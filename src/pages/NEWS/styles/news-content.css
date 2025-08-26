@@ -1,0 +1,374 @@
+/* 新闻内容样式 - 针对新闻详情页面的HTML内容优化 */
+
+.news-content {
+  @apply max-w-4xl mx-auto px-4;
+}
+
+.news-content h1 {
+  @apply text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight;
+}
+
+.news-content h2 {
+  @apply text-2xl md:text-3xl font-semibold text-gray-900 mb-4 mt-8 leading-tight;
+}
+
+.news-content h3 {
+  @apply text-xl md:text-2xl font-semibold text-gray-800 mb-3 mt-6 leading-tight;
+}
+
+.news-content h4 {
+  @apply text-lg md:text-xl font-semibold text-gray-800 mb-2 mt-4;
+}
+
+.news-content h5 {
+  @apply text-base md:text-lg font-semibold text-gray-700 mb-2 mt-3;
+}
+
+.news-content h6 {
+  @apply text-sm md:text-base font-semibold text-gray-700 mb-2 mt-3;
+}
+
+.news-content p,
+.news-content div:not(.news-content h1):not(.news-content h2):not(.news-content h3):not(.news-content h4):not(.news-content h5):not(.news-content h6):not(.news-content ul):not(.news-content ol):not(.news-content li):not(.news-content blockquote):not(.news-content table):not(.news-content pre):not(.news-content code):not(.news-content img):not(.news-content figure):not(.news-content figcaption):not(.news-content hr) {
+  @apply text-gray-700 leading-relaxed mb-4 text-lg md:text-xl leading-8;
+}
+
+.news-content p:last-child {
+  @apply mb-0;
+}
+
+.news-content a {
+  @apply text-[#0EB623] hover:text-[#0a9e1e] underline transition-colors duration-200;
+}
+
+.news-content a:hover {
+  @apply no-underline;
+}
+
+.news-content strong,
+.news-content b {
+  @apply font-semibold text-gray-900;
+}
+
+.news-content em,
+.news-content i {
+  @apply italic;
+}
+
+.news-content ul {
+  @apply list-disc list-inside mb-4 space-y-1;
+}
+
+.news-content ol {
+  @apply list-decimal list-inside mb-4 space-y-1;
+}
+
+.news-content li {
+  @apply text-gray-700 leading-relaxed text-lg md:text-xl leading-8;
+}
+
+.news-content li > ul,
+.news-content li > ol {
+  @apply ml-4 mt-1 mb-0;
+}
+
+.news-content blockquote {
+  @apply border-l-4 border-[#0EB623] pl-4 italic text-gray-600 my-4 bg-gray-50 py-2 text-lg md:text-xl;
+}
+
+.news-content code {
+  @apply bg-gray-100 text-gray-800 px-2 py-1 rounded text-sm font-mono;
+}
+
+.news-content pre {
+  @apply bg-gray-100 text-gray-800 p-4 rounded-lg overflow-x-auto mb-4;
+}
+
+.news-content pre code {
+  @apply bg-transparent p-0;
+}
+
+.news-content img {
+  @apply max-w-full h-auto rounded-lg shadow-md mb-4 mx-auto;
+}
+
+.news-content figure {
+  @apply mb-6;
+}
+
+.news-content figcaption {
+  @apply text-sm text-gray-600 text-center mt-2 italic;
+}
+
+.news-content table {
+  @apply w-full border-collapse border border-gray-300 mb-4 text-sm;
+}
+
+.news-content th {
+  @apply bg-gray-100 border border-gray-300 px-4 py-2 text-left font-semibold text-gray-900;
+}
+
+.news-content td {
+  @apply border border-gray-300 px-4 py-2 text-gray-700;
+}
+
+.news-content tr:nth-child(even) {
+  @apply bg-gray-50;
+}
+
+.news-content hr {
+  @apply border-0 border-t border-gray-300 my-8;
+}
+
+/* 特殊样式 */
+.news-content .highlight {
+  @apply bg-yellow-100 px-1 rounded;
+}
+
+/* 强制统一字体样式 */
+.news-content * {
+  font-family: inherit;
+}
+
+/* CSS重置 - 确保没有其他样式干扰 */
+.news-content {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #374151;
+}
+
+.news-content > * {
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+/* 强制所有文本内容使用统一样式 */
+.news-content div,
+.news-content span,
+.news-content p {
+  font-size: 18px !important;
+  line-height: 1.8 !important;
+  color: #374151 !important;
+}
+
+@media (min-width: 768px) {
+  .news-content div,
+  .news-content span,
+  .news-content p {
+    font-size: 20px !important;
+  }
+}
+
+/* 通用文本样式 - 覆盖所有可能的文本容器 */
+.news-content span,
+.news-content div:not(.news-content h1):not(.news-content h2):not(.news-content h3):not(.news-content h4):not(.news-content h5):not(.news-content h6):not(.news-content ul):not(.news-content ol):not(.news-content li):not(.news-content blockquote):not(.news-content table):not(.news-content pre):not(.news-content code):not(.news-content img):not(.news-content figure):not(.news-content figcaption):not(.news-content hr):not(.news-content a):not(.news-content strong):not(.news-content b):not(.news-content em):not(.news-content i) {
+  @apply text-gray-700 text-lg md:text-xl leading-8;
+}
+
+/* 处理嵌套的文本内容 */
+.news-content div > div:not(.news-content h1):not(.news-content h2):not(.news-content h3):not(.news-content h4):not(.news-content h5):not(.news-content h6):not(.news-content ul):not(.news-content ol):not(.news-content li):not(.news-content blockquote):not(.news-content table):not(.news-content pre):not(.news-content code):not(.news-content img):not(.news-content figure):not(.news-content figcaption):not(.news-content hr):not(.news-content a):not(.news-content strong):not(.news-content b):not(.news-content em):not(.news-content i) {
+  @apply text-gray-700 text-lg md:text-xl leading-8;
+}
+
+/* 处理可能的文本段落 */
+.news-content .Paragraph,
+.news-content .TextRun,
+.news-content .SCXW252405646,
+.news-content .BCX0 {
+  @apply text-gray-700 text-lg md:text-xl leading-8;
+}
+
+.news-content .quote-box {
+  @apply bg-[#0EB623]/5 border border-[#0EB623]/20 rounded-lg p-4 mb-4;
+}
+
+.news-content .info-box {
+  @apply bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4;
+}
+
+.news-content .warning-box {
+  @apply bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-4;
+}
+
+.news-content .success-box {
+  @apply bg-green-50 border border-green-200 rounded-lg p-4 mb-4;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .news-content {
+    @apply px-4;
+  }
+  
+  .news-content h1 {
+    @apply text-2xl;
+  }
+  
+  .news-content h2 {
+    @apply text-xl;
+  }
+  
+  .news-content h3 {
+    @apply text-lg;
+  }
+  
+  .news-content p {
+    @apply text-base;
+  }
+  
+  .news-content li {
+    @apply text-base;
+  }
+  
+  .news-content blockquote {
+    @apply text-base;
+  }
+  
+  .news-content table {
+    @apply text-xs;
+  }
+  
+  .news-content th,
+  .news-content td {
+    @apply px-2 py-1;
+  }
+  
+  .news-content pre {
+    @apply p-3 text-sm;
+  }
+}
+
+/* 打印样式 */
+@media print {
+  .news-content {
+    @apply text-black;
+  }
+  
+  .news-content a {
+    @apply text-black no-underline;
+  }
+  
+  .news-content a:after {
+    content: " (" attr(href) ")";
+    @apply text-sm;
+  }
+}
+
+/* 搜索结果高亮 */
+.news-content mark {
+  @apply bg-yellow-200 px-1 rounded;
+}
+
+/* 图片画廊样式 */
+.news-content .image-gallery {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6;
+}
+
+.news-content .image-gallery img {
+  @apply w-full h-48 object-cover rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 cursor-pointer;
+}
+
+/* 视频容器 */
+.news-content .video-container {
+  @apply relative w-full h-0 pb-[56.25%] mb-4 rounded-lg overflow-hidden;
+}
+
+.news-content .video-container iframe,
+.news-content .video-container video {
+  @apply absolute top-0 left-0 w-full h-full;
+}
+
+/* 社交分享按钮 */
+.news-content .social-share {
+  @apply flex flex-wrap gap-2 mt-6 pt-6 border-t border-gray-200;
+}
+
+.news-content .social-share button {
+  @apply px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200;
+}
+
+.news-content .social-share .twitter {
+  @apply bg-blue-500 text-white hover:bg-blue-600;
+}
+
+.news-content .social-share .linkedin {
+  @apply bg-blue-700 text-white hover:bg-blue-800;
+}
+
+.news-content .social-share .facebook {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.news-content .social-share .email {
+  @apply bg-gray-600 text-white hover:bg-gray-700;
+}
+
+/* 标签样式 */
+.news-content .tags {
+  @apply flex flex-wrap gap-2 mt-4;
+}
+
+.news-content .tag {
+  @apply bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm hover:bg-gray-200 transition-colors duration-200;
+}
+
+/* 作者信息 */
+.news-content .author-info {
+  @apply flex items-center gap-3 mt-6 pt-6 border-t border-gray-200;
+}
+
+.news-content .author-avatar {
+  @apply w-12 h-12 rounded-full bg-gray-300;
+}
+
+.news-content .author-details h4 {
+  @apply text-base font-semibold text-gray-900 mb-0 mt-0;
+}
+
+.news-content .author-details p {
+  @apply text-sm text-gray-600 mb-0;
+}
+
+/* 相关文章 */
+.news-content .related-articles {
+  @apply mt-8 pt-8 border-t border-gray-200;
+}
+
+.news-content .related-articles h3 {
+  @apply text-xl font-semibold text-gray-900 mb-4 mt-0;
+}
+
+.news-content .related-articles .article-card {
+  @apply block bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow duration-200;
+}
+
+.news-content .related-articles .article-title {
+  @apply font-medium text-gray-900 mb-2;
+}
+
+.news-content .related-articles .article-excerpt {
+  @apply text-sm text-gray-600;
+}
+
+/* 目录导航 */
+.news-content .table-of-contents {
+  @apply bg-gray-50 border border-gray-200 rounded-lg p-4 mb-6;
+}
+
+.news-content .table-of-contents h4 {
+  @apply text-base font-semibold text-gray-900 mb-2 mt-0;
+}
+
+.news-content .table-of-contents ul {
+  @apply list-none space-y-1 mb-0;
+}
+
+.news-content .table-of-contents a {
+  @apply text-sm text-gray-600 hover:text-[#0EB623] no-underline;
+}
+
+/* 回到顶部按钮 */
+.news-content .back-to-top {
+  @apply fixed bottom-4 right-4 bg-[#0EB623] text-white p-3 rounded-full shadow-lg hover:bg-[#0a9e1e] transition-colors duration-200 z-50;
+}

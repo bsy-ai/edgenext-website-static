@@ -1,0 +1,240 @@
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="UTF-8"/>
+        <title>Kepler.gl embedded map</title>
+
+        <!--Uber Font-->
+        <link rel="stylesheet" href="https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/uber-fonts/4.0.0/superfine.css">
+
+        <!--Kepler css-->
+        <link href="https://unpkg.com/kepler.gl@3.1.8/umd/keplergl.min.css" rel="stylesheet">
+
+        <!--MapBox css-->
+        <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.1/mapbox-gl.css" rel="stylesheet">
+        <link href="https://unpkg.com/maplibre-gl@^3/dist/maplibre-gl.css" rel="stylesheet">
+
+        <!-— facebook open graph tags -->
+        <meta property="og:url" content="http://kepler.gl/" />
+        <meta property="og:title" content="Large-scale WebGL-powered Geospatial Data Visualization Tool" />
+        <meta property="og:description" content="Kepler.gl is a powerful web-based geospatial data analysis tool. Built on a high performance rendering engine and designed for large-scale data sets." />
+        <meta property="og:site_name" content="kepler.gl" />
+        <meta property="og:image" content="https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/kepler.gl-meta-tag.png" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="800" />
+        <meta property="og:image:height" content="800" />
+
+        <!-— twitter card tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@openjsf">
+        <meta name="twitter:creator" content="@openjsf">
+        <meta name="twitter:title" content="Large-scale WebGL-powered Geospatial Data Visualization Tool">
+        <meta name="twitter:description" content="Kepler.gl is a powerful web-based geospatial data analysis tool. Built on a high performance rendering engine and designed for large-scale data sets.">
+        <meta name="twitter:image" content="https://d1a3f4spazzrp4.cloudfront.net/kepler.gl/kepler.gl-meta-tag.png" />
+
+        <!-- Load React/Redux -->
+        <script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin></script>
+        <script src="https://unpkg.com/redux@4.2.1/dist/redux.js" crossorigin></script>
+        <script src="https://unpkg.com/react-redux@8.1.2/dist/react-redux.min.js" crossorigin></script>
+        <script src="https://unpkg.com/styled-components@6.1.8/dist/styled-components.min.js" crossorigin></script>
+
+        <!-- Load Kepler.gl -->
+        <script src="https://unpkg.com/kepler.gl@3.1.8/umd/keplergl.min.js" crossorigin></script>
+
+        <style type="text/css">
+          body {margin: 0; padding: 0; overflow: hidden;}
+        </style>
+
+        <!--MapBox token-->
+        <script>
+          /**
+           * Provide your MapBox Token
+           **/
+          const MAPBOX_TOKEN = 'pk.eyJ1IjoidWNmLW1hcGJveCIsImEiOiJjbDBiYzlveHgwdnF0M2NtZzUzZWZuNWZ4In0.l9J8ptz3MKwaU9I4PtCcig';
+          const WARNING_MESSAGE = 'Please Provide a Mapbox Token in order to use Kepler.gl. Edit this file and fill out MAPBOX_TOKEN with your access key';
+        </script>
+
+        <!-- GA: Delete this as you wish, However to pat ourselves on the back, we only track anonymous pageview to understand how many people are using kepler.gl. -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+          ga('create', 'UA-64694404-19', {
+            'storage': 'none',
+            'clientId': localStorage.getItem('ga:clientId')
+          });
+          ga(function(tracker) {
+              localStorage.setItem('ga:clientId', tracker.get('clientId'));
+          });
+          ga('set', 'checkProtocolTask', null); // Disable file protocol checking.
+          ga('set', 'checkStorageTask', null); // Disable cookie storage checking.
+          ga('set', 'historyImportTask', null); // Disable history checking (requires reading from cookies).
+          ga('set', 'page', 'keplergl-html');
+          ga('send', 'pageview');
+        </script>
+      </head>
+      <body>
+        <!-- We will put our React component inside this div. -->
+        <div id="app">
+          <!-- Kepler.gl map will be placed here-->
+        </div>
+
+        <!-- Load our React component. -->
+        <script>
+          /* Validate Mapbox Token */
+          if ((MAPBOX_TOKEN || '') === '' || MAPBOX_TOKEN === 'PROVIDE_MAPBOX_TOKEN') {
+            alert(WARNING_MESSAGE);
+          }
+
+          /** STORE **/
+          const reducers = (function createReducers(redux, keplerGl) {
+            return redux.combineReducers({
+              // mount keplerGl reducer
+              keplerGl: keplerGl.keplerGlReducer.initialState({
+                uiState: {
+                  readOnly: true,
+                  currentModal: null
+                }
+              })
+            });
+          }(Redux, KeplerGl));
+
+          const middleWares = (function createMiddlewares(keplerGl) {
+            return keplerGl.enhanceReduxMiddleware([
+              // Add other middlewares here
+            ]);
+          }(KeplerGl));
+
+          const enhancers = (function craeteEnhancers(redux, middles) {
+            return redux.applyMiddleware(...middles);
+          }(Redux, middleWares));
+
+          const store = (function createStore(redux, enhancers) {
+            const initialState = {};
+
+            return redux.createStore(
+              reducers,
+              initialState,
+              redux.compose(enhancers)
+            );
+          }(Redux, enhancers));
+          /** END STORE **/
+
+          /** COMPONENTS **/
+          var KeplerElement = (function makeKeplerElement(react, keplerGl, mapboxToken) {
+            var LogoSvg = function LogoSvg() {
+              return react.createElement(
+                "div",
+                { className: "logo-container", style: {position: 'fixed', zIndex: 10000, padding: '4px'} },
+                  react.createElement(
+                    "svg",
+                    {
+                      className: "kepler_gl__logo",
+                      width: "107px",
+                      height: "21px",
+                      viewBox: "0 0 124 24"
+                    },
+                    react.createElement(
+                      "g",
+                      { transform: "translate(13.500000, 13.500000) rotate(45.000000) translate(-13.500000, -13.500000) translate(4.000000, 4.000000)" },
+                      react.createElement("rect", { x: "0", y: "6", transform: "matrix(2.535181e-06 1 -1 2.535181e-06 18.1107 6.0369)", fill: "#535C6C", width: "12.1", height: "12.1" }),
+                      react.createElement("rect", { x: "6", y: "0", transform: "matrix(2.535182e-06 1 -1 2.535182e-06 18.1107 -6.0369)", fill:"#1FBAD6", width: "12.1", height: "12.1" })
+                    ),
+                    react.createElement(
+                      "g",
+                      {},
+                      react.createElement("path", { fill:"#1FBAD6", d: "M39,8.7h2.2l-2.8,4.2l2.9,5.1H39l-2.4-4.2h-1.3V18h-2V5l2-0.1v7.3h1.3L39,8.7z" }),
+                      react.createElement("path", { fill:"#1FBAD6", d: "M42.4,13.3c0-1.5,0.4-2.7,1.1-3.5s1.8-1.2,3.1-1.2c1.3,0,2.2,0.4,2.8,1.1c0.6,0.7,0.9,1.8,0.9,3.3 c0,0.4,0,0.8,0,1.1h-5.8c0,1.6,0.8,2.4,2.4,2.4c1,0,2-0.2,2.9-0.6l0.2,1.7c-0.4,0.2-0.9,0.4-1.4,0.5s-1.1,0.2-1.7,0.2 c-1.5,0-2.6-0.4-3.3-1.2C42.8,16.1,42.4,14.9,42.4,13.3z M46.6,10.1c-0.7,0-1.2,0.2-1.5,0.5c-0.4,0.4-0.6,0.9-0.6,1.7h4 c0-0.8-0.2-1.4-0.5-1.7S47.2,10.1,46.6,10.1z" }),
+                      react.createElement("path", { fill:"#1FBAD6", d: "M57.1,18.2c-1,0-1.8-0.3-2.3-0.9l0,0l0,1.3v2.5h-2V8.7h1.5l0.3,0.9h0c0.3-0.3,0.7-0.6,1.2-0.7 c0.4-0.2,0.9-0.3,1.4-0.3c1.2,0,2.1,0.4,2.7,1.1c0.6,0.7,0.9,2,0.9,3.7c0,1.6-0.3,2.8-1,3.7C59.2,17.8,58.3,18.2,57.1,18.2z M56.7,10.3c-0.4,0-0.8,0.1-1.1,0.2c-0.3,0.2-0.6,0.4-0.8,0.7v4.3c0.2,0.3,0.4,0.5,0.7,0.7c0.3,0.2,0.7,0.3,1.1,0.3 c0.7,0,1.2-0.2,1.6-0.7c0.4-0.5,0.5-1.3,0.5-2.5c0-0.8-0.1-1.4-0.2-1.8s-0.4-0.7-0.7-0.9C57.6,10.4,57.2,10.3,56.7,10.3z" }),
+                      react.createElement("path", { fill:"#1FBAD6", d: "M63.2,16V5l2-0.1v10.8c0,0.3,0.1,0.5,0.2,0.6c0.1,0.1,0.3,0.2,0.6,0.2c0.3,0,0.6,0,0.9-0.1V18 c-0.4,0.1-1,0.2-1.6,0.2c-0.8,0-1.3-0.2-1.7-0.5S63.2,16.8,63.2,16z" }),
+                      react.createElement("path", { fill:"#1FBAD6", d: "M68.2,13.3c0-1.5,0.4-2.7,1.1-3.5c0.7-0.8,1.8-1.2,3.1-1.2c1.3,0,2.2,0.4,2.8,1.1c0.6,0.7,0.9,1.8,0.9,3.3 c0,0.4,0,0.8,0,1.1h-5.8c0,1.6,0.8,2.4,2.4,2.4c1,0,2-0.2,2.9-0.6l0.2,1.7c-0.4,0.2-0.9,0.4-1.4,0.5s-1.1,0.2-1.7,0.2 c-1.5,0-2.6-0.4-3.3-1.2C68.6,16.1,68.2,14.9,68.2,13.3z M72.4,10.1c-0.7,0-1.2,0.2-1.5,0.5c-0.4,0.4-0.6,0.9-0.6,1.7h4 c0-0.8-0.2-1.4-0.5-1.7S73,10.1,72.4,10.1z" }),
+                      react.createElement("path", { fill:"#1FBAD6", d: "M80.2,8.7l0.1,1.7h0c0.3-0.6,0.7-1.1,1.1-1.4c0.4-0.3,1-0.5,1.6-0.5c0.4,0,0.7,0,1,0.1l-0.1,2 c-0.3-0.1-0.7-0.2-1-0.2c-0.7,0-1.3,0.3-1.7,0.8c-0.4,0.5-0.7,1.2-0.7,2.1V18h-2V8.7H80.2z" }),
+                      react.createElement("path", { fill:"#1FBAD6", d: "M83.8,17c0-0.8,0.4-1.2,1.2-1.2c0.8,0,1.2,0.4,1.2,1.2c0,0.8-0.4,1.1-1.2,1.1C84.2,18.2,83.8,17.8,83.8,17z" }),
+                      react.createElement("path", { fill:"#1FBAD6", d: "M88.5,18.7c0-0.8,0.4-1.4,1.2-1.8c-0.6-0.3-0.9-0.8-0.9-1.5c0-0.7,0.4-1.2,1.1-1.6c-0.3-0.3-0.6-0.6-0.7-0.9 c-0.2-0.4-0.2-0.8-0.2-1.3c0-1,0.3-1.8,0.9-2.3c0.6-0.5,1.6-0.8,2.8-0.8c0.5,0,1,0,1.4,0.1c0.4,0.1,0.8,0.2,1.1,0.4l2.4-0.2v1.5 h-1.5c0.2,0.4,0.2,0.8,0.2,1.3c0,1-0.3,1.7-0.9,2.2s-1.5,0.8-2.7,0.8c-0.7,0-1.2-0.1-1.6-0.2c-0.1,0.1-0.2,0.2-0.3,0.3 c-0.1,0.1-0.1,0.2-0.1,0.4c0,0.2,0.1,0.3,0.2,0.4c0.1,0.1,0.3,0.2,0.6,0.2l2.7,0.2c1,0.1,1.7,0.3,2.2,0.6c0.5,0.3,0.8,0.9,0.8,1.7 c0,0.6-0.2,1.1-0.5,1.5c-0.4,0.4-0.9,0.8-1.5,1c-0.7,0.2-1.5,0.4-2.4,0.4c-1.3,0-2.3-0.2-3-0.6C88.8,20.1,88.5,19.5,88.5,18.7z M95.1,18.4c0-0.3-0.1-0.5-0.3-0.7s-0.6-0.2-1.1-0.3l-2.7-0.3c-0.2,0.1-0.4,0.3-0.5,0.5c-0.1,0.2-0.2,0.4-0.2,0.6 c0,0.4,0.2,0.8,0.5,1c0.4,0.2,1,0.3,1.8,0.3C94.2,19.5,95.1,19.2,95.1,18.4z M94.3,11.5c0-0.6-0.1-1-0.4-1.2 c-0.3-0.2-0.7-0.3-1.3-0.3c-0.7,0-1.1,0.1-1.4,0.3c-0.3,0.2-0.4,0.6-0.4,1.2s0.1,1,0.4,1.2c0.3,0.2,0.7,0.3,1.4,0.3 c0.6,0,1.1-0.1,1.3-0.4S94.3,12,94.3,11.5z" }),
+                      react.createElement("path", { fill:"#1FBAD6", d: "M99.4,16V5l2-0.1v10.8c0,0.3,0.1,0.5,0.2,0.6c0.1,0.1,0.3,0.2,0.6,0.2c0.3,0,0.6,0,0.9-0.1V18 c-0.4,0.1-1,0.2-1.6,0.2c-0.8,0-1.3-0.2-1.7-0.5S99.4,16.8,99.4,16z" })
+                    )
+                  )
+                );
+              };
+
+            return function App() {
+              var rootElm = react.useRef(null);
+              var _useState = react.useState({
+                width: window.innerWidth,
+                height: window.innerHeight
+              });
+              var windowDimension = _useState[0];
+              var setDimension = _useState[1];
+              react.useEffect(function sideEffect(){
+                function handleResize() {
+                  setDimension({width: window.innerWidth, height: window.innerHeight});
+                };
+                window.addEventListener('resize', handleResize);
+                return function() {window.removeEventListener('resize', handleResize);};
+              }, []);
+              return react.createElement(
+                'div',
+                {style: {position: 'absolute', left: 0, width: '100vw', height: '100vh'}},
+                LogoSvg(),
+                react.createElement(keplerGl.KeplerGl, {
+                  mapboxApiAccessToken: mapboxToken,
+                  id: "map",
+                  width: windowDimension.width,
+                  height: windowDimension.height
+                })
+              )
+            }
+          }(React, KeplerGl, MAPBOX_TOKEN));
+
+          const app = (function createReactReduxProvider(react, reactRedux, KeplerElement) {
+            return react.createElement(
+              reactRedux.Provider,
+              {store},
+              react.createElement(KeplerElement, null)
+            )
+          }(React, ReactRedux, KeplerElement));
+          /** END COMPONENTS **/
+
+          /** Render **/
+          (function render(react, reactDOM, app) {
+            const container = document.getElementById('app');
+            const root = reactDOM.createRoot(container);
+            root.render(app);
+          }(React, ReactDOM, app));
+        </script>
+        <!-- The next script will show how to interact directly with Kepler map store -->
+        <script>
+          /**
+           * Customize map.
+           * In the following section you can use the store object to dispatch Kepler.gl actions
+           * to add new data and customize behavior
+           */
+          (function customize(keplerGl, store) {
+            const datasets = [{"version":"v1","data":{"id":"osehem","label":"EdgeNext_Global_Map_Locations_with_China_FINAL.csv","color":[143,47,191],"allData":[["North America","Los Angeles",34.0522,-118.2437,"existing"],["North America","Chicago",41.8781,-87.6298,"existing"],["North America","Seattle",47.6062,-122.3321,"existing"],["North America","Santa Clara",37.3541,-121.9552,"existing"],["North America","Ashburn",39.0438,-77.4874,"existing"],["North America","Miami",25.7617,-80.1918,"existing"],["North America","San Jose",37.3382,-121.8863,"existing"],["North America","New York",40.7128,-74.006,"existing"],["North America","Montreal",45.5017,-73.5673,"existing"],["North America","Dallas",32.7767,-96.797,"existing"],["North America","Denver",39.7392,-104.9903,"upcoming"],["North America","Toronto",43.65107,-79.347015,"upcoming"],["North America","Vancouver",49.2827,-123.1207,"upcoming"],["South America","São Paulo",-23.5505,-46.6333,"existing"],["South America","Rio de Janeiro",-22.9068,-43.1729,"existing"],["South America","Fortaleza",-3.7172,-38.5433,"existing"],["South America","Mexico City",19.4326,-99.1332,"existing"],["South America","Buenos Aires",-34.6037,-58.3816,"existing"],["South America","Santiago",-33.4489,-70.6693,"existing"],["South America","Bogotá",4.711,-74.0721,"existing"],["South America","Queretaro",20.5888,-100.3899,"existing"],["South America","Lima",-12.0464,-77.0428,"upcoming"],["South America","Brasilia",-15.8267,-47.9218,"upcoming"],["South America","Salvador",-12.9777,-38.5016,"upcoming"],["South America","Asuncion",-25.2637,-57.5759,"upcoming"],["South America","Caracas",10.4806,-66.9036,"upcoming"],["Europe","Paris",48.8566,2.3522,"existing"],["Europe","Marseille",43.2965,5.3698,"existing"],["Europe","Madrid",40.4168,-3.7038,"existing"],["Europe","London",51.5074,-0.1278,"existing"],["Europe","Milan",45.4642,9.19,"existing"],["Europe","Amsterdam",52.3676,4.9041,"existing"],["Europe","Frankfurt",50.1109,8.6821,"existing"],["Europe","Helsinki",60.1699,24.9384,"upcoming"],["Europe","Baku",40.4093,49.8671,"upcoming"],["Africa","Johannesburg",-26.2041,28.0473,"existing"],["Africa","Cape Town",-33.9249,18.4241,"upcoming"],["Africa","Lagos",6.5244,3.3792,"existing"],["Africa","Tunis",36.8065,10.1815,"existing"],["Africa","Algiers",36.7538,3.0588,"upcoming"],["Africa","Addis Ababa",9.03,38.74,"upcoming"],["Africa","Dar es Salaam",-6.7924,39.2083,"upcoming"],["Africa","Cairo",30.0444,31.2357,"existing"],["Africa","Casablanca",33.5731,-7.5898,"upcoming"],["Africa","Tripoli",32.8872,13.1913,"existing"],["Africa","N'Djamena",12.1348,15.0557,"upcoming"],["Africa","Brazzaville",-4.2634,15.2429,"upcoming"],["Africa","Kinshasa",-4.4419,15.2663,"existing"],["Africa","Libreville",0.4162,9.4673,"upcoming"],["Africa","Nairobi",-1.2921,36.8219,"existing"],["Africa","Antananarivo",-18.8792,47.5079,"existing"],["Africa","Lilongwe",-13.9833,33.7833,"upcoming"],["Africa","Niamey",13.5128,2.1128,"upcoming"],["Africa","Rabat",34.0209,-6.8416,"upcoming"],["Africa","Gaborone",-24.6282,25.9231,"existing"],["Africa","Kigali",-1.9706,30.1044,"upcoming"],["Africa","Dodoma",-6.163,35.7516,"existing"],["Africa","Kampala",0.3476,32.5825,"upcoming"],["Africa","Lusaka",-15.3875,28.3228,"existing"],["Middle East","Fujairah",25.1288,56.3265,"existing"],["Middle East","Dubai",25.276987,55.296249,"existing"],["Middle East","Manama",26.2235,50.5876,"existing"],["Middle East","Baghdad",33.3128,44.3615,"existing"],["Middle East","Mosul",36.3456,43.1575,"existing"],["Middle East","Sulaymaniyah",35.5649,45.4329,"existing"],["Middle East","Erbil",36.1911,44.0092,"existing"],["Middle East","Baqubah",33.7481,44.6416,"existing"],["Middle East","Jeddah",21.4858,39.1925,"existing"],["Middle East","Riyadh",24.7136,46.6753,"existing"],["Middle East","Dammam",26.4207,50.0888,"existing"],["Middle East","Muscat",23.5859,58.4059,"existing"],["Middle East","Amman",31.9539,35.9106,"existing"],["Middle East","Doha",25.276987,51.52,"existing"],["Middle East","Beirut",33.8938,35.5018,"existing"],["Middle East","Istanbul",41.0082,28.9784,"existing"],["Middle East","Kuwait City",29.3759,47.9774,"existing"],["Middle East","AlHillah",32.4721,44.4222,"existing"],["Middle East","Nablus",32.2211,35.2544,"upcoming"],["Middle East","Sana’a",15.3694,44.191,"upcoming"],["Asia","Ho Chi Minh City",10.7769,106.7009,"existing"],["Asia","Hanoi",21.0285,105.8542,"existing"],["Asia","Da Nang",16.0544,108.2022,"existing"],["Asia","Toshkent",41.2995,69.2401,"existing"],["Asia","Bangkok",13.7563,100.5018,"existing"],["Asia","Chon Buri",13.3611,100.9847,"existing"],["Asia","Muang Pathum Thani",14.0137,100.5305,"existing"],["Asia","Hong Kong",22.3193,114.1694,"existing"],["Asia","Taipei",25.0329,121.5654,"existing"],["Asia","Macau",22.1987,113.5439,"existing"],["Asia","Vientiane",17.9757,102.6331,"existing"],["Asia","Seoul",37.5665,126.978,"existing"],["Asia","Singapore",1.3521,103.8198,"existing"],["Asia","Manila",14.5995,120.9842,"existing"],["Asia","Cebu",10.3157,123.8854,"existing"],["Asia","Davao",7.1907,125.4553,"existing"],["Asia","Karachi",24.8607,67.0011,"existing"],["Asia","Lahore",31.5497,74.3436,"existing"],["Asia","Kathmandu",27.7172,85.324,"existing"],["Asia","Almaty",43.222,76.8512,"existing"],["Asia","Astana",51.1605,71.4704,"existing"],["Asia","Pavlodar",52.2871,76.9674,"existing"],["Asia","Ulaanbaatar",47.8864,106.9057,"existing"],["Asia","Yangon",16.8409,96.1735,"existing"],["Asia","Mandalay",21.9588,96.0891,"existing"],["Asia","Naypyidaw",19.7633,96.0785,"existing"],["Asia","Jakarta",-6.2088,106.8456,"existing"],["Asia","Surabaya",-7.2575,112.7521,"existing"],["Asia","Semarang",-6.9667,110.4167,"existing"],["Asia","Medan",3.5952,98.6722,"existing"],["Asia","Makassar",-5.1477,119.4327,"existing"],["Asia","Tangerang",-6.1783,106.6319,"existing"],["Asia","Lampung",-5.3971,105.2668,"existing"],["Asia","Palembang",-2.9761,104.7754,"existing"],["Asia","Batam",1.0456,104.0305,"existing"],["Asia","Pekanbaru",0.5071,101.4478,"existing"],["Asia","Bandung",-6.9175,107.6191,"existing"],["Asia","Yogyakarta",-7.7956,110.3695,"existing"],["Asia","Depok",-6.4025,106.7942,"existing"],["Asia","Denpasar",-8.6705,115.2126,"existing"],["Asia","Banjarmasin",-3.3167,114.5908,"existing"],["Asia","Kuala Lumpur",3.139,101.6869,"existing"],["Asia","Johorbaru",1.4927,103.7414,"existing"],["Asia","Kuching",1.5535,110.3593,"existing"],["Asia","Kota Kinabalu",5.9804,116.0735,"existing"],["Asia","Dhaka",23.8103,90.4125,"existing"],["Asia","Jessore",23.1706,89.2,"existing"],["Asia","Comilla",23.4607,91.1809,"existing"],["Asia","Noakhali",22.8242,91.1004,"existing"],["Asia","Chittagong",22.3569,91.7832,"existing"],["Asia","Sylhet",24.8949,91.8687,"existing"],["Asia","Khulna",22.8456,89.5403,"existing"],["Asia","Gazipur",23.9999,90.4203,"existing"],["Asia","Bandar Seri Begawan",4.9031,114.9398,"existing"],["Asia","Phnom Penh",11.5564,104.9282,"existing"],["Asia","Tokyo",35.6895,139.6917,"existing"],["Asia","Osaka",34.6937,135.5023,"existing"],["Asia","Mumbai",19.076,72.8777,"existing"],["Asia","New Delhi",28.6139,77.209,"existing"],["Asia","Noida",28.5355,77.391,"existing"],["Asia","Bengaluru",12.9716,77.5946,"upcoming"],["Asia","Chennai",13.0827,80.2707,"upcoming"],["Asia","Pune",18.5204,73.8567,"upcoming"],["Asia","Hyderabad",17.385,78.4867,"upcoming"],["Asia","Ashgabat",37.9601,58.3261,"upcoming"],["Asia","Bishkek",42.8746,74.5698,"upcoming"],["Asia","Dushanbe",38.5598,68.787,"upcoming"],["Oceania","Sydney",-33.8688,151.2093,"existing"],["Oceania","Auckland",-36.8485,174.7633,"upcoming"],["China","Heilongjiang",47.356,128.0474,"existing"],["China","Liaoning",41.8369,123.4291,"existing"],["China","Jilin",43.6661,126.1923,"existing"],["China","Hebei",38.0428,114.5149,"existing"],["China","Henan",34.7655,113.7536,"existing"],["China","Hubei",30.5454,114.3423,"existing"],["China","Hunan",28.1124,112.9838,"existing"],["China","Shandong",36.6683,117.0204,"existing"],["China","Shanxi",37.8735,112.5624,"existing"],["China","Anhui",31.8612,117.2857,"existing"],["China","Zhejiang",29.1832,120.0934,"existing"],["China","Jiangsu",32.9711,119.455,"existing"],["China","Fujian",26.1008,119.2951,"existing"],["China","Guangdong",23.379,113.7633,"existing"],["China","Hainan",19.1959,109.7453,"existing"],["China","Sichuan",30.6512,104.0759,"existing"],["China","Yunnan",25.0453,102.7097,"existing"],["China","Guizhou",26.8429,106.9336,"existing"],["China","Qinghai",36.6232,101.7782,"existing"],["China","Gansu",36.0594,103.8263,"existing"],["China","Jiangxi",27.0875,115.7331,"existing"],["China","Inner Mongolia",43.2301,115.4735,"existing"],["China","Ningxia",37.1987,106.1581,"existing"],["China","Xinjiang",42.5246,87.5397,"existing"],["China","Tibet",31.6926,88.0924,"existing"],["China","Guangxi",23.7248,108.8076,"existing"],["China","Shaanxi",34.2649,108.9481,"existing"],["China","Shanghai",31.2304,121.4737,"existing"],["China","Chongqing",29.563,106.5516,"existing"],["China","Beijing",39.9042,116.4074,"existing"],["China","Tianjin",39.3434,117.3616,"existing"]],"fields":[{"name":"Region","type":"string","format":"","analyzerType":"STRING"},{"name":"City","type":"string","format":"","analyzerType":"STRING"},{"name":"Latitude","type":"real","format":"","analyzerType":"FLOAT"},{"name":"Longitude","type":"real","format":"","analyzerType":"FLOAT"},{"name":"Status","type":"string","format":"","analyzerType":"STRING"}],"type":"","metadata":{"id":"osehem","format":"row","label":"EdgeNext_Global_Map_Locations_with_China_FINAL.csv"},"disableDataOperation":false}}];
+            const config = {"version":"v1","config":{"visState":{"filters":[],"layers":[{"id":"itacrqi","type":"point","config":{"dataId":"osehem","columnMode":"points","label":"point","color":[248,149,112],"highlightColor":[252,242,26,255],"columns":{"lat":"Latitude","lng":"Longitude"},"isVisible":true,"visConfig":{"radius":18,"fixedRadius":false,"opacity":0.8,"outline":false,"thickness":2,"strokeColor":null,"colorRange":{"name":"color.customPalette.customOrdinal.Status","type":"customOrdinal","category":"Custom","colors":["#14B800","#FCCF49"],"colorMap":[["existing","#14B800"],["upcoming","#FCCF49"]]},"strokeColorRange":{"name":"Global Warming","type":"sequential","category":"Uber","colors":["#4C0035","#880030","#B72F15","#D6610A","#EF9100","#FFC300"]},"radiusRange":[0,50],"filled":true,"billboard":false,"allowHover":true,"showNeighborOnHover":false,"showHighlightColor":true},"hidden":false,"textLabel":[{"field":null,"color":[255,255,255],"size":18,"offset":[0,0],"anchor":"start","alignment":"center","outlineWidth":0,"outlineColor":[255,0,0,255],"background":false,"backgroundColor":[0,0,200,255]}]},"visualChannels":{"colorField":{"name":"Status","type":"string"},"colorScale":"customOrdinal","strokeColorField":null,"strokeColorScale":"quantile","sizeField":null,"sizeScale":"linear"}}],"effects":[],"interactionConfig":{"tooltip":{"fieldsToShow":{"osehem":[{"name":"Region","format":null},{"name":"City","format":null},{"name":"Latitude","format":null},{"name":"Longitude","format":null},{"name":"Status","format":null}]},"compareMode":false,"compareType":"absolute","enabled":true},"brush":{"size":0.5,"enabled":false},"geocoder":{"enabled":false},"coordinate":{"enabled":false}},"layerBlending":"normal","overlayBlending":"normal","splitMaps":[],"animationConfig":{"currentTime":null,"speed":1},"editor":{"features":[],"visible":true}},"mapState":{"bearing":0,"dragRotate":false,"latitude":13.965473621165888,"longitude":6.634880223301506,"pitch":0,"zoom":1.5706496204975,"isSplit":false,"isViewportSynced":true,"isZoomLocked":false,"splitMapViewports":[]},"mapStyle":{"styleType":"positron","topLayerGroups":{},"visibleLayerGroups":{"label":true,"road":true,"border":false,"building":true,"water":true,"land":true,"3d building":false},"threeDBuildingColor":[232.7874787737094,232.7874787737094,230.92517894351974],"backgroundColor":[0,0,0],"mapStyles":{}},"uiState":{"mapControls":{"mapLegend":{"active":false}}}}};
+
+            const loadedData = keplerGl.KeplerGlSchema.load(
+              datasets,
+              config
+            );
+
+            // For some reason Kepler overwrites the config without extra wait time
+            window.setTimeout(() => {
+              store.dispatch(
+                keplerGl.addDataToMap({
+                  datasets: loadedData.datasets,
+                  config: loadedData.config,
+                  options: {
+                    centerMap: false,
+                  },
+                })
+              );
+            }, 500);
+          }(KeplerGl, store))
+        </script>
+      </body>
+    </html>
+  

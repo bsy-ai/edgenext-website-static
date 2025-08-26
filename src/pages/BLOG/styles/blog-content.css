@@ -1,0 +1,164 @@
+/* 博客内容样式优化 */
+.blog-content {
+  line-height: 1.8;
+  color: #374151;
+}
+
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5,
+.blog-content h6 {
+  color: #111827;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.blog-content h1 {
+  font-size: 2rem;
+}
+
+.blog-content h2 {
+  font-size: 1.75rem;
+}
+
+.blog-content h3 {
+  font-size: 1.5rem;
+}
+
+.blog-content h4 {
+  font-size: 1.25rem;
+}
+
+.blog-content p {
+  margin-bottom: 1.5rem;
+}
+
+.blog-content ul,
+.blog-content ol {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+.blog-content li {
+  margin-bottom: 0.5rem;
+}
+
+.blog-content a {
+  color: #0EB623;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.blog-content a:hover {
+  border-bottom-color: #0EB623;
+}
+
+.blog-content img {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  margin: 2rem auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-content blockquote {
+  border-left: 4px solid #0EB623;
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  background: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  font-style: italic;
+}
+
+.blog-content code {
+  background: #f3f4f6;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+}
+
+.blog-content pre {
+  background: #1f2937;
+  color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 2rem 0;
+}
+
+.blog-content pre code {
+  background: transparent;
+  padding: 0;
+  color: inherit;
+}
+
+.blog-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.blog-content th,
+.blog-content td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.blog-content th {
+  background: #f9fafb;
+  font-weight: 600;
+}
+
+.blog-content tr:last-child td {
+  border-bottom: none;
+}
+
+/* 清理一些可能存在的冗余样式 */
+.blog-content .wp-block-heading {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blog-content .wp-block-paragraph {
+  margin-bottom: 1.5rem;
+}
+
+.blog-content .wp-block-image {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.blog-content .wp-block-list {
+  margin: 1.5rem 0;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .blog-content h1 {
+    font-size: 1.75rem;
+  }
+  
+  .blog-content h2 {
+    font-size: 1.5rem;
+  }
+  
+  .blog-content h3 {
+    font-size: 1.25rem;
+  }
+  
+  .blog-content pre {
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+}
