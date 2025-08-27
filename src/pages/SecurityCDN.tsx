@@ -128,7 +128,7 @@ const SecurityCDN: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-medium text-white mb-3">Intelligent Acceleration</h3>
                 <p className="text-gray-300 text-sm">
-                  dynamic-static hybrid separation + efficient caching + smart routing for faster, more stable delivery
+                  Dynamic-static hybrid separation + efficient caching + smart routing for faster, more stable delivery
                 </p>
               </div>
               

@@ -40,7 +40,7 @@ const AdaptiveThreatModulation: React.FC = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-[#0EB623] text-sm font-medium mb-4">December 19, 2024 • by Kaiyue</div>
               <h1 className="text-[32px] md:text-[48px] font-medium mb-6 leading-[1.2]">
-                What Is Adaptive Threat Modulation, and Why Is It Key for DDoS Resilience
+                What Is Adaptive Threat Modulation, and Why Is It Key for DDoS Resilience?
               </h1>
             </div>
           </div>
