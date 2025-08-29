@@ -292,7 +292,7 @@ export const Header: React.FC = () => {
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
-                              E-commerce
+                              E-Commerce
                             </Link>
                             <Link 
                               to="/e_learning" 

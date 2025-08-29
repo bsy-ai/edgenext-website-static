@@ -198,7 +198,7 @@ export const Dropdown: React.FC<DropdownProps> = ({ type, onClose }) => {
         <div className="grid grid-cols-2 gap-x-4 gap-y-3">
           <MenuItem 
             icon={<ShoppingCart size={18} />}
-            title="E-commerce"
+            title="E-Commerce"
             description="For online stores or services"
             to="/e_commerce"
           />
