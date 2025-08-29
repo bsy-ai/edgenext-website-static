@@ -70,7 +70,7 @@ function generateSlug(title: string): string {
 
 function extractCategory(title: string, content: string): string {
   const categories = {
-    'cdn': ['cdn', 'content delivery', 'caching'],
+    'CDN': ['cdn', 'content delivery', 'caching'],
     'security': ['ddos', 'security', 'firewall', 'protection'],
     'server': ['server', 'vps', 'bare metal', 'hosting'],
     'optimization': ['speed', 'performance', 'optimization', 'wordpress'],
