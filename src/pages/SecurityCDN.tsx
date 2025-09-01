@@ -512,7 +512,7 @@ const SecurityCDN: React.FC = () => {
                       <td className="py-4 px-6 border-b border-gray-200 text-center">Enterprise systems & SaaS portals</td>
                     </tr>
                     <tr>
-                      <td className="py-4 px-6 border-b border-gray-200 font-medium">Max Services Supported</td>
+                      <td className="py-4 px-6 border-b border-gray-200 font-medium">Max Services</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">10</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">10</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">20+</td>
