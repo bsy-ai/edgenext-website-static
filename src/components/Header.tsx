@@ -487,6 +487,18 @@ export const Header: React.FC = () => {
                       </div>
                     )}
                   </div>
+
+                  {/* Partners Section */}
+                  <div>
+                    <button 
+                      onClick={() => toggleMobileSubmenu('partners')}
+                      className="flex items-center justify-between w-full text-left text-gray-900 font-medium"
+                    >
+                     <Link to="/partners" >
+                        Partners
+                      </Link>
+                    </button>
+                  </div>
                 </nav>
               </div>
             
