@@ -113,7 +113,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 mb-4">
               <li>
                 <a href="/e_commerce" className="hover:text-[#0EB623] transition-colors duration-200">
-                  E-commerce
+                  E-Commerce
                 </a>
               </li>
               <li>
