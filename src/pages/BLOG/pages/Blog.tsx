@@ -305,10 +305,10 @@ const Blog: React.FC = () => {
                             const init = (el as any)._initDone as boolean | undefined;
                             if (!init) {
                               const bases: string[] = [];
-                              const current = item.thumbnail || "/blog/photo/placeholder";
+                              const current = item.thumbnail || "/blogphoto/placeholder";
                               const noExt = current.replace(/\.[^.]+$/, '');
                               // 根据连字符拆分，生成逐渐缩短的前缀
-                              const parts = noExt.replace(/^.*\/blog\/photo\//, '').split('-');
+                              const parts = noExt.replace(/^.*\/blogphoto\//, '').split('-');
                               // 尝试从全长逐步递减到3词的前缀，最短不低于3词
                               const lenFull = parts.length;
                               const candidates: string[] = [];
@@ -318,8 +318,8 @@ const Blog: React.FC = () => {
                               }
                               // 对每个前缀尝试原样和全小写，忽略文件名大小写差异
                               for (const p of candidates) {
-                                bases.push(`/blog/photo/${p}`);
-                                bases.push(`/blog/photo/${p.toLowerCase()}`);
+                                bases.push(`/blogphoto/${p}`);
+                                bases.push(`/blogphoto/${p.toLowerCase()}`);
                               }
                               (el as any)._baseCandidates = bases;
                               // 扩展名候选：优先jpg，然后png
