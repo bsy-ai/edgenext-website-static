@@ -9,17 +9,17 @@ const DarkSideAI: React.FC = () => {
   const relatedPosts = [
     {
       title: "What Is Adaptive Threat Modulation, and Why Is It Key for DDoS Resilience",
-      slug: "adaptive-threat-modulation-ddos-resilience",
+      slug: "what-is-adaptive-threat-modulation-and-why-is-it-key-for-ddos-resilience-",
       date: "December 19, 2024"
     },
     {
       title: "How Can Businesses Detect and Defend Against Multi-Vector DDoS Attacks",
-      slug: "detect-defend-multi-vector-ddos-attacks",
+      slug: "how-can-businesses-detect-and-defend-against-multi-vector-ddos-attacks-",
       date: "November 17, 2024"
     },
     {
       title: "What's the Future Impact of Quantum Computing on DDoS Defense",
-      slug: "quantum-computing-ddos-defense",
+      slug: "whats-the-future-impact-of-quantum-computing-on-ddos-defense-" ,
       date: "November 10, 2024"
     }
   ];
