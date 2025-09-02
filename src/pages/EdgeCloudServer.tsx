@@ -358,7 +358,7 @@ const EdgeCloudServer: React.FC = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
               <div className="text-center">
-                <div className="text-6xl font-bold text-[#0EB623] mb-2">
+                <div className="text-6xl font-bold text-[#0EB623] mb-2" translate='no'>
                   {hasScrolled && <CountUp end={16} duration={2} />}
                   {!hasScrolled && "16"}
                 </div>
@@ -366,7 +366,7 @@ const EdgeCloudServer: React.FC = () => {
               </div>
               
               <div className="text-center">
-                <div className="text-6xl font-bold text-[#0EB623] mb-2">
+                <div className="text-6xl font-bold text-[#0EB623] mb-2" translate='no'>
                   {hasScrolled && <CountUp end={7} duration={2} />}
                   {!hasScrolled && "7"}
                 </div>
@@ -374,7 +374,7 @@ const EdgeCloudServer: React.FC = () => {
               </div>
               
               <div className="text-center">
-                <div className="text-6xl font-bold text-[#0EB623] mb-2">
+                <div className="text-6xl font-bold text-[#0EB623] mb-2" translate='no'>
                   {hasScrolled && <CountUp end={6} duration={2} />}
                   {!hasScrolled && "6"}
                 </div>

@@ -221,21 +221,21 @@ const DNSSecurity: React.FC = () => {
                   className="absolute top-0 right-0 bg-white/90 backdrop-blur-sm rounded-2xl p-8 m-6 shadow-lg space-y-8"
                 >
                   <div>
-                    <div className="text-4xl font-bold text-[#0EB623] mb-2">
+                    <div className="text-4xl font-bold text-[#0EB623] mb-2" translate="no">
                       {hasScrolled && <CountUp end={50} duration={2} />}+
                     </div>
                     <p className="text-gray-600">Covered Countries in Emerging Markets</p>
                   </div>
                   
                   <div>
-                    <div className="text-4xl font-bold text-[#0EB623] mb-2">
+                    <div className="text-4xl font-bold text-[#0EB623] mb-2" translate="no">
                       {hasScrolled && <CountUp end={1700} duration={2} />}+
                     </div>
                     <p className="text-gray-600">Global Points of Presence</p>
                   </div>
                   
                   <div>
-                    <div className="text-4xl font-bold text-[#0EB623] mb-2">
+                    <div className="text-4xl font-bold text-[#0EB623] mb-2" translate="no">
                       {hasScrolled && <CountUp end={80} duration={2} />}+
                     </div>
                     <p className="text-gray-600">Tbps Redundant Bandwidth</p>
