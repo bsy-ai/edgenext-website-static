@@ -708,7 +708,14 @@ function App() {
           } 
         />
         <Route path="resources/news/:slug" element={<NewsDetail/>}/>
-        <Route path="/blog" element={<Blog />} />
+        <Route 
+          path="/blog" 
+          element={
+            <PageTransition>
+              <Blog />
+            </PageTransition>
+          } 
+        />
         <Route 
           path="/resources/blog" 
           element={

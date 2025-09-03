@@ -204,7 +204,7 @@ const Gaming: React.FC = () => {
               </div>
               <div className="order-1 lg:order-2">
                 <img 
-                  src="/ecommerce3.png"
+                  src="/security.jpg"
                   alt="Global Edge Network"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
                 />
@@ -214,7 +214,7 @@ const Gaming: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
               <div>
                 <img 
-                  src="/global.png"
+                  src="/network.jpg"
                   alt="Security Protection"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
                 />
@@ -278,7 +278,7 @@ const Gaming: React.FC = () => {
               </div>
               <div className="order-1 lg:order-2">
                 <img 
-                  src="/realtime.png"
+                  src="/speed.jpg"
                   alt="Real-time Analytics"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
                 />

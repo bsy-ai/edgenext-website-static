@@ -276,7 +276,7 @@ const Ecommerce: React.FC = () => {
               </div>
               <div className="order-1 lg:order-2">
                 <img 
-                  src="/ecommerce4.png"
+                  src="/ecommerce4.jpg"
                   alt="User Experience"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
                 />

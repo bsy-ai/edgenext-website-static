@@ -222,7 +222,7 @@ const Telecommunication: React.FC = () => {
               </div>
               <div className="order-1 lg:order-2">
                 <img 
-                  src="/telco1.png"
+                  src="/partner.jpg"
                   alt="Trusted Expertise"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
                 />
@@ -232,7 +232,7 @@ const Telecommunication: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
               <div>
                 <img 
-                  src="/telco2.png"
+                  src="/partner2.jpg"
                   alt="Revenue Growth"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
                 />
@@ -296,7 +296,7 @@ const Telecommunication: React.FC = () => {
               </div>
               <div className="order-1 lg:order-2">
                 <img 
-                  src="/telco3.png"
+                  src="/partner3.jpg"
                   alt="Competitive Edge"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
                 />

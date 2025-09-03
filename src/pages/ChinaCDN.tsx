@@ -66,7 +66,7 @@ const ChinaCDN: React.FC = () => {
               </div>
               <div className="relative h-[400px] rounded-2xl overflow-hidden">
                 <img
-                  src="/chinacdn.png"
+                  src="/chinacdn.jpg"
                   alt="China Digital Infrastructure"
                   className="absolute inset-0 w-full h-full object-cover rounded-2xl"
                 />
@@ -146,7 +146,7 @@ const ChinaCDN: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2">
                 <img 
-                  src="/chinacdn.png"
+                  src="/chinacdn.jpg"
                   alt="Accelerated Cross-Border Delivery"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
                 />
@@ -225,7 +225,7 @@ const ChinaCDN: React.FC = () => {
               </div>
               <div className="order-1 lg:order-2">
                 <img 
-                  src="/chinacdn.png"
+                  src="/chinacdn.jpg"
                   alt="Cross-Border Delivery"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
                 />

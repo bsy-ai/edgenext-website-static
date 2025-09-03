@@ -575,7 +575,7 @@ const SecurityCDN: React.FC = () => {
                           rel="noopener noreferrer"
                           className="inline-flex items-center px-6 py-3 bg-[#0EB623] text-white rounded-lg hover:bg-[#0EA620] transition-colors font-medium"
                         >
-                          Upgrade to Pro
+                          Activate Now
                         </a>
                       </td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">
@@ -706,7 +706,7 @@ const SecurityCDN: React.FC = () => {
                      rel="noopener noreferrer"
                       className="inline-flex items-center px-6 py-3 bg-[#0EB623] text-white rounded-lg hover:bg-[#0EA620] transition-colors font-medium"
                     >
-                      Upgrade to Pro
+                      Activate Now
                     </a>
                   </div>
                 </div>
@@ -774,7 +774,7 @@ const SecurityCDN: React.FC = () => {
             
             <div className="text-center mt-8">
               <p className="text-gray-500 text-sm">
-                Need a custom plan? <a href="/company/contact" className="text-[#0EB623] font-medium hover:underline">Contact our sales team</a> for enterprise-grade solutions.
+                Need a custom plan? <a href="/contact_us" className="text-[#0EB623] font-medium hover:underline">Contact our sales team</a> for enterprise-grade solutions.
               </p>
             </div>
           </div>
