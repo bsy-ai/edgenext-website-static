@@ -232,7 +232,7 @@ export const Header: React.FC = () => {
                           </div>
                         </div>
                         <div>
-                          <h4 className="text-sm font-medium text-[#0EB623] mb-2">Computing</h4>
+                          <h4 className="text-sm font-medium text-[#0EB623] mb-2">Computing & Network</h4>
                           <div className="space-y-3">
                             <Link 
                               to="/vps" 
@@ -255,7 +255,6 @@ export const Header: React.FC = () => {
                             >
                               IP Transit
                             </Link>
-
                           </div>
                         </div>
                         <div>
@@ -375,8 +374,14 @@ export const Header: React.FC = () => {
                         <div>
                           <h4 className="text-sm font-medium text-[#0EB623] mb-2">Documentation</h4>
                           <div className="space-y-3">
-                            <a href="#" className="block text-gray-600 hover:text-[#0EB623]">API Reference</a>
-                            <a href="#" className="block text-gray-600 hover:text-[#0EB623]">Developer Guides</a>
+                            <a 
+                              href="https://home.console.edgenext.com/#/doc/content/cdn/Product%20Introduction/Product%20overview" 
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="block text-gray-600 hover:text-[#0EB623]"
+                            >
+                              API Reference
+                            </a>
                             <Link 
                               to="/icp-license" 
                               className="block text-gray-600 hover:text-[#0EB623]"
@@ -481,6 +486,18 @@ export const Header: React.FC = () => {
                         </div>
                       </div>
                     )}
+                  </div>
+
+                  {/* Partners Section */}
+                  <div>
+                    <button 
+                      onClick={() => toggleMobileSubmenu('partners')}
+                      className="flex items-center justify-between w-full text-left text-gray-900 font-medium"
+                    >
+                     <Link to="/partners" >
+                        Partners
+                      </Link>
+                    </button>
                   </div>
                 </nav>
               </div>
