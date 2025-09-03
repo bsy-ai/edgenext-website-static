@@ -253,16 +253,16 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
           
           // 使用新的映射方法确定缩略图
           const matchingPhotoName = findMatchingPhotoName(title);
-          let thumbnail = '/blog/photo/default.jpg'; // 默认图片
+          let thumbnail = '/blogphoto/default.jpg'; // 默认图片
           
           if (matchingPhotoName) {
             // 检查文件是否存在，优先使用jpg格式
-            thumbnail = `/blog/photo/${matchingPhotoName}.jpg`;
+            thumbnail = `/blogphoto/${matchingPhotoName}.jpg`;
           } else {
             // 如果没有匹配，回退到原来的逻辑
             const words = splitTitleToWords(title);
             const prefixes = buildHyphenPrefixes(words, 3, Math.min(words.length, 16));
-            const baseCandidates = prefixes.map(p => `/blog/photo/${p}`);
+            const baseCandidates = prefixes.map(p => `/blogphoto/${p}`);
             thumbnail = `${baseCandidates[0]}.jpg`;
           }
           
