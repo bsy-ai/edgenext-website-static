@@ -334,7 +334,7 @@ export const Header: React.FC = () => {
                               Global CDN
                             </Link>
                             <Link 
-                              to="/solutions/mena-cdn" 
+                              to="/mea_cdn" 
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
