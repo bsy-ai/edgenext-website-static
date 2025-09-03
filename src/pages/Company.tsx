@@ -88,13 +88,11 @@ const Company: React.FC = () => {
           
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-5xl mx-auto text-center">
-              <h2 className="text-[40px] md:text-[60px] font-medium mb-6 leading-[1.1]">
               <h1 className="text-[40px] md:text-[60px] font-bold mb-6 leading-[1.1]">
                 <span className="animated-gradient-text">Building the Edge Where It's Hardest</span>
                 <br />
                 <span className="animated-gradient-text">And Most Needed</span>
               </h1>
-              </h2>
               <p className="text-base md:text-lg text-gray-600 mb-8 max-w-4xl mx-auto font-light leading-relaxed">
                 At EdgeNext, we believe every corner of the world deserves world-class digital access. That's why we've made it our mission to build secure, high-performance infrastructure across all over the world, especially Africa, Central Asia, Southeast Asia, and the Middle East — regions too often overlooked. We partner with local industries, adapt to complex realities, and help them grow into the future — from reliable connectivity to edge-native computing ready for the AI era.
               </p>
@@ -107,7 +105,7 @@ const Company: React.FC = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4">
+                <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4" translate="no">
                   {hasScrolled && <CountUp end={1700} suffix="+" duration={2} />}
                   {!hasScrolled && "1700+"}
                 </div>
@@ -115,7 +113,7 @@ const Company: React.FC = () => {
               </div>
               
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4">
+                <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4" translate="no">
                   {hasScrolled && <CountUp end={60} suffix="B+" duration={2} />}
                   {!hasScrolled && "60B+"}
                 </div>
@@ -123,7 +121,7 @@ const Company: React.FC = () => {
               </div>
               
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4">
+                <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4" translate="no">
                   {hasScrolled && <CountUp end={80} suffix="+" duration={2} />}
                   {!hasScrolled && "80+"}
                 </div>
@@ -131,7 +129,7 @@ const Company: React.FC = () => {
               </div>
 
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4">
+                <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4" translate="no">
                   {hasScrolled && <CountUp end={30} prefix="<" suffix="ms" duration={2} />}
                   {!hasScrolled && "<30ms"}
                 </div>
