@@ -157,6 +157,38 @@ function selectThumbnail(title: string, category: string): string {
   }
 }
 
+// 将纯文本内容中的换行转换为HTML换行/段落，仅在内容不包含HTML标签时处理
+function normalizeContentLineBreaks(content: string): string {
+  // 如果已经包含HTML标签，直接返回
+  if (/<[^>]+>/.test(content)) {
+    return content;
+  }
+  // 处理双换行作为段落分隔
+  const paragraphs = content.split(/\n\n+/).map(p => p.trim()).filter(Boolean);
+  if (paragraphs.length > 1) {
+    return paragraphs.map(p => `<p>${p.replace(/\n/g, ' ')}</p>`).join('');
+  }
+  // 单换行转为<br>
+  return content.replace(/\n/g, '<br>');
+}
+
+// 解析缩略图：可选覆盖图 > /newsphoto/{slug}.jpg > 关键词/分类默认
+function normalizeImagePath(imageNameOrUrl: string): string {
+  const trimmed = imageNameOrUrl.trim();
+  if (/^https?:\/\//i.test(trimmed) || trimmed.startsWith('/')) {
+    return trimmed;
+  }
+  return `/newsphoto/${trimmed}`;
+}
+
+function resolveThumbnail(title: string, category: string, slug: string, content: string, imageOverride?: string): string {
+  if (imageOverride && typeof imageOverride === 'string' && imageOverride.trim().length > 0) {
+    return normalizeImagePath(imageOverride);
+  }
+  // 使用 slug 基名，默认尝试 .jpg，组件里会在加载失败时尝试其他扩展名
+  return `/newsphoto/${slug}.jpg` || selectThumbnail(title, category);
+}
+
 // 生成文章摘要
 function generateDescription(content: string): string {
   // 移除HTML标签
@@ -227,13 +259,14 @@ function generateTags(title: string, content: string, category: string): string[
 // 解析新闻数据
 export function parseNewsData(): NewsArticle[] {
   return newsData.map((item, index) => {
-    const [title, dateString, content] = item;
+    const [title, dateString, content, imageOverride] = item as [string, string, string, string?];
     const category = categorizeArticle(title, content);
     const slug = generateSlug(title);
-    const description = generateDescription(content);
-    const thumbnail = selectThumbnail(title, category);
+    const processedContent = normalizeContentLineBreaks(content);
+    const description = generateDescription(processedContent);
+    const thumbnail = resolveThumbnail(title, category, slug, processedContent, imageOverride);
     const readTime = calculateReadTime(content);
-    const tags = generateTags(title, content, category);
+    const tags = generateTags(title, processedContent, category);
     
     // 将日期字符串转换为ISO格式
     const publishedAt = new Date(dateString).toISOString();
@@ -243,7 +276,7 @@ export function parseNewsData(): NewsArticle[] {
       title,
       slug,
       description,
-      content,
+      content: processedContent,
       publishedAt,
       author: 'EdgeNext Team',
       category,
