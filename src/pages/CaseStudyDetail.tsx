@@ -22,7 +22,7 @@ const CaseStudyDetail: React.FC = () => {
               <h1 className="text-3xl font-bold mb-6">Case Study Not Found</h1>
               <p className="text-gray-600 mb-8">The case study you're looking for doesn't exist or has been moved.</p>
               <Link 
-                to="/case_study/" 
+                to="/case_study" 
                 className="inline-flex items-center px-6 py-3 bg-[#0EB623] text-white rounded-xl hover:bg-[#0EA620] transition-colors"
               >
                 View All Case Studies
@@ -223,7 +223,7 @@ const CaseStudyDetail: React.FC = () => {
                 .slice(0, 3)
                 .map((study, index) => (
                   <div key={index} className="group bg-white rounded-2xl overflow-hidden hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-                    <Link to={`/${study.slug}`} className="block">
+                    <Link to={`/case-study/${study.slug}`} className="block">
                       <div className="aspect-video bg-gradient-to-br from-[#0EB623]/10 to-[#0EB623]/5 relative overflow-hidden">
                         <img 
                           src={study.slug === "beijing-2022-winter-olympic-games-cdn-streaming-solution" ? "/Beijing2022WinterOlympicGamesCDNStreamingSolution.png" : study.slug === "dynamic-acceleration-solution-for-top-e-commerce-in-china" ? "/Dynamic Acceleration case study.png" : study.slug === "global-delivery-solution-for-top-photo-beauty-app-in-china" ? "/GlobalDeliverySolutionforTopPhotoBeautyAppinChina.jpg" : study.slug === "media-on-demand-solution-for-top-global-short-video-platform" ? "/MediaonDemandSolutionforTopGlobalShortVideoPlatform.jpg" : study.slug === "cdn-gaming-solution-for-us-top-gaming-company" ? "/CDNGamingSolutionforUSTopGamingCompany.jpg" : study.slug === "global-delivery-top-ecommerce-in-sea" ? "/GlobalDeliveryTopEcommerceinSEA.jpg" : study.slug === "cctv-cdn-streaming-solution" ? "/CCTVCDN StreamingSolution.png" : study.slug === "giant-network-cdn-gaming-solution" ? "/GiantNetworkCDNGamingSolution.jpg" : (study.imageUrl || "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg")}

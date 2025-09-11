@@ -127,7 +127,7 @@ const CaseStudies: React.FC = () => {
                     key={index}
                     className="group bg-white rounded-2xl overflow-hidden hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100"
                   >
-                    <Link to={`/${item.slug}`} className="block">
+                    <Link to={`/case-study/${item.slug}`} className="block">
                       <div className="aspect-video bg-gradient-to-br from-[#0EB623]/10 to-[#0EB623]/5 relative overflow-hidden">
                         <img 
                           src={item.slug === "beijing-2022-winter-olympic-games-cdn-streaming-solution" ? "/Beijing2022WinterOlympicGamesCDNStreamingSolution.png" : item.slug === "dynamic-acceleration-solution-for-top-e-commerce-in-china" ? "/Dynamic Acceleration case study.png" : item.slug === "global-delivery-solution-for-top-photo-beauty-app-in-china" ? "/GlobalDeliverySolutionforTopPhotoBeautyAppinChina.jpg" : item.slug === "media-on-demand-solution-for-top-global-short-video-platform" ? "/MediaonDemandSolutionforTopGlobalShortVideoPlatform.jpg" : item.slug === "cdn-gaming-solution-for-us-top-gaming-company" ? "/CDNGamingSolutionforUSTopGamingCompany.jpg" : item.slug === "global-delivery-top-ecommerce-in-sea" ? "/GlobalDeliveryTopEcommerceinSEA.jpg" : item.slug === "cctv-cdn-streaming-solution" ? "/CCTVCDN StreamingSolution.png" : item.slug === "giant-network-cdn-gaming-solution" ? "/GiantNetworkCDNGamingSolution.jpg" : (item.imageUrl || "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg")}

@@ -875,14 +875,14 @@ function App() {
             </PageTransition>
           } 
         />
-        {/* <Route 
-          path="/:slug" 
+        <Route 
+          path="/case-study/:slug" 
           element={
             <PageTransition>
               <CaseStudyDetail />
             </PageTransition>
           } 
-        /> */}
+        />
         <Route 
           path="*" 
           element={
