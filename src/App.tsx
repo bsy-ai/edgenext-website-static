@@ -707,7 +707,14 @@ function App() {
             </PageTransition>
           } 
         />
-        <Route path="resources/news/:slug" element={<NewsDetail/>}/>
+        <Route 
+          path="resources/news/:slug" 
+          element={
+            <PageTransition>
+            <NewsDetail/>
+            </PageTransition>
+          }
+        />
         <Route 
           path="/blog" 
           element={
@@ -868,14 +875,14 @@ function App() {
             </PageTransition>
           } 
         />
-        {/* <Route 
-          path="/:slug" 
+        <Route 
+          path="/case-study/:slug" 
           element={
             <PageTransition>
               <CaseStudyDetail />
             </PageTransition>
           } 
-        /> */}
+        />
         <Route 
           path="*" 
           element={
