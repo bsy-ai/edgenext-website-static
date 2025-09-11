@@ -707,7 +707,14 @@ function App() {
             </PageTransition>
           } 
         />
-        <Route path="resources/news/:slug" element={<NewsDetail/>}/>
+        <Route 
+          path="resources/news/:slug" 
+          element={
+            <PageTransition>
+            <NewsDetail/>
+            </PageTransition>
+          }
+        />
         <Route 
           path="/blog" 
           element={
