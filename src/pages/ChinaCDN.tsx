@@ -350,7 +350,7 @@ const ChinaCDN: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   How we helped a leading photo beauty app achieve 40% faster load times and 99.9% uptime across China's diverse network landscape.
                 </p>
-                <Link to="/global-delivery-solution-for-top-photo-beauty-app-in-china" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
+                <Link to="/case-study/global-delivery-solution-for-top-photo-beauty-app-in-china" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
                   Read Case Study <ArrowRight className="ml-2" size={16} />
                 </Link>
               </div>
@@ -364,7 +364,7 @@ const ChinaCDN: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   Discover how a major e-commerce platform reduced page load times by 60% and increased conversion rates during peak shopping seasons.
                 </p>
-                <Link to="/dynamic-acceleration-solution-for-top-e-commerce-in-china" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
+                <Link to="/case-study/dynamic-acceleration-solution-for-top-e-commerce-in-china" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
                   Read Case Study <ArrowRight className="ml-2" size={16} />
                 </Link>
               </div>

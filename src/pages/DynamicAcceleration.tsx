@@ -343,7 +343,7 @@ const DynamicAcceleration: React.FC = () => {
                 />
                 <div className="mt-6">
                   <h3 className="text-2xl font-medium mb-4">Global Delivery Solution for Top Photo Beauty App in China</h3>
-                  <a href="/global-delivery-solution-for-top-photo-beauty-app-in-china" className="inline-flex items-center text-[#0EB623] font-medium hover:gap-2 transition-all duration-300">
+                  <a href="/case-study/global-delivery-solution-for-top-photo-beauty-app-in-china" className="inline-flex items-center text-[#0EB623] font-medium hover:gap-2 transition-all duration-300">
                     Read Full Case Study <ArrowUpRight className="ml-2" size={16} />
                   </a>
                 </div>

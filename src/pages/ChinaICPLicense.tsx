@@ -455,7 +455,7 @@ const ChinaICPLicense: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="group bg-white rounded-2xl overflow-hidden hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-                <Link to="/global-delivery-solution-for-top-photo-beauty-app-in-china" className="block">
+                <Link to="/case-study/global-delivery-solution-for-top-photo-beauty-app-in-china" className="block">
                   <div className="aspect-video bg-gradient-to-br from-[#0EB623]/10 to-[#0EB623]/5 relative overflow-hidden">
                     <img 
                       src="/GlobalDeliverySolutionforTopPhotoBeautyAppinChina.jpg"
@@ -482,7 +482,7 @@ const ChinaICPLicense: React.FC = () => {
               </div>
 
               <div className="group bg-white rounded-2xl overflow-hidden hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-                <Link to="/dynamic-acceleration-solution-for-top-e-commerce-in-china" className="block">
+                <Link to="/case-study/dynamic-acceleration-solution-for-top-e-commerce-in-china" className="block">
                   <div className="aspect-video bg-gradient-to-br from-[#0EB623]/10 to-[#0EB623]/5 relative overflow-hidden">
                     <img 
                       src="/DynamicAccelerationSolutionforTopEcommerceinChina.jpg"

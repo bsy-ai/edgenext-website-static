@@ -413,7 +413,7 @@ const GlobalCDN: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   Optimized game downloads and ensured seamless play with intelligent edge delivery solutions.
                 </p>
-                <Link to="/cdn-gaming-solution-for-us-top-gaming-company" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
+                <Link to="/case-study/cdn-gaming-solution-for-us-top-gaming-company" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
                   Read Case Study <ArrowRight className="ml-2" size={16} />
                 </Link>
               </div>
