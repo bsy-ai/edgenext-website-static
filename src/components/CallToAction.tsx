@@ -67,7 +67,7 @@ export const CallToAction: React.FC = () => {
                   <span className="text-white font-medium">✓ Thank you! We'll be in touch soon.</span>
                 ) : (
                   <a 
-                    href="https://home.console.edgenext.com/#/uc/register"
+                    href={`https://home.console.edgenext.com/#/uc/register?email=${encodeURIComponent(emailValue || '')}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-white/70 hover:text-white transition-colors duration-200 underline"

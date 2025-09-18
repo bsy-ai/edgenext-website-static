@@ -356,7 +356,7 @@ const Ecommerce: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   Optimized game downloads and ensured seamless play with intelligent edge delivery, handling traffic surges up to 12x daily average.
                 </p>
-                <a href="/cdn-gaming-solution-for-us-top-gaming-company" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
+                <a href="/case-study/cdn-gaming-solution-for-us-top-gaming-company" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
                   Read Case Study <ArrowRight className="ml-2" size={16} />
                 </a>
               </div>

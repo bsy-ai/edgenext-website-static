@@ -306,7 +306,7 @@ const GlobalNetwork: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Case Study 1 */}
               <div className="group bg-white rounded-2xl overflow-hidden hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-                <Link to="/global-delivery-top-ecommerce-in-sea" className="block">
+                <Link to="/case-study/global-delivery-top-ecommerce-in-sea" className="block">
                   <div className="aspect-video bg-gradient-to-br from-[#0EB623]/10 to-[#0EB623]/5 relative overflow-hidden">
                     <div className="absolute top-4 left-4 w-10 h-10 bg-white/80 rounded-lg flex items-center justify-center">
                       <ShoppingCart className="text-[#0EB623]" size={20} />
@@ -337,7 +337,7 @@ const GlobalNetwork: React.FC = () => {
 
               {/* Case Study 2 */}
               <div className="group bg-white rounded-2xl overflow-hidden hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-                <Link to="/cdn-gaming-solution-for-us-top-gaming-company" className="block">
+                <Link to="/case-study/cdn-gaming-solution-for-us-top-gaming-company" className="block">
                   <div className="aspect-video bg-gradient-to-br from-[#0EB623]/10 to-[#0EB623]/5 relative overflow-hidden">
                     <div className="absolute top-4 left-4 w-10 h-10 bg-white/80 rounded-lg flex items-center justify-center">
                       <Gamepad2 className="text-[#0EB623]" size={20} />
@@ -368,7 +368,7 @@ const GlobalNetwork: React.FC = () => {
 
               {/* Case Study 3 */}
               <div className="group bg-white rounded-2xl overflow-hidden hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-                <Link to="/media-on-demand-solution-for-top-global-short-video-platform" className="block">
+                <Link to="/case-study/media-on-demand-solution-for-top-global-short-video-platform" className="block">
                   <div className="aspect-video bg-gradient-to-br from-[#0EB623]/10 to-[#0EB623]/5 relative overflow-hidden">
                     <div className="absolute top-4 left-4 w-10 h-10 bg-white/80 rounded-lg flex items-center justify-center">
                       <Film className="text-[#0EB623]" size={20} />

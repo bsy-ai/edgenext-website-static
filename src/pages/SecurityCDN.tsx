@@ -841,7 +841,7 @@ const SecurityCDN: React.FC = () => {
                 <p className="text-sm md:text-base text-gray-600 mb-4 md:mb-6">
                   How we helped a leading gaming company optimize their content delivery for millions of players worldwide.
                 </p>
-                <a href="/cdn-gaming-solution-for-us-top-gaming-company" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
+                <a href="/case-study/cdn-gaming-solution-for-us-top-gaming-company" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
                   Read the case study <ArrowUpRight className="ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" size={16} />
                 </a>
               </div>

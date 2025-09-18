@@ -488,7 +488,7 @@ const IPTransit: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   How we helped a leading gaming company optimize their content delivery for millions of players worldwide.
                 </p>
-                <a href="/cdn-gaming-solution-for-us-top-gaming-company" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
+                <a href="/case-study/cdn-gaming-solution-for-us-top-gaming-company" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
                   Read the case study <ArrowRight className="ml-2" size={16} />
                 </a>
               </div>
