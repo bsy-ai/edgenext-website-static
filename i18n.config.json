@@ -1,0 +1,33 @@
+{
+  "baiduAppId": "20250924002463041",
+  "baiduAppKey": "LDJzP0SvkzpH53yaFjgT",
+  "sourceLanguage": "en",
+  "targetLanguages": ["zh"],
+  "scanConfig": {
+    "srcDir": "src",
+    "outputDir": "src/i18n/locales",
+    "fileExtensions": [".tsx", ".ts", ".jsx", ".js"],
+    "ignorePatterns": [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/*.test.*",
+      "**/*.spec.*",
+      "**/test/**",
+      "**/tests/**"
+    ],
+    "ignoreDirs": [
+      "node_modules",
+      "dist",
+      "build",
+      ".git",
+      ".vscode",
+      "public",
+      "src/i18n/scripts",
+      "src/i18n/services",
+      "src/pages/BLOG",
+      "src/pages/NEWS",
+      "src/components/LanguageSwitcher.tsx"
+    ]
+  }
+}

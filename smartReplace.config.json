@@ -1,0 +1,29 @@
+{
+    "srcDir": "src",
+    "localesDir": "src/i18n/locales",
+    "sourceLanguage": "en",
+    "targetLanguages": ["zh"],
+    "fileExtensions": [".tsx", ".ts", ".jsx", ".js"],
+    "ignorePatterns": [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/*.test.*",
+      "**/*.spec.*",
+      "src/pages/BLOG/**",
+      "src/pages/NEWS/**",
+      "src/components/DemoComponent.tsx",
+      "src/**/*.stories.*",
+      "src/components/LanguageSwitcher.tsx"
+    ],
+    "ignoreDirs": [
+      "node_modules",
+      "dist",
+      "build",
+      ".git",
+      "src/i18n/scripts",
+      "src/i18n/services",
+      "src/pages/BLOG",
+      "src/pages/NEWS"
+    ]
+  }

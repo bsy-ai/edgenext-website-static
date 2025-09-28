@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Globe, Menu, X, ChevronDown, ChevronRight } from 'lucide-react';
 import { Logo } from './Logo';
 import { Dropdown } from './Dropdown';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
