@@ -1,6 +1,6 @@
 import React from 'react';
 import { Logo } from './Logo';
-import { Linkedin, Facebook, Youtube } from 'lucide-react';
+import { Linkedin, Facebook, Youtube,Instagram } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -41,6 +41,9 @@ export const Footer: React.FC = () => {
               </a>
               <a href="https://www.youtube.com/channel/UCXB1VO-oZSjNROd-2O8UYig" target="_blank" rel="noopener noreferrer" className="hover:text-[#0EB623] transition-colors duration-200">
                 <Youtube size={20} />
+              </a>
+              <a href="https://www.instagram.com/edgenext_technology/" target="_blank" rel="noopener noreferrer" className="hover:text-[#0EB623] transition-colors duration-200">
+                <Instagram size={20} />
               </a>
             </div>
           </div>
