@@ -459,7 +459,7 @@ const BareMetalServer: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   Enhanced video delivery and reduced buffering time across global short-form content platforms with &lt;1s TTFB and infrastructure capable of handling 600 billion requests/day.
                 </p>
-                <a href="/media-on-demand-solution-for-top-global-short-video-platform" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
+                <a href="case-study/media-on-demand-solution-for-top-global-short-video-platform" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
                   Read the case study <ArrowRight className="ml-2" size={16} />
                 </a>
               </div>
@@ -473,7 +473,7 @@ const BareMetalServer: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   With EdgeNext's CDN and edge security infrastructure, Giant Network achieved significant improvements in both performance and threat prevention, reducing false alerts by 80%.
                 </p>
-                <a href="/giant-network-cdn-gaming-solution" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
+                <a href="case-study/giant-network-cdn-gaming-solution" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
                   Read the case study <ArrowRight className="ml-2" size={16} />
                 </a>
               </div>
@@ -487,7 +487,7 @@ const BareMetalServer: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   By integrating EdgeNext's Large File Download Optimization, the gaming client dramatically reduced latency during high-demand periods and ensured smoother, faster downloads.
                 </p>
-                <a href="/giant-network-cdn-gaming-solution" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
+                <a href="case-study/giant-network-cdn-gaming-solution" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
                   Read the case study <ArrowRight className="ml-2" size={16} />
                 </a>
               </div>
