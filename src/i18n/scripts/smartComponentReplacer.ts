@@ -30,6 +30,11 @@ interface ComponentReplaceConfig {
 class SmartComponentReplacer {
   constructor(private config: SmartReplaceConfig) {}
 
+  // 统一文本：折叠所有空白为单个空格并去除首尾空白，解决 CR/LF 与缩进差异
+  private normalizeText(text: string): string {
+    return (text ?? '').replace(/\s+/g, ' ').trim();
+  }
+
   async smartReplace(): Promise<void> {
     console.log('🤖 Starting smart component text replacement...');
 
@@ -90,7 +95,22 @@ class SmartComponentReplacer {
       const fullKey = prefix ? `${prefix}.${key}` : key;
 
       if (typeof value === 'string') {
+        // 保存原文映射
         result[value] = fullKey;
+        // 保存归一化后的映射，以匹配跨行/不同换行/缩进差异
+        const normalized = this.normalizeText(value);
+        if (!(normalized in result)) {
+          result[normalized] = fullKey;
+        }
+        // 保存换行差异映射（CRLF/LF 互转）
+        const lfVariant = value.replace(/\r\n/g, '\n');
+        if (!(lfVariant in result)) {
+          result[lfVariant] = fullKey;
+        }
+        const crlfVariant = value.replace(/\n/g, '\r\n');
+        if (!(crlfVariant in result)) {
+          result[crlfVariant] = fullKey;
+        }
       } else if (typeof value === 'object' && value !== null) {
         this.flattenTranslations(value as Record<string, unknown>, fullKey, result);
       }
@@ -100,15 +120,37 @@ class SmartComponentReplacer {
   private generateReplaceConfig(extractedTexts: any[], translations: Record<string, string>): ComponentReplaceConfig {
     const replaceTranslations: Record<string, string> = {};
 
-    // 为每个提取的文本生成替换映射
+    // 0) 先用已存在的翻译表（来自语言文件）建立全量映射：原文 -> key
+    for (const [original, fullKey] of Object.entries(translations)) {
+      const normalized = this.normalizeText(original);
+      const lfVariant = original.replace(/\r\n/g, '\n');
+      const crlfVariant = original.replace(/\n/g, '\r\n');
+
+      replaceTranslations[original] = fullKey;
+      if (!(normalized in replaceTranslations)) replaceTranslations[normalized] = fullKey;
+      if (!(lfVariant in replaceTranslations)) replaceTranslations[lfVariant] = fullKey;
+      if (!(crlfVariant in replaceTranslations)) replaceTranslations[crlfVariant] = fullKey;
+    }
+
+    // 1) 然后为扫描到但翻译表中尚不存在的文本生成键（使用提取时生成的 key）
     extractedTexts.forEach(({ text, key }) => {
-      // 如果翻译文件中已经有这个文本的翻译，使用现有的key
-      if (translations[text]) {
-        replaceTranslations[text] = translations[text];
-      } else {
-        // 否则使用生成的key
-        replaceTranslations[text] = key;
-      }
+      const normalized = this.normalizeText(text);
+      const lfVariant = text.replace(/\r\n/g, '\n');
+      const crlfVariant = text.replace(/\n/g, '\r\n');
+
+      const existingKey =
+      replaceTranslations[text] ||
+      replaceTranslations[normalized] ||
+      replaceTranslations[lfVariant] ||
+      replaceTranslations[crlfVariant];
+
+      const finalKey = existingKey || key;
+
+      // 写入/补全映射
+      if (!(text in replaceTranslations)) replaceTranslations[text] = finalKey;
+      if (!(normalized in replaceTranslations)) replaceTranslations[normalized] = finalKey;
+      if (!(lfVariant in replaceTranslations)) replaceTranslations[lfVariant] = finalKey;
+      if (!(crlfVariant in replaceTranslations)) replaceTranslations[crlfVariant] = finalKey;
     });
 
     return {
@@ -208,11 +250,53 @@ class SmartComponentReplacer {
 
       const traverseFn: any = (traverseImport as any)?.default ?? traverseImport as any;
       traverseFn(ast, {
+        JSXElement: (path: any) => {
+          const node = path.node;
+          const children = node.children || [];
+          if (!children.length) return;
+
+          // 仅处理纯文本子节点的元素（允许空表达式容器；不允许嵌套标签或有内容的表达式）
+          const allText = children.every((ch: any) => {
+            if (t.isJSXText(ch)) return true;
+            if (t.isJSXExpressionContainer(ch)) {
+              const expr: any = (ch as any).expression;
+              return t.isJSXEmptyExpression(expr);
+            }
+            return false;
+          });
+          if (!allText) return;
+
+          // 保留原始换行序列，随后尝试多种归一化；先按拼接再进行多版本匹配
+          const combinedRaw = (children as any[]).
+          map((ch: any) => t.isJSXText(ch) ? ch.value : '').
+          join('');
+          const combinedTrimmed = combinedRaw.trim();
+          if (!combinedTrimmed) return;
+
+          const normalized = this.normalizeText(combinedTrimmed);
+          const lfVariant = combinedTrimmed.replace(/\r\n/g, '\n');
+          const crlfVariant = combinedTrimmed.replace(/\n/g, '\r\n');
+          const key =
+          translations[combinedTrimmed] ||
+          translations[normalized] ||
+          translations[lfVariant] ||
+          translations[crlfVariant];
+          if (key) {
+            // 用单个表达式替换整个文本子节点集合
+            (node as any).children = [t.jsxExpressionContainer(getTranslateCall(key))];
+            replacements++;
+            path.skip();
+          }
+        },
         JSXText: (path: any) => {
           const raw = path.node.value;
           const trimmed = raw.trim();
           if (!trimmed) return;
-          const key = translations[trimmed];
+          const normalized = this.normalizeText(trimmed);
+          // 跳过包含 easing 关键词的文本，避免误替换
+          const ban = /\b(linear|ease|easeIn|easeOut|easeInOut|spring|tween|线性)\b/i;
+          if (ban.test(trimmed)) return;
+          const key = translations[trimmed] || translations[normalized];
           if (key) {
             path.replaceWith(t.jsxExpressionContainer(getTranslateCall(key)));
             replacements++;
@@ -220,6 +304,8 @@ class SmartComponentReplacer {
         },
         StringLiteral: (path: any) => {
           const parent = path.parent;
+          // 判断是否在 JSX 上下文
+          const isInJsx = typeof (path as any).findParent === 'function' && (path as any).findParent((p: any) => t.isJSXElement(p.node) || (t as any).isJSXFragment?.(p.node));
 
           // Skip if this literal is used as an object key
           if ((t.isObjectProperty(parent) || t.isObjectMethod(parent)) && (parent as t.ObjectProperty | t.ObjectMethod).key === path.node && !(parent as t.ObjectProperty | t.ObjectMethod).computed) {
@@ -238,9 +324,19 @@ class SmartComponentReplacer {
             return;
           }
 
-          // JSX attribute value
-          if (t.isJSXAttribute(parent) && parent.value === path.node) {
-            const key = translations[path.node.value];
+          // 仅允许在 JSX 属性值中替换（白名单属性）
+          if (isInJsx && t.isJSXAttribute(parent) && parent.value === path.node) {
+            // 仅白名单属性允许替换
+            const attrName = (parent.name as any)?.name as string;
+            const allowedAttrNames = new Set(['alt', 'title', 'aria-label', 'placeholder', 'description', 'buttonText', 'subtitle', 'label', 'heading', 'text', 'content']);
+            if (!allowedAttrNames.has(attrName)) {
+              return;
+            }
+            const normalized = this.normalizeText(path.node.value);
+            // 跳过 easing 相关文本
+            const ban = /\b(linear|ease|easeIn|easeOut|easeInOut|spring|tween|线性)\b/i;
+            if (ban.test(path.node.value)) return;
+            const key = translations[path.node.value] || translations[normalized];
             if (key) {
               parent.value = t.jsxExpressionContainer(getTranslateCall(key));
               path.skip();
@@ -248,21 +344,87 @@ class SmartComponentReplacer {
             }
             return;
           }
-
-          const key = translations[path.node.value];
-          if (key) {
-            path.replaceWith(getTranslateCall(key));
-            replacements++;
-          }
-        },
-        TemplateLiteral: (path: any) => {
-          if (path.node.expressions.length === 0 && path.node.quasis.length === 1) {
-            const text = path.node.quasis[0].value.cooked || '';
-            const key = translations[text];
+          
+          // 非 JSX 情况：对白名单对象属性进行替换（例如 title/description/buttonText 等配置文案）
+          if (!isInJsx && t.isObjectProperty(parent) && (parent as t.ObjectProperty).value === path.node) {
+            const keyNode: any = (parent as t.ObjectProperty).key;
+            const keyName = (t.isIdentifier(keyNode) && keyNode.name) || (t.isStringLiteral(keyNode) && keyNode.value) || undefined;
+            const allowedPropNames = new Set(['title','description','buttonText','subtitle','label','heading','text','content']);
+            if (!keyName || !allowedPropNames.has(keyName)) {
+              return;
+            }
+            const rawVal = path.node.value as string;
+            // 过滤 URL/路径/图片/样式/easing 等
+            const isUrlLike = /^(https?:\/\/|\/)\S+/i.test(rawVal) || /\.(png|jpe?g|webp|svg)$/i.test(rawVal);
+            const hasPathChars = /[\/\\]/.test(rawVal);
+            const ban = /\b(linear|ease|easeIn|easeOut|easeInOut|spring|tween|className|style|src)\b/i;
+            if (isUrlLike || hasPathChars || ban.test(rawVal)) {
+              return;
+            }
+            const normalized = this.normalizeText(rawVal);
+            const key = translations[rawVal] || translations[normalized];
             if (key) {
               path.replaceWith(getTranslateCall(key));
               replacements++;
             }
+            return;
+          }
+          
+          // 其他上下文不替换
+          return;
+        },
+        TemplateLiteral: (path: any) => {
+          // 仅允许在 JSX 属性白名单中替换模板字面量（极少见）
+          const parent = path.parent;
+          if (!(t.isJSXAttribute(parent))) return;
+          const attrName = (parent.name as any)?.name as string;
+          const allowedAttrNames = new Set(['alt', 'title', 'aria-label', 'placeholder', 'description', 'buttonText', 'subtitle', 'label', 'heading', 'text', 'content']);
+          if (!allowedAttrNames.has(attrName)) return;
+          if (path.node.expressions.length === 0 && path.node.quasis.length === 1) {
+            const text = path.node.quasis[0].value.cooked || '';
+            const normalized = this.normalizeText(text);
+            const key = translations[text] || translations[normalized];
+            if (key) {
+              parent.value = t.jsxExpressionContainer(getTranslateCall(key));
+              path.skip();
+              replacements++;
+            }
+          }
+        },
+        // 处理对象字面量中的数组字段，例如 features: ["..."]
+        ObjectProperty: (path: any) => {
+          // 仅处理白名单键
+          const keyNode: any = path.node.key;
+          const keyName = (t.isIdentifier(keyNode) && keyNode.name) || (t.isStringLiteral(keyNode) && keyNode.value) || undefined;
+          const allowedArrayPropNames = new Set(['features', 'bullets', 'points', 'items']);
+          if (!keyName || !allowedArrayPropNames.has(keyName)) return;
+
+          // 值必须是数组
+          if (!t.isArrayExpression(path.node.value)) return;
+          const arr = path.node.value as any;
+          let changed = false;
+          arr.elements = (arr.elements || []).map((el: any) => {
+            if (t.isStringLiteral(el)) {
+              const raw = el.value as string;
+              // 过滤 URL/路径/图片/样式/easing
+              const isUrlLike = /^(https?:\/\/|\/)\S+/i.test(raw) || /\.(png|jpe?g|webp|svg)$/i.test(raw);
+              const hasPathChars = /[\/\\]/.test(raw);
+              const ban = /\b(linear|ease|easeIn|easeOut|easeInOut|spring|tween|className|style|src)\b/i;
+              if (isUrlLike || hasPathChars || ban.test(raw)) return el;
+              const normalized = (raw || '').replace(/\s+/g, ' ').trim();
+              const key = translations[raw] || translations[normalized];
+              if (key) {
+                changed = true;
+                return t.callExpression(
+                  t.memberExpression(t.identifier('window'), t.identifier('t')),
+                  [t.stringLiteral(key)]
+                );
+              }
+            }
+            return el;
+          });
+          if (changed) {
+            replacements++;
           }
         }
       });
@@ -274,6 +436,7 @@ class SmartComponentReplacer {
       // Cleanup legacy hooks/imports
       newContent = this.cleanupIncorrectHooks(newContent);
       newContent = this.removeUseTranslationImports(newContent);
+      newContent = this.cleanupMotionEasing(newContent);
 
       if (newContent !== content) {
         await fs.writeFile(filePath, newContent, 'utf-8');
@@ -317,11 +480,21 @@ class SmartComponentReplacer {
     content = content.replace(mixedImportRegex, (_, before, after) => {
       const parts = [before, after].filter((part) => part && part.trim());
       if (parts.length > 0) {
-        return `import { ${parts.join(', ')} } from 'react-i18next';`;
+        return `import { ${parts.join(", ")} } from 'react-i18next';`;
       }
       return '';
     });
 
+    return content;
+  }
+
+  // 清理被误替换的 framer-motion easing 设置
+  private cleanupMotionEasing(content: string): string {
+    // 将 ease: window.t("...") 或 ease: "线性" 统一还原为合法的 'linear'
+    const easeWindowT = /ease\s*:\s*window\.t\([^)]*\)/g;
+    const easeChinese = /ease\s*:\s*["'](?:线性)["']/g;
+    content = content.replace(easeWindowT, 'ease: "linear"');
+    content = content.replace(easeChinese, 'ease: "linear"');
     return content;
   }
 
@@ -398,7 +571,7 @@ This tool will automatically:
         srcDir: 'src',
         localesDir: 'src/i18n/locales',
         sourceLanguage: process.env.I18N_SOURCE_LANGUAGE || 'en',
-        targetLanguages: (process.env.I18N_TARGET_LANGUAGES || 'zh').split(',').map((lang) => lang.trim()),
+        targetLanguages: (process.env.I18N_TARGET_LANGUAGES || 'zh').split(",").map((lang) => lang.trim()),
         fileExtensions: ['.tsx', '.ts', '.jsx', '.js'],
         ignorePatterns: [
         '**/node_modules/**',
@@ -422,7 +595,7 @@ This tool will automatically:
 
     console.log('🔧 Configuration loaded successfully');
     console.log(`📁 Source directory: ${config.srcDir}`);
-    console.log(`🌍 Target languages: ${config.targetLanguages.join(', ')}`);
+    console.log(`🌍 Target languages: ${config.targetLanguages.join(", ")}`);
 
     if (generateOnly) {
       console.log('📄 Generating replacement config file...');

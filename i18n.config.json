@@ -14,7 +14,8 @@
       "**/*.test.*",
       "**/*.spec.*",
       "**/test/**",
-      "**/tests/**"
+      "**/tests/**",
+      "src/i18n/**"
     ],
     "ignoreDirs": [
       "node_modules",
@@ -23,11 +24,12 @@
       ".git",
       ".vscode",
       "public",
-      "src/i18n/scripts",
-      "src/i18n/services",
+      "src/i18n",
       "src/pages/BLOG",
       "src/pages/NEWS",
-      "src/components/LanguageSwitcher.tsx"
+      "src/components/LanguageSwitcher.tsx",
+      "src/i18n/scripts",
+      "src/i18n"
     ]
   }
 }
