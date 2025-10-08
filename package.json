@@ -14,7 +14,7 @@
     "replace": "tsx src/i18n/scripts/smartComponentReplacer.ts",
     "replace:config": "tsx src/i18n/scripts/smartComponentReplacer.ts --generate",
     "i18n:full": "npm run translate && npm run replace",
-    "prebuild": "npm run translate"
+    "prebuild": "npm run replace"
   },
   "dependencies": {
     "axios": "^1.12.2",
