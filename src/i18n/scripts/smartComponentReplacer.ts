@@ -396,7 +396,7 @@ class SmartComponentReplacer {
           // 仅处理白名单键
           const keyNode: any = path.node.key;
           const keyName = (t.isIdentifier(keyNode) && keyNode.name) || (t.isStringLiteral(keyNode) && keyNode.value) || undefined;
-          const allowedArrayPropNames = new Set(['features', 'bullets', 'points', 'items']);
+          const allowedArrayPropNames = new Set(['features', 'bullets', 'points', 'items', 'benefits']);
           if (!keyName || !allowedArrayPropNames.has(keyName)) return;
 
           // 值必须是数组
