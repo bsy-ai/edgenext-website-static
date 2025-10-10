@@ -445,7 +445,7 @@ const LiveStreaming: React.FC = () => {
                           {feature.icon}
                         </div>
                         <span className="font-medium text-left break-words">
-                          {key === 'live-streaming-support' ? 'Push/Pull Live Streaming' : feature.title}
+                          {feature.title}
                         </span>
                       </button>
                     ))}
@@ -653,7 +653,6 @@ const LiveStreaming: React.FC = () => {
                       onChange={(e) => handleInputChange('name', e.target.value)}
                       className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white text-sm md:text-base"
                       required
-                      required
                     />
                   </div>
                   <div>
@@ -664,7 +663,6 @@ const LiveStreaming: React.FC = () => {
                       value={formData.email}
                       onChange={(e) => handleInputChange('email', e.target.value)}
                       className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white text-sm md:text-base"
-                      required
                       required
                     />
                   </div>

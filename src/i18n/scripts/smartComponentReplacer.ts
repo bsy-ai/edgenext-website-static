@@ -9,6 +9,7 @@ import { parse } from '@babel/parser';
 import traverseImport from '@babel/traverse';
 import generateImport from '@babel/generator';
 import * as t from '@babel/types';
+import { FileQuestion, QuoteIcon } from 'lucide-react';
 
 interface SmartReplaceConfig {
   srcDir: string;
@@ -349,7 +350,7 @@ class SmartComponentReplacer {
           if (!isInJsx && t.isObjectProperty(parent) && (parent as t.ObjectProperty).value === path.node) {
             const keyNode: any = (parent as t.ObjectProperty).key;
             const keyName = (t.isIdentifier(keyNode) && keyNode.name) || (t.isStringLiteral(keyNode) && keyNode.value) || undefined;
-            const allowedPropNames = new Set(['title','description','buttonText','subtitle','label','heading','text','content']);
+            const allowedPropNames = new Set(['title','description','buttonText','subtitle','label','heading','text','content','question','answer']);
             if (!keyName || !allowedPropNames.has(keyName)) {
               return;
             }
@@ -396,7 +397,7 @@ class SmartComponentReplacer {
           // 仅处理白名单键
           const keyNode: any = path.node.key;
           const keyName = (t.isIdentifier(keyNode) && keyNode.name) || (t.isStringLiteral(keyNode) && keyNode.value) || undefined;
-          const allowedArrayPropNames = new Set(['features', 'bullets', 'points', 'items', 'benefits']);
+          const allowedArrayPropNames = new Set(['features', 'bullets', 'points', 'items', 'benefits', 'solutions']);
           if (!keyName || !allowedArrayPropNames.has(keyName)) return;
 
           // 值必须是数组
