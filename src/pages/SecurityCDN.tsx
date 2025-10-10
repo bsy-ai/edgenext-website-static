@@ -5,8 +5,17 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ArrowRight, Shield, Lock, Settings, Globe, ShoppingCart, Gamepad2, Building2, GraduationCap, Zap, Check, Newspaper, ArrowUpRight, ShieldCheck, Key, Shield as FileShield, ShieldAlert, Rocket, DollarSign, Network, Activity } from 'lucide-react';
 
+type FeatureKey = 'acceleration' | 'ddos-protection' | 'access-control' | 'webpage-protection';
+
+type Feature = {
+  icon: React.ReactElement;
+  title: string;
+  description: string;
+  benefits: string[];
+};
+
 const SecurityCDN: React.FC = () => {
-  const [activeFeature, setActiveFeature] = useState('acceleration');
+  const [activeFeature, setActiveFeature] = useState<FeatureKey>('acceleration');
 
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formData, setFormData] = useState({
@@ -32,7 +41,7 @@ const SecurityCDN: React.FC = () => {
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
-  const features = {
+  const features: Record<FeatureKey, Feature> = {
     'acceleration': {
       icon: <Zap className="text-[#0EB623]" size={24} />,
       title: "Acceleration",
@@ -261,7 +270,11 @@ const SecurityCDN: React.FC = () => {
                     <span className="font-medium text-left whitespace-nowrap">Acceleration</span>
                   </button>
                   
-                  {Object.entries(features).filter(([key]) => key !== 'acceleration').map(([key, feature]) => (
+                  {(Object.keys(features) as FeatureKey[])
+                    .filter((key) => key !== 'acceleration')
+                    .map((key) => {
+                      const feature = features[key];
+                      return (
                     <button
                       key={key}
                       onClick={() => setActiveFeature(key)}
@@ -280,7 +293,8 @@ const SecurityCDN: React.FC = () => {
                       </div>
                       <span className="font-medium text-left whitespace-nowrap">{feature.title}</span>
                     </button>
-                  ))}
+                      );
+                  })}
                 </div>
               </div>
 
@@ -291,7 +305,7 @@ const SecurityCDN: React.FC = () => {
 
                   <h4 className="font-semibold mb-4">Key Benefits</h4>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    {features[activeFeature].benefits.map((benefit, index) => (
+                    {features[activeFeature].benefits.map((benefit: string, index: number) => (
                       <div 
                         key={index} 
                         className="flex items-center gap-2 p-3 rounded-lg bg-white shadow-sm hover:shadow-md transition-all duration-300"
@@ -466,11 +480,9 @@ const SecurityCDN: React.FC = () => {
                       <th className="py-6 px-6 text-center bg-gray-50 border-b border-gray-200">
                         <div className="text-xl font-bold text-gray-800">Basic</div>
                       </th>
+                      
                       <th className="py-6 px-6 text-center bg-gray-50 border-b border-gray-200">
-                        <div className="text-xl font-bold text-gray-800">Pro</div>
-                      </th>
-                      <th className="py-6 px-6 text-center bg-gray-50 border-b border-gray-200">
-                        <div className="text-xl font-bold text-gray-800">Business(Custom)</div>
+                        <div className="text-xl font-bold text-gray-800">Custom</div>
                       </th>
                     </tr> 
                   </thead>
@@ -480,18 +492,14 @@ const SecurityCDN: React.FC = () => {
                       <td className="py-4 px-6 border-b border-gray-200 text-center">
                         <div className="text-2xl font-bold text-[#0EB623]">$180</div>
                       </td>
-                      <td className="py-4 px-6 border-b border-gray-200 text-center">
-                        <div className="text-2xl font-bold text-[#0EB623]">$480</div>
-                      </td>
+                      
                       <td className="py-4 px-6 border-b border-gray-200 text-center">
                         <div className="text-2xl font-bold text-[#0EB623]">Custom Pricing</div>
                       </td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">Price / Year</td>
-                      <td className="py-4 px-6 border-b border-gray-200 text-center">
-                        <a href="https://home.console.edgenext.com/#/uc/register" className="text-gray-500 text-sm hover:text-[#0EB623] transition-colors">Sign up for more details</a>
-                      </td>
+                      
                       <td className="py-4 px-6 border-b border-gray-200 text-center">
                         <a href="https://home.console.edgenext.com/#/uc/register" className="text-gray-500 text-sm hover:text-[#0EB623] transition-colors">Sign up for more details</a>
                       </td>
@@ -502,36 +510,35 @@ const SecurityCDN: React.FC = () => {
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">Included Traffic</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">500GB</td>
-                      <td className="py-4 px-6 border-b border-gray-200 text-center">1,000GB</td>
+                      
                       <td className="py-4 px-6 border-b border-gray-200 text-center">2,000+GB</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">Recommended For</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">Personal & small business sites</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">SME portals / schools / gov sites</td>
-                      <td className="py-4 px-6 border-b border-gray-200 text-center">Enterprise systems & SaaS portals</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">Max Services</td>
-                      <td className="py-4 px-6 border-b border-gray-200 text-center">10</td>
+                      
                       <td className="py-4 px-6 border-b border-gray-200 text-center">10</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">20+</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">QPS</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">1,000</td>
-                      <td className="py-4 px-6 border-b border-gray-200 text-center">4,000</td>
+                      
                       <td className="py-4 px-6 border-b border-gray-200 text-center">14,000+</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">WAF Mode</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">Observation</td>
-                      <td className="py-4 px-6 border-b border-gray-200 text-center">+ Intercept + Ban</td>
+                      
                       <td className="py-4 px-6 border-b border-gray-200 text-center">+ Intercept + Ban</td>
                     </tr>
                     <tr> 
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">Bot Protection</td>
-                      <td className="py-4 px-6 border-b border-gray-200 text-center">–</td>
+                      
                       <td className="py-4 px-6 border-b border-gray-200 text-center">–</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">
                         <Check className="text-[#0EB623] inline-block" size={20} />
@@ -541,33 +548,24 @@ const SecurityCDN: React.FC = () => {
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">Custom Rules</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">10 / domain</td>
-                      <td className="py-4 px-6 border-b border-gray-200 text-center">20 / domain</td>
+                      
                       <td className="py-4 px-6 border-b border-gray-200 text-center">100+ / domain</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">Anti-DDoS</td>
-                      <td className="py-4 px-6 border-b border-gray-200 text-center">Universal engine</td>
+                      
                       <td className="py-4 px-6 border-b border-gray-200 text-center">Universal engine</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">Custom defense policies</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">Support</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">Email + Ticket</td>
-                      <td className="py-4 px-6 border-b border-gray-200 text-center">8×5 Email + IM + Ticket</td>
+                      
                       <td className="py-4 px-6 border-b border-gray-200 text-center">24×7 Email + IM + Phone Support</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200"></td>
-                      <td className="py-4 px-6 border-b border-gray-200 text-center">
-                        <a 
-                          href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center px-6 py-3 bg-[#0EB623] text-white rounded-lg hover:bg-[#0EA620] transition-colors font-medium"
-                        >
-                          Activate Now
-                        </a>
-                      </td>
+                      
                       <td className="py-4 px-6 border-b border-gray-200 text-center">
                         <a 
                           href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
@@ -653,64 +651,7 @@ const SecurityCDN: React.FC = () => {
                 </div>
               </div>
               
-              {/* Pro Plan */}
-              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
-                <div className="bg-gray-50 py-6 px-6 border-b border-gray-200">
-                  <div className="text-xl font-bold text-gray-800 text-center">Pro</div>
-                </div>
-                <div className="p-6">
-                  <div className="text-center mb-6">
-                    <div className="text-3xl font-bold text-[#0EB623] mb-1">$480</div>
-                    <div className="text-gray-500 text-sm">per month</div>
-                  </div>
-                  
-                  <div className="space-y-4 mb-6">
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="text-gray-600">Included Traffic</span>
-                      <span className="font-medium">1,000GB</span>
-                    </div>
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="text-gray-600">Max Services</span>
-                      <span className="font-medium">10</span>
-                    </div>
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="text-gray-600">QPS</span>
-                      <span className="font-medium">4,000</span>
-                    </div>
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="text-gray-600">WAF Mode</span>
-                      <span className="font-medium">+ Intercept + Ban</span>
-                    </div>
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="text-gray-600">Bot Protection</span>
-                      <span className="font-medium">–</span>
-                    </div>
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="text-gray-600">Custom Rules</span>
-                      <span className="font-medium">20 / domain</span>
-                    </div>
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="text-gray-600">Anti-DDoS</span>
-                      <span className="font-medium">Universal engine</span>
-                    </div>
-                    <div className="flex justify-between border-b border-gray-100 pb-2">
-                      <span className="text-gray-600">Support</span>
-                      <span className="font-medium">8×5 Email + IM + Ticket</span>
-                    </div>
-                  </div>
-                  
-                  <div className="text-center">
-                    <a 
-                     href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
-                     target="_blank"
-                     rel="noopener noreferrer"
-                      className="inline-flex items-center px-6 py-3 bg-[#0EB623] text-white rounded-lg hover:bg-[#0EA620] transition-colors font-medium"
-                    >
-                      Activate Now
-                    </a>
-                  </div>
-                </div>
-              </div>
+              
               
               {/* Business Plan */}
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden">

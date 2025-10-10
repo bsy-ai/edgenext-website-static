@@ -57,8 +57,8 @@ export const Header: React.FC = () => {
             
             {/* Right side */}
             <div className="flex items-center">
-              <a href="https://home.console.edgenext.com/#/uc/register" className="utility-link ml-6 hidden md:block" target="_blank" rel="noopener noreferrer">Sign up</a>
-       
+              <a href="https://home.console.edgenext.com/#/uc/register" className="utility-link ml-6 hidden md:block" target="_blank" rel="noopener">Sign up</a>
+      
             </div>
           </div>
         </div>
@@ -133,7 +133,7 @@ export const Header: React.FC = () => {
               <a 
                 href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
                 className="button-secondary"
               >
                 Login
@@ -506,7 +506,7 @@ export const Header: React.FC = () => {
                 <a 
                   href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="w-full mb-4 py-3 text-gray-600 hover:text-[#0EB623] block text-center"
                 >
                   Login
