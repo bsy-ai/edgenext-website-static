@@ -29,7 +29,7 @@ init({
   },
 
   detection: {
-    order: ['localStorage', 'navigator', 'htmlTag'],
+    order: ['localStorage'],
     caches: ['localStorage'],
     lookupLocalStorage: 'i18nextLng'
   },
@@ -38,6 +38,20 @@ init({
     useSuspense: false
   }
 });
+try {
+  const key = 'i18nextLng';
+  const current = (typeof window !== 'undefined') ? localStorage.getItem(key) : null;
+  if (!current) {
+    // 设置并与 i18n 同步
+    if (typeof window !== 'undefined') {
+      localStorage.setItem(key, 'en');
+    }
+    // 无需 await，若当前已是 en 则不会触发变更
+    i18n.changeLanguage('en');
+  }
+} catch {
+  // 可能处于无 localStorage 环境，忽略
+}
 
 // 挂载全局翻译函数到 window
 declare global {
