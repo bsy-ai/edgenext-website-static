@@ -225,7 +225,7 @@ const EdgeCloudServer: React.FC = () => {
                 Lightweight global cloud hosting. Go edge in 30 seconds
               </p>
               <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 max-w-4xl mx-auto font-light">
-                EdgeNext Edge Cloud Server (ECS) leverages 1,700+ global edge nodes to create an edge computing network, bringing cloud power closer to end users. It delivers low-latency, scalable services worldwide, with a focus on emerging markets with high computing demand across Asia, the Middle East, Africa, North America, and Oceania.
+                EdgeNext Edge Cloud Server (ECS) leverages 1,500+ global edge nodes to create an edge computing network, bringing cloud power closer to end users. It delivers low-latency, scalable services worldwide, with a focus on emerging markets with high computing demand across Asia, the Middle East, Africa, North America, and Oceania.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 

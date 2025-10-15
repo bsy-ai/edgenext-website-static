@@ -121,17 +121,17 @@ export const Hero: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div>
-            <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4">1700+</div>
+            <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4">1500+</div>
             <div className="text-lg text-white">Global Points of Presence</div>
           </div>
           
           <div>
-            <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4">80+ Tbps</div>
+            <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4">90+ Tbps</div>
             <div className="text-lg text-white">Network Capacity</div>
           </div>
           
           <div>
-            <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4">200+</div>
+            <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4">170+</div>
             <div className="text-lg text-white">Partner ISPs</div>
           </div>
         </div>

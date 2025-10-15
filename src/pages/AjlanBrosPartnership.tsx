@@ -73,7 +73,7 @@ const AjlanBrosPartnership: React.FC = () => {
 
                   <h2 className="text-2xl font-medium mb-4">About EdgeNext</h2>
                   <p className="text-gray-600 mb-8">
-                    EdgeNext, a leading provider in the global edge cloud service arena, boasts an impressive infrastructure of over 1,700 edge nodes spread across more than 250 cities globally. The company has established profound interconnection collaborations with over 100 key operators worldwide. These partnerships enable EdgeNext to offer comprehensive edge cloud services that encompass networking, security, and computing, catering to the diverse needs of its global enterprise clientele.
+                    EdgeNext, a leading provider in the global edge cloud service arena, boasts an impressive infrastructure of over 1,500 edge nodes spread across more than 290 cities globally. The company has established profound interconnection collaborations with over 100 key operators worldwide. These partnerships enable EdgeNext to offer comprehensive edge cloud services that encompass networking, security, and computing, catering to the diverse needs of its global enterprise clientele.
                   </p>
 
                   <p className="text-gray-600 mb-8">

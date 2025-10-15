@@ -109,11 +109,11 @@ const GlobalNetwork: React.FC = () => {
               {/* Stats */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
                 <div className="glass-card rounded-2xl p-4 md:p-6 text-center backdrop-blur-sm bg-white/40 hover:bg-white/60 hover:shadow-glow transition-all duration-300">
-                  <div className="text-2xl md:text-4xl font-bold text-[#0EB623] mb-2">1700+</div>
+                  <div className="text-2xl md:text-4xl font-bold text-[#0EB623] mb-2">1500+</div>
                   <div className="text-sm md:text-base text-gray-700">Global Points of Presence</div>
                 </div>
                 <div className="glass-card rounded-2xl p-4 md:p-6 text-center backdrop-blur-sm bg-white/40 hover:bg-white/60 hover:shadow-glow transition-all duration-300">
-                  <div className="text-2xl md:text-4xl font-bold text-[#0EB623] mb-2">80+</div>
+                  <div className="text-2xl md:text-4xl font-bold text-[#0EB623] mb-2">90+</div>
                   <div className="text-sm md:text-base text-gray-700">Tbps Total Bandwidth</div>
                 </div>
                 <div className="glass-card rounded-2xl p-4 md:p-6 text-center backdrop-blur-sm bg-white/40 hover:bg-white/60 hover:shadow-glow transition-all duration-300">

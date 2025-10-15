@@ -153,19 +153,19 @@ const MediaEntertainment: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/20 transition-all duration-500">
                 <div className="text-4xl font-bold text-[#0EB623] mb-4">
-                  {hasScrolled && <CountUp end={80} suffix="+" duration={2} />}
-                  {!hasScrolled && "80+"}
+                  {hasScrolled && <CountUp end={90} suffix="+" duration={2} />}
+                  {!hasScrolled && "90+"}
                 </div>
                 <div className="text-xl font-semibold mb-2 text-white">Global Bandwidth Capacity</div>
                 <p className="text-gray-300">Tbps of total network capacity</p>
               </div>
               <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/20 transition-all duration-500">
                 <div className="text-4xl font-bold text-[#0EB623] mb-4">
-                  {hasScrolled && <CountUp end={1700} suffix="+" duration={2} />}
-                  {!hasScrolled && "1700+"}
+                  {hasScrolled && <CountUp end={1500} suffix="+" duration={2} />}
+                  {!hasScrolled && "1500+"}
                 </div>
                 <div className="text-xl font-semibold mb-2 text-white">Global Points of Presence</div>
-                <p className="text-gray-300">Across 300+ cities worldwide</p>
+                <p className="text-gray-300">Across 290+ cities worldwide</p>
               </div>
               <div className="group bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:bg-white/20 transition-all duration-500">
                 <div className="text-4xl font-bold text-[#0EB623] mb-4">

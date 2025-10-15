@@ -78,7 +78,7 @@ const APACNewOffice: React.FC = () => {
 
                   <h2 className="text-2xl font-medium mb-4">About EdgeNext</h2>
                   <p className="text-gray-600 mb-8">
-                    EdgeNext is a prominent leader in the global edge cloud services industry, with a robust infrastructure of over 1,700 edge nodes spanning more than 250 cities worldwide. The company has built strong interconnection partnerships with over 100 key operators across the globe, enabling it to deliver comprehensive edge cloud services, including networking, security, and computing, to meet the varied needs of its enterprise clients.
+                    EdgeNext is a prominent leader in the global edge cloud services industry, with a robust infrastructure of over 1,500 edge nodes spanning more than 290 cities worldwide. The company has built strong interconnection partnerships with over 100 key operators across the globe, enabling it to deliver comprehensive edge cloud services, including networking, security, and computing, to meet the varied needs of its enterprise clients.
                   </p>
 
                   <p className="text-gray-600 mb-8">

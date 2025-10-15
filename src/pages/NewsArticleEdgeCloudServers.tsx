@@ -148,7 +148,7 @@ const NewsArticleEdgeCloudServers: React.FC = () => {
 
                   <h2 className="text-2xl font-medium mb-4">Comprehensive Technological Architecture Upgrade</h2>
                   <p className="text-gray-600 mb-6">
-                    The new EdgeNext ECS, through over 1700+ edge nodes worldwide, builds a network of edge computing power, bringing cloud computing capabilities closer to the user side and providing global users with low-latency, scalable edge computing services. A wide variety of high-performance cloud servers support multiple CPU, memory, and storage configurations to achieve optimal performance, enhance service availability, and meet diverse business needs, including video, online gaming, live streaming, IoT, artificial intelligence, and real-time data processing and analysis.
+                    The new EdgeNext ECS, through over 1500+ edge nodes worldwide, builds a network of edge computing power, bringing cloud computing capabilities closer to the user side and providing global users with low-latency, scalable edge computing services. A wide variety of high-performance cloud servers support multiple CPU, memory, and storage configurations to achieve optimal performance, enhance service availability, and meet diverse business needs, including video, online gaming, live streaming, IoT, artificial intelligence, and real-time data processing and analysis.
                   </p>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">

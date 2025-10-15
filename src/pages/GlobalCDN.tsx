@@ -95,7 +95,7 @@ const GlobalCDN: React.FC = () => {
                 <span className="animated-gradient-text block mt-2">Without Boundaries</span>
               </h1>
               <p className="text-base md:text-xl text-gray-600 mb-6 md:mb-8 max-w-3xl mx-auto font-light">
-                EdgeNext's Global CDN delivers lightning-fast content with unparalleled performance across 1700+ points of presence worldwide, with dominant coverage in Southeast Asia, China, and MENA regions.
+                EdgeNext's Global CDN delivers lightning-fast content with unparalleled performance across 1500+ points of presence worldwide, with dominant coverage in Southeast Asia, China, and MENA regions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a 
@@ -119,15 +119,15 @@ const GlobalCDN: React.FC = () => {
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-12 md:mt-16">
               <div className="glass-card rounded-2xl p-4 md:p-6 text-center backdrop-blur-sm bg-white/40 hover:bg-white/60 hover:shadow-glow transition-all duration-300">
-                <div className="text-2xl md:text-4xl font-bold text-[#0EB623] mb-2">1700+</div>
+                <div className="text-2xl md:text-4xl font-bold text-[#0EB623] mb-2">1500+</div>
                 <div className="text-sm md:text-base text-gray-700">Global Points of Presence</div>
               </div>
               <div className="glass-card rounded-2xl p-4 md:p-6 text-center backdrop-blur-sm bg-white/40 hover:bg-white/60 hover:shadow-glow transition-all duration-300">
-                <div className="text-2xl md:text-4xl font-bold text-[#0EB623] mb-2">80+</div>
+                <div className="text-2xl md:text-4xl font-bold text-[#0EB623] mb-2">90+</div>
                 <div className="text-sm md:text-base text-gray-700">Tbps Total Bandwidth</div>
               </div>
               <div className="glass-card rounded-2xl p-4 md:p-6 text-center backdrop-blur-sm bg-white/40 hover:bg-white/60 hover:shadow-glow transition-all duration-300">
-                <div className="text-2xl md:text-4xl font-bold text-[#0EB623] mb-2">60B+</div>
+                <div className="text-2xl md:text-4xl font-bold text-[#0EB623] mb-2">76B+</div>
                 <div className="text-sm md:text-base text-gray-700">Requests Processed Daily</div>
               </div>
               <div className="glass-card rounded-2xl p-4 md:p-6 text-center backdrop-blur-sm bg-white/40 hover:bg-white/60 hover:shadow-glow transition-all duration-300">
@@ -248,7 +248,7 @@ const GlobalCDN: React.FC = () => {
                 <ul className="space-y-4">
                   <li className="flex items-start gap-3">
                     <Check className="text-[#0EB623] mt-1 flex-shrink-0" size={18} />
-                    <span className="text-gray-600">1,700+ nodes in 300+ cities ensure minimal latency worldwide</span>
+                    <span className="text-gray-600">1,500+ nodes in 290+ cities ensure minimal latency worldwide</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <Check className="text-[#0EB623] mt-1 flex-shrink-0" size={18} />
