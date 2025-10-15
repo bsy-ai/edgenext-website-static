@@ -233,11 +233,11 @@ const NotFound: React.FC = () => {
               <h3 className="text-xl font-medium mb-6">While you're here, did you know?</h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#0EB623] mb-2">1700+</div>
+                  <div className="text-3xl font-bold text-[#0EB623] mb-2">1500+</div>
                   <div className="text-gray-600">Global Edge Nodes</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-[#0EB623] mb-2">80+</div>
+                  <div className="text-3xl font-bold text-[#0EB623] mb-2">90+</div>
                   <div className="text-gray-600">Tbps Network Capacity</div>
                 </div>
                 <div className="text-center">

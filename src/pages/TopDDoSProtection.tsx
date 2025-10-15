@@ -61,7 +61,7 @@ const TopDDoSProtection: React.FC = () => {
                   </p>
 
                   <p className="text-gray-600 mb-8">
-                    With our global network of over 1,700 edge nodes spanning more than 250 cities worldwide, EdgeNext is uniquely positioned to detect and mitigate DDoS attacks at the edge, before they can impact your origin servers. This distributed approach ensures that malicious traffic is filtered out close to its source, while legitimate traffic is allowed to pass through seamlessly.
+                    With our global network of over 1,500 edge nodes spanning more than 290 cities worldwide, EdgeNext is uniquely positioned to detect and mitigate DDoS attacks at the edge, before they can impact your origin servers. This distributed approach ensures that malicious traffic is filtered out close to its source, while legitimate traffic is allowed to pass through seamlessly.
                   </p>
 
                   <p className="text-gray-600 mb-8">

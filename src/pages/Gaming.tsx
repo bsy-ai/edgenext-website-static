@@ -123,8 +123,8 @@ const Gaming: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500">
                 <div className="text-4xl font-bold text-[#0EB623] mb-4">
-                  {hasScrolled && <CountUp end={1700} suffix="+" duration={2} />}
-                  {!hasScrolled && "1700+"}
+                  {hasScrolled && <CountUp end={1500} suffix="+" duration={2} />}
+                  {!hasScrolled && "1500+"}
                 </div>
                 <div className="text-xl font-medium mb-2">Global PoPs</div>
                 <p className="text-gray-600">Strategic points of presence worldwide</p>
@@ -132,8 +132,8 @@ const Gaming: React.FC = () => {
               
               <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-500">
                 <div className="text-4xl font-bold text-[#0EB623] mb-4">
-                  {hasScrolled && <CountUp end={80} suffix="+" duration={2} />}
-                  {!hasScrolled && "80+"}
+                  {hasScrolled && <CountUp end={90} suffix="+" duration={2} />}
+                  {!hasScrolled && "90+"}
                 </div>
                 <div className="text-xl font-medium mb-2">Tbps Network</div>
                 <p className="text-gray-600">Total network capacity</p>
@@ -190,7 +190,7 @@ const Gaming: React.FC = () => {
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">
                     <Check className="text-[#0EB623]" size={20} />
-                    <span className="text-gray-600">1700+ PoPs for instant activation</span>
+                    <span className="text-gray-600">1500+ PoPs for instant activation</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <Check className="text-[#0EB623]" size={20} />

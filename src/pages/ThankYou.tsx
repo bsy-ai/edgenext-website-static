@@ -197,7 +197,7 @@ const ThankYou: React.FC = () => {
                 </div>
                 <h3 className="text-xl font-medium mb-4">Global Reach</h3>
                 <p className="text-gray-600">
-                  1700+ points of presence across 300+ cities worldwide, with dominant coverage in emerging markets.
+                  1500+ points of presence across 290+ cities worldwide, with dominant coverage in emerging markets.
                 </p>
               </div>
 

@@ -110,7 +110,7 @@ const Ecommerce: React.FC = () => {
                   <div>
                     <h3 className="text-xl font-medium mb-4">Localized CDN + Acceleration</h3>
                     <p className="text-gray-600">
-                      Deliver lightning-fast user experiences worldwide with a fully localized edge network and 1,700+ PoPs—designed to bypass cross-border latency and routing challenges.
+                      Deliver lightning-fast user experiences worldwide with a fully localized edge network and 1,500+ PoPs—designed to bypass cross-border latency and routing challenges.
                     </p>
                   </div>
                 </div>

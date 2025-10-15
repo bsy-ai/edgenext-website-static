@@ -43,7 +43,7 @@ export const SolutionsSection: React.FC = () => {
       description: "Deliver content with lightning-fast speed across the globe with our advanced CDN and edge computing solutions.",
       image: "/dynamic-acceleration-2.png",
       features: [
-        "1700+ global points of presence",
+        "1500+ global points of presence",
         "Intelligent routing algorithms",
         "Advanced caching strategies",
         "Real-time analytics and monitoring"
@@ -163,7 +163,7 @@ export const SolutionsSection: React.FC = () => {
       description: "Flexible cloud computing with global edge reach",
       features: [
         "Full root access and fast deployment",
-        "1700+ PoPs worldwide",
+        "1500+ PoPs worldwide",
         "Scalable billing (hourly/monthly)"
       ],
       link: "/products/edge-cloud-server"

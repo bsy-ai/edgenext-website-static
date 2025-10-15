@@ -48,7 +48,7 @@ const IPTransit: React.FC = () => {
                 <span className="animated-gradient-text">IP Transit</span>
               </h1>
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-light">
-                Reliable global connectivity with 1,700+ nodes—EdgeNext IP Transit powers scalable, cost-effective cross-border access for modern enterprises.
+                Reliable global connectivity with 1,500+ nodes—EdgeNext IP Transit powers scalable, cost-effective cross-border access for modern enterprises.
               </p>
               <a 
                 href="/contact_us"
@@ -261,7 +261,7 @@ const IPTransit: React.FC = () => {
                 <div className="text-6xl font-bold text-[#0EB623] mb-4">02</div>
                 <h3 className="text-xl font-medium mb-4">Challenge: Latency and instability from congested global routes</h3>
                 <p className="text-[#0EB623] mb-6">
-                  Our solution: 1,700+ nodes and intelligent routing for optimized paths
+                  Our solution: 1,500+ nodes and intelligent routing for optimized paths
                 </p>
                 <p className="text-gray-600">
                   Results: 50%+ latency reduction and smoother application performance

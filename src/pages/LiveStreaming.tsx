@@ -57,7 +57,7 @@ const LiveStreaming: React.FC = () => {
       title: 'Global Acceleration & Low Latency',
       description: 'Ensure ultra-smooth playback with intelligent routing and deep edge coverage designed for high-concurrency scenarios.',
       benefits: [
-        '1700+ global edge nodes with 80 Tbps bandwidth capacity',
+        '1500+ global edge nodes with 90 Tbps bandwidth capacity',
         'Sub-5ms latency through smart scheduling',
         '20% reduction in buffering rates at massive scale'
       ]
@@ -165,7 +165,7 @@ const LiveStreaming: React.FC = () => {
                 </div>
                 <h3 className="text-xl md:text-2xl font-medium mb-3 md:mb-4">Global Reach</h3>
                 <p className="text-sm md:text-base text-gray-600">
-                  With 1,700+ edge nodes and strategically placed video centers, EdgeNext provides real-time live streaming coverage in 300+ cities—bridging creators and audiences worldwide.
+                  With 1,500+ edge nodes and strategically placed video centers, EdgeNext provides real-time live streaming coverage in 290+ cities—bridging creators and audiences worldwide.
                 </p>
               </div>
             </div>
@@ -535,7 +535,7 @@ const LiveStreaming: React.FC = () => {
               {/* Content Delivery Nodes */}
               <div className="bg-gray-800 rounded-2xl p-6 md:p-8 hover:bg-gray-800/80 transition-all duration-300">
                 <h3 className="text-xl font-medium mb-4">Content Delivery Nodes</h3>
-                <p className="text-sm text-gray-400 mb-6">1700+ Global Edge Locations</p>
+                <p className="text-sm text-gray-400 mb-6">1500+ Global Edge Locations</p>
                 
                 <div className="space-y-4 mb-8">
                   <div className="flex items-start gap-3">

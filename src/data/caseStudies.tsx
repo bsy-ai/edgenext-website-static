@@ -118,7 +118,7 @@ const caseStudies: CaseStudy[] = [
       },
       {
         title: "Global Scalability & High-Performance Delivery",
-        description: "EdgeNext operates a global PoP network with over 1,700 nodes, ensuring fast, reliable, and scalable media delivery across all major regions. This allows for stable playback even under high concurrency or limited bandwidth environments."
+        description: "EdgeNext operates a global PoP network with over 1,500 nodes, ensuring fast, reliable, and scalable media delivery across all major regions. This allows for stable playback even under high concurrency or limited bandwidth environments."
       }
     ],
     products: [
@@ -143,7 +143,7 @@ const caseStudies: CaseStudy[] = [
         description: "Multi-layered security to mitigate attacks on media infrastructure"
       }
     ],
-    takeaway: "EdgeNext's solution empowered the client to maintain a stable and uninterrupted video viewing experience for its massive global audience. With <1s TTFB, a low buffer rate, and an infrastructure capable of handling 600 billion requests/day and 7 million peak requests/second, EdgeNext ensured scalable delivery while preserving content quality and platform availability. Its modular, media-friendly architecture and global coverage positioned the platform to continue growing while meeting the demands of a fast-evolving digital landscape.",
+    takeaway: "EdgeNext's solution empowered the client to maintain a stable and uninterrupted video viewing experience for its massive global audience. With <1s TTFB, a low buffer rate, and an infrastructure capable of handling 760 billion requests/day and 7 million peak requests/second, EdgeNext ensured scalable delivery while preserving content quality and platform availability. Its modular, media-friendly architecture and global coverage positioned the platform to continue growing while meeting the demands of a fast-evolving digital landscape.",
     industries: ["Short Video Platforms", "Media & Entertainment", "Mobile Video Streaming", "Content Creation Tools"],
     relatedProducts: ["Media on Demand Acceleration", "CDN Acceleration", "Application Acceleration", "Anti-DDoS", "WAF"],
     imageUrl: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
@@ -170,7 +170,7 @@ const caseStudies: CaseStudy[] = [
     solutions: [
       {
         title: "Traffic Surge Mitigation",
-        description: "Leveraging a global network of over 1,700 PoPs, EdgeNext enabled the client to manage unpredictable bursts in user traffic with consistent, low-latency service."
+        description: "Leveraging a global network of over 1,500 PoPs, EdgeNext enabled the client to manage unpredictable bursts in user traffic with consistent, low-latency service."
       },
       {
         title: "Enhanced Security Architecture",
@@ -232,7 +232,7 @@ const caseStudies: CaseStudy[] = [
       },
       {
         title: "Global Reach with Local Efficiency",
-        description: "With over 1,700 high-quality PoPs globally, EdgeNext placed game content—including installation packages and patches—at the network edge, closest to users. This reduced latency and improved download speed."
+        description: "With over 1,500 high-quality PoPs globally, EdgeNext placed game content—including installation packages and patches—at the network edge, closest to users. This reduced latency and improved download speed."
       },
       {
         title: "Traffic Surge Management",
@@ -348,7 +348,7 @@ const caseStudies: CaseStudy[] = [
       },
       {
         title: "Massive Global Coverage",
-        description: "EdgeNext's 1,700+ high-quality Points of Presence (PoPs) formed the backbone of the delivery strategy. By positioning content closer to end users—no matter where they were—latency was drastically reduced, and delivery was stabilized under any network condition."
+        description: "EdgeNext's 1,500+ high-quality Points of Presence (PoPs) formed the backbone of the delivery strategy. By positioning content closer to end users—no matter where they were—latency was drastically reduced, and delivery was stabilized under any network condition."
       },
       {
         title: "High Availability and Redundancy",
@@ -370,7 +370,7 @@ const caseStudies: CaseStudy[] = [
       },
       {
         name: "Global CDN Network",
-        description: "1,700+ PoPs worldwide for content proximity and latency reduction"
+        description: "1,500+ PoPs worldwide for content proximity and latency reduction"
       }
     ],
     takeaway: "By partnering with EdgeNext, the organizers of the 2022 Beijing Winter Olympic Games ensured a flawless global digital experience for viewers. From low-latency live video to high-speed on-demand playback, the solution handled one of the most complex digital delivery challenges ever attempted. The result: record-breaking reach, consistent user satisfaction, and a new global standard for streaming at scale.",
@@ -408,7 +408,7 @@ const caseStudies: CaseStudy[] = [
       },
       {
         title: "Globally Distributed Network",
-        description: "With over 1,700 high-quality Points of Presence (PoPs), EdgeNext ensured low-latency access to game resources from any location. Game installation packages, updates, and patches were strategically cached at the edge, reducing origin server loads and supporting high concurrency during peak times such as promotions or large-scale in-game events."
+        description: "With over 1,500 high-quality Points of Presence (PoPs), EdgeNext ensured low-latency access to game resources from any location. Game installation packages, updates, and patches were strategically cached at the edge, reducing origin server loads and supporting high concurrency during peak times such as promotions or large-scale in-game events."
       }
     ],
     products: [
@@ -468,7 +468,7 @@ const caseStudies: CaseStudy[] = [
       },
       {
         title: "Flexible Architecture",
-        description: "EdgeNext's loosely coupled, highly modular architecture enables flexible deployment and precise traffic routing. By deploying over 1,700 global Points of Presence (PoPs), EdgeNext ensures that all video requests are handled by the nearest available edge node. This significantly reduces latency and helps maintain broadcast continuity across regions."
+        description: "EdgeNext's loosely coupled, highly modular architecture enables flexible deployment and precise traffic routing. By deploying over 1,500 global Points of Presence (PoPs), EdgeNext ensures that all video requests are handled by the nearest available edge node. This significantly reduces latency and helps maintain broadcast continuity across regions."
       },
       {
         title: "Advanced Streaming Features",

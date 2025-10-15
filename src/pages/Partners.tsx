@@ -373,11 +373,11 @@ const Partners: React.FC = () => {
                 {/* Responsive stats grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
                   <div className="text-center sm:text-left">
-                    <div className="text-5xl sm:text-6xl font-bold text-[#0EB623] mb-2">1700+</div>
+                    <div className="text-5xl sm:text-6xl font-bold text-[#0EB623] mb-2">1500+</div>
                     <div className="text-gray-600">Global Points of Presence</div>
                   </div>
                   <div className="text-center sm:text-left">
-                    <div className="text-5xl sm:text-6xl font-bold text-[#0EB623] mb-2">200+</div>
+                    <div className="text-5xl sm:text-6xl font-bold text-[#0EB623] mb-2">170+</div>
                     <div className="text-gray-600">ISP & IIG Partners Worldwide</div>
                   </div>
                   <div className="text-center sm:text-left">

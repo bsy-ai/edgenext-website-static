@@ -106,8 +106,8 @@ const Company: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4" translate="no">
-                  {hasScrolled && <CountUp end={1700} suffix="+" duration={2} />}
-                  {!hasScrolled && "1700+"}
+                  {hasScrolled && <CountUp end={1500} suffix="+" duration={2} />}
+                  {!hasScrolled && "1500+"}
                 </div>
                 <div className="text-lg text-gray-600">Global Points of Presence</div>
               </div>
@@ -115,15 +115,15 @@ const Company: React.FC = () => {
               <div className="text-center">
                 <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4" translate="no">
                   {hasScrolled && <CountUp end={60} suffix="B+" duration={2} />}
-                  {!hasScrolled && "60B+"}
+                  {!hasScrolled && "76B+"}
                 </div>
                 <div className="text-lg text-gray-600">Requests Processed Daily</div>
               </div>
               
               <div className="text-center">
                 <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4" translate="no">
-                  {hasScrolled && <CountUp end={80} suffix="+" duration={2} />}
-                  {!hasScrolled && "80+"}
+                  {hasScrolled && <CountUp end={90} suffix="+" duration={2} />}
+                  {!hasScrolled && "90+"}
                 </div>
                 <div className="text-lg text-gray-600">Tbps Total Bandwidth</div>
               </div>

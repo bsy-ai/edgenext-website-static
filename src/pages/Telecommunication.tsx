@@ -203,7 +203,7 @@ const Telecommunication: React.FC = () => {
                   </h3>
                 </div>
                 <p className="text-gray-600 mb-6">
-                  Expand your product and service offerings by leveraging EdgeNext's proven experience working with 150+ ISPs and IIGs.
+                  Expand your product and service offerings by leveraging EdgeNext's proven experience working with 170+ ISPs and IIGs.
                 </p>
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">

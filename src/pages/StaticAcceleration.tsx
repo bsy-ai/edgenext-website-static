@@ -300,7 +300,7 @@ const StaticAcceleration: React.FC = () => {
                 <div className="text-6xl font-bold text-[#0EB623] mb-4">01</div>
                 <h3 className="text-xl font-medium mb-4">Challenge: High Loading Latency</h3>
                 <p className="text-[#0EB623]">
-                  Local content access, accelerated by 1,700+ global edge nodes with smart scheduling for low-latency.
+                  Local content access, accelerated by 1,500+ global edge nodes with smart scheduling for low-latency.
                 </p>
               </div>
 

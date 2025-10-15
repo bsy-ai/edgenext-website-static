@@ -262,7 +262,7 @@ const SoutheastAsiaCDN: React.FC = () => {
                 <ul className="space-y-4">
                   <li className="flex items-center gap-3">
                     <Check className="text-[#0EB623]" size={20} />
-                    <span className="text-gray-600">Backbone built on 1,700+ PoPs and robust ISP peering</span>
+                    <span className="text-gray-600">Backbone built on 1,500+ PoPs and robust ISP peering</span>
                   </li>
                   <li className="flex items-center gap-3">
                     <Check className="text-[#0EB623]" size={20} />

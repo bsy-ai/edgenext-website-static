@@ -229,14 +229,14 @@ const DNSSecurity: React.FC = () => {
                   
                   <div>
                     <div className="text-4xl font-bold text-[#0EB623] mb-2" translate="no">
-                      {hasScrolled && <CountUp end={1700} duration={2} />}+
+                      {hasScrolled && <CountUp end={1500} duration={2} />}+
                     </div>
                     <p className="text-gray-600">Global Points of Presence</p>
                   </div>
                   
                   <div>
                     <div className="text-4xl font-bold text-[#0EB623] mb-2" translate="no">
-                      {hasScrolled && <CountUp end={80} duration={2} />}+
+                      {hasScrolled && <CountUp end={90} duration={2} />}+
                     </div>
                     <p className="text-gray-600">Tbps Redundant Bandwidth</p>
                   </div>
