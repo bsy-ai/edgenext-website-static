@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
 import { Header } from './components/Header';
@@ -132,12 +132,16 @@ function App() {
           } 
         />
         <Route 
-          path="/vps" 
+          path="/ecs" 
           element={
             <PageTransition>
               <EdgeCloudServer />
             </PageTransition>
           } 
+        />
+        <Route 
+          path="/vps" 
+          element={<Navigate to="/ecs" replace />}
         />
         <Route 
           path="/global_cdn"

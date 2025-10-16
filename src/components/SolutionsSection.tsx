@@ -307,7 +307,7 @@ export const SolutionsSection: React.FC = () => {
                 </div>
                 
                 <Link 
-                  to={getActiveItem()?.link === "/products/global-cdn" ? "/global_cdn" : getActiveItem()?.link === "/products/dynamic-acceleration" ? "/dynamic-acceleration" : getActiveItem()?.link === "/products/edge-cloud-server" ? "/vps" : getActiveItem()?.link === "/company/global-network" ? "/network" : getActiveItem()?.link || "#"}
+                  to={getActiveItem()?.link === "/products/global-cdn" ? "/global_cdn" : getActiveItem()?.link === "/products/dynamic-acceleration" ? "/dynamic-acceleration" : getActiveItem()?.link === "/products/edge-cloud-server" ? "/ecs" : getActiveItem()?.link === "/company/global-network" ? "/network" : getActiveItem()?.link || "#"}
                   className="inline-flex items-center text-[#0EB623] font-medium hover:gap-2 transition-all duration-300"
                 >
                   Learn more <ArrowRight className="ml-2" size={16} />

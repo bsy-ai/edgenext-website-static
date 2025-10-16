@@ -56,7 +56,7 @@ const Banner: React.FC<{ type: string }> = ({ type }) => {
       title: "Edge Cloud Server Special Offer",
       description: "Up to 50% off monthly and additional 10% off annually",
       buttonText: "Learn More",
-      link: "/vps"
+      link: "/ecs"
     },
     solutions: {
       title: "Need Expert Guidance?",
@@ -165,7 +165,7 @@ export const Dropdown: React.FC<DropdownProps> = ({ type, onClose }) => {
           icon={<Cloud size={18} />}
           title="Edge Cloud Server"
           description="High-speed global cloud hosting"
-          to="/vps"
+          to="/ecs"
         />
         <MenuItem 
           icon={<ServerIcon size={18} />}

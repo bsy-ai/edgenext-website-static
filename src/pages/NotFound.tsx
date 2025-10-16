@@ -50,7 +50,7 @@ const NotFound: React.FC = () => {
 
   const suggestions = [
     { title: 'Global CDN', path: '/global_cdn', description: 'Accelerate your content delivery worldwide' },
-    { title: 'Edge Cloud Server', path: '/vps', description: 'Deploy applications closer to your users' },
+    { title: 'Edge Cloud Server', path: '/ecs', description: 'Deploy applications closer to your users' },
     { title: 'Anti-DDoS Protection', path: '/anti_ddos', description: 'Protect your infrastructure from attacks' },
     { title: 'Live Streaming', path: '/live_streaming', description: 'Deliver smooth real-time streams globally' },
     { title: 'Gaming Solutions', path: '/gaming', description: 'Optimize your gaming infrastructure' },
