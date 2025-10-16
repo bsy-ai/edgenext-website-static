@@ -206,7 +206,7 @@ const VpsSsdStorage: React.FC = () => {
                   </p>
                 </div>
                 <a 
-                  href="/vps" 
+                  href="/ecs" 
                   className="px-8 py-4 bg-white text-[#0EB623] rounded-xl hover:bg-opacity-90 transition-colors font-medium whitespace-nowrap"
                 >
                   Learn More

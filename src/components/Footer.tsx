@@ -92,7 +92,7 @@ export const Footer: React.FC = () => {
             <h4 className="text-[#0EB623] font-medium mb-2">Computing</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/vps" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="/ecs" className="hover:text-[#0EB623] transition-colors duration-200">
                   Edge Cloud Server
                 </a>
               </li>

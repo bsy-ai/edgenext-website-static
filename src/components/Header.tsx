@@ -235,7 +235,7 @@ export const Header: React.FC = () => {
                           <h4 className="text-sm font-medium text-[#0EB623] mb-2">Computing & Network</h4>
                           <div className="space-y-3">
                             <Link 
-                              to="/vps" 
+                              to="/ecs" 
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >

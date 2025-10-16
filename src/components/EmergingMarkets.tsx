@@ -72,7 +72,7 @@ export const EmergingMarkets: React.FC = () => {
             </div>
             <h3 className="text-xl font-bold text-white mb-3">Launch Closer<br />Run Faster</h3>
             <p className="text-white/80 group-hover:text-white mb-4">Deploy compute at the edge for real-time performance.</p>
-            <a href="/vps" className="text-[#0EB623] group-hover:text-white inline-flex items-center opacity-0 group-hover:opacity-100 transition-all duration-300">
+            <a href="/ecs" className="text-[#0EB623] group-hover:text-white inline-flex items-center opacity-0 group-hover:opacity-100 transition-all duration-300">
               Learn more <ArrowRight className="ml-2" size={16} />
             </a>
           </div>
