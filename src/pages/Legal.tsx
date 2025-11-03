@@ -756,6 +756,8 @@ These Payment Terms (“Terms”) govern the payment in connection with your pur
         <h2 class="text-2xl font-medium mb-6">Privacy Policy</h2>
         <p class="mb-4">This Privacy Policy apply to access and use the EdgeNext International Website (www.edgenext.com_, “Website”)，and the use by registered users of the EdgeNext International Website of EdgeNext products and Services provided by the  EdgeNext entity listed in Clause 2 of the EdgeNext International Website Terms of Use（“EdgeNext”, “we”, “us” or “our”). EdgeNext respects privacy of our users and we are committed to protecting it through our compliance with this privacy policy. This privacy Policy describes how we collect, use, keep, protect and disclose your personal information in relation to our website, services, products, events and experiences that reference this Privacy Policy (collectively, “Services”). This Privacy Policy applys to the data collected by us, or those working on our behalf, through information you enter or from the imported data from authorized and approved sources. It does not apply to data collected through other sites, products, services or content that are offered by third parties or have their own privacy policy.
 <br><br>
+International Data Transfer and Storage: Please be aware that the personal information we collect from you will be stored and processed on our secure servers in Malaysia. By using our Website or Services, you acknowledge and expressly consent to the transfer, storage, and processing of your personal information from Singapore (and other countries where you may be located) to Malaysia. We have implemented appropriate safeguards, including standard contractual clauses and robust security measures, to protect your data during such transfers and ensure its security in Malaysia, in compliance with the Singapore Personal Data Protection Act (PDPA) and other applicable laws.
+<br><br>
 By using or accessing our Website or the Services in any manner, you acknowledge that you accept the practices and policies described in this Privacy Policy, and you hereby consent that we may collect, use, and share your information as described herein. If you do not agree with our policies and practices, your choice is not to use our Website or our Services.
 <br><br>
 If you do not provide us with the necessary personal information, we will not be able to deliver all the features of our Services and/or Website to you as intended. Any capitalized terms we use in this Privacy Policy without defining them have the definitions given to them in the EdgeNext International Website Terms and Conditions of Use（”International Website Terms”</p>
@@ -829,13 +831,15 @@ Following termination or deactivation of your account, we may retain your profil
         <h3 class="text-xl font-medium mb-4">4. How We Share Your Information
 
 </h3>
-        <p class="mb-4">We will never rent or sell our customers’ Personal Information to others. We share personal information only as noted below with third parties for the purpose of providing or improving the Service to you. If we do this, such third parties’ use of your Personal Information will be bound by obligations of confidentiality. We may store Personal Information in locations outside our direct control (for instance, on servers or databases located or co-located with hosting providers). Any Personal Information or content that you voluntarily disclose for posting to the Service becomes available to the public, as controlled by any applicable privacy or website customization settings. To change your privacy settings on the Service, you may visit our account settings page. If you remove information that you posted to the Service, copies may remain viewable in cached and archived pages of the Service, or if other users have copied or saved that information.
-<br/>
-Third-Party Service Providers: We need other parties to perform and perfect functions on our behalf, Such as communications, payments, certifications, etc.
-<br/>
-Protection of us and others: By law, court order, legal process, or subpoena, including to respond to any government or regulatory request, or if we believe that such action is necessary to (a) conform to the law, comply with legal process served on us or our affiliates or partners, or investigate, prevent, or take action regarding suspected or actual illegal activities; (b) to enforce our Terms, take precautions against liability, to investigate and defend ourselves against any third-party claims or allegations, to assist government enforcement agencies, or to protect the security or integrity of our site; and (c) to exercise or protect the rights, property, or personal safety of EdgeNext, our users or others.
+        <p class="mb-4">We will never rent or sell our customers’ Personal Information to others. We share personal information only as noted below with third parties for the purpose of providing or improving the Service to you. If we do this, such third parties’ use of your Personal Information will be bound by obligations of confidentiality. We may store Personal Information in locations outside our direct control (for instance, on servers or databases located or co-located with hosting providers). Any Personal Information or content that you voluntarily disclose for posting to the Service becomes available to the public, as controlled by any applicable privacy or website customization settings. To change your privacy settings on the Service, you may visit our account settings page. If you remove information that you posted to the Service, copies may remain viewable in cached and archived pages of the Service, or if other users have copied or saved that information.</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2 text-gray-600">
+          <li><strong>Within Our Corporate Group and Service Providers:</strong> To deliver our Services efficiently, we share your personal information with our affiliated entity in Malaysia and with third-party service providers (e.g., for communications, payments, hosting) who are also located in Malaysia or other countries outside of Singapore. When we do this, we ensure that such recipients are contractually bound by obligations of confidentiality and data protection standards that are at least as stringent as those required by the Singapore PDPA.</li>
+          <li><strong>International Data Transfers:</strong> Your acceptance of this Privacy Policy constitutes your consent (deemed consent under the PDPA) to the transfer of your personal information to Malaysia. We take all reasonable steps to ensure that your data is treated securely and in accordance with this Privacy Policy after such transfer.</li>
+          <li><strong>Legal and Regulatory Requirements:</strong> We may disclose your information if required to do so by law, court order, legal process, or subpoena, including to respond to any government or regulatory request, whether in Singapore, Malaysia, or other jurisdictions.</li>
+          <li><strong>Business Transfers:</strong> In the event of a merger, acquisition, or sale of all or a portion of our assets, your Personal Information may be transferred to the successor entity. The data will remain subject to the promises made in this Privacy Policy unless you consent otherwise.</li>
+        </ul>
+        <br/>
 
-</p>
         
         <h3 class="text-xl font-medium mb-4">5. De-Identified Personal Information</h3>
         <p class="mb-4">We may share De-Identified Personal Information (such as anonymous usage data, referring/exit pages and URLs, platform types, number of clicks, etc.) with interested third parties to help understand the usage patterns for certain Services.
@@ -880,26 +884,21 @@ The information that you can view, update, and delete may change as the Services
         <h3 class="text-xl font-medium mb-4">8. Your Rights/Information
 
 </h3>
-        <p class="mb-4">You have the following rights regarding your information:
+        <p class="mb-4">You have the following rights regarding your information: To exercise any of these rights, please contact us using the details in Section 9.</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2 text-gray-600">
+          <li><strong>Access and Correction:</strong> You have the right to access and correct your personal data in our possession or under our control.</li>
+          <li><strong>Withdrawal of Consent:</strong> You may withdraw your consent for the collection, use, or disclosure of your personal data by giving us reasonable notice. Please note that upon withdrawal of consent, we may not be able to continue providing you with some or all of our Services.</li>
+          <li><strong>Data portability:</strong> Where applicable, upon your request, we shall provide you or a successor organization you authorize with your data in a commonly used machine-readable format.</li>
+          <li><strong>Deletion:</strong> You may request the deletion of your personal data, and we will act on such requests unless we are required to retain the data by law or have a legitimate business interest to retain it (e.g., for legal compliance, dispute resolution).</li>
+        </ul>
+        <p class="mb-4">We will respond to your request within the timeframe set by applicable law. If you are not satisfied with our response, you have the right to contact the Personal Data Protection Commission (PDPC) of Singapore.<br/>
+        <p class="mb-4"><strong>The right to restrict processing:</strong> You have rights to “block” or suppress further use of your information. When processing is restricted, we can still store your information, but may not use it further. We keep lists of people who have asked for further use of their information to be “blocked” to make sure the restriction is respected in future.</p>
+        <p class="mb-4"><strong>The right to data portability:</strong> You have rights to obtain and reuse your personal data for your own purposes across different services. For example, if you decide to switch to a new provider, this enables you to move, copy or transfer your information easily between our IT systems and theirs safely and securely, without affecting its usability.</p>
+        <p class="mb-4"><strong>The right to object:</strong> You have the right to object to certain types of processing, including processing for direct marketing (which we do only with your consent). For more information or to object, see Objecting to processing.</p>
+To ask questions or comment about this Privacy Policy and our privacy practices, contact us at: info_apac@edgenext.com       
+60 PAYA LEBAR ROAD, #11-20, PAYA LEBAR SQUARE, SINGAPORE 409051<br/>
+Tel：+65 68718812</p>
 <br/>
-The right to be informed: You have the right to be provided with clear, transparent and easily understandable information about how we use your information and your rights. This is why we’re providing you with the information in this Privacy Policy.
-<br/>
-The right of access: You have the right to obtain access to your information (if we’re processing it), and other certain other information (similar to that provided in this Privacy Policy). This is so you’re aware and can check that we’re using your information in accordance with data protection law.
-<br/>
-The right to rectification: You’re entitled to have your information corrected if it’s inaccurate or incomplete.
-<br/>
-The right to erasure: This is also known as ‘the right to be forgotten’ and, in simple terms, enables you to request the deletion or removal of your information where there’s no compelling reason for us to keep using it. This is not a general right to erasure; there are exceptions.
-<br/>
-The right to restrict processing: You have rights to ‘block’ or suppress further use of your information. When processing is restricted, we can still store your information, but may not use it further. We keep lists of people who have asked for further use of their information to be ‘blocked’ to make sure the restriction is respected in future.
-<br/>
-The right to data portability: You have rights to obtain and reuse your personal data for your own purposes across different services. E.g, if you decide to switch to a new provider, this enables you to move, copy or transfer your information easily between our IT systems and theirs safely and securely, without affecting its usability.
-<br/>
-The right to object: You have the right to object to certain types of processing, including processing for direct marketing (which we do only with your consent). For more information or to object, see Objecting to processing.
-To ask questions or comment about this Privacy Policy and our privacy practices, contact us at: info_apac@edgenext.com
-<br/>
-1 PICKERING STREET #08 GREAT EASTERN CENTRE SINGAPORE (048659)
-<br/>
-Tel：+65 68718812     </p>
 
    <h3 class="text-xl font-medium mb-4">9. Changes to Our Privacy Policy
 
@@ -936,7 +935,14 @@ Fourth, we will not discriminate against you on either a pricing or service basi
 
 Finally, you may exercise your rights under CCPA by: a) deactivating and purging your account in your control panel settings or b) by sending an email to info_apac@edgenext.com to request access or deletion. If you have any questions about your CCPA rights as they relate to EdgeNext, you may call us or send emails.
 <br/>
+ <br/>
  
+Additional Information for International Users (Including Singapore)
+<br/>
+<br/>
+Data Storage and Processing Location: Your personal data is primarily stored and processed on servers located in Malaysia. By using our Services, you consent to the transfer of your data from your country of residence (including Singapore) to Malaysia. Malaysia's data protection laws may differ from those in your jurisdiction. We handle all data in accordance with this policy and have implemented safeguards to protect your information.
+Singapore-Specific Notice: For users in Singapore, our data protection practices are designed to comply with the Singapore Personal Data Protection Act (PDPA). Our basis for collecting, using, and disclosing your personal data is often your consent, which is deemed to be given when you voluntarily provide your data for the purposes you have been notified of, or when you continue using our Website after being informed of this Policy.
+<br/>
 <br/>
 Additional Information for Users Located in the European Economic Area (“EEA”)
 
@@ -1173,16 +1179,16 @@ If customers have any questions about this Statement or other related matters, p
 
 Email: info_apac@edgenext.com</p>
 Service-Hotline: +65 68718812</p>
-Address: 1 Pickering Street, Level 8, Great Eastern Centre, Singapore 048659</p>
+Address: 60 PAYA LEBAR ROAD, #11-20, PAYA LEBAR SQUARE, SINGAPORE 409051</p>
 <br />
         <h3 class="text-xl font-medium mb-4">1.Definitions and Interpretations</h3>
-        <p class="mb-4">1.1. Customer data refers to the data stored in the EdgeNext server by the customer due to the use of EdgeNext services, including but not limited to text, audio, video or images.</p>
-   1.2. The customer data does not include the customer’s EdgeNext account data and the data generated by the customer using EdgeNext services, this type of data does not apply to this statement; the customer can click on the “EdgeNext Privacy Policy” to understand our processing policy of such type of data, including the collection, use, storage, sharing and other specific information.</p>
+        <p class="mb-4">1.1. "Customer data" refers to the data stored in the EdgeNext server by the customer due to the use of EdgeNext services, including but not limited to text, audio, video or images.This includes personal data contaioned within.</p>
+   1.2. The customer data does not include the customer’s EdgeNext account data and the data generated by the customer using EdgeNext services for administrative and billing purposes;this type of data does not apply to this statement; the customer can click on the “EdgeNext Privacy Policy” to understand our processing policy of such type of data, including the collection, use, storage, sharing and other specific information.</p>
      <br />
-        <h3 class="text-xl font-medium mb-4">2. Customer data control and role</h3>
-        <p class="mb-4">2.1. Customer Data is controlled and managed by the Customer, who is the controller of such data. We do not access or use customer data unless otherwise required by law or mutually agreed. Customers decide for themselves how they control customer data. We will carry out the corresponding data processing activities in strict accordance with the written instructions of the customer.</p>
+        <h3 class="text-xl font-medium mb-4">2. Customer data control and roles</h3>
+        <p class="mb-4">2.1. Customer Data is controlled and managed by the Customer, who is the data controller of such data. EdgeNext acts as a data processor on the instructions of the customer.we do not access or use customer data uless othderwise required by law or mutually agreed. Customers decide for themselves how they control customer data. We will carry out the corresponding data processing activities in strict accordance with the written instructions of the customer and in compliance with the Singapore PDPA.</p>
 
-   2.2. Customers have full control over customer data and should correctly and comprehensively identify cloud data, select appropriate services and formulate security and data protection policies to protect personal data. Customers should perform security configuration work according to business and data protection requirements to ensure that the processing of customer data complies with the requirements of relevant laws and regulations on data protection.</p><br />
+   2.2. Customers have full control over customer data and should correctly and comprehensively identify cloud data, select appropriate services and formulate security and data protection policies to protect personal data. Customers should perform security configuration work according to business and data protection requirements to ensure that the processing of customer data complies with the requirements of relevant laws and regulations on data protection,including the PDPA.</p><br />
    2.3. Customers can take security protection measures for the computer information systems they use in accordance with the relevant country regulations and EdgeNext service rules, such as installing special products for computer information system security approved by the country. Customers can also choose to manage their own encryption keys according to the encryption functions we provide. </p>
    <br />
         <h3 class="text-xl font-medium mb-4">3. Customer Data Lifecycle</h3>
@@ -1194,22 +1200,22 @@ Address: 1 Pickering Street, Level 8, Great Eastern Centre, Singapore 048659</p>
 <br />
    3.1.2 Customers manage their own access to and use of customer data. We will provide a range of access, encryption and logging capabilities that can effectively help customers achieve this goal.</p>
 <br />
-3.2 Storage</p>
+3.2 Storage and International Data Transfer</p>
 
-   3.2.1 In order to ensure the security and stability of the service, if customers use our cloud storage products, we will provide customers with multiple storage copies and backup services. We may perform irregular upgrades and migrations of EdgeNext’s computer room, server, bandwidth, database and other products. When major changes are involved (such as computer room migration), we will notify customers in advance.</p>
+   3.2.1 Data Storage Location: To provide our services effectively, the Customer Data you store with us will be hosted and processed on our secure servers located in Malaysia.</p>
 <br />
-   3.2.2 According to the agreement reached between EdgeNext and the customer, customer data will be retained for a reasonable period of time after the expiration or termination of the service, and the customer must complete the migration of customer data before the expiration of the retention period. After the retention period expires, unless otherwise stipulated by law, the EdgeNext service system will automatically delete all customer data and account information of the customer, and all data after deletion cannot be recovered.</p>
+   3.2.2 Cross-Border Data Transfer: By using our services, you acknowledge and consent to the transfer, storage, and processing of your Customer Data from Singapore (and other jurisdictions where you operate) to Malaysia. This cross-border transfer is necessary for the performance of our service agreement with you. We ensure that such transfers are conducted in compliance with the Singapore PDPA. Our legal safeguards for these transfers include the implementation of robust contractual clauses (e.g., based on PDPA model clauses) with our affiliated entity and partners in Malaysia, ensuring they provide a standard of protection comparable to the requirements of the PDPA.</p>
 <br />
-3.3 We have established data centers around the world to meet the multiple deployment needs of our customers. When cross-border transmission is involved in the operation and provision of services, we will follow local regulations and requirements, such as signing data transmission agreements, obtaining explicit consent from customers, etc., to ensure the legality of data transmission and subsequent processing.</p>
+   3.2.3 Service Management: In order to ensure the security and stability of the service, if customers use our cloud storage products, we will provide customers with multiple storage copies and backup services, which will also be stored in Malaysia. We may perform irregular upgrades and migrations of EdgeNext's computer room, server, bandwidth, database, and other products within Malaysia. When major changes are involved (such as data center migration), we will notify customers in advance.</p>
 <br />
-3.4 Disclosure
+   3.2.4 Data Retention & Deletion: According to the agreement reached between EdgeNext and the customer, Customer Data will be retained for a reasonable period of time after the expiration or termination of the service, and the customer must complete the migration of Customer Data before the expiration of the retention period. After the retention period expires, unless otherwise stipulated by law, the EdgeNext service system will automatically delete all Customer Data and account information of the customer, and all data after deletion cannot be recovered.</p>
+<br />
+3.3 Disclosure</p>
 
-Unless otherwise required by law, we will protect customer data in accordance with the law and will not disclose customer data without authorization.</p>
+Unless otherwise required by law, we will protect Customer Data in accordance with the law and will not disclose Customer Data without authorization. Where disclosure is mandated by law, we will, where legally permissible, inform the customer prior to disclosure.</p>
       <br />  
         <h3 class="text-xl font-medium mb-4">4. Customer Data Security</h3>
-        <p 4.1 Based on years of experience, EdgeNext has built a strong data security guarantee system, and complies with the compliance requirements of different countries and industries and builds a complete information security management mechanism to provide customers with cloud services that are trustworthy. We are continuously advancing the data protection security assurance plan of the construction system to help customers establish and operate security protection and control processes to achieve security assurance.
-<br />  
-   4.2  EdgeNext provides customers with a variety of data protection technologies, including access control and identity authentication, data encryption, logging and auditing and related enhanced technologies, as well as various services of EdgeNext based on this, to help customers according to business needs. data protection. We will endeavor to implement the following safeguards:</p>
+   4.1  EdgeNext provides customers with a variety of data protection technologies, including access control and identity authentication, data encryption, logging and auditing and related enhanced technologies, as well as various services of EdgeNext based on this, to help customers according to business needs. data protection. We will endeavor to implement the following safeguards:</p>
 
    (1) Strict management and control measures are taken for the data retained in the EdgeNext platform, and in order to ensure data security, unified management of access, authentication, authorization, storage, and auditing is carried out.</p>
 
@@ -1221,10 +1227,13 @@ Unless otherwise required by law, we will protect customer data in accordance wi
 
    (5) Equipped with a professional team to fully respond to customers’ requests related to data protection, complete the request processing within the specified time after receiving the customer’s request, and feedback the processing results to the customer. In the unfortunate event of a data breach, we will fully fulfill our legal obligations, disclose it in a timely manner, and implement emergency plans and recovery procedures to minimize the impact on customers.</p>
 <br />  
-4.3 We make continuous efforts to take more secure physical and technical measures and strengthen security management to protect customer data. When customers use EdgeNext services, we provide encryption functions for customer data in transmission and storage according to customer needs, and support customers to choose to manage their own encryption keys.</p>
+4.2 We make continuous efforts to take more secure physical and technical measures and strengthen security management to protect customer data. When customers use EdgeNext services, we provide encryption functions for customer data in transmission and storage according to customer needs, and support customers to choose to manage their own encryption keys.</p>
 <br />  
-4.4 We have obtained information security management system certificationISO27001, quality management system certification ISO9001, information technology service management system certification ISO20000, privacy information management system compliance evaluation ISO27701, business continuity management system certification ISO22301, personal identifiable information security management system certification ISO27018, cloud services Information security management system certification ISO27017, compliance management system certification ISO37301  and other certifications for information security management activities related to technical services such as cloud distribution, with the corresponding security competence.</p>
-    
+4.3 We have obtained information security management system certificationISO27001, quality management system certification ISO9001, information technology service management system certification ISO20000, privacy information management system compliance evaluation ISO27701, business continuity management system certification ISO22301, personal identifiable information security management system certification ISO27018, cloud services Information security management system certification ISO27017, compliance management system certification ISO37301  and other certifications for information security management activities related to technical services such as cloud distribution, with the corresponding security competence.</p>
+      <br />  
+        <h3 class="text-xl font-medium mb-4">5. Data Subject Rights and Complaints</h3>
+        <p>Customers, as data controllers, are primarily responsible for responding to requests from individuals whose personal data is contained within the Customer Data. However, we will provide reasonable assistance to you in fulfilling your obligations under the PDPA. If you receive any data subject requests or have any concerns about how we handle Customer Data, please contact us at <a href="mailto:info_apac@edgenext.com" class="text-[#0EB623] hover:underline">info_apac@edgenext.com</a>.</p>
+        <p>If you are not satisfied with how we have handled your complaint, you may have the right to lodge a complaint with the <strong>Personal Data Protection Commission (PDPC) of Singapore</strong>.</p>
       `
     }
   };
