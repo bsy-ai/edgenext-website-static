@@ -73,6 +73,7 @@ import CaseStudies from './pages/CaseStudies';
 import CaseStudyDetail from './pages/CaseStudyDetail';
 import Legal from './pages/Legal';
 import Partners from './pages/Partners';
+import TrafficPartners from './pages/TrafficPartners';
 import GlobalNetwork from './pages/GlobalNetwork';
 import ChinaICPLicense from './pages/ChinaICPLicense';
 import NotFound from './pages/NotFound';
@@ -860,6 +861,14 @@ function App() {
           element={
             <PageTransition>
               <Partners />
+            </PageTransition>
+          } 
+        />
+        <Route 
+          path="/traffic-partner" 
+          element={
+            <PageTransition>
+              <TrafficPartners />
             </PageTransition>
           } 
         />
