@@ -111,7 +111,9 @@
     "54931c35": "text-gray-600 hover:text-[#0EB623]",
     "b23f8d10": "bg-[#0EB623]/5 border border-[#0EB623]/20",
     "f19ae950": "hover:bg-gray-50",
-    "b37d2e55": "rotate-90"
+    "b37d2e55": "rotate-90",
+    "ed9031f3": "1500+ global points of presence",
+    "2fd07de1": "1500+ PoPs worldwide"
   },
   "src__components__Solutions": {
     "d2e13c31": "EdgeNext global infrastructure",
@@ -182,7 +184,8 @@
     "274f58ee": "response_type=code&",
     "c163f357": "scope=openid%20email%20profile&",
     "554cafca": "access_type=online&",
-    "ef0e171d": "EdgeNext delivers powerful CDN, Cloud Security, and Edge Computing solutions \n            optimized for emerging markets. Accelerate content, protect applications, and \n            deploy globally with confidence."
+    "ef0e171d": "EdgeNext delivers powerful CDN, Cloud Security, and Edge Computing solutions \n            optimized for emerging markets. Accelerate content, protect applications, and \n            deploy globally with confidence.",
+    "344a2e79": "90+ Tbps"
   },
   "src__components__Header": {
     "6b3669d8": "Global Network Status",
@@ -659,7 +662,13 @@
     "45fbaeb6": "National Broadcasting Platforms",
     "e63f2f30": "Government and Public Sector Streaming",
     "df3b75f2": "High-Viewership Event Broadcasting",
-    "416933a8": "Video-on-Demand Platforms"
+    "416933a8": "Video-on-Demand Platforms",
+    "3345c870": "EdgeNext operates a global PoP network with over 1,500 nodes, ensuring fast, reliable, and scalable media delivery across all major regions. This allows for stable playback even under high concurrency or limited bandwidth environments.",
+    "69a4a500": "EdgeNext's solution empowered the client to maintain a stable and uninterrupted video viewing experience for its massive global audience. With <1s TTFB, a low buffer rate, and an infrastructure capable of handling 760 billion requests/day and 7 million peak requests/second, EdgeNext ensured scalable delivery while preserving content quality and platform availability. Its modular, media-friendly architecture and global coverage positioned the platform to continue growing while meeting the demands of a fast-evolving digital landscape.",
+    "a89e4b37": "Leveraging a global network of over 1,500 PoPs, EdgeNext enabled the client to manage unpredictable bursts in user traffic with consistent, low-latency service.",
+    "14547aa3": "With over 1,500 high-quality PoPs globally, EdgeNext placed game content—including installation packages and patches—at the network edge, closest to users. This reduced latency and improved download speed.",
+    "cfeba149": "1,500+ PoPs worldwide for content proximity and latency reduction",
+    "506114b9": "EdgeNext's loosely coupled, highly modular architecture enables flexible deployment and precise traffic routing. By deploying over 1,500 global Points of Presence (PoPs), EdgeNext ensures that all video requests are handled by the nearest available edge node. This significantly reduces latency and helps maintain broadcast continuity across regions."
   },
   "src__pages__ZeroTrustIoT": {
     "c2c03626": "November 19, 2024 • by Kaiyue",
@@ -842,7 +851,8 @@
     "61bc7942": "EdgeNext New Self-built PoPs in the Middle East, Southeast Asia, and Latin America",
     "22d6a270": "Explore EdgeNext's security solutions and safeguard your business from cyber threats.",
     "231c721a": "_blank",
-    "b3f95d39": "noopener noreferrer"
+    "b3f95d39": "noopener noreferrer",
+    "110c9226": "With our global network of over 1,500 edge nodes spanning more than 290 cities worldwide, EdgeNext is uniquely positioned to detect and mitigate DDoS attacks at the edge, before they can impact your origin servers. This distributed approach ensures that malicious traffic is filtered out close to its source, while legitimate traffic is allowed to pass through seamlessly."
   },
   "src__pages__TopCloudProvider": {
     "01255b55": "News • June 26, 2023",
@@ -878,7 +888,8 @@
     "61bc7942": "EdgeNext New Self-built PoPs in the Middle East, Southeast Asia, and Latin America",
     "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth.",
     "231c721a": "_blank",
-    "b3f95d39": "noopener noreferrer"
+    "b3f95d39": "noopener noreferrer",
+    "47a2927d": "EdgeNext is a prominent leader in the global edge cloud services industry, with a robust infrastructure of over 1,500 edge nodes spanning more than 290 cities worldwide. The company has built strong interconnection partnerships with over 100 key operators across the globe, enabling it to deliver comprehensive edge cloud services, including networking, security, and computing, to meet the varied needs of its enterprise clients."
   },
   "src__pages__ThankYou": {
     "51689906": "Your request has been successfully submitted. Our team will review your information and get back to you within 24 hours.",
@@ -909,7 +920,8 @@
     "248fca8b": "easeOut",
     "39f55161": "<30ms global response time with intelligent routing and edge optimization.",
     "231c721a": "_blank",
-    "b3f95d39": "noopener noreferrer"
+    "b3f95d39": "noopener noreferrer",
+    "c54648fe": "1500+ points of presence across 290+ cities worldwide, with dominant coverage in emerging markets."
   },
   "src__pages__Telecommunication": {
     "68920240": "Value",
@@ -981,7 +993,8 @@
     "e909c2d7": "country",
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
-    "4e61651e": "✓ Message Sent!"
+    "4e61651e": "✓ Message Sent!",
+    "be8fe828": "Expand your product and service offerings by leveraging EdgeNext's proven experience working with 170+ ISPs and IIGs."
   },
   "src__pages__StreamingMediaTrendsetting": {
     "f25573c3": "News • June 15, 2023",
@@ -1015,7 +1028,8 @@
     "2436d051": "EdgeNext is listed as one of the Top DDoS Protection Services",
     "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth.",
     "231c721a": "_blank",
-    "b3f95d39": "noopener noreferrer"
+    "b3f95d39": "noopener noreferrer",
+    "47a2927d": "EdgeNext is a prominent leader in the global edge cloud services industry, with a robust infrastructure of over 1,500 edge nodes spanning more than 290 cities worldwide. The company has built strong interconnection partnerships with over 100 key operators across the globe, enabling it to deliver comprehensive edge cloud services, including networking, security, and computing, to meet the varied needs of its enterprise clients."
   },
   "src__pages__StreamingMediaEast": {
     "21686973": "EdgeNext attended Streaming Media East 2023",
@@ -1046,7 +1060,8 @@
     "43340e6c": "Read more",
     "67eb5348": "EdgeNext, Jet-Stream, and EPEAK Studio Partnership for Live-streaming",
     "88b31e59": "EdgeNext x ChatLabs- Happy Hour at VivaTech 2023",
-    "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth."
+    "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth.",
+    "47a2927d": "EdgeNext is a prominent leader in the global edge cloud services industry, with a robust infrastructure of over 1,500 edge nodes spanning more than 290 cities worldwide. The company has built strong interconnection partnerships with over 100 key operators across the globe, enabling it to deliver comprehensive edge cloud services, including networking, security, and computing, to meet the varied needs of its enterprise clients."
   },
   "src__pages__StaticAcceleration": {
     "63005802": "Full Name",
@@ -1146,7 +1161,8 @@
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "6bcc7d36": "Get in Touch"
+    "6bcc7d36": "Get in Touch",
+    "f645fb81": "Local content access, accelerated by 1,500+ global edge nodes with smart scheduling for low-latency."
   },
   "src__pages__SoutheastAsiaCDN": {
     "24365718": "Unequal Network Development",
@@ -1219,7 +1235,8 @@
     "e909c2d7": "country",
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
-    "4e61651e": "✓ Message Sent!"
+    "4e61651e": "✓ Message Sent!",
+    "e6040124": "Backbone built on 1,500+ PoPs and robust ISP peering"
   },
   "src__pages__SigmaEurasiaDubai": {
     "21686973": "EdgeNext attended Streaming Media East 2023",
@@ -1250,7 +1267,8 @@
     "4aa462cd": "EdgeNext APAC team has a new office",
     "43340e6c": "Read more",
     "eccf8efb": "New team member has arrived: Edgey",
-    "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth."
+    "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth.",
+    "47a2927d": "EdgeNext is a prominent leader in the global edge cloud services industry, with a robust infrastructure of over 1,500 edge nodes spanning more than 290 cities worldwide. The company has built strong interconnection partnerships with over 100 key operators across the globe, enabling it to deliver comprehensive edge cloud services, including networking, security, and computing, to meet the varied needs of its enterprise clients."
   },
   "src__pages__ServerlessVPS": {
     "cd14da14": "December 9, 2024 • by Kaiyue",
@@ -1461,7 +1479,11 @@
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "6bcc7d36": "Get in Touch"
+    "6bcc7d36": "Get in Touch",
+    "90589c47": "Custom",
+    "3c0136ea": "ddos-protection",
+    "993025ed": "access-control",
+    "9ea6f181": "webpage-protection"
   },
   "src__pages__SafenamesPartnership": {
     "87409202": "EdgeNext and Ajlan & Bros Holding Group Announce the Launch of AJ Cloud",
@@ -1776,7 +1798,8 @@
     "4aa462cd": "EdgeNext APAC team has a new office",
     "43340e6c": "Read more",
     "a77000db": "EdgeNext attended Sigma Eurasia Dubai 2023",
-    "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth."
+    "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth.",
+    "47a2927d": "EdgeNext is a prominent leader in the global edge cloud services industry, with a robust infrastructure of over 1,500 edge nodes spanning more than 290 cities worldwide. The company has built strong interconnection partnerships with over 100 key operators across the globe, enabling it to deliver comprehensive edge cloud services, including networking, security, and computing, to meet the varied needs of its enterprise clients."
   },
   "src__pages__NewSelfBuiltPoPs": {
     "c9bc2cc4": "News • June 28, 2023",
@@ -1823,7 +1846,8 @@
     "43340e6c": "Read more",
     "b6f709a7": "EdgeNext and National Pulse Form Strategic Partnership",
     "4661db98": "EdgeNext and Commercis Announce Strategic Cloud Partnership at GITEX",
-    "6bb5f24b": "Try EdgeNext's global network and accelerate your business worldwide."
+    "6bb5f24b": "Try EdgeNext's global network and accelerate your business worldwide.",
+    "47a2927d": "EdgeNext is a prominent leader in the global edge cloud services industry, with a robust infrastructure of over 1,500 edge nodes spanning more than 290 cities worldwide. The company has built strong interconnection partnerships with over 100 key operators across the globe, enabling it to deliver comprehensive edge cloud services, including networking, security, and computing, to meet the varied needs of its enterprise clients."
   },
   "src__pages__NewsArticleEdgeCloudServers": {
     "60398957": "The new EdgeNext ECS, through over 1700+ edge nodes worldwide, builds a network of edge computing power, bringing cloud computing capabilities closer to the user side and providing global users with low-latency, scalable edge computing services. A wide variety of high-performance cloud servers support multiple CPU, memory, and storage configurations to achieve optimal performance, enhance service availability, and meet diverse business needs, including video, online gaming, live streaming, IoT, artificial intelligence, and real-time data processing and analysis.",
@@ -1908,7 +1932,8 @@
     "da1cd0df": "Try EdgeNext Edge Cloud Servers and accelerate your business in emerging markets.",
     "f5395c97": "Learn More",
     "231c721a": "_blank",
-    "b3f95d39": "noopener noreferrer"
+    "b3f95d39": "noopener noreferrer",
+    "223d7d1e": "The new EdgeNext ECS, through over 1500+ edge nodes worldwide, builds a network of edge computing power, bringing cloud computing capabilities closer to the user side and providing global users with low-latency, scalable edge computing services. A wide variety of high-performance cloud servers support multiple CPU, memory, and storage configurations to achieve optimal performance, enhance service availability, and meet diverse business needs, including video, online gaming, live streaming, IoT, artificial intelligence, and real-time data processing and analysis."
   },
   "src__pages__NationalPulsePartnership": {
     "87409202": "EdgeNext and Ajlan & Bros Holding Group Announce the Launch of AJ Cloud",
@@ -1949,7 +1974,8 @@
     "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth.",
     "85c29966": "\"Partnering with National Pulse allows us to leverage our global technology expertise while addressing the specific needs of the market,\" said Terence Wang, COO of EdgeNext. \"We are excited to work together to bring secure, high-performance digital services, facilitating the digital transformation.\"",
     "231c721a": "_blank",
-    "b3f95d39": "noopener noreferrer"
+    "b3f95d39": "noopener noreferrer",
+    "47a2927d": "EdgeNext is a prominent leader in the global edge cloud services industry, with a robust infrastructure of over 1,500 edge nodes spanning more than 290 cities worldwide. The company has built strong interconnection partnerships with over 100 key operators across the globe, enabling it to deliver comprehensive edge cloud services, including networking, security, and computing, to meet the varied needs of its enterprise clients."
   },
   "src__pages__MultiVectorDDoSAttacks": {
     "78641652": "Stay protected against the most complex multi-vector DDoS attacks with EdgeNext's advanced security solutions. Our scalable, real-time defenses combine network-level filtering, application-layer protection, and cutting-edge traffic analysis to keep your business online and secure. Whether you're managing critical applications or high-traffic networks, EdgeNext has the tools to ensure uninterrupted performance. Contact us today to learn how EdgeNext can strengthen your DDoS defense strategy.",
@@ -2143,7 +2169,8 @@
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "6bcc7d36": "Get in Touch"
+    "6bcc7d36": "Get in Touch",
+    "ab5b43fa": "Across 290+ cities worldwide"
   },
   "src__pages__LiveStreaming": {
     "40874233": "20% reduction in buffering rates at massive scale",
@@ -2280,7 +2307,10 @@
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "6bcc7d36": "Get in Touch"
+    "6bcc7d36": "Get in Touch",
+    "64daa949": "1500+ Global Edge Locations",
+    "bfaacfc6": "1500+ global edge nodes with 90 Tbps bandwidth capacity",
+    "83c97b20": "With 1,500+ edge nodes and strategically placed video centers, EdgeNext provides real-time live streaming coverage in 290+ cities—bridging creators and audiences worldwide."
   },
   "src__pages__Legal": {
     "24184990": "You fail to follow the product manual or recommendations of EdgeNext, e.g. unavailability happens because you conduct shutdown, reboot, or cloud drive uninstallation of instance by using the control methods such as control console, API, or CLI;",
@@ -2891,7 +2921,9 @@
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "6bcc7d36": "Get in Touch"
+    "6bcc7d36": "Get in Touch",
+    "4b250730": "Reliable global connectivity with 1,500+ nodes—EdgeNext IP Transit powers scalable, cost-effective cross-border access for modern enterprises.",
+    "2b1fe88d": "Our solution: 1,500+ nodes and intelligent routing for optimized paths"
   },
   "src__pages__IoTAuthentication": {
     "10513676": "What Are the Benefits of Using Hardware-Based Authentication for IoT Devices?",
@@ -3289,7 +3321,10 @@
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "6bcc7d36": "Get in Touch"
+    "6bcc7d36": "Get in Touch",
+    "3dc168d5": "76B+",
+    "b1b63391": "1,500+ nodes in 290+ cities ensure minimal latency worldwide",
+    "e3855b82": "EdgeNext's Global CDN delivers lightning-fast content with unparalleled performance across 1500+ points of presence worldwide, with dominant coverage in Southeast Asia, China, and MENA regions."
   },
   "src__pages__Gaming": {
     "85051346": "Scenarios",
@@ -3375,7 +3410,8 @@
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "6bcc7d36": "Get in Touch"
+    "6bcc7d36": "Get in Touch",
+    "1c99dd0c": "1500+ PoPs for instant activation"
   },
   "src__pages__FogComputing": {
     "12289716": "Fog computing supports resource-constrained IoT devices by offloading computational tasks to nearby fog nodes. Many IoT devices, such as sensors and wearables, have limited processing power and memory, making it difficult for them to handle complex tasks independently. Fog nodes fill this gap by providing additional computational resources close to the devices, enabling real-time data processing without taxing them.",
@@ -3551,7 +3587,8 @@
     "61bc7942": "EdgeNext New Self-built PoPs in the Middle East, Southeast Asia, and Latin America",
     "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth.",
     "231c721a": "_blank",
-    "b3f95d39": "noopener noreferrer"
+    "b3f95d39": "noopener noreferrer",
+    "47a2927d": "EdgeNext is a prominent leader in the global edge cloud services industry, with a robust infrastructure of over 1,500 edge nodes spanning more than 290 cities worldwide. The company has built strong interconnection partnerships with over 100 key operators across the globe, enabling it to deliver comprehensive edge cloud services, including networking, security, and computing, to meet the varied needs of its enterprise clients."
   },
   "src__pages__ELearning": {
     "20939971": "The World Is Learning Online—Are You Ready?",
@@ -3841,7 +3878,8 @@
     "58f21289": "✓ Trial Request Sent!",
     "e909c2d7": "country",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
-    "4e61651e": "✓ Message Sent!"
+    "4e61651e": "✓ Message Sent!",
+    "800db55a": "EdgeNext Edge Cloud Server (ECS) leverages 1,500+ global edge nodes to create an edge computing network, bringing cloud power closer to end users. It delivers low-latency, scalable services worldwide, with a focus on emerging markets with high computing demand across Asia, the Middle East, Africa, North America, and Oceania."
   },
   "src__pages__Ecommerce": {
     "15656986": "Leverage EdgeNext's localized infrastructure and orchestration tools to roll out e-commerce services across all over the world.",
@@ -3911,7 +3949,8 @@
     "e909c2d7": "country",
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
-    "4e61651e": "✓ Message Sent!"
+    "4e61651e": "✓ Message Sent!",
+    "1fc0cda3": "Deliver lightning-fast user experiences worldwide with a fully localized edge network and 1,500+ PoPs—designed to bypass cross-border latency and routing challenges."
   },
   "src__pages__DynamicAcceleration": {
     "24049577": "Edge access reduces round-trip latency, enabling faster and more responsive user experiences",
@@ -4373,7 +4412,8 @@
     "e909c2d7": "country",
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
-    "4e61651e": "✓ Message Sent!"
+    "4e61651e": "✓ Message Sent!",
+    "3dc168d5": "76B+"
   },
   "src__pages__CommercisPartnership": {
     "87409202": "EdgeNext and Ajlan & Bros Holding Group Announce the Launch of AJ Cloud",
@@ -4416,7 +4456,9 @@
     "123146a5": "\"Our partnership with Commercis will be pivotal in bringing cutting-edge cloud and gaming services to Iraq. With this collaboration, we aim to address the region's growing demand for high-performance digital infrastructure,\" said Terence Wang, the EdgeNext COO.",
     "191d2eed": "\"Commercis regional presence and expertise, coupled with EdgeNext's technology, will enable us to offer unparalleled digital performance to customers,\" added Alan Afrasiab, Group CEO at Commercis. \" This partnership marks a significant step forward in our vision to enhance digital infrastructure across Iraq. By leveraging EdgeNext's cutting-edge technology and expertise in edge computing, we aim to deliver faster, more reliable, and secure services to meet the growing demands of our customers. We look forward to supporting the increasing demand for fast, reliable content distribution across Iraq.\"",
     "231c721a": "_blank",
-    "b3f95d39": "noopener noreferrer"
+    "b3f95d39": "noopener noreferrer",
+    "64575a2f": "This partnership will integrate Commercis's regional infrastructures with EdgeNext's global network of over 1,500 edge nodes. Together, the companies will deliver high-performance content delivery, cloud security, and low-latency services to enterprises and public sectors across Iraq.",
+    "0cf6c1d5": "EdgeNext, a leading provider in the global edge cloud service arena, boasts an impressive infrastructure of over 1,500 edge nodes spread across more than 250 cities globally. The company has established profound interconnection collaborations with over 100 key operators worldwide. These partnerships enable EdgeNext to offer comprehensive edge cloud services that encompass networking, security, and computing, catering to the diverse needs of its global enterprise clientele."
   },
   "src__pages__CommerceNextEvent": {
     "f36c5d9a": "News • June 21, 2023",
@@ -4447,7 +4489,8 @@
     "43340e6c": "Read more",
     "a3c9a1cc": "AdTiming is now powered by EdgeNext Edge Cloud Platform",
     "61bc7942": "EdgeNext New Self-built PoPs in the Middle East, Southeast Asia, and Latin America",
-    "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth."
+    "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth.",
+    "47a2927d": "EdgeNext is a prominent leader in the global edge cloud services industry, with a robust infrastructure of over 1,500 edge nodes spanning more than 290 cities worldwide. The company has built strong interconnection partnerships with over 100 key operators across the globe, enabling it to deliver comprehensive edge cloud services, including networking, security, and computing, to meet the varied needs of its enterprise clients."
   },
   "src__pages__ChinaICPLicense": {
     "24133758": "bg-[#0EB623]/10 text-[#0EB623]",
@@ -4663,7 +4706,8 @@
     "6455bcb9": "EdgeNext Partners with Chatlabs to Offer Comprehensive Technology Solutions",
     "43340e6c": "Read more",
     "e0cfa969": "EdgeNext Unified Global Edge Cloud Platform Recognized as Trendsetting Product",
-    "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth."
+    "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth.",
+    "47a2927d": "EdgeNext is a prominent leader in the global edge cloud services industry, with a robust infrastructure of over 1,500 edge nodes spanning more than 290 cities worldwide. The company has built strong interconnection partnerships with over 100 key operators across the globe, enabling it to deliver comprehensive edge cloud services, including networking, security, and computing, to meet the varied needs of its enterprise clients."
   },
   "src__pages__ChatLabsPartnership": {
     "2e45b3bb": "News • June 14, 2023",
@@ -5037,7 +5081,9 @@
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "6bcc7d36": "Get in Touch"
+    "6bcc7d36": "Get in Touch",
+    "f6d49575": "Solution: 1,500+ edge nodes + private lines with local BMS reduce end-to-end latency to ≤50 ms, boosting response speed by 80%.",
+    "03642927": "Enhanced video delivery and reduced buffering time across global short-form content platforms with <1s TTFB and infrastructure capable of handling 760 billion requests/day."
   },
   "src__pages__ApplicationLayerNetworkLayerDDoS": {
     "c2c03626": "November 19, 2024 • by Kaiyue",
@@ -5114,7 +5160,8 @@
     "eccf8efb": "New team member has arrived: Edgey",
     "43340e6c": "Read more",
     "a77000db": "EdgeNext attended Sigma Eurasia Dubai 2023",
-    "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth."
+    "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth.",
+    "47a2927d": "EdgeNext is a prominent leader in the global edge cloud services industry, with a robust infrastructure of over 1,500 edge nodes spanning more than 290 cities worldwide. The company has built strong interconnection partnerships with over 100 key operators across the globe, enabling it to deliver comprehensive edge cloud services, including networking, security, and computing, to meet the varied needs of its enterprise clients."
   },
   "src__pages__AntiDDoS": {
     "63005802": "Full Name",
@@ -5252,7 +5299,8 @@
     "9cfc9b74": "Contact Us",
     "c5023b5f": "\"We are excited to launch AJ Cloud, a platform that not only represents technological advancement but also a deep understanding of the MENA market,\" said Robert Sha, CEO of EdgeNext. Ajlan Mohammed Al Ajlan, Deputy Group CEO of Ajlan & Bros Holding added, \"Our collaboration is a testament to our commitment to providing innovative and localized cloud solutions that will significantly contribute to the digital economy of the Kingdom.\" Ammar Enaya, CEO of AJTECH, said,\" This joint venture will play a significant role in contributing to the economic growth and development of the Kingdom, which is in line with the Vision 2030 initiative. The investment of the JV company is expected to reach a staggering USD 918 million, which will undoubtedly positively impact the economy and various industries within the Kingdom. Furthermore, the creation of more than 200 job opportunities is a testament to the commitment of the JV company to support the local workforce and provide opportunities for professional development and growth.",
     "231c721a": "_blank",
-    "b3f95d39": "noopener noreferrer"
+    "b3f95d39": "noopener noreferrer",
+    "a9fc1b8b": "EdgeNext, a leading provider in the global edge cloud service arena, boasts an impressive infrastructure of over 1,500 edge nodes spread across more than 290 cities globally. The company has established profound interconnection collaborations with over 100 key operators worldwide. These partnerships enable EdgeNext to offer comprehensive edge cloud services that encompass networking, security, and computing, catering to the diverse needs of its global enterprise clientele."
   },
   "src__pages__AjlanBrosJointVenture": {
     "87409202": "EdgeNext and Ajlan & Bros Holding Group Announce the Launch of AJ Cloud",
@@ -5358,7 +5406,8 @@
     "43340e6c": "Read more",
     "61bc7942": "EdgeNext New Self-built PoPs in the Middle East, Southeast Asia, and Latin America",
     "cbf1583a": "EdgeNext and Safenames Partner to Enhance Website and App Performance",
-    "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth."
+    "a2248d82": "Explore EdgeNext's cloud solutions and accelerate your business growth.",
+    "47a2927d": "EdgeNext is a prominent leader in the global edge cloud services industry, with a robust infrastructure of over 1,500 edge nodes spanning more than 290 cities worldwide. The company has built strong interconnection partnerships with over 100 key operators across the globe, enabling it to deliver comprehensive edge cloud services, including networking, security, and computing, to meet the varied needs of its enterprise clients."
   },
   "src__pages__AdaptiveThreatModulation": {
     "46b884bc": "December 19, 2024 • by Kaiyue",
@@ -5552,5 +5601,43 @@
     "9cfc9b74": "Contact Us",
     "articles": "articles",
     "searchNewsPlaceholder": "Search news and insights..."
+    },
+  "src__pages__TrafficPartners": {
+    "59004518": "Enrich Network Content Resources",
+    "b5834a47": "The Path to Success",
+    "32492dfd": "with EdgeNext",
+    "4282b82f": "Right Partner?",
+    "43900dbf": "Accelerate User Experience",
+    "657c4c6f": "Reduce International Bandwidth Costs",
+    "93b82901": "Empower Your Network",
+    "2453dee0": "Cooperation Process",
+    "d65444c7": "Technical Discussion",
+    "dd6dd049": "Agreement Signing",
+    "ea355214": "Deployment",
+    "bab7c2c8": "Service Activation",
+    "4ab65803": "Milestones",
+    "cbb89d9b": "Global Points of Presence",
+    "e3dda65a": "ISP & IIG Partners Worldwide",
+    "76573ad0": "Years of Industry Experience",
+    "a2c15638": "Partner with EdgeNext to accelerate innovation, expand market reach, and build future-ready solutions—together, with trust and support at every step.",
+    "231c721a": "_blank",
+    "84b5cc39": "Become a Partner",
+    "da8c711c": "What Makes EdgeNext the",
+    "bb46e925": "We set ambitious yet achievable benchmarks, pushing boundaries while ensuring real results.",
+    "790a74f1": "Integrate EdgeNext's CDN nodes within your network to deliver  premium content at ultra-low latency — achieving first-screen  load times under 10ms for video-on-demand, live streaming,  and gaming acceleration.",
+    "2f9661f2": "By hosting more localized resources through EdgeNext's CDN deployment, partners can save over 90% of international IP transit bandwidth, minimizing cross-border traffic and improving overall efficiency.",
+    "b03ccc0d": "Gain access to a broader range of global content sources, enhancing the diversity and quality of your network's traffic ecosystem.",
+    "ef463539": "Enable your infrastructure to handle richer digital experiences and prepare for future demand in media, gaming, and real-time applications",
+    "d80f82fe": "Build with EdgeNext in Four Easy Steps",
+    "4e2f1cc7": "Our collaboration process is straightforward and transparent, consisting of four key phases:",
+    "c63c0cba": "Assess network topology, peering capabilities, and CDN deployment potential.",
+    "e33f0cb1": "Finalize partnership terms and responsibilities.",
+    "3d85704b": "Jointly deploy and configure EdgeNext CDN nodes within your infrastructure.",
+    "2a7723b4": "Launch and optimize traffic routing to deliver high-quality content to local users.",
+    "752ace58": "Growing Together with",
+    "7d49fbc5": "Our Global Partner",
+    "82985e23": "Our journey with partners is built on scale, trust, and long-term value—here's what we've achieved, together:",
+    "ae2e7b42": "Ready to grow—together?",
+    "d5930c29": "Join EdgeNext to unlock new markets, grow your revenue, and empower your customers with edge-first technology."
   }
 }
