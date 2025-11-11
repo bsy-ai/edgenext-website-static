@@ -67,30 +67,25 @@ function generateUUID(): string {
 
 /**
  * 从 URL 中提取追踪参数
- * @returns 追踪参数对象，如果没有参数则返回 null
+ * @returns 追踪参数对象（始终包含基础信息）
  */
-export function getTrackingParamsFromURL(): TrackingParams | null {
+export function getTrackingParamsFromURL(): TrackingParams {
   // 获取当前 URL 的查询参数
   const urlParams = new URLSearchParams(window.location.search);
   
   const trackingParams: TrackingParams = {};
-  let hasParams = false;
+  let hasUrlParams = false;
 
   // 遍历所有需要追踪的参数
   TRACKING_PARAM_KEYS.forEach((key) => {
     const value = urlParams.get(key);
     if (value) {
       trackingParams[key] = value;
-      hasParams = true;
+      hasUrlParams = true;
     }
   });
 
-  // 如果没有任何追踪参数，返回 null
-  if (!hasParams) {
-    return null;
-  }
-
-  // 添加额外的追踪信息
+  // 无论是否有 URL 追踪参数，都添加基础追踪信息
   // 1. 当前页面的来源（referrer）
   trackingParams.referrer = document.referrer || '';
   
@@ -102,6 +97,9 @@ export function getTrackingParamsFromURL(): TrackingParams | null {
   
   // 4. 添加时间戳
   trackingParams.timestamp = new Date().toISOString();
+
+  // 5. 标记是否包含 URL 追踪参数（用于调试）
+  trackingParams.has_url_params = hasUrlParams;
 
   return trackingParams;
 }
@@ -152,29 +150,28 @@ export function getTrackingFromCookie(): TrackingParams | null {
 
 /**
  * 初始化追踪功能
- * 检查 URL 是否包含追踪参数，如果有则保存到 Cookie
+ * 自动收集并保存追踪信息到 Cookie
  * 
  * 使用说明：
  * - 在应用入口调用此函数（例如 App.tsx 的 useEffect 中）
- * - 每次页面加载/路由变化时都会检查 URL 参数
- * - 如果 URL 包含追踪参数，会自动更新 Cookie（覆盖旧值）
- * - 如果 URL 不包含追踪参数，不会影响现有 Cookie
+ * - 每次页面加载/路由变化时都会收集并保存追踪信息
+ * - 无论是否包含 URL 追踪参数，都会保存基础信息（referrer、landing_page、session_id、timestamp）
+ * - 如果 URL 包含追踪参数（gclid、utm_* 等），会一并保存
+ * - 每次调用都会更新 Cookie（覆盖旧值）
  */
 export function initTracking(): void {
   try {
-    // 从 URL 中提取追踪参数
+    // 从 URL 中提取追踪参数（包含基础信息）
     const trackingParams = getTrackingParamsFromURL();
 
-    // 如果 URL 包含追踪参数，保存到 Cookie
-    if (trackingParams) {
-      saveTrackingToCookie(trackingParams);
-      console.log('[Tracking] 检测到追踪参数:', trackingParams);
+    // 保存到 Cookie
+    saveTrackingToCookie(trackingParams);
+    
+    // 日志输出
+    if (trackingParams.has_url_params) {
+      console.log('[Tracking] 检测到 URL 追踪参数，已保存:', trackingParams);
     } else {
-      // 如果 URL 不包含追踪参数，尝试读取现有 Cookie（用于调试）
-      const existingParams = getTrackingFromCookie();
-      if (existingParams) {
-        console.log('[Tracking] 当前追踪参数（来自 Cookie）:', existingParams);
-      }
+      console.log('[Tracking] 已保存基础追踪信息:', trackingParams);
     }
   } catch (error) {
     console.error('[Tracking] 初始化追踪失败:', error);

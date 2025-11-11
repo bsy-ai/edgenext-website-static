@@ -39,5 +39,8 @@ export interface TrackingParams {
   
   /** 追踪参数保存时间戳 */
   timestamp?: string;
+  
+  /** 是否包含 URL 追踪参数（用于调试和统计） */
+  has_url_params?: boolean;
 }
 
