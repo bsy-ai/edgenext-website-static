@@ -1,6 +1,7 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Hero } from './components/Hero';
@@ -94,9 +95,18 @@ import BlogDetail from './pages/BLOG/pages/BlogDetail';
 import News from './pages/NEWS/pages/News';
 import NewsDetail from './pages/NEWS/pages/NewsDetail';
 
+// Google Ads 追踪工具
+import { initTracking } from './utils/trackingUtils';
+
 
 function App() {
   const location = useLocation();
+
+  // 初始化 Google Ads 追踪功能
+  // 每次路由变化时检查 URL 参数，如果包含 gclid 或 UTM 参数则保存到 Cookie
+  useEffect(() => {
+    initTracking();
+  }, [location]);
 
   return (
     <AnimatePresence mode="wait">
