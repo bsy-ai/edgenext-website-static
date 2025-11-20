@@ -121,7 +121,8 @@ class AutoTranslator {
     }
     
     const translation = (component as Record<string, unknown>)[hashKey];
-    return typeof translation === 'string' && translation.length > 0;
+    // 只要是字符串（包括空字符串）就认为已经“有人为处理过”，避免再次自动翻译覆盖
+    return typeof translation === 'string';
   }
 
   private setTranslation(translations: Record<string, unknown>, key: string, value: string): void {
