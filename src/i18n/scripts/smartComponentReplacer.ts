@@ -350,16 +350,30 @@ class SmartComponentReplacer {
           if (!isInJsx && t.isObjectProperty(parent) && (parent as t.ObjectProperty).value === path.node) {
             const keyNode: any = (parent as t.ObjectProperty).key;
             const keyName = (t.isIdentifier(keyNode) && keyNode.name) || (t.isStringLiteral(keyNode) && keyNode.value) || undefined;
-            const allowedPropNames = new Set(['title','description','buttonText','subtitle','label','heading','text','content','question','answer']);
+            // 允许在数据模型中替换 overview / takeaway 等字段（如 caseStudies.tsx）
+            const allowedPropNames = new Set([
+              'title',
+              'description',
+              'buttonText',
+              'subtitle',
+              'label',
+              'heading',
+              'text',
+              'content',
+              'question',
+              'answer',
+              'overview',
+              'takeaway',
+              'name'
+            ]);
             if (!keyName || !allowedPropNames.has(keyName)) {
               return;
             }
             const rawVal = path.node.value as string;
-            // 过滤 URL/路径/图片/样式/easing 等
+            // 过滤 URL/图片/样式/easing 等（仅根据明显的 URL/静态资源模式判断，不再仅凭 "/" 拦截）
             const isUrlLike = /^(https?:\/\/|\/)\S+/i.test(rawVal) || /\.(png|jpe?g|webp|svg)$/i.test(rawVal);
-            const hasPathChars = /[\/\\]/.test(rawVal);
             const ban = /\b(linear|ease|easeIn|easeOut|easeInOut|spring|tween|className|style|src)\b/i;
-            if (isUrlLike || hasPathChars || ban.test(rawVal)) {
+            if (isUrlLike || ban.test(rawVal)) {
               return;
             }
             const normalized = this.normalizeText(rawVal);
@@ -397,7 +411,18 @@ class SmartComponentReplacer {
           // 仅处理白名单键
           const keyNode: any = path.node.key;
           const keyName = (t.isIdentifier(keyNode) && keyNode.name) || (t.isStringLiteral(keyNode) && keyNode.value) || undefined;
-          const allowedArrayPropNames = new Set(['features', 'bullets', 'points', 'items', 'benefits', 'solutions']);
+          // 允许对数组形式的 takeaway 等字段进行批量替换
+          const allowedArrayPropNames = new Set([
+            'features',
+            'bullets',
+            'points',
+            'items',
+            'benefits',
+            'solutions',
+            'takeaway',
+            'industries',
+            'relatedProducts'
+          ]);
           if (!keyName || !allowedArrayPropNames.has(keyName)) return;
 
           // 值必须是数组
@@ -407,11 +432,10 @@ class SmartComponentReplacer {
           arr.elements = (arr.elements || []).map((el: any) => {
             if (t.isStringLiteral(el)) {
               const raw = el.value as string;
-              // 过滤 URL/路径/图片/样式/easing
+              // 过滤 URL/图片/样式/easing（不再因为普通文本中包含 "/" 就整体跳过）
               const isUrlLike = /^(https?:\/\/|\/)\S+/i.test(raw) || /\.(png|jpe?g|webp|svg)$/i.test(raw);
-              const hasPathChars = /[\/\\]/.test(raw);
               const ban = /\b(linear|ease|easeIn|easeOut|easeInOut|spring|tween|className|style|src)\b/i;
-              if (isUrlLike || hasPathChars || ban.test(raw)) return el;
+              if (isUrlLike || ban.test(raw)) return el;
               const normalized = (raw || '').replace(/\s+/g, ' ').trim();
               const key = translations[raw] || translations[normalized];
               if (key) {

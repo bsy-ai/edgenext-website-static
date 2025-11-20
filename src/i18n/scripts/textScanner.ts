@@ -305,14 +305,15 @@ export class TextScanner {
     // 更严格：短小的单词样式字符串往往是代码中的标识符（如 tab/key/id），避免提取   可能是变量名
     /^[a-z][a-zA-Z0-9_]*$/.test(text) && text.length <= 8,
     /^(div|span|p|h1|h2|h3|h4|h5|h6|a|img|input|button|form|table|tr|td|th|ul|ol|li|nav|header|footer|main|section|article)$/.test(text), // HTML标签
-    /^\w+\.\w+/.test(text), // 包含点的字符串（可能是类名或方法名）
-    /^\/.*/.test(text), // 路径
+    // 改进：仅排除短小且类似类名/方法名的字符串，不排除长段落中偶然包含点号的情况
+    /^\w+\.\w+$/.test(text) && text.length < 30,
+    /^\/.*/.test(text) && text.length < 100, // 路径（但不排除长段落）
     /^https?:\/\//.test(text), // URL
     /^[0-9-+]+$/.test(text), // 纯数字
     /^\$\{.*\}$/.test(text), // 模板变量
     // 避免误把 TypeScript 泛型/联合类型当作 JSX 文本（例如 "> string | null <"）
-    /\|/.test(text) && /^[\w\s|<>,:?]+$/.test(text),
-    /\b(string|number|boolean|null|undefined|never|unknown|any|void|HTMLElement|Element|Node)\b/.test(text)];
+    /\|/.test(text) && /^[\w\s|<>,:?]+$/.test(text) && text.length < 50,
+    /\b(string|number|boolean|null|undefined|never|unknown|any|void|HTMLElement|Element|Node)\b/.test(text) && text.length < 50];
 
     // 黑名单：动画/缓动等关键词（不翻译）
     const bannedLiterals = new Set([

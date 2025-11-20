@@ -143,7 +143,9 @@
     "8e9d4713": "redirect_uri=https%3A%2F%2Faccount.console.edgenext.com%2Fauth%2Frealms%2Fedgenext%2Fprotocol%2Fopenid-connect%2FgoogleCallback&",
     "274f58ee": "response_type=code&",
     "c163f357": "scope=openid%20email%20profile&",
-    "554cafca": "access_type=online&"
+    "554cafca": "access_type=online&",
+    "2111d2bb": "M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z",
+    "07222667": "M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
   },
   "src__components__I18nDemo": {
     "57286212": "• {t('common.retry')}",
@@ -185,7 +187,9 @@
     "c163f357": "scope=openid%20email%20profile&",
     "554cafca": "access_type=online&",
     "ef0e171d": "EdgeNext delivers powerful CDN, Cloud Security, and Edge Computing solutions \n            optimized for emerging markets. Accelerate content, protect applications, and \n            deploy globally with confidence.",
-    "344a2e79": "90+ Tbps"
+    "344a2e79": "90+ Tbps",
+    "2111d2bb": "M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z",
+    "07222667": "M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
   },
   "src__components__Header": {
     "6b3669d8": "Global Network Status",
@@ -649,7 +653,7 @@
     "bd352d99": "Repeated issues with latency or buffering may discourage users from continuing to engage with the platform, impacting overall viewership and brand perception.",
     "0dfddbe1": "End-to-End Content Acceleration",
     "c5800a86": "Support for Flagship Events",
-    "827f0a34": "Since 2017, EdgeNext has been working closely with CCTV.com to support a variety of flagship events including the Spring Festival Gala, Two Sessions, National Day Parade, and World Cup broadcasts. These events attract hundreds of millions of viewers simultaneously, requiring real-time load balancing and ultra-reliable performance.",
+    "827f0a34": "EdgeNext has partnered with CCTV.com since 2017 to deliver a range of major events including the Lunar New Year Gala, Two Sessions, National Day Parade, and World Cup broadcasts. These events draw hundreds of millions of concurrent viewers, demanding real-time load balancing and exceptional reliability.",
     "2e3fe5e3": "Flexible Architecture",
     "812ecc26": "EdgeNext's loosely coupled, highly modular architecture enables flexible deployment and precise traffic routing. By deploying over 1,700 global Points of Presence (PoPs), EdgeNext ensures that all video requests are handled by the nearest available edge node. This significantly reduces latency and helps maintain broadcast continuity across regions.",
     "34a27381": "Advanced Streaming Features",
@@ -668,7 +672,17 @@
     "a89e4b37": "Leveraging a global network of over 1,500 PoPs, EdgeNext enabled the client to manage unpredictable bursts in user traffic with consistent, low-latency service.",
     "14547aa3": "With over 1,500 high-quality PoPs globally, EdgeNext placed game content—including installation packages and patches—at the network edge, closest to users. This reduced latency and improved download speed.",
     "cfeba149": "1,500+ PoPs worldwide for content proximity and latency reduction",
-    "506114b9": "EdgeNext's loosely coupled, highly modular architecture enables flexible deployment and precise traffic routing. By deploying over 1,500 global Points of Presence (PoPs), EdgeNext ensures that all video requests are handled by the nearest available edge node. This significantly reduces latency and helps maintain broadcast continuity across regions."
+    "506114b9": "EdgeNext's loosely coupled, highly modular architecture enables flexible deployment and precise traffic routing. By deploying over 1,500 global Points of Presence (PoPs), EdgeNext ensures that all video requests are handled by the nearest available edge node. This significantly reduces latency and helps maintain broadcast continuity across regions.",
+    "38ec771c": "Our client operates one of the world's leading short video platforms, used to create and share video content ranging from dance and comedy to education. The videos typically last from 15 seconds to 3 minutes and are consumed at a massive scale. With over 2.6 billion app downloads and a global monthly active user base reaching 1 billion, the platform demands a highly stable and scalable infrastructure to support uninterrupted media access across regions. To meet these demands, the client partnered with EdgeNext to implement a tailored Media on Demand (MOD) acceleration solution that ensures seamless global delivery and optimized viewing experiences on any device, in any location.",
+    "06f9ec5f": "With an advanced content delivery engine for transcoding, packaging, and stream optimization, EdgeNext enables the client to focus on content creation—while delivering consistently high-quality playback to end-users, anywhere and on any device.",
+    "90e86ba7": "Our client is one of the most successful video game companies in the U.S., serving a global user base through game development, publishing, and digital distribution. With the global games market projected to generate over $236.9 billion in 2025 and a player population surpassing 3.38 billion worldwide, delivering smooth, fast, and scalable gaming services has never been more critical.",
+    "1cdc8f46": "EdgeNext's 1,700+ high-quality Points of Presence (PoPs) formed the backbone of the delivery strategy. By positioning content closer to end users—no matter where they were—latency was drastically reduced, and delivery was stabilized under any network condition.",
+    "d7f3444d": "With real-time interactions being core to multiplayer gaming, latency issues at any point in the content delivery pipeline could degrade the user experience. Lag during gameplay or delays in patch downloads could lead to player dissatisfaction or churn.",
+    "d5e6c6fb": "Powered by a lightweight SDK and UDP-based streaming, EdgeNext minimized latency to under 150ms while providing robust protection through behavioral analytics, AI-driven threat detection, and real-time traffic analysis. The platform intercepted over 9 million credential stuffing and scan attacks, and mitigated over 100,000 origin-based unknown attacks.",
+    "acf3ceaa": "With over 1,700 high-quality Points of Presence (PoPs), EdgeNext ensured low-latency access to game resources from any location. Game installation packages, updates, and patches were strategically cached at the edge, reducing origin server loads and supporting high concurrency during peak times such as promotions or large-scale in-game events.",
+    "ba820a8c": "Protects against DDoS, credential abuse, and unknown threats.",
+    "732772f2": "China Central Television (CCTV) is the largest television network in China, operating a comprehensive online video platform through its portal CCTV.com. With a mission to deliver content continuously to a massive audience both domestically and internationally, CCTV.com manages one of the largest-scale digital video databases in the country. Its platform operates 24/7 and supports extensive video-on-demand and livestreaming services across diverse programs and events. The platform supports a high number of concurrent users, with peaks reaching over 11.06 million simultaneous online viewers during major broadcasts. These large-scale demands highlight the necessity for an infrastructure that can reliably deliver ultra-stable and high-quality content at scale, across all network conditions and viewer locations.",
+    "e976b544": "EdgeNext has partnered with CCTV.com since 2017 to deliver a range of major events including the Lunar New Year Gala, Two Sessions, National Day Parade, and World Cup broadcasts. These events draw hundreds of millions of concurrent viewers, demanding real-time load balancing and exceptional reliability."
   },
   "src__pages__ZeroTrustIoT": {
     "c2c03626": "November 19, 2024 • by Kaiyue",
@@ -1367,7 +1381,7 @@
     "f8ee8414": "Behavioral analysis + smart rate limiting filters out abnormal access attempts.",
     "1ad40237": "Find the Right Plan for Your Business",
     "972e73b7": "Basic",
-    "Custom":"Custom",
+    "Custom": "Custom",
     "5c942bd6": "Business(Custom)",
     "abe75b31": "Price / Month",
     "b461bcc3": "Custom Pricing",
@@ -1530,7 +1544,9 @@
     "b9fd46b4": "\"With our partnership, we provide clients with state-of-the-art solutions for performance, security, and computing needs,\" said Brett Roberts, Sr. Global Sales Director of EdgeNext. \"We empower businesses to excel in the digital space while maintaining robust cybersecurity defenses and leveraging the advantages of edge computing.\"",
     "cbf25cc5": "\"Safenames' overall mission is to help protect our clients' brands. Our partnership with EdgeNext is another valuable step forward in our ongoing journey to provide the highest grade of security and performance solutions to our clients, therefore further protecting their highly valued brands, as well as their own customer bases.\" said Gavin Mills, Global Sales Director at Safenames.",
     "231c721a": "_blank",
-    "b3f95d39": "noopener noreferrer"
+    "b3f95d39": "noopener noreferrer",
+    "789f4553": "www.edgenext.com",
+    "eef7f24e": "www.safenames.net"
   },
   "src__pages__QuantumComputingDDoS": {
     "36036724": "Conclusion: Why Quantum Computing Is Both a Challenge and an Opportunity for DDoS Defense",
@@ -1975,7 +1991,9 @@
     "85c29966": "\"Partnering with National Pulse allows us to leverage our global technology expertise while addressing the specific needs of the market,\" said Terence Wang, COO of EdgeNext. \"We are excited to work together to bring secure, high-performance digital services, facilitating the digital transformation.\"",
     "231c721a": "_blank",
     "b3f95d39": "noopener noreferrer",
-    "47a2927d": "EdgeNext is a prominent leader in the global edge cloud services industry, with a robust infrastructure of over 1,500 edge nodes spanning more than 290 cities worldwide. The company has built strong interconnection partnerships with over 100 key operators across the globe, enabling it to deliver comprehensive edge cloud services, including networking, security, and computing, to meet the varied needs of its enterprise clients."
+    "47a2927d": "EdgeNext is a prominent leader in the global edge cloud services industry, with a robust infrastructure of over 1,500 edge nodes spanning more than 290 cities worldwide. The company has built strong interconnection partnerships with over 100 key operators across the globe, enabling it to deliver comprehensive edge cloud services, including networking, security, and computing, to meet the varied needs of its enterprise clients.",
+    "d952744f": "www.nationalpulse.ae",
+    "789f4553": "www.edgenext.com"
   },
   "src__pages__MultiVectorDDoSAttacks": {
     "78641652": "Stay protected against the most complex multi-vector DDoS attacks with EdgeNext's advanced security solutions. Our scalable, real-time defenses combine network-level filtering, application-layer protection, and cutting-edge traffic analysis to keep your business online and secure. Whether you're managing critical applications or high-traffic networks, EdgeNext has the tools to ensure uninterrupted performance. Contact us today to learn how EdgeNext can strengthen your DDoS defense strategy.",
@@ -2826,7 +2844,17 @@
     "d8c0f97f": "text-gray-600 hover:bg-white hover:text-[#0EB623] hover:shadow-sm",
     "c3fcf5ca": "text-white",
     "1c156852": "text-[#0EB623]",
-    "b731aba6": "#0EB623"
+    "b731aba6": "#0EB623",
+    "d287b551": "1.1 The prices of products listed on www.edgenext.com (EdgeNext International Website) are in US dollars. We accept payment by PayPal, VISA, and MasterCard. We accept payments in US dollars, Singapore dollars and Hong Kong dollars, with US dollars being the main payment currency.",
+    "dcc6aa85": "3.1 Subject to the requirements of applicable law, each party will be responsible for determining and paying all taxes and other governmental charges (and any penalties, interest and other surcharges) imposed on that party in connection with the transactions and payments under this clause.",
+    "03ca3e76": "1.1   By registering an account and/or using EdgeNext Services, You accept the terms and conditions set out in this Agreement. By clicking on the checkbox and completing the “Register” or otherwise beginning to use the EdgeNext Services, You agree to be bound by this Agreement and the following terms and conditions.",
+    "28b30184": "2.1   The IPRs on the LOGO of EdgeNext International Website, “EdgeNext” and other words, graphics and combinations thereof, as well as other logos and emblems of EdgeNext International Website, names of EdgeNext Services, technical documents, etc., shall be the property of EdgeNext and its affiliates.",
+    "3c142017": "1.Definitions and Interpretations",
+    "d7e42c52": "1.1. Customer data refers to the data stored in the EdgeNext server by the customer due to the use of EdgeNext services, including but not limited to text, audio, video or images.",
+    "a106c683": "2.1. Customer Data is controlled and managed by the Customer, who is the controller of such data. We do not access or use customer data unless otherwise required by law or mutually agreed. Customers decide for themselves how they control customer data. We will carry out the corresponding data processing activities in strict accordance with the written instructions of the customer.",
+    "757bfac8": "6.1  If You believe that Your work has been copied and which constitutes copyright infringement, You may give Us a written notice and provide all the details stipulated in PART 6 to the Singapore Copyright Act 2021, Clause 323, Our contact details are as follows:",
+    "f8d49cd2": "2.2 Based on the special nature of the Internet and network services, you agree that the services provided by EdgeNext are billed on the basis of the statistics of the EdgeNext billing system.",
+    "d0bbdf2d": "4.2  EdgeNext provides customers with a variety of data protection technologies, including access control and identity authentication, data encryption, logging and auditing and related enhanced technologies, as well as various services of EdgeNext based on this, to help customers according to business needs. data protection. We will endeavor to implement the following safeguards:"
   },
   "src__pages__IPTransit": {
     "63005802": "Full Name",
@@ -3657,7 +3685,9 @@
     "e909c2d7": "country",
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
-    "4e61651e": "✓ Message Sent!"
+    "4e61651e": "✓ Message Sent!",
+    "55788b20": "1.1B+",
+    "935c299a": "11.88% CAGR"
   },
   "src__pages__EdgeComputingIoTSecurity": {
     "19303392": "Using edge computing to isolate IoT networks provides a robust security advantage by creating separate, secure zones for IoT devices, reducing the risk of broader network compromise. By keeping IoT devices on isolated segments of the network, organizations limit the impact of potential breaches, ensuring that if one device or group of devices is compromised, the threat remains contained within that segment. This approach is beneficial for protecting critical infrastructure, where IoT devices often play a crucial role in maintaining essential services.",
@@ -3879,7 +3909,8 @@
     "e909c2d7": "country",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "800db55a": "EdgeNext Edge Cloud Server (ECS) leverages 1,500+ global edge nodes to create an edge computing network, bringing cloud power closer to end users. It delivers low-latency, scalable services worldwide, with a focus on emerging markets with high computing demand across Asia, the Middle East, Africa, North America, and Oceania."
+    "800db55a": "EdgeNext Edge Cloud Server (ECS) leverages 1,500+ global edge nodes to create an edge computing network, bringing cloud power closer to end users. It delivers low-latency, scalable services worldwide, with a focus on emerging markets with high computing demand across Asia, the Middle East, Africa, North America, and Oceania.",
+    "d6c9a955": "99.5% uptime for secure transactions"
   },
   "src__pages__Ecommerce": {
     "15656986": "Leverage EdgeNext's localized infrastructure and orchestration tools to roll out e-commerce services across all over the world.",
@@ -4354,7 +4385,8 @@
     "559d9663": "25 Wilton Road Victoria, London, England, SW1V 1LW",
     "55008bd0": "Dubai Office",
     "f134b1a7": "Unit 210, Building 09, Dubai Internet City, Dubai, United Arab Emirates",
-    "1cc173f3": "Customers can report issues by emailing"
+    "1cc173f3": "Customers can report issues by emailing",
+    "5587d204": "EdgeNext accelerates and protects any website. Once configured, your web traffic is routed through our intelligent global network. We optimize delivery for performance and security automatically."
   },
   "src__pages__Company": {
     "48153233": "And Most Needed",
@@ -4458,7 +4490,8 @@
     "231c721a": "_blank",
     "b3f95d39": "noopener noreferrer",
     "64575a2f": "This partnership will integrate Commercis's regional infrastructures with EdgeNext's global network of over 1,500 edge nodes. Together, the companies will deliver high-performance content delivery, cloud security, and low-latency services to enterprises and public sectors across Iraq.",
-    "0cf6c1d5": "EdgeNext, a leading provider in the global edge cloud service arena, boasts an impressive infrastructure of over 1,500 edge nodes spread across more than 250 cities globally. The company has established profound interconnection collaborations with over 100 key operators worldwide. These partnerships enable EdgeNext to offer comprehensive edge cloud services that encompass networking, security, and computing, catering to the diverse needs of its global enterprise clientele."
+    "0cf6c1d5": "EdgeNext, a leading provider in the global edge cloud service arena, boasts an impressive infrastructure of over 1,500 edge nodes spread across more than 250 cities globally. The company has established profound interconnection collaborations with over 100 key operators worldwide. These partnerships enable EdgeNext to offer comprehensive edge cloud services that encompass networking, security, and computing, catering to the diverse needs of its global enterprise clientele.",
+    "789f4553": "www.edgenext.com"
   },
   "src__pages__CommerceNextEvent": {
     "f36c5d9a": "News • June 21, 2023",
@@ -4754,7 +4787,8 @@
     "3418690d": "Robert Sha, CEO of EdgeNext, said, \"Our partnership with Chatlabs enables us to combine our industry-leading CDN services with their expertise in social media strategies, creating a powerful solution tailored to the needs of businesses looking to expand their reach in the Chinese market and beyond. We are confident this collaboration will strengthen our market presence in China and beyond and provide exceptional user experiences for Chatlabs' clients and their target audiences.\"",
     "26f95da7": "Michel Tjoeng, SVP of Sales & Marketing of Chatlabs, added, \"We are thrilled to offer brands the opportunity to grow their presence in China and beyond together with EdgeNext. By combining the power of EdgeNext's state-of-the-art content delivery solutions with our innovative Social Experiences Platform solutions, our clients can deliver seamless, secure, and hyper-personalised digital experiences to their followers that boost engagement and nurtures loyalty, ultimately translating into conversion.\"",
     "231c721a": "_blank",
-    "b3f95d39": "noopener noreferrer"
+    "b3f95d39": "noopener noreferrer",
+    "3db6c77a": "www.chatlabs.com"
   },
   "src__pages__CaseStudyDetail": {
     "c04cfcfc": "Case Study Not Found",
@@ -5601,7 +5635,7 @@
     "9cfc9b74": "Contact Us",
     "articles": "articles",
     "searchNewsPlaceholder": "Search news and insights..."
-    },
+  },
   "src__pages__TrafficPartners": {
     "59004518": "Enrich Network Content Resources",
     "b5834a47": "The Path to Success",
