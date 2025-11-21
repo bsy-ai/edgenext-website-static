@@ -229,9 +229,7 @@ const DynamicAcceleration: React.FC = () => {
                           {key === 'gaming' && <Gamepad2 size={20} />}
                           {key === 'saas' && <Building2 size={20} />}
                           <span className="font-medium">
-                            {key === 'ecommerce' && 'E-commerce Transactions & Search APIs'}
-                            {key === 'gaming' && 'Gaming Access & Logic Execution'}
-                            {key === 'saas' && 'SaaS Platforms & Multi-Tenant API Calls'}
+                            {useCase.title}
                           </span>
                         </div>
                       </button>

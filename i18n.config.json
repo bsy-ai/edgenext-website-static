@@ -1,0 +1,46 @@
+{
+  "baiduAppId": "20250924002463041",
+  "baiduAppKey": "LDJzP0SvkzpH53yaFjgT",
+  "sourceLanguage": "en",
+  "targetLanguages": ["zh"],
+  "scanConfig": {
+    "srcDir": "src",
+    "outputDir": "src/i18n/locales",
+    "fileExtensions": [".tsx", ".ts", ".jsx", ".js"],
+    "ignorePatterns": [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/build/**",
+      "**/*.test.*",
+      "**/*.spec.*",
+      "src/App.tsx",
+      "src/main.tsx",
+      "src/vite-env.d.ts",
+      "**/test/**",
+      "**/tests/**",
+      "src/i18n/**",
+      "src/utils/**",
+      "src/pages/BLOG/content/**",
+      "src/pages/BLOG/styles/**",
+      "src/pages/BLOG/utils/**",
+      "src/pages/BLOG/**/*.json",
+      "src/pages/NEWS/content/**",
+      "src/pages/NEWS/styles/**",
+      "src/pages/NEWS/utils/**",
+      "src/pages/NEWS/**/*.json"
+    ],
+    "ignoreDirs": [
+      "node_modules",
+      "dist",
+      "build",
+      ".git",
+      ".vscode",
+      "public",
+      "src/i18n",
+      "src/utils",
+      "src/components/LanguageSwitcher.tsx",
+      "src/i18n/scripts",
+      "src/i18n"
+    ]
+  }
+}

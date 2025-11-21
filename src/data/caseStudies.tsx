@@ -464,7 +464,7 @@ const caseStudies: CaseStudy[] = [
       },
       {
         title: "Support for Flagship Events",
-        description: "Since 2017, EdgeNext has been working closely with CCTV.com to support a variety of flagship events including the Spring Festival Gala, Two Sessions, National Day Parade, and World Cup broadcasts. These events attract hundreds of millions of viewers simultaneously, requiring real-time load balancing and ultra-reliable performance."
+        description: "EdgeNext has partnered with CCTV.com since 2017 to deliver a range of major events including the Lunar New Year Gala, Two Sessions, National Day Parade, and World Cup broadcasts. These events draw hundreds of millions of concurrent viewers, demanding real-time load balancing and exceptional reliability."
       },
       {
         title: "Flexible Architecture",
