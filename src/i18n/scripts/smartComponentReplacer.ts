@@ -611,7 +611,8 @@ This tool will automatically:
         'build',
         '.git',
         'src/i18n/scripts',
-        'src/i18n/services']
+        'src/i18n/services',
+        'src/utils']
 
       };
     }

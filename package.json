@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "prebuild": "npm run translate && npm run replace",
     "build:with-i18n": "npm run replace && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -14,7 +15,7 @@
     "translate:scan": "tsx src/i18n/scripts/autoTranslate.ts --help",
     "replace": "tsx src/i18n/scripts/smartComponentReplacer.ts",
     "replace:config": "tsx src/i18n/scripts/smartComponentReplacer.ts --generate",
-    "i18n:full": "npm run translate && npm run replace"
+    "i18n:full": "npm run trxanslate && npm run replace"
   },
   "dependencies": {
     "axios": "^1.12.2",

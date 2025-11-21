@@ -413,6 +413,7 @@ export const defaultScanConfig: ScanConfig = {
   '.vscode',
   'public',
   'src/i18n/scripts',
-  'src/i18n/services']
+  'src/i18n/services',
+  'src/utils']
 
 };

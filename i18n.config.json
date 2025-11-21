@@ -19,6 +19,7 @@
       "**/test/**",
       "**/tests/**",
       "src/i18n/**",
+      "src/utils/**",
       "src/pages/BLOG/content/**",
       "src/pages/BLOG/styles/**",
       "src/pages/BLOG/utils/**",
@@ -36,6 +37,7 @@
       ".vscode",
       "public",
       "src/i18n",
+      "src/utils",
       "src/components/LanguageSwitcher.tsx",
       "src/i18n/scripts",
       "src/i18n"

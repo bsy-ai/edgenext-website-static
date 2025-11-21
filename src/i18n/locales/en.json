@@ -323,7 +323,8 @@
     "4acc8eb3": "Enable seamless video streaming, interactive content delivery, and global classroom experiences.",
     "8f2160ec": "Enhance network performance with carrier-grade solutions designed for telecom providers.",
     "c527b3f0": "Deliver high-quality streaming content, live events, and digital assets to global audiences.",
-    "3cab6f69": "Need something specific? Our team can build tailored solutions for your unique business requirements."
+    "3cab6f69": "Need something specific? Our team can build tailored solutions for your unique business requirements.",
+    "custom_solutions_title": "Custom Solutions"
   },
   "src__components__EmergingMarkets": {
     "2c7f22e0": "Building the Edge,",
@@ -682,7 +683,9 @@
     "acf3ceaa": "With over 1,700 high-quality Points of Presence (PoPs), EdgeNext ensured low-latency access to game resources from any location. Game installation packages, updates, and patches were strategically cached at the edge, reducing origin server loads and supporting high concurrency during peak times such as promotions or large-scale in-game events.",
     "ba820a8c": "Protects against DDoS, credential abuse, and unknown threats.",
     "732772f2": "China Central Television (CCTV) is the largest television network in China, operating a comprehensive online video platform through its portal CCTV.com. With a mission to deliver content continuously to a massive audience both domestically and internationally, CCTV.com manages one of the largest-scale digital video databases in the country. Its platform operates 24/7 and supports extensive video-on-demand and livestreaming services across diverse programs and events. The platform supports a high number of concurrent users, with peaks reaching over 11.06 million simultaneous online viewers during major broadcasts. These large-scale demands highlight the necessity for an infrastructure that can reliably deliver ultra-stable and high-quality content at scale, across all network conditions and viewer locations.",
-    "e976b544": "EdgeNext has partnered with CCTV.com since 2017 to deliver a range of major events including the Lunar New Year Gala, Two Sessions, National Day Parade, and World Cup broadcasts. These events draw hundreds of millions of concurrent viewers, demanding real-time load balancing and exceptional reliability."
+    "e976b544": "EdgeNext has partnered with CCTV.com since 2017 to deliver a range of major events including the Lunar New Year Gala, Two Sessions, National Day Parade, and World Cup broadcasts. These events draw hundreds of millions of concurrent viewers, demanding real-time load balancing and exceptional reliability.",
+    "7d8c0507": "EdgeNext's 1,500+ high-quality Points of Presence (PoPs) formed the backbone of the delivery strategy. By positioning content closer to end users—no matter where they were—latency was drastically reduced, and delivery was stabilized under any network condition.",
+    "b4600b47": "With over 1,500 high-quality Points of Presence (PoPs), EdgeNext ensured low-latency access to game resources from any location. Game installation packages, updates, and patches were strategically cached at the edge, reducing origin server loads and supporting high concurrency during peak times such as promotions or large-scale in-game events."
   },
   "src__pages__ZeroTrustIoT": {
     "c2c03626": "November 19, 2024 • by Kaiyue",
