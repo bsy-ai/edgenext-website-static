@@ -427,7 +427,7 @@ const GlobalCDN: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   Enhanced video delivery and reduced buffering time across global short-form content platforms.
                 </p>
-                <Link to="/media-on-demand-solution-for-top-global-short-video-platform" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
+                <Link to="/case-study/media-on-demand-solution-for-top-global-short-video-platform" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
                   Read Case Study <ArrowRight className="ml-2" size={16} />
                 </Link>
               </div>

@@ -320,7 +320,7 @@ const MediaEntertainment: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   The 2022 Beijing Winter Olympic Games became the most-watched Winter Olympics in history, achieving an extraordinary global reach of over 2 billion people with EdgeNext's scalable streaming infrastructure and real-time delivery capabilities.
                 </p>
-                <Link to="/beijing-2022-winter-olympic-games-cdn-streaming-solution" className="text-[#0EB623] font-medium inline-flex items-center group-hover:gap-2 transition-all duration-300">
+                <Link to="/case-study/beijing-2022-winter-olympic-games-cdn-streaming-solution" className="text-[#0EB623] font-medium inline-flex items-center group-hover:gap-2 transition-all duration-300">
                   Read Case Study
                   <ArrowRight className="ml-2" size={16} />
                 </Link>

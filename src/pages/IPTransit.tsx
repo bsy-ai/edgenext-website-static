@@ -502,7 +502,7 @@ const IPTransit: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   Transforming online shopping experiences across Southeast Asia with optimized content delivery.
                 </p>
-                <a href="/global-delivery-top-ecommerce-in-sea" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
+                <a href="/case-study/global-delivery-top-ecommerce-in-sea" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
                   Read the case study <ArrowRight className="ml-2" size={16} />
                 </a>
               </div>
