@@ -229,6 +229,75 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
 
     blogsData.forEach((item: any, index: number) => {
       try {
+        // 兼容两种格式：
+        // 1）旧格式：{ "<titleKey>": "<titleValue>", "<timestampKey>": 1690831540000, "<htmlKey>": "<htmlValue>", ... }
+        // 2）新格式：{ "title": "...", "date": "2025-11-23", "content_html": "<h1>...</h1>..." }
+
+        // 新格式优先判断
+        if (item && typeof item === 'object' && 'title' in item && ('content_html' in item || 'content' in item)) {
+          const rawTitle = (item as any).title;
+          const title = typeof rawTitle === 'string' ? rawTitle : String(rawTitle);
+
+          // 处理时间戳与日期
+          let timestamp: number;
+          if (typeof (item as any).timestamp === 'number') {
+            timestamp = (item as any).timestamp;
+          } else if (typeof (item as any).date === 'string') {
+            const parsed = Date.parse((item as any).date);
+            timestamp = Number.isNaN(parsed) ? Date.now() : parsed;
+          } else {
+            timestamp = Date.now();
+          }
+
+          const date =
+            typeof (item as any).date === 'string'
+              ? (item as any).date
+              : new Date(timestamp).toISOString().split('T')[0];
+
+          const rawContent = (item as any).content_html ?? (item as any).content;
+          const content = typeof rawContent === 'string' ? rawContent : String(rawContent ?? '');
+
+          const slug = generateSlug(title);
+          const author = extractAuthorFromTimestamp(timestamp);
+          const description = extractDescription(content);
+          const category = extractCategory(title, content);
+
+          // 使用新的映射方法确定缩略图
+          const matchingPhotoName = findMatchingPhotoName(title);
+          let thumbnail = '/blogphoto/default.jpg'; // 默认图片
+
+          if (matchingPhotoName) {
+            thumbnail = `/blogphoto/${matchingPhotoName}.jpg`;
+          } else {
+            const words = splitTitleToWords(title);
+            const prefixes = buildHyphenPrefixes(words, 3, Math.min(words.length, 16));
+            const baseCandidates = prefixes.map(p => `/blogphoto/${p}`);
+            thumbnail = `${baseCandidates[0]}.jpg`;
+          }
+
+          const relatedPosts = parsedPosts
+            .filter(post => post.category === category && post.slug !== slug)
+            .slice(0, 3)
+            .map(post => post.slug);
+
+          const parsedPost: ParsedBlogPost = {
+            slug,
+            title,
+            date,
+            timestamp,
+            author,
+            description,
+            content,
+            thumbnail,
+            relatedPosts,
+            category
+          };
+
+          parsedPosts.push(parsedPost);
+          return;
+        }
+
+        // 旧格式解析逻辑（保持兼容）
         const keys = Object.keys(item);
         
         if (keys.length >= 3) {

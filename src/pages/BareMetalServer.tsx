@@ -459,7 +459,7 @@ const BareMetalServer: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   Enhanced video delivery and reduced buffering time across global short-form content platforms with &lt;1s TTFB and infrastructure capable of handling 760 billion requests/day.
                 </p>
-                <a href="case-study/media-on-demand-solution-for-top-global-short-video-platform" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
+                <a href="/case-study/media-on-demand-solution-for-top-global-short-video-platform" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
                   Read the case study <ArrowRight className="ml-2" size={16} />
                 </a>
               </div>
