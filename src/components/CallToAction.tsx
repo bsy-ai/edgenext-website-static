@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 
+const EMPTY_FIELD_VALUE = String();
+const createEmptyContactForm = () => ({
+  name: EMPTY_FIELD_VALUE,
+  email: EMPTY_FIELD_VALUE,
+  company: EMPTY_FIELD_VALUE,
+  country: EMPTY_FIELD_VALUE
+});
+
 export const CallToAction: React.FC = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
   const [contactSubmitted, setContactSubmitted] = useState(false);
   const [emailValue, setEmailValue] = useState('');
-  const [contactForm, setContactForm] = useState({
-    name: '',
-    email: '',
-    company: '',
-    country: ''
-  });
+  const [contactForm, setContactForm] = useState(createEmptyContactForm());
 
   const handleEmailSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -25,7 +28,7 @@ export const CallToAction: React.FC = () => {
     if (contactForm.name.trim() && contactForm.email.trim() && contactForm.company.trim() && contactForm.country.trim()) {
       setContactSubmitted(true);
       setTimeout(() => setContactSubmitted(false), 3000);
-      setContactForm({ name: '', email: '', company: '', country: '' });
+      setContactForm(createEmptyContactForm());
     } else {
       alert('Please fill in all required fields: Full Name, Work Email, Company, and Country/Region');
     }
