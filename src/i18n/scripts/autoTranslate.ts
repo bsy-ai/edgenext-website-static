@@ -149,8 +149,9 @@ async function main() {
 Usage: node autoTranslate.js [options]
 
 Options:
-  --appid <id>       Baidu Translate App ID (required)
-  --appkey <key>     Baidu Translate App Key (required)
+  --scan-only        Only scan and generate source language file (no translation needed)
+  --appid <id>       Baidu Translate App ID (required for translation)
+  --appkey <key>     Baidu Translate App Key (required for translation)
   --source <lang>    Source language code (default: en)
   --target <langs>   Target language codes, comma separated (default: zh)
   --help, -h         Show this help message
@@ -159,9 +160,37 @@ Environment Variables:
   BAIDU_TRANSLATE_APP_ID    Baidu Translate App ID
   BAIDU_TRANSLATE_APP_KEY   Baidu Translate App Key
 
-Example:
+Examples:
+  node autoTranslate.js --scan-only
+  node autoTranslate.js --scan-only --source en
   node autoTranslate.js --appid your_app_id --appkey your_app_key --source en --target zh,ja,ko
     `);
+    return;
+  }
+
+  // 处理 --scan-only 模式：仅扫描并生成源语言文件
+  if (args.includes('--scan-only')) {
+    console.log('🔍 Starting scan-only mode...');
+    const sourceLanguage = getArgValue(args, '--source') || 'en';
+    
+    try {
+      const scanner = new TextScanner(defaultScanConfig);
+      const extractedTexts = await scanner.scan();
+      
+      console.log(`📝 Found ${extractedTexts.length} text strings`);
+      
+      if (extractedTexts.length > 0) {
+        const outputPath = path.join(defaultScanConfig.outputDir, `${sourceLanguage}.json`);
+        await scanner.generateLanguageFile(extractedTexts, outputPath);
+        console.log(`✅ Generated ${outputPath}`);
+      } else {
+        console.log('✅ No texts found to extract');
+      }
+    } catch (error) {
+      console.error('❌ Scan failed:', error);
+      process.exit(1);
+    }
+    
     return;
   }
 
