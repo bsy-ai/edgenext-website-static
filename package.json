@@ -12,7 +12,7 @@
     "preview": "vite preview",
     "translate": "tsx src/i18n/scripts/buildTimeTranslation.ts",
     "translate:init": "tsx src/i18n/scripts/buildTimeTranslation.ts --init",
-    "translate:scan": "tsx src/i18n/scripts/autoTranslate.ts --help",
+    "translate:scan": "tsx src/i18n/scripts/autoTranslate.ts --scan-only",
     "replace": "tsx src/i18n/scripts/smartComponentReplacer.ts",
     "replace:config": "tsx src/i18n/scripts/smartComponentReplacer.ts --generate",
     "i18n:full": "npm run trxanslate && npm run replace"

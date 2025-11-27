@@ -157,13 +157,16 @@ export class TextScanner {
         }
 
         const raw = path.node.value;
-        const text = this.cleanText(raw);
-        if (this.shouldTranslate(text)) {
-          const keyInfo = this.generateKey(text, filePath);
+        const cleanedText = this.cleanText(raw);
+        if (this.shouldTranslate(cleanedText)) {
+          // 基于 cleaned text 生成 key（保持 key 稳定）
+          const keyInfo = this.generateKey(cleanedText, filePath);
           if (!this.extractedTexts.has(keyInfo.key)) {
+            // 存储原始文本（保留空格），但如果原始文本为空则用 cleaned
+            const textToStore = raw.trim() ? raw : cleanedText;
             this.extractedTexts.set(keyInfo.key, {
               key: keyInfo.key,
-              text,
+              text: textToStore,
               file: filePath,
               line: path.node.loc?.start.line || 0,
               componentPrefix: keyInfo.componentPrefix,
@@ -174,14 +177,17 @@ export class TextScanner {
       },
       TemplateLiteral: (path: any) => {
         if (path.node.expressions.length === 0 && path.node.quasis.length === 1) {
-          const cooked = path.node.quasis[0].value.cooked || '';
-          const text = this.cleanText(cooked);
-          if (this.shouldTranslate(text)) {
-            const keyInfo = this.generateKey(text, filePath);
+          const raw = path.node.quasis[0].value.cooked || '';
+          const cleanedText = this.cleanText(raw);
+          if (this.shouldTranslate(cleanedText)) {
+            // 基于 cleaned text 生成 key（保持 key 稳定）
+            const keyInfo = this.generateKey(cleanedText, filePath);
             if (!this.extractedTexts.has(keyInfo.key)) {
+              // 存储原始文本（保留空格），但如果原始文本为空则用 cleaned
+              const textToStore = raw.trim() ? raw : cleanedText;
               this.extractedTexts.set(keyInfo.key, {
                 key: keyInfo.key,
-                text,
+                text: textToStore,
                 file: filePath,
                 line: path.node.loc?.start.line || 0,
                 componentPrefix: keyInfo.componentPrefix,
@@ -192,14 +198,18 @@ export class TextScanner {
         }
       },
       JSXText: (path: any) => {
-        const text = this.cleanText(path.node.value || '');
-        if (!text) return;
-        if (this.shouldTranslate(text)) {
-          const keyInfo = this.generateKey(text, filePath);
+        const raw = path.node.value || '';
+        const cleanedText = this.cleanText(raw);
+        if (!cleanedText) return;
+        if (this.shouldTranslate(cleanedText)) {
+          // 基于 cleaned text 生成 key（保持 key 稳定）
+          const keyInfo = this.generateKey(cleanedText, filePath);
           if (!this.extractedTexts.has(keyInfo.key)) {
+            // 存储原始文本（保留空格），但如果原始文本为空则用 cleaned
+            const textToStore = raw.trim() ? raw : cleanedText;
             this.extractedTexts.set(keyInfo.key, {
               key: keyInfo.key,
-              text,
+              text: textToStore,
               file: filePath,
               line: path.node.loc?.start.line || 0,
               componentPrefix: keyInfo.componentPrefix,
@@ -227,17 +237,20 @@ export class TextScanner {
     stringPatterns.forEach((pattern) => {
       let match;
       while ((match = pattern.exec(line)) !== null) {
-        let text = match[1] || match[0];
+        const raw = match[1] || match[0];
 
         // 清理文本
-        text = this.cleanText(text);
+        const cleanedText = this.cleanText(raw);
 
         // 过滤掉不需要翻译的文本
-        if (this.shouldTranslate(text)) {
-          const keyInfo = this.generateKey(text, filePath);
+        if (this.shouldTranslate(cleanedText)) {
+          // 基于 cleaned text 生成 key（保持 key 稳定）
+          const keyInfo = this.generateKey(cleanedText, filePath);
+          // 存储原始文本（保留空格），但如果原始文本为空则用 cleaned
+          const textToStore = raw.trim() ? raw : cleanedText;
           this.extractedTexts.set(keyInfo.key, {
             key: keyInfo.key,
-            text,
+            text: textToStore,
             file: filePath,
             line: lineNumber,
             componentPrefix: keyInfo.componentPrefix,
@@ -256,24 +269,27 @@ export class TextScanner {
     let match: RegExpExecArray | null;
 
     while ((match = pairedJsxRegex.exec(content)) !== null) {
-      let text = match[2] || '';
+      const raw = match[2] || '';
       // 跳过包含子标签或表达式的文本块
-      if (text.includes('<') || text.includes('>') || text.includes('{')) {
+      if (raw.includes('<') || raw.includes('>') || raw.includes('{')) {
         continue;
       }
 
-      text = this.cleanText(text);
-      if (!this.shouldTranslate(text)) {
+      const cleanedText = this.cleanText(raw);
+      if (!this.shouldTranslate(cleanedText)) {
         continue;
       }
 
       const startIndex = match.index;
       const lineNumber = content.substring(0, startIndex).split('\n').length;
 
-      const keyInfo = this.generateKey(text, filePath);
+      // 基于 cleaned text 生成 key（保持 key 稳定）
+      const keyInfo = this.generateKey(cleanedText, filePath);
+      // 存储原始文本（保留空格），但如果原始文本为空则用 cleaned
+      const textToStore = raw.trim() ? raw : cleanedText;
       this.extractedTexts.set(keyInfo.key, {
         key: keyInfo.key,
-        text,
+        text: textToStore,
         file: filePath,
         line: lineNumber,
         componentPrefix: keyInfo.componentPrefix,
