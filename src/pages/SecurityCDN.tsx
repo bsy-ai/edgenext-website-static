@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ArrowRight, Shield, Lock, Settings, Globe, ShoppingCart, Gamepad2, Building2, GraduationCap, Zap, Check, Newspaper, ArrowUpRight, ShieldCheck, Key, Shield as FileShield, ShieldAlert, Rocket, DollarSign, Network, Activity } from 'lucide-react';
+import { createEmptyContactForm } from '../utils/contactFormDefaults';
 
 type FeatureKey = 'acceleration' | 'ddos-protection' | 'access-control' | 'webpage-protection';
 
@@ -18,12 +19,7 @@ const SecurityCDN: React.FC = () => {
   const [activeFeature, setActiveFeature] = useState<FeatureKey>('acceleration');
 
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    country: ''
-  });
+  const [formData, setFormData] = useState(createEmptyContactForm);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -31,7 +27,7 @@ const SecurityCDN: React.FC = () => {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-        setFormData({ name: '', email: '', company: '', country: '' });
+        setFormData(createEmptyContactForm());
       }, 3000);
     } else {
       alert('Please fill in all required fields: Full Name, Work Email, Company, and Country/Region');

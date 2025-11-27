@@ -3,16 +3,12 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ArrowRight, Network, Shield, Globe, Check, Zap, Radio, Cloud, Lock, Activity, Server, Database, Settings } from 'lucide-react';
 import CountUp from 'react-countup';
+import { createEmptyContactForm } from '../utils/contactFormDefaults';
 
 const Telecommunication: React.FC = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    country: ''
-  });
+  const [formData, setFormData] = useState(createEmptyContactForm);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,7 +31,7 @@ const Telecommunication: React.FC = () => {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-        setFormData({ name: '', email: '', company: '', country: '' });
+        setFormData(createEmptyContactForm());
       }, 3000);
     } else {
       alert('Please fill in all required fields: Full Name, Work Email, Company, and Country/Region');

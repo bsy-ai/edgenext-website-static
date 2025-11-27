@@ -4,16 +4,12 @@ import { Footer } from '../components/Footer';
 import { ArrowRight, Film, Tv, Radio, Newspaper, Play, Zap, Shield, Globe, Check, Network, Cloud, Lock, Users, ArrowUpRight, Activity, Gauge } from 'lucide-react';
 import CountUp from 'react-countup';
 import { Link } from 'react-router-dom';
+import { createEmptyContactForm } from '../utils/contactFormDefaults';
 
 const MediaEntertainment: React.FC = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    country: ''
-  });
+  const [formData, setFormData] = useState(createEmptyContactForm);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,7 +32,7 @@ const MediaEntertainment: React.FC = () => {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-        setFormData({ name: '', email: '', company: '', country: '' });
+        setFormData(createEmptyContactForm());
       }, 3000);
     } else {
       alert('Please fill in all required fields: Full Name, Work Email, Company, and Country/Region');

@@ -3,16 +3,12 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ArrowRight, Zap, Box, Globe, ShoppingCart, Gamepad2, Building2, Check, Network, Cloud, Lock, Activity, Shield, Settings, DollarSign, RefreshCw } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { createEmptyContactForm } from '../utils/contactFormDefaults';
 
 const IPTransit: React.FC = () => {
   const [activeTab, setActiveTab] = useState('challenges');
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    country: ''
-  });
+  const [formData, setFormData] = useState(createEmptyContactForm);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -20,7 +16,7 @@ const IPTransit: React.FC = () => {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-        setFormData({ name: '', email: '', company: '', country: '' });
+        setFormData(createEmptyContactForm());
       }, 3000);
     } else {
       alert('Please fill in all required fields: Full Name, Work Email, Company, and Country/Region');
