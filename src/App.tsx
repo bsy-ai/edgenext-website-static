@@ -75,6 +75,7 @@ import CaseStudyDetail from './pages/CaseStudyDetail';
 import Legal from './pages/Legal';
 import Partners from './pages/Partners';
 import TrafficPartners from './pages/TrafficPartners';
+import TrafficContactUs from './pages/TrafficContactUs';
 import GlobalNetwork from './pages/GlobalNetwork';
 import ChinaICPLicense from './pages/ChinaICPLicense';
 import NotFound from './pages/NotFound';
@@ -881,6 +882,14 @@ function App() {
               <TrafficPartners />
             </PageTransition>
           } 
+        />
+        <Route 
+          path="/traffic-contact-us"
+          element={
+            <PageTransition>
+              <TrafficContactUs />
+            </PageTransition>
+          }
         />
         <Route 
           path="/resources/documentation/china-icp-license" 

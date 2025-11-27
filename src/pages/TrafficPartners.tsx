@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ArrowRight } from 'lucide-react';
@@ -27,15 +28,13 @@ const Partners: React.FC = () => {
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-light leading-relaxed">
                 Partner with EdgeNext to accelerate innovation, expand market reach, and build future-ready solutions—together, with trust and support at every step.
               </p>
-              <a 
-                href="https://share-na2.hsforms.com/15pGd3NNFSySn2eP3Lr08bQ2toy7" 
-                target="_blank"
-                rel="noopener"
+              <Link
+                to="/traffic-contact-us"
                 className="inline-flex items-center px-8 py-4 bg-[#0EB623] text-white rounded-xl font-medium hover:bg-[#0EA620] transition-all duration-300"
               >
                 Become a Partner
                 <ArrowRight className="ml-2" size={20} />
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -222,15 +221,13 @@ const Partners: React.FC = () => {
               <p className="text-xl text-white/90 mb-8 leading-relaxed">
                 Join EdgeNext to unlock new markets, grow your revenue, and empower your customers with edge-first technology.
               </p>
-              <a 
-                href="https://share-na2.hsforms.com/15pGd3NNFSySn2eP3Lr08bQ2toy7"
-                target="_blank"
-                rel="noopener"
+              <Link
+                to="/traffic-contact-us"
                 className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
               >
                 Become a Partner
                 <ArrowRight className="ml-2" size={20} />
-              </a>
+              </Link>
             </div>
           </div>
         </section>
