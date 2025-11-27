@@ -2,16 +2,12 @@ import React, { useState } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ArrowRight, Server, Shield, Settings, Globe, Database, Cloud, Network, Check, Newspaper, ArrowUpRight, Cpu, Lock, Activity, Building2, ShipIcon as ChipIcon, Gauge, Video, Gamepad2 } from 'lucide-react';
+import { createEmptyContactForm } from '../utils/contactFormDefaults';
 
 const BareMetalServer: React.FC = () => {
   const [activeFeature, setActiveFeature] = useState('low-latency');
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    country: ''
-  });
+  const [formData, setFormData] = useState(createEmptyContactForm);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,7 +15,7 @@ const BareMetalServer: React.FC = () => {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-        setFormData({ name: '', email: '', company: '', country: '' });
+        setFormData(createEmptyContactForm());
       }, 3000);
     } else {
       alert('Please fill in all required fields: Full Name, Work Email, Company, and Country/Region');

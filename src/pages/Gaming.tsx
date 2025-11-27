@@ -5,16 +5,12 @@ import { ArrowRight, Network, Shield, Globe, Check, Zap, Monitor, Cloud, Lock, A
 import CountUp from 'react-countup';
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
+import { createEmptyContactForm } from '../utils/contactFormDefaults';
 
 const Gaming: React.FC = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    country: ''
-  });
+  const [formData, setFormData] = useState(createEmptyContactForm);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -38,7 +34,7 @@ const Gaming: React.FC = () => {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-        setFormData({ name: '', email: '', company: '', country: '' });
+        setFormData(createEmptyContactForm());
       }, 3000);
     } else {
       alert('Please fill in all required fields: Full Name, Work Email, Company, and Country/Region');

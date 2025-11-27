@@ -2,16 +2,12 @@ import React, { useState } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ArrowRight, Zap, Box, Globe, ShoppingCart, Gamepad2, Trophy, GraduationCap, Play, Settings, BarChart2, Film, Shield, Check, Rss, Newspaper, ArrowUpRight, Cog, BarChart as ChartBar, FileVideo, Lock, Network, Activity, ShieldAlert, Radar, Server } from 'lucide-react';
+import { createEmptyContactForm } from '../utils/contactFormDefaults';
 
 const AntiDDoS: React.FC = () => {
   const [activeFeature, setActiveFeature] = useState('high-throughput');
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    country: ''
-  });
+  const [formData, setFormData] = useState(createEmptyContactForm);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,7 +15,7 @@ const AntiDDoS: React.FC = () => {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-        setFormData({ name: '', email: '', company: '', country: '' });
+        setFormData(createEmptyContactForm());
       }, 3000);
     } else {
       alert('Please fill in all required fields: Full Name, Work Email, Company, and Country/Region');

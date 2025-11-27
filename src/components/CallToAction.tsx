@@ -1,13 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
-
-const EMPTY_FIELD_VALUE = String();
-const createEmptyContactForm = () => ({
-  name: EMPTY_FIELD_VALUE,
-  email: EMPTY_FIELD_VALUE,
-  company: EMPTY_FIELD_VALUE,
-  country: EMPTY_FIELD_VALUE
-});
+import { createEmptyContactForm } from '../utils/contactFormDefaults';
 
 export const CallToAction: React.FC = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);

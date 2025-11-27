@@ -5,17 +5,13 @@ import { TrustedBy } from '../components/TrustedBy';
 import { ArrowRight, Users, Lightbulb, Heart, ChevronDown, ChevronUp, Play } from 'lucide-react';
 import CountUp from 'react-countup';
 import { motion } from 'framer-motion';
+import { createEmptyContactForm } from '../utils/contactFormDefaults';
 
 const Company: React.FC = () => {
   const [activeAccordion, setActiveAccordion] = useState<number | null>(null);
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    country: ''
-  });
+  const [formData, setFormData] = useState(createEmptyContactForm);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -62,7 +58,7 @@ const Company: React.FC = () => {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-        setFormData({ name: '', email: '', company: '', country: '' });
+        setFormData(createEmptyContactForm());
       }, 3000);
     } else {
       alert('Please fill in all required fields: Full Name, Work Email, Company, and Country/Region');

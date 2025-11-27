@@ -4,17 +4,13 @@ import { Footer } from '../components/Footer';
 import { ArrowRight, Shield, Lock, Settings, Globe, ShoppingCart, Gamepad2, Building2, GraduationCap, Zap, Check, Newspaper, ArrowUpRight, ShieldCheck, Key, Shield as FileShield, ShieldAlert, Rocket, DollarSign, Network, Server, Database, BarChart2, Mail, Activity } from 'lucide-react';
 import CountUp from 'react-countup';
 import { motion } from 'framer-motion';
+import { createEmptyContactForm } from '../utils/contactFormDefaults';
 
 const DNSSecurity: React.FC = () => {
   const [activeFeature, setActiveFeature] = useState('website-hosting');
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    country: ''
-  });
+  const [formData, setFormData] = useState(createEmptyContactForm);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,7 +33,7 @@ const DNSSecurity: React.FC = () => {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-        setFormData({ name: '', email: '', company: '', country: '' });
+        setFormData(createEmptyContactForm());
       }, 3000);
     } else {
       alert('Please fill in all required fields: Full Name, Work Email, Company, and Country/Region');

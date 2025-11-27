@@ -3,16 +3,12 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ArrowRight, Shield, Lock, Settings, Globe, ShoppingCart, Gamepad2, Building2, GraduationCap, Zap, Check, Newspaper, ArrowUpRight, ShieldCheck, Key, Shield as FileShield, ShieldAlert, Rocket, DollarSign, Gauge, Network, Headphones, BarChart2, Users, Image, Database, Shield as ShieldIcon, Film } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { createEmptyContactForm } from '../utils/contactFormDefaults';
 
 const GlobalCDN: React.FC = () => {
   const [activeFeature, setActiveFeature] = useState('performance');
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    country: ''
-  });
+  const [formData, setFormData] = useState(createEmptyContactForm);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -20,7 +16,7 @@ const GlobalCDN: React.FC = () => {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-        setFormData({ name: '', email: '', company: '', country: '' });
+        setFormData(createEmptyContactForm());
       }, 3000);
     } else {
       alert('Please fill in all required fields: Full Name, Work Email, Company, and Country/Region');

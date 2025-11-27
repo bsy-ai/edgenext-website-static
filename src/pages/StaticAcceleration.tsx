@@ -2,16 +2,12 @@ import React, { useState } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ArrowRight, Zap, Globe, Network, Shield, Clock, Database, Settings, ShoppingCart, Gamepad2, Building2, Check, ArrowUpRight, Image, FileText, Video, Smartphone, Download, RefreshCw } from 'lucide-react';
+import { createEmptyContactForm } from '../utils/contactFormDefaults';
 
 const StaticAcceleration: React.FC = () => {
   const [activeTab, setActiveTab] = useState('website');
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    country: ''
-  });
+  const [formData, setFormData] = useState(createEmptyContactForm);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -19,7 +15,7 @@ const StaticAcceleration: React.FC = () => {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-        setFormData({ name: '', email: '', company: '', country: '' });
+        setFormData(createEmptyContactForm());
       }, 3000);
     } else {
       alert('Please fill in all required fields: Full Name, Work Email, Company, and Country/Region');

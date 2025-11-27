@@ -4,17 +4,13 @@ import { Footer } from '../components/Footer';
 import { ArrowRight, Zap, Box, Globe, ShoppingCart, Gamepad2, Trophy, GraduationCap, Play, Settings, BarChart2, Film, Shield, Check, Rss, Newspaper, ArrowUpRight, Cog, BarChart as ChartBar, FileVideo, Lock, Network, Activity, ShieldAlert, Radar, Server, Database, Cloud, Car, Building2, Camera, Rocket } from 'lucide-react';
 import { useEffect } from 'react';
 import CountUp from 'react-countup';
+import { createEmptyContactForm } from '../utils/contactFormDefaults';
 
 const EdgeCloudServer: React.FC = () => {
   const [activeTab, setActiveTab] = useState('new-emerging');
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    company: '',
-    country: ''
-  });
+  const [formData, setFormData] = useState(createEmptyContactForm);
   const [isTrialSubmitted, setIsTrialSubmitted] = useState(false);
   const [trialFormData, setTrialFormData] = useState({
     email: '',
@@ -42,7 +38,7 @@ const EdgeCloudServer: React.FC = () => {
       setIsSubmitted(true);
       setTimeout(() => {
         setIsSubmitted(false);
-        setFormData({ name: '', email: '', company: '', country: '' });
+        setFormData(createEmptyContactForm());
       }, 3000);
     } else {
       alert('Please fill in all required fields: Full Name, Work Email, Company, and Country/Region');
