@@ -584,9 +584,9 @@ These Terms and Conditions of Use of EdgeNext International Website (hereinafter
 <br/>
 3.3  Electronic Commercial Information
 <br/>
-（a）You agree that You will not disseminate, send or assist in sending any unsolicited electronic commercial information, or engage in any form of spam, violate the laws and regulations of any relevant jurisdiction, or otherwise do any act or matter that EdgeNext believes constitutes an abuse of promotional and marketing information.
+(a)You agree that You will not disseminate, send or assist in sending any unsolicited electronic commercial information, or engage in any form of spam, violate the laws and regulations of any relevant jurisdiction, or otherwise do any act or matter that EdgeNext believes constitutes an abuse of promotional and marketing information.
 <br/>
-（b）You agree that we may send you electronic commercial information via email about services, features or events that may be of interest to you. If you do not wish to receive such information, you may unsubscribe using the path provided in the email or by contacting us directly.
+(b)You agree that we may send you electronic commercial information via email about services, features or events that may be of interest to you. If you do not wish to receive such information, you may unsubscribe using the path provided in the email or by contacting us directly.
 <br/>
 3.4  You acknowledge and agree that by disclosing and/or submitting any information to Us, You warrant that You have full power, right and authority to disclose and/or submit such information and that the use of such information in accordance with these Terms and Conditions of Use will not expose Us to any claim, liability or prosecution.
 <br/>
@@ -1174,7 +1174,7 @@ We may transfer some or all of your personal information outside of the EEA. The
       icon: <Shield size={20} />,
       content: `
         <h2 class="text-2xl font-medium mb-6">EdgeNext Customer Data Protection Policy</h2>
-        <p class="mb-4">LEGEND DYNASTY PTE.LTD. and its affiliates (hereinafter referred to as “EdgeNext” or “we”) value the data security of our customers. As a cloud service provider, EdgeNext provides various activities and services in compliance with relevant data protection laws and regulations and provides customers with a stable, secure and data-friendly cloud environment. Adhering to the concept of providing customers with adequate data protection, we are committed to becoming a stable, reliable, secure and reliable cloud partner with sustainable evolution.</p>
+        <p class="mb-4">Edgenext Legend Dynasty Pte.Ltd. and its affiliates (hereinafter referred to as “EdgeNext” or “we”) value the data security of our customers. As a cloud service provider, EdgeNext provides various activities and services in compliance with relevant data protection laws and regulations and provides customers with a stable, secure and data-friendly cloud environment. Adhering to the concept of providing customers with adequate data protection, we are committed to becoming a stable, reliable, secure and reliable cloud partner with sustainable evolution.</p>
 If customers have any questions about this Statement or other related matters, please contact us as follows. We will provide you with further instructions and explanations to meet your needs. </p>
 
 Email: info_apac@edgenext.com</p>
