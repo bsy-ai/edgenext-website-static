@@ -868,6 +868,10 @@ function App() {
           } 
         />
         <Route 
+          path="/LegalDocumentation" 
+          element={<Navigate to="/legal" replace />}
+        />
+        <Route 
           path="/partners" 
           element={
             <PageTransition>
