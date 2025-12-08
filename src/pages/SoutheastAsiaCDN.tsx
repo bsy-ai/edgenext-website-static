@@ -422,7 +422,6 @@ const SoutheastAsiaCDN: React.FC = () => {
                       onChange={(e) => handleInputChange('name', e.target.value)}
                       className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
                       required
-                      required
                     />
                   </div>
                   <div>
@@ -433,7 +432,6 @@ const SoutheastAsiaCDN: React.FC = () => {
                       value={formData.email}
                       onChange={(e) => handleInputChange('email', e.target.value)}
                       className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      required
                       required
                     />
                   </div>
