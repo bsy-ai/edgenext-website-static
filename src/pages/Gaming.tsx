@@ -5,12 +5,9 @@ import { ArrowRight, Network, Shield, Globe, Check, Zap, Monitor, Cloud, Lock, A
 import CountUp from 'react-countup';
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
-import { createEmptyContactForm } from '../utils/contactFormDefaults';
 
 const Gaming: React.FC = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState(createEmptyContactForm);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -28,22 +25,6 @@ const Gaming: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [hasScrolled]);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (formData.name.trim() && formData.email.trim() && formData.company.trim() && formData.country.trim()) {
-      setIsSubmitted(true);
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setFormData(createEmptyContactForm());
-      }, 3000);
-    } else {
-      alert('Please fill in all required fields: Full Name, Work Email, Company, and Country/Region');
-    }
-  };
-
-  const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
-  };
 
   // Expanded list of client logos for scrolling effect
   const clientLogos = [
@@ -373,88 +354,32 @@ const Gaming: React.FC = () => {
           </div>
         </section>
 
-
         {/* Contact Section */}
-        <section className="py-24 bg-[#0EB623]">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-4xl font-medium text-white mb-6">
-                  Ready to Power the Future of Gaming?
-                </h2>
-                <p className="text-lg text-white/90 mb-8">
-                  From low-latency delivery to regional infrastructure—EdgeNext localizes performance where it matters most.
-                </p>
-                <a 
-                  href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
-                >
-                  Get Started
-                  <ArrowRight className="ml-2" size={20} />
-                </a>
-              </div>
+        <section className="py-24 bg-gradient-to-r from-[#0EB623] to-[#0CA61F] relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.12)_0%,transparent_55%)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.12)_0%,transparent_55%)]" />
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-                <h3 className="text-2xl font-medium text-white mb-6">Contact Us</h3>
-                <form className="gaming-contact-form space-y-4" onSubmit={handleSubmit}>
-                  <div>
-                    <label className="block text-white/90 mb-2">Full Name *</label>
-                    <input 
-                      type="text"
-                      placeholder="Enter your name"
-                      value={formData.name}
-                      onChange={(e) => handleInputChange('name', e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-white/90 mb-2">Work Email *</label>
-                    <input 
-                      type="email"
-                      placeholder="you@company.com"
-                      value={formData.email}
-                      onChange={(e) => handleInputChange('email', e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-white/90 mb-2">Company *</label>
-                    <input 
-                      type="text"
-                      placeholder="Your company name"
-                      value={formData.company}
-                      onChange={(e) => handleInputChange('company', e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-white/90 mb-2">Country/Region *</label>
-                    <input 
-                      type="text"
-                      placeholder="Enter your country or region"
-                      value={formData.country}
-                      onChange={(e) => handleInputChange('country', e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      required
-                    />
-                  </div>
-                  <button 
-                    type="submit" 
-                    className={`w-full font-medium px-8 py-4 rounded-xl transition-all duration-300 ${
-                      isSubmitted 
-                        ? 'bg-green-500 text-white' 
-                        : 'bg-white text-[#0EB623] hover:bg-opacity-90'
-                    }`}
-                  >
-                    {isSubmitted ? '✓ Message Sent!' : 'Get in Touch'}
-                  </button>
-                </form>
-              </div>
+ <div className="container mx-auto px-4 relative z-10">
+    <div className="max-w-4xl mx-auto text-center">
+      <h2 className="text-3xl md:text-4xl font-medium text-white mb-6">
+                Ready to Power the Future of Gaming?
+              </h2>
+              <p className="text-lg md:text-xl text-white/90 mb-10">
+                From low-latency delivery to regional infrastructure—EdgeNext localizes performance where it matters most.
+              </p>
+
+              <a
+                href="/contact_us"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300 group"
+              >
+                Contact Us
+                <ArrowRight
+                  className="ml-2 group-hover:translate-x-1 transition-transform duration-200"
+                  size={20}
+                />
+              </a>
             </div>
           </div>
         </section>

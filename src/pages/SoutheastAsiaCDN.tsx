@@ -390,88 +390,31 @@ const SoutheastAsiaCDN: React.FC = () => {
           </div>
         </section>
 
-        {/* Final CTA Section */}
-        <section className="py-24 bg-[#0EB623]">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-4xl font-medium text-white mb-6">
-                  Deliver Smarter in Southeast Asia
-                </h2>
-                <p className="text-lg text-white/90 mb-8">
-                  EdgeNext delivers custom-tailored CDN solutions with local compliance expertise and 24/7 bilingual support—so you can focus on growing your business in Southeast Asia with confidence.
-                </p>
-                <a 
-                  href="/contact_us" 
-                  className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
-                >
-                  Get in Touch
-                  <ArrowRight className="ml-2" size={20} />
-                </a>
-              </div>
+{/* Final CTA Section (Centered, No Form) */}
+<section className="py-24 bg-[#0EB623] relative overflow-hidden">
+  <div className="container mx-auto px-4 relative">
+    <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
+      
+      <h2 className="text-4xl font-medium text-white mb-6">
+        Deliver Smarter in Southeast Asia
+      </h2>
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-                <h3 className="text-2xl font-medium text-white mb-6">Contact Us</h3>
-                <form className="southeast-asia-cdn-contact-form space-y-4" onSubmit={handleSubmit}>
-                  <div>
-                    <label className="block text-white/90 mb-2">Full Name</label>
-                    <input 
-                      type="text"
-                      placeholder="Enter your name"
-                      value={formData.name}
-                      onChange={(e) => handleInputChange('name', e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-white/90 mb-2">Work Email</label>
-                    <input 
-                      type="email"
-                      placeholder="you@company.com"
-                      value={formData.email}
-                      onChange={(e) => handleInputChange('email', e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-white/90 mb-2">Company</label>
-                    <input 
-                      type="text"
-                      placeholder="Your company name"
-                      value={formData.company}
-                      onChange={(e) => handleInputChange('company', e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-white/90 mb-2">Country/Region</label>
-                    <input 
-                      type="text"
-                      placeholder="Enter your country or region"
-                      value={formData.country}
-                      onChange={(e) => handleInputChange('country', e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      required
-                    />
-                  </div>
-                  <button 
-                    type="submit" 
-                    className={`w-full font-medium px-8 py-4 rounded-xl transition-all duration-300 ${
-                      isSubmitted 
-                        ? 'bg-green-500 text-white' 
-                        : 'bg-white text-[#0EB623] hover:bg-opacity-90'
-                    }`}
-                  >
-                    {isSubmitted ? '✓ Message Sent!' : 'Get in Touch'}
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
+      <p className="text-lg text-white/90 mb-8">
+        EdgeNext delivers custom-tailored CDN solutions with local compliance expertise and 24/7 bilingual support—so you can focus on growing your business in Southeast Asia with confidence.
+      </p>
+
+      <a 
+        href="/contact_us" 
+        className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
+      >
+        Get in Touch
+        <ArrowRight className="ml-2" size={20} />
+      </a>
+
+    </div>
+  </div>
+</section>
+
       </main>
       <Footer />
     </div>

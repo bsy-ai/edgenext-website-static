@@ -5,60 +5,6 @@ import { Footer } from '../components/Footer';
 import { ArrowRight, Zap, Globe, Shield, Headphones, Link, Server, RefreshCw } from 'lucide-react';
 
 const Partners: React.FC = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    companyName: '',
-    email: '',
-    industry: '',
-    companyWebsite: '',
-    countryRegion: '',
-    companySize: '',
-    partnerModel: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // 验证必填字段
-    const requiredFields = [
-      formData.firstName.trim(),
-      formData.lastName.trim(),
-      formData.companyName.trim(),
-      formData.email.trim(),
-      formData.industry,
-      formData.companyWebsite.trim(),
-      formData.countryRegion.trim(),
-      formData.companySize,
-      formData.partnerModel
-    ];
-    
-    if (requiredFields.every(field => field)) {
-      setIsSubmitted(true);
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setFormData({
-          firstName: '',
-          lastName: '',
-          companyName: '',
-          email: '',
-          industry: '',
-          companyWebsite: '',
-          countryRegion: '',
-          companySize: '',
-          partnerModel: ''
-        });
-      }, 3000);
-    } else {
-      alert('Please fill in all required fields.');
-    }
-  };
-
-  const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
-  };
-
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -409,213 +355,23 @@ const Partners: React.FC = () => {
 
         {/* CTA Section */}
         <section id="partner-form" className="py-24 bg-[#0EB623]">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-              <div>
-                <h2 className="text-4xl md:text-5xl font-medium text-white mb-6">
-                  Ready to grow—together?
-                </h2>
-                <p className="text-xl text-white/90 mb-8 leading-relaxed">
-                  Join EdgeNext to unlock new markets, grow your revenue, and empower your customers with edge-first technology.
-                </p>
-              </div>
+  <div className="container mx-auto px-4 relative">
+    <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
+      
+      <h2 className="text-4xl font-medium text-white mb-6">
+                Ready to grow—together?
+              </h2>
+              <p className="text-xl text-white/90 mb-8 leading-relaxed">
+                Join EdgeNext to unlock new markets, grow your revenue, and empower your customers with edge-first technology.
+              </p>
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-                <h3 className="text-2xl font-medium text-white mb-6">Become a Partner</h3>
-                <form className="partners-form space-y-4" onSubmit={handleSubmit}>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-white/90 mb-2">First name *</label>
-                      <input 
-                        type="text"
-                        value={formData.firstName}
-                        onChange={(e) => handleInputChange('firstName', e.target.value)}
-                        required
-                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-white/90 mb-2">Last name *</label>
-                      <input 
-                        type="text"
-                        value={formData.lastName}
-                        onChange={(e) => handleInputChange('lastName', e.target.value)}
-                        required
-                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-white/90 mb-2">Company name *</label>
-                      <input 
-                        type="text"
-                        value={formData.companyName}
-                        onChange={(e) => handleInputChange('companyName', e.target.value)}
-                        required
-                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-white/90 mb-2">Email *</label>
-                      <input 
-                        type="email"
-                        value={formData.email}
-                        onChange={(e) => handleInputChange('email', e.target.value)}
-                        required
-                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-white/90 mb-2">Industry *</label>
-                      <select 
-                        value={formData.industry}
-                        onChange={(e) => handleInputChange('industry', e.target.value)}
-                        required
-                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white focus:outline-none focus:border-white"
-                      >
-                        <option value="" className="text-gray-900">Select Industry</option>
-                        <option value="technology" className="text-gray-900">Technology</option>
-                        <option value="telecommunications" className="text-gray-900">Telecommunications</option>
-                        <option value="media-entertainment" className="text-gray-900">Media & Entertainment</option>
-                        <option value="ecommerce" className="text-gray-900">E-commerce</option>
-                        <option value="gaming" className="text-gray-900">Gaming</option>
-                        <option value="education" className="text-gray-900">Education</option>
-                        <option value="healthcare" className="text-gray-900">Healthcare</option>
-                        <option value="finance" className="text-gray-900">Finance</option>
-                        <option value="other" className="text-gray-900">Other</option>
-                      </select>
-                    </div>
-                    <div>
-                      <label className="block text-white/90 mb-2">Company Website *</label>
-                      <input 
-                        type="url"
-                        value={formData.companyWebsite}
-                        onChange={(e) => handleInputChange('companyWebsite', e.target.value)}
-                        required
-                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-white/90 mb-2">Country/Region *</label>
-                    <input 
-                      type="text"
-                      value={formData.countryRegion}
-                      onChange={(e) => handleInputChange('countryRegion', e.target.value)}
-                      required
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                    />
-                  </div>
-
-                  <div>
-                    <label className="block text-white/90 mb-2">Company Size *</label>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                      <label className="flex items-center gap-2 cursor-pointer">
-                        <input 
-                          type="radio" 
-                          name="companySize" 
-                          value="0-10"
-                          checked={formData.companySize === '0-10'}
-                          onChange={(e) => handleInputChange('companySize', e.target.value)}
-                          className="text-[#0EB623] focus:ring-[#0EB623]"
-                          required
-                        />
-                        <span className="text-white/90">0-10</span>
-                      </label>
-                      <label className="flex items-center gap-2 cursor-pointer">
-                        <input 
-                          type="radio" 
-                          name="companySize" 
-                          value="10-100"
-                          checked={formData.companySize === '10-100'}
-                          onChange={(e) => handleInputChange('companySize', e.target.value)}
-                          className="text-[#0EB623] focus:ring-[#0EB623]"
-                        />
-                        <span className="text-white/90">10-100</span>
-                      </label>
-                      <label className="flex items-center gap-2 cursor-pointer">
-                        <input 
-                          type="radio" 
-                          name="companySize" 
-                          value="100-500"
-                          checked={formData.companySize === '100-500'}
-                          onChange={(e) => handleInputChange('companySize', e.target.value)}
-                          className="text-[#0EB623] focus:ring-[#0EB623]"
-                        />
-                        <span className="text-white/90">100-500</span>
-                      </label>
-                      <label className="flex items-center gap-2 cursor-pointer">
-                        <input 
-                          type="radio" 
-                          name="companySize" 
-                          value="500+"
-                          checked={formData.companySize === '500+'}
-                          onChange={(e) => handleInputChange('companySize', e.target.value)}
-                          className="text-[#0EB623] focus:ring-[#0EB623]"
-                        />
-                        <span className="text-white/90">500+</span>
-                      </label>
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-white/90 mb-2">Prefer Partner Model *</label>
-                    <div className="space-y-3">
-                      <label className="flex items-center gap-2 cursor-pointer">
-                        <input 
-                          type="radio" 
-                          name="partnerModel" 
-                          value="channel-alliance"
-                          checked={formData.partnerModel === 'channel-alliance'}
-                          onChange={(e) => handleInputChange('partnerModel', e.target.value)}
-                          className="text-[#0EB623] focus:ring-[#0EB623]"
-                          required
-                        />
-                        <span className="text-white/90">Channel & Alliance</span>
-                      </label>
-                      <label className="flex items-center gap-2 cursor-pointer">
-                        <input 
-                          type="radio" 
-                          name="partnerModel" 
-                          value="technology"
-                          checked={formData.partnerModel === 'technology'}
-                          onChange={(e) => handleInputChange('partnerModel', e.target.value)}
-                          className="text-[#0EB623] focus:ring-[#0EB623]"
-                        />
-                        <span className="text-white/90">Technology</span>
-                      </label>
-                      <label className="flex items-center gap-2 cursor-pointer">
-                        <input 
-                          type="radio" 
-                          name="partnerModel" 
-                          value="referral"
-                          checked={formData.partnerModel === 'referral'}
-                          onChange={(e) => handleInputChange('partnerModel', e.target.value)}
-                          className="text-[#0EB623] focus:ring-[#0EB623]"
-                        />
-                        <span className="text-white/90">Referral</span>
-                      </label>
-                    </div>
-                  </div>
-
-                  <button 
-                    type="submit" 
-                    className={`w-full font-medium px-8 py-4 rounded-xl transition-all duration-300 ${
-                      isSubmitted 
-                        ? 'bg-green-500 text-white' 
-                        : 'bg-white text-[#0EB623] hover:bg-opacity-90'
-                    }`}
-                  >
-                    {isSubmitted ? '✓ Application Submitted!' : 'Submit'}
-                  </button>
-                </form>
-              </div>
+              <a
+                href="/contact_us"
+                className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
+              >
+                Become a Partner
+                <ArrowRight className="ml-2" size={20} />
+              </a>
             </div>
           </div>
         </section>

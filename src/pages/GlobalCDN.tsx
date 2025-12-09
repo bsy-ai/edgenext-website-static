@@ -491,93 +491,32 @@ const GlobalCDN: React.FC = () => {
             </div>
           </div>
         </section>
+<section className="py-24 bg-[#0EB623] relative overflow-hidden">
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1)_0%,transparent_50%)]"></div>
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.1)_0%,transparent_50%)]"></div>
 
-        {/* Contact Section */}
-        <section className="py-24 bg-[#0EB623] relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1)_0%,transparent_50%)]"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.1)_0%,transparent_50%)]"></div>
-          
-          <div className="container mx-auto px-4 relative">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-4xl md:text-5xl font-medium text-white mb-6">
-                  Ready to Transform Your Global Content Delivery?
-                </h2>
-                <p className="text-lg text-white/90 mb-8">
-                  Join the leading companies leveraging EdgeNext for unparalleled performance across emerging markets.
-                </p>
-                <a 
-                  href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
-                >
-                  Start Your Free Trial
-                </a>
-              </div>
+ <div className="container mx-auto px-4 relative z-10">
+    <div className="max-w-4xl mx-auto text-center">
+      <h2 className="text-3xl md:text-4xl font-medium text-white mb-6">
+        Ready to Transform Your Global Content Delivery?
+      </h2>
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-                <h3 className="text-2xl font-medium text-white mb-6">Contact Us</h3>
-                <form className="global-cdn-contact-form space-y-4" onSubmit={handleSubmit}>
-                  <div>
-                    <label className="block text-white/90 mb-2">Full Name</label>
-                    <input 
-                      type="text"
-                      placeholder="Enter your name"
-                      value={formData.name}
-                      onChange={(e) => handleInputChange('name', e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-white/90 mb-2">Work Email</label>
-                    <input 
-                      type="email"
-                      placeholder="you@company.com"
-                      value={formData.email}
-                      onChange={(e) => handleInputChange('email', e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-white/90 mb-2">Company</label>
-                    <input 
-                      type="text"
-                      placeholder="Your company name"
-                      value={formData.company}
-                      onChange={(e) => handleInputChange('company', e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-white/90 mb-2">Country/Region</label>
-                    <input 
-                      type="text"
-                      placeholder="Enter your country or region"
-                      value={formData.country}
-                      onChange={(e) => handleInputChange('country', e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                      required
-                    />
-                  </div>
-                  <button 
-                    type="submit" 
-                    className={`w-full font-medium px-8 py-4 rounded-xl transition-all duration-300 ${
-                      isSubmitted 
-                        ? 'bg-green-500 text-white' 
-                        : 'bg-white text-[#0EB623] hover:bg-opacity-90'
-                    }`}
-                  >
-                    {isSubmitted ? '✓ Message Sent!' : 'Get in Touch'}
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
+      <p className="text-lg text-white/90 mb-8 max-w-2xl">
+        Join the leading companies leveraging EdgeNext for unparalleled performance across emerging markets.
+      </p>
+
+      <Link
+        to="/contact_us"
+        className="inline-flex items-center px-10 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-gray-100 transition-all duration-300 text-lg shadow-md"
+      >
+        Contact Us
+      </Link>
+
+    </div>
+  </div>
+</section>
+
+
       </main>
       <Footer />
     </div>

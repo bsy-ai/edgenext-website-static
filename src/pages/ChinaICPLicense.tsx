@@ -5,67 +5,6 @@ import { ArrowRight, Check, Globe, Shield, Zap, Server, Database, RefreshCw, Fil
 import { Link } from 'react-router-dom';
 
 const ChinaICPLicense: React.FC = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    fullName: '',
-    email: '',
-    companyName: '',
-    phone: '',
-    website: '',
-    region: '',
-    registeredInChina: '',
-    hostingLocation: [] as string[],
-    needCDN: ''
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // 验证所有必填字段
-    const requiredFields = [
-      formData.fullName.trim(),
-      formData.email.trim(),
-      formData.companyName.trim(),
-      formData.phone.trim(),
-      formData.website.trim(),
-      formData.region,
-      formData.registeredInChina,
-      formData.needCDN
-    ];
-    
-    const hasHostingLocation = formData.hostingLocation.length > 0;
-    
-    if (requiredFields.every(field => field) && hasHostingLocation) {
-      setIsSubmitted(true);
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setFormData({
-          fullName: '',
-          email: '',
-          companyName: '',
-          phone: '',
-          website: '',
-          region: '',
-          registeredInChina: '',
-          hostingLocation: [],
-          needCDN: ''
-        });
-      }, 3000);
-    }
-  };
-
-  const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
-  };
-
-  const handleCheckboxChange = (value: string, checked: boolean) => {
-    setFormData(prev => ({
-      ...prev,
-      hostingLocation: checked 
-        ? [...prev.hostingLocation, value]
-        : prev.hostingLocation.filter(item => item !== value)
-    }));
-  };
 
   const [activeTab, setActiveTab] = useState('icp-filing');
 
@@ -511,243 +450,29 @@ const ChinaICPLicense: React.FC = () => {
           </div>
         </section>
 
-        {/* Contact Form Section */}
-        <section className="py-24 bg-[#0EB623]">
-          <div className="container mx-auto px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-4xl font-medium text-white mb-6">
-                  Ready to Enter the Chinese Market?
-                </h2>
-                <p className="text-lg text-white/90 mb-8">
-                  Fill out the form and our China market experts will get back to you within 24 hours to discuss your ICP license needs and options.
-                </p>
-                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6">
-                  <h3 className="text-xl font-medium text-white mb-4">Our ICP License Support Includes:</h3>
-                  <ul className="space-y-3">
-                    <li className="flex items-center gap-3">
-                      <Check className="text-white" size={20} />
-                      <span className="text-white/90">Full document preparation assistance</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <Check className="text-white" size={20} />
-                      <span className="text-white/90">Direct liaison with Chinese authorities</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <Check className="text-white" size={20} />
-                      <span className="text-white/90">Bilingual support throughout the process</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <Check className="text-white" size={20} />
-                      <span className="text-white/90">Post-approval technical implementation</span>
-                    </li>
-                    <li className="flex items-center gap-3">
-                      <Check className="text-white" size={20} />
-                      <span className="text-white/90">Ongoing compliance monitoring</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+{/* Contact CTA Section – simple centered block */}
+<section className="py-24 bg-[#0EB623]">
+  <div className="container mx-auto px-4">
+    <div className="max-w-3xl mx-auto text-center">
+      <h2 className="text-4xl font-medium text-white mb-6">
+        Ready to Enter the Chinese Market?
+      </h2>
+      <p className="text-lg text-white/90 mb-10">
+        Fill out the form and our China market experts will get back to you within
+        24 hours to discuss your ICP license needs and options.
+      </p>
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
-                <h3 className="text-2xl font-medium text-white mb-6">Contact Us</h3>
-                <form className="china-icp-license-form space-y-4" onSubmit={handleSubmit}>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-white/90 mb-2">Full Name</label>
-                      <input 
-                        type="text"
-                        value={formData.fullName}
-                        onChange={(e) => handleInputChange('fullName', e.target.value)}
-                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-white/90 mb-2">Email</label>
-                      <input 
-                        type="email"
-                        value={formData.email}
-                        onChange={(e) => handleInputChange('email', e.target.value)}
-                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                        required
-                      />
-                    </div>
-                  </div>
+      <Link
+        to="/contact_us"
+        className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
+      >
+        Contact Us
+        <ArrowRight className="ml-2" size={20} />
+      </Link>
+    </div>
+  </div>
+</section>
 
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-white/90 mb-2">Company Name</label>
-                      <input 
-                        type="text"
-                        value={formData.companyName}
-                        onChange={(e) => handleInputChange('companyName', e.target.value)}
-                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-white/90 mb-2">Phone</label>
-                      <input 
-                        type="tel"
-                        value={formData.phone}
-                        onChange={(e) => handleInputChange('phone', e.target.value)}
-                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-white/90 mb-2">Website</label>
-                      <input 
-                        type="url"
-                        value={formData.website}
-                        onChange={(e) => handleInputChange('website', e.target.value)}
-                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label className="block text-white/90 mb-2">Region</label>
-                      <select 
-                        value={formData.region}
-                        onChange={(e) => handleInputChange('region', e.target.value)}
-                        className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white"
-                        required
-                      >
-                        <option value="">Select Region</option>
-                        <option value="North America"className="text-black">North America</option>
-                        <option value="Europe"className="text-black">Europe</option>
-                        <option value="Asia Pacific"className="text-black">Asia Pacific</option>
-                        <option value="Middle East"className="text-black">Middle East</option>
-                        <option value="Africa"className="text-black">Africa</option>
-                        <option value="Latin America"className="text-black">Latin America</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-white/90 mb-2">Do you have a company registered in China?</label>
-                    <div className="flex gap-4">
-                      <label className="flex items-center gap-2">
-                        <input 
-                          type="radio" 
-                          name="registered" 
-                          value="Yes"
-                          checked={formData.registeredInChina === 'Yes'}
-                          onChange={(e) => handleInputChange('registeredInChina', e.target.value)}
-                          className="text-[#0EB623]" 
-                        />
-                        <span className="text-white/90">Yes</span>
-                      </label>
-                      <label className="flex items-center gap-2">
-                        <input 
-                          type="radio" 
-                          name="registered" 
-                          value="No"
-                          checked={formData.registeredInChina === 'No'}
-                          onChange={(e) => handleInputChange('registeredInChina', e.target.value)}
-                          className="text-[#0EB623]" 
-                        />
-                        <span className="text-white/90">No</span>
-                      </label>
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-white/90 mb-2">Where do you want to host your website?</label>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                      <label className="flex items-center gap-2">
-                        <input 
-                          type="checkbox" 
-                          checked={formData.hostingLocation.includes('Mainland China')}
-                          onChange={(e) => handleCheckboxChange('Mainland China', e.target.checked)}
-                          className="text-[#0EB623]" 
-                        />
-                        <span className="text-white/90">Mainland China</span>
-                      </label>
-                      <label className="flex items-center gap-2">
-                        <input 
-                          type="checkbox" 
-                          checked={formData.hostingLocation.includes('Hong Kong')}
-                          onChange={(e) => handleCheckboxChange('Hong Kong', e.target.checked)}
-                          className="text-[#0EB623]" 
-                        />
-                        <span className="text-white/90">Hong Kong</span>
-                      </label>
-                      <label className="flex items-center gap-2">
-                        <input 
-                          type="checkbox" 
-                          checked={formData.hostingLocation.includes('Taiwan')}
-                          onChange={(e) => handleCheckboxChange('Taiwan', e.target.checked)}
-                          className="text-[#0EB623]" 
-                        />
-                        <span className="text-white/90">Taiwan</span>
-                      </label>
-                      <label className="flex items-center gap-2">
-                        <input 
-                          type="checkbox" 
-                          checked={formData.hostingLocation.includes('Global')}
-                          onChange={(e) => handleCheckboxChange('Global', e.target.checked)}
-                          className="text-[#0EB623]" 
-                        />
-                        <span className="text-white/90">Global</span>
-                      </label>
-                    </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-white/90 mb-2">Do you need CDN service?</label>
-                    <div className="flex gap-4">
-                      <label className="flex items-center gap-2">
-                        <input 
-                          type="radio" 
-                          name="cdn" 
-                          value="Yes"
-                          checked={formData.needCDN === 'Yes'}
-                          onChange={(e) => handleInputChange('needCDN', e.target.value)}
-                          className="text-[#0EB623]" 
-                        />
-                        <span className="text-white/90">Yes</span>
-                      </label>
-                      <label className="flex items-center gap-2">
-                        <input 
-                          type="radio" 
-                          name="cdn" 
-                          value="No"
-                          checked={formData.needCDN === 'No'}
-                          onChange={(e) => handleInputChange('needCDN', e.target.value)}
-                          className="text-[#0EB623]" 
-                        />
-                        <span className="text-white/90">No</span>
-                      </label>
-                    </div>
-                  </div>
-
-                  <button 
-                    type="submit" 
-                    className={`w-full font-medium px-8 py-4 rounded-xl transition-all duration-300 flex items-center justify-center group ${
-                      isSubmitted 
-                        ? 'bg-green-500 text-white' 
-                        : 'bg-white text-[#0EB623] hover:bg-opacity-90'
-                    }`}
-                  >
-                    {isSubmitted ? (
-                      '✓ Message Sent!'
-                    ) : (
-                      <>
-                        Submit
-                        <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-200" size={20} />
-                      </>
-                    )}
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>

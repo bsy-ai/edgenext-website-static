@@ -2,30 +2,10 @@ import React, { useState } from 'react';
 import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 import { ArrowRight, Zap, Box, Globe, ShoppingCart, Gamepad2, Trophy, GraduationCap, Play, Settings, BarChart2, Film, Shield, Check, Rss, Newspaper, ArrowUpRight, Cog, BarChart as ChartBar, FileVideo, Lock, Music, Tv, ChevronDown, Users } from 'lucide-react';
-import { createEmptyContactForm } from '../utils/contactFormDefaults';
 
 const LiveStreaming: React.FC = () => {
   const [activeFeature, setActiveFeature] = useState('live-streaming-support');
   const [showAllScenarios, setShowAllScenarios] = useState(false);
-  const [isSubmitted, setIsSubmitted] = useState(false);
-  const [formData, setFormData] = useState(createEmptyContactForm);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (formData.name.trim() && formData.email.trim() && formData.company.trim() && formData.country.trim()) {
-      setIsSubmitted(true);
-      setTimeout(() => {
-        setIsSubmitted(false);
-        setFormData(createEmptyContactForm());
-      }, 3000);
-    } else {
-      alert('Please fill in all required fields: Full Name, Work Email, Company, and Country/Region');
-    }
-  };
-
-  const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
-  };
 
   const features = {
     'live-streaming-support': {
@@ -612,93 +592,29 @@ const LiveStreaming: React.FC = () => {
           </div>
         </section>
 
-        {/* Contact Section */}
-        <section className="py-16 md:py-24 bg-[#0EB623] relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(255,255,255,0.1)_0%,transparent_50%)]"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(255,255,255,0.1)_0%,transparent_50%)]"></div>
-          
-          <div className="container mx-auto px-4 relative">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div>
-                <h2 className="text-3xl md:text-5xl font-medium text-white mb-4 md:mb-6">
-                  Ready to Transform Your Global Content Delivery?
-                </h2>
-                <p className="text-base md:text-lg text-white/90 mb-6 md:mb-8">
-                  Trusted by businesses scaling across the globe—and thriving in emerging markets. From Southeast Asia to Central Asia and Africa, EdgeNext delivers content with speed, security, and a human-first touch.
-                </p>
-                <a 
-                  href="https://home.console.edgenext.com/#/uc/register"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 md:px-8 py-3 md:py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
-                >
-                  Start Free Trial
-                  <ArrowRight className="ml-2" size={20} />
-                </a>
-              </div>
+   {/* CTA Section – career style */}
+        <section className="py-24 bg-[#0EB623]">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl md:text-4xl font-medium text-white mb-6">
+        Ready to Transform Your Global Content Delivery?
+      </h2>
+      <p className="text-base md:text-lg text-white/90 mb-8 leading-relaxed">
+        Trusted by businesses scaling across the globe—and thriving in emerging markets. 
+        From Southeast Asia to Central Asia and Africa, EdgeNext delivers content with speed, 
+        security, and a human-first touch.
+      </p>
+      <a 
+        href="/contact_us"
+        className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
+      >
+        Contact Us
+        <ArrowRight className="ml-2" size={20} />
+      </a>
+    </div>
+  </div>
+</section>
 
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 md:p-8">
-                <h3 className="text-xl md:text-2xl font-medium text-white mb-4 md:mb-6">Contact Us</h3>
-                <form className="live-streaming-contact-form space-y-4" onSubmit={handleSubmit}>
-                  <div>
-                    <label className="block text-white/90 mb-2 text-sm md:text-base">Full Name</label>
-                    <input 
-                      type="text"
-                      placeholder="Enter your name"
-                      value={formData.name}
-                      onChange={(e) => handleInputChange('name', e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white text-sm md:text-base"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-white/90 mb-2 text-sm md:text-base">Work Email</label>
-                    <input 
-                      type="email"
-                      placeholder="you@company.com"
-                      value={formData.email}
-                      onChange={(e) => handleInputChange('email', e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white text-sm md:text-base"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-white/90 mb-2 text-sm md:text-base">Company</label>
-                    <input 
-                      type="text"
-                      placeholder="Your company name"
-                      value={formData.company}
-                      onChange={(e) => handleInputChange('company', e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white text-sm md:text-base"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-white/90 mb-2 text-sm md:text-base">Country/Region</label>
-                    <input 
-                      type="text"
-                      placeholder="Enter your country or region"
-                      value={formData.country}
-                      onChange={(e) => handleInputChange('country', e.target.value)}
-                      className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white text-sm md:text-base"
-                      required
-                    />
-                  </div>
-                  <button 
-                    type="submit" 
-                    className={`w-full font-medium px-6 md:px-8 py-3 md:py-4 rounded-xl transition-all duration-300 text-sm md:text-base ${
-                      isSubmitted 
-                        ? 'bg-green-500 text-white' 
-                        : 'bg-white text-[#0EB623] hover:bg-opacity-90'
-                    }`}
-                  >
-                    {isSubmitted ? '✓ Message Sent!' : 'Get in Touch'}
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
       <Footer />
     </div>
