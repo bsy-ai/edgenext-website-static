@@ -149,6 +149,39 @@ export function getTrackingFromCookie(): TrackingParams | null {
 }
 
 /**
+ * 检查 URL 中是否包含新的追踪参数（TRACKING_PARAM_KEYS 中的参数有值）
+ * @returns 如果包含新的追踪参数则返回 true，否则返回 false
+ */
+function hasNewTrackingParamsInURL(): boolean {
+  const urlParams = new URLSearchParams(window.location.search);
+  
+  // 检查是否有 TRACKING_PARAM_KEYS 中的参数且有值
+  return TRACKING_PARAM_KEYS.some((key) => {
+    const value = urlParams.get(key);
+    return value !== null && value !== '';
+  });
+}
+
+/**
+ * 从 URL 中仅提取追踪参数（TRACKING_PARAM_KEYS），不包含基础信息
+ * @returns 追踪参数对象（仅包含 TRACKING_PARAM_KEYS 中的参数）
+ */
+function getTrackingParamsFromURLOnly(): Partial<TrackingParams> {
+  const urlParams = new URLSearchParams(window.location.search);
+  const trackingParams: Partial<TrackingParams> = {};
+  
+  // 只提取 TRACKING_PARAM_KEYS 中的参数
+  TRACKING_PARAM_KEYS.forEach((key) => {
+    const value = urlParams.get(key);
+    if (value) {
+      trackingParams[key] = value;
+    }
+  });
+  
+  return trackingParams;
+}
+
+/**
  * 初始化追踪功能
  * 自动收集并保存追踪信息到 Cookie
  * 
@@ -157,11 +190,40 @@ export function getTrackingFromCookie(): TrackingParams | null {
  * - 每次页面加载/路由变化时都会收集并保存追踪信息
  * - 无论是否包含 URL 追踪参数，都会保存基础信息（referrer、landing_page、session_id、timestamp）
  * - 如果 URL 包含追踪参数（gclid、utm_* 等），会一并保存
- * - 每次调用都会更新 Cookie（覆盖旧值）
+ * - 如果 Cookie 中已存在追踪信息：
+ *   - 如果新的 URL 中包含追踪参数（TRACKING_PARAM_KEYS 中的参数有值），则用最新的替换当前 cookie 内容
+ *   - 否则沿用第一次进来的内容，不会覆盖
  */
 export function initTracking(): void {
   try {
-    // 从 URL 中提取追踪参数（包含基础信息）
+    // 先检查 Cookie 中是否已存在追踪信息
+    const existingTracking = getTrackingFromCookie();
+    
+    if (existingTracking) {
+      // 检查 URL 中是否包含新的追踪参数
+      if (hasNewTrackingParamsInURL()) {
+        // 从 URL 中提取新的追踪参数
+        const newTrackingParams = getTrackingParamsFromURLOnly();
+        
+        // 合并：保留第一次的 session_id，更新追踪参数和其他基础信息
+        const updatedTracking: TrackingParams = {
+          ...existingTracking,
+          ...newTrackingParams, // 用新的追踪参数覆盖旧的
+          referrer: document.referrer || '', // 更新 referrer
+          landing_page: window.location.href, // 更新落地页
+          timestamp: new Date().toISOString(), // 更新时间戳
+          has_url_params: Object.keys(newTrackingParams).length > 0, // 更新标记
+        };
+        
+        // 保存更新后的追踪信息
+        saveTrackingToCookie(updatedTracking);
+        console.log('[Tracking] 检测到新的 URL 追踪参数，已更新 Cookie:', updatedTracking);
+      }
+      // 如果没有新的追踪参数，沿用第一次进来的 Cookie 内容，不覆盖
+      return;
+    }
+
+    // Cookie 中不存在，从 URL 中提取追踪参数（包含基础信息）
     const trackingParams = getTrackingParamsFromURL();
 
     // 保存到 Cookie
