@@ -172,7 +172,7 @@ export const Footer: React.FC = () => {
             <h4 className="text-[#0EB623] font-medium mb-2">Documentation</h4>
             <ul className="space-y-2 mb-4">
               <li>
-                <a href="https://home.console.edgenext.com/#/doc/content/cdn/Product%20Introduction/Product%20overview" target="_blank" rel="noopener noreferrer" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="https://home.console.edgenext.com/#/doc/dashboard" target="_blank" rel="noopener noreferrer" className="hover:text-[#0EB623] transition-colors duration-200">
                   API Reference
                 </a>
               </li>

@@ -43,28 +43,41 @@ export const Header: React.FC = () => {
 
   return (
     <>
-      {/* Top utility bar */}
-      <div className="bg-gray-50 py-2">
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center">
-            {/* Left side */}
-            <div className="flex items-center">
-              <a href="/network" className="utility-link flex items-center">
-                <Globe size={16} className="mr-1" />
-                <span>Global Network Status</span>
-              </a>
-              <a href="/events" className="utility-link ml-6 hidden md:block">Events</a>
-            </div>
-            
-            {/* Right side */}
-            <div className="flex items-center">
-              <LanguageSwitcher />
-              <a href="https://home.console.edgenext.com/#/uc/register" className="utility-link ml-6 hidden md:block" target="_blank" rel="noopener">Sign up</a>
-      
-            </div>
-          </div>
+{/* Top utility bar */}
+<div className="bg-gray-50 py-2">
+  <div className="container mx-auto px-4">
+    <div className="flex justify-between items-center">
+      {/* Left side */}
+      <div className="flex items-center">
+        <a href="/network" className="utility-link flex items-center">
+          <Globe size={16} className="mr-1" />
+          <span>Global Network Status</span>
+        </a>
+        <a href="/events" className="utility-link ml-6 hidden md:block">
+          Events
+        </a>
+      </div>
+
+      {/* Right side */}
+      <div className="flex items-center">
+        <a
+          href="https://home.console.edgenext.com/#/uc/register"
+          className="utility-link hidden md:block"
+          target="_blank"
+          rel="noopener"
+        >
+          Sign up
+        </a>
+
+        <div className="ml-6">
+          <LanguageSwitcher />
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+
 
       {/* Main header */}
       <header 
@@ -377,7 +390,7 @@ export const Header: React.FC = () => {
                           <h4 className="text-sm font-medium text-[#0EB623] mb-2">Documentation</h4>
                           <div className="space-y-3">
                             <a 
-                              href="https://home.console.edgenext.com/#/doc/content/cdn/Product%20Introduction/Product%20overview" 
+                              href="https://home.console.edgenext.com/#/doc/dashboard" 
                               target="_blank"
                               rel="noopener noreferrer"
                               className="block text-gray-600 hover:text-[#0EB623]"

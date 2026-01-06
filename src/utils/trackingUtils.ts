@@ -239,4 +239,3 @@ export function initTracking(): void {
     console.error('[Tracking] 初始化追踪失败:', error);
   }
 }
-

@@ -265,7 +265,7 @@ export const Dropdown: React.FC<DropdownProps> = ({ type, onClose }) => {
           icon={<FileText size={18} />}
           title="API Reference"
           description="Complete API documentation"
-          to="https://home.console.edgenext.com/#/doc/content/cdn/Product%20Introduction/Product%20overview"
+          to="https://home.console.edgenext.com/#/doc/dashboard"
         />
         <MenuItem 
           icon={<FileQuestion size={18} />}

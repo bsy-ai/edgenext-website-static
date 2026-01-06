@@ -11,16 +11,16 @@ const Events: React.FC = () => {
     global: [
       {
         location: 'Lagos, Nigeria',
-        name: 'African Peering & Interconnection Forum (AfPIF 2025)',
-        dates: 'Aug 19–21',
+        name: 'African Peering & Interconnection Forum (AfPIF 2026)',
+        dates: 'Coming soon',
        available: false,
        past: false
       },
       {
         location: 'Dubai, UAE',
-        name: 'Gitex Global 2025',
-        dates: 'Oct 14–18',
-       available: true,
+        name: 'Gitex Global 2026',
+        dates: 'Dec 8–11',
+       available: false,
        past: false
       },
       {
@@ -33,14 +33,14 @@ const Events: React.FC = () => {
       {
         location: 'Singapore',
         name: 'Cloud Expo Asia',
-        dates: 'Oct 9–10, 2025',
+        dates: 'Coming soon',
        available: false,
        past: false
       },
       {
         location: 'Lagos, Nigeria',
         name: 'African Gaming Expo (iGaming)',
-        dates: 'Feb 24–27, 2025',
+        dates: 'Coming soon',
        available: false,
        past: true
       }
@@ -49,7 +49,7 @@ const Events: React.FC = () => {
       {
         location: 'Singapore',
         name: 'Cloud Expo Asia',
-        dates: 'Oct 9–10, 2025',
+        dates: 'Coming soon',
        available: false,
        past: false
       }
@@ -57,22 +57,22 @@ const Events: React.FC = () => {
     emea: [
       {
         location: 'Dubai, UAE',
-        name: 'Gitex Global 2025',
-        dates: 'Oct 14–18',
-       available: true,
+        name: 'Gitex Global 2026',
+        dates: 'Dec 8–11',
+       available: false,
        past: false
       },
       {
         location: 'Lagos, Nigeria',
-        name: 'African Peering & Interconnection Forum (AfPIF 2025)',
-        dates: 'Aug 19–21',
+        name: 'African Peering & Interconnection Forum (AfPIF 2026)',
+        dates: 'Coming soon',
        available: false,
        past: false
       },
       {
         location: 'Lagos, Nigeria',
         name: 'African Gaming Expo (iGaming)',
-        dates: 'Feb 24–27, 2025',
+        dates: 'Coming soon',
        available: false,
        past: true
       }
@@ -81,7 +81,7 @@ const Events: React.FC = () => {
       { 
         location: 'San Francisco, USA',
         name: 'Game Developers Conference (GDC)',
-        dates: 'Mar 17–21, 2025',
+        dates: 'Coming soon',
        available: true,
        past: true
       }
@@ -103,21 +103,21 @@ const Events: React.FC = () => {
             <div className="max-w-4xl mx-auto">
               <div className="bg-white/5 backdrop-blur-sm p-8 md:p-12 rounded-2xl border border-white/10">
                 <h1 className="text-[40px] md:text-[56px] font-medium mb-6 leading-[1.1] tracking-tight text-white">
-                  Gitex Global 2025 - Hall 23, A20
+                  IDC Middle East CIO Summit
                 </h1>
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-4 mb-6 text-white/90">
                   <div className="flex items-center">
                     <Calendar className="mr-2 text-[#0EB623]" size={20} />
-                    <span>October 14–18</span>
+                    <span>Feb 11–12,2026</span>
                   </div>
                   <div className="hidden md:block w-1.5 h-1.5 rounded-full bg-white/50"></div>
                   <div className="flex items-center">
                     <MapPin className="mr-2 text-[#0EB623]" size={20} />
-                    <span>Dubai World Trade Centre</span>
+                    <span>The Palm, Dubai</span>
                   </div>
                 </div>
                 <p className="text-lg md:text-xl text-white/80 mb-8 max-w-3xl font-light leading-relaxed">
-                  Join EdgeNext at GITEX GLOBAL 2025 to explore the future of edge cloud infrastructure and digital innovation across emerging markets.
+                  Join EdgeNext at IDC Middle East CIO Summit 2026 to explore the future of edge cloud infrastructure and digital innovation across emerging markets.
                 </p>
                 <a 
                   href="/Contact_us" 
