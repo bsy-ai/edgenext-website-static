@@ -15,6 +15,7 @@ import { Solutions } from './components/Solutions';
 import { Registration } from './components/Registration';
 import { CallToAction } from './components/CallToAction';
 import { PageTransition } from './components/PageTransition';
+import { LegacyRedirect } from './components/LegacyRedirect';
 
 import EdgeCloudServer from './pages/EdgeCloudServer';
 import AdaptiveThreatModulation from './pages/AdaptiveThreatModulation';
@@ -918,6 +919,11 @@ function App() {
               <CaseStudyDetail />
             </PageTransition>
           } 
+        />
+        {/* 旧版 URL 重定向 - 处理 /<slug>/ 格式的旧链接 */}
+        <Route 
+          path="/:slug" 
+          element={<LegacyRedirect />}
         />
         <Route 
           path="*" 
