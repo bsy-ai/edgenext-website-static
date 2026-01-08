@@ -1187,7 +1187,8 @@
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "6bcc7d36": "Get in Touch"
+    "6bcc7d36": "Get in Touch",
+    "b25eaca0": "\n                Trusted by businesses scaling across the globe—and thriving in emerging markets.\n                From Southeast Asia to Central Asia and Africa, EdgeNext delivers content with\n                speed, security, and a human-first touch.\n              "
   },
   "src__pages__SoutheastAsiaCDN": {
     "24365718": "Unequal Network Development",
@@ -1495,7 +1496,8 @@
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "6bcc7d36": "Get in Touch"
+    "6bcc7d36": "Get in Touch",
+    "095de751": "\n        Trusted by businesses scaling across the globe—and thriving in emerging markets. \n        From Southeast Asia to Central Asia and Africa, EdgeNext delivers content with speed, \n        security, and a human-first touch.\n      "
   },
   "src__pages__SafenamesPartnership": {
     "87409202": "\n                      EdgeNext and Ajlan & Bros Holding Group Announce the Launch of AJ Cloud\n                    ",
@@ -2165,7 +2167,18 @@
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "6bcc7d36": "Get in Touch"
+    "6bcc7d36": "Get in Touch",
+    "cb394e50": "\n                  EdgeNext delivers ultra-fast, secure, and reliable media\n                  experiences—from live news to global streaming—powered by\n                  localized edge delivery and advanced threat protection.\n                ",
+    "7fc4349c": "\n                  At the heart of today's media challenges are unpredictable\n                  traffic surges, evolving security threats, and the demand for\n                  instant content refresh.\n                ",
+    "0392a093": "\n                    DNS hijacking, DDoS, and content tampering damage your\n                    brand.\n                  ",
+    "470888cd": "\n                From latency-sensitive live streaming to secure content refresh,\n                EdgeNext's edge platform empowers media providers to move\n                faster, safer, and smarter.\n              ",
+    "cd59ac3a": "\n                Powerful, edge-first media solutions that scale with your\n                audience—wherever they are.\n              ",
+    "280155cc": "\n                  Restore content fast during origin failures to keep media\n                  delivery uninterrupted.\n                ",
+    "f01887eb": "\n                  Stop attacks before they spread with smart detection and\n                  expert response.\n                ",
+    "f9fc930d": "\n                  Deliver real-time news and updates with millisecond-level\n                  efficiency using P2P and smart routing.\n                ",
+    "b3e24d66": "\n                Power real-time news updates, major event livestreams, and\n                on-demand video experiences with low-latency, scalable\n                infrastructure—wherever your audience is.\n              ",
+    "57648cc9": "\n                  China Central Television (CCTV) operates one of the\n                  largest-scale digital video databases in the country,\n                  supporting over 11.06 million simultaneous online viewers\n                  during major broadcasts with EdgeNext's comprehensive\n                  streaming solution.\n                ",
+    "b5cf55b7": "\n                  The 2022 Beijing Winter Olympic Games became the most-watched\n                  Winter Olympics in history, achieving an extraordinary global\n                  reach of over 2 billion people with EdgeNext's scalable\n                  streaming infrastructure and real-time delivery capabilities.\n                "
   },
   "src__pages__LiveStreaming": {
     "40874233": "20% reduction in buffering rates at massive scale",
@@ -2297,7 +2310,8 @@
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "6bcc7d36": "Get in Touch"
+    "6bcc7d36": "Get in Touch",
+    "095de751": "\n        Trusted by businesses scaling across the globe—and thriving in emerging markets. \n        From Southeast Asia to Central Asia and Africa, EdgeNext delivers content with speed, \n        security, and a human-first touch.\n      "
   },
   "src__pages__Legal": {
     "24184990": " You fail to follow the product manual or recommendations of EdgeNext, e.g. unavailability happens because you conduct shutdown, reboot, or cloud drive uninstallation of instance by using the control methods such as control console, API, or CLI;",
@@ -2306,6 +2320,7 @@
     "51221559": "BMS Service Level Agreement",
     "63700809": "1. Application and Acceptance of Terms and Conditions",
     "67509056": " You must comply with the relevant technical documents that we release and update from time to time on EdgeNext International Website and are applicable to the products you purchase.",
+    "68157191": "Data portability:",
     "81725771": "Please read these terms carefully.",
     "87340119": " your non-payment or arrears;",
     "fd7d7960": "CDN Service Level Agreement",
@@ -2663,7 +2678,40 @@
     "b731aba6": "#0EB623",
     "50fbb769": "\n                Questions About Our Legal Terms?\n              ",
     "bcf68a09": "\n                Our legal team is here to help clarify any questions you may have about our terms and policies.\n              ",
-    "14e3c4fd": "\n                Contact Legal Team\n              "
+    "14e3c4fd": "\n                Contact Legal Team\n              ",
+    "6860f1f5": "We will never rent or sell our customers’ Personal Information to others. We share personal information only as noted below with third parties for the purpose of providing or improving the Service to you. If we do this, such third parties’ use of your Personal Information will be bound by obligations of confidentiality. We may store Personal Information in locations outside our direct control (for instance, on servers or databases located or co-located with hosting providers). Any Personal Information or content that you voluntarily disclose for posting to the Service becomes available to the public, as controlled by any applicable privacy or website customization settings. To change your privacy settings on the Service, you may visit our account settings page. If you remove information that you posted to the Service, copies may remain viewable in cached and archived pages of the Service, or if other users have copied or saved that information.",
+    "5b3d07fb": "Within Our Corporate Group and Service Providers:",
+    "3ec42c73": " To deliver our Services efficiently, we share your personal information with our affiliated entity in Malaysia and with third-party service providers (e.g., for communications, payments, hosting) who are also located in Malaysia or other countries outside of Singapore. When we do this, we ensure that such recipients are contractually bound by obligations of confidentiality and data protection standards that are at least as stringent as those required by the Singapore PDPA.",
+    "47e80f5c": "International Data Transfers:",
+    "bb3b8bf2": " Your acceptance of this Privacy Policy constitutes your consent (deemed consent under the PDPA) to the transfer of your personal information to Malaysia. We take all reasonable steps to ensure that your data is treated securely and in accordance with this Privacy Policy after such transfer.",
+    "4a3cb50b": "Legal and Regulatory Requirements:",
+    "3e21a033": " We may disclose your information if required to do so by law, court order, legal process, or subpoena, including to respond to any government or regulatory request, whether in Singapore, Malaysia, or other jurisdictions.",
+    "a8caff61": "Business Transfers:",
+    "917f9a27": " In the event of a merger, acquisition, or sale of all or a portion of our assets, your Personal Information may be transferred to the successor entity. The data will remain subject to the promises made in this Privacy Policy unless you consent otherwise.",
+    "fbe85862": "You have the following rights regarding your information: To exercise any of these rights, please contact us using the details in Section 9.",
+    "1345fca3": "Access and Correction:",
+    "9d7bf0f3": " You have the right to access and correct your personal data in our possession or under our control.",
+    "0e2ee9c7": "Withdrawal of Consent:",
+    "d0ba888a": " You may withdraw your consent for the collection, use, or disclosure of your personal data by giving us reasonable notice. Please note that upon withdrawal of consent, we may not be able to continue providing you with some or all of our Services.",
+    "ba9a7548": " Where applicable, upon your request, we shall provide you or a successor organization you authorize with your data in a commonly used machine-readable format.",
+    "5e969b42": "Deletion:",
+    "8cca85a2": " You may request the deletion of your personal data, and we will act on such requests unless we are required to retain the data by law or have a legitimate business interest to retain it (e.g., for legal compliance, dispute resolution).",
+    "7d0fa9af": "We will respond to your request within the timeframe set by applicable law. If you are not satisfied with our response, you have the right to contact the Personal Data Protection Commission (PDPC) of Singapore.",
+    "63bd9de5": "The right to restrict processing:",
+    "6491cc90": " You have rights to “block” or suppress further use of your information. When processing is restricted, we can still store your information, but may not use it further. We keep lists of people who have asked for further use of their information to be “blocked” to make sure the restriction is respected in future.",
+    "e526579c": "The right to data portability:",
+    "692da5ef": " You have rights to obtain and reuse your personal data for your own purposes across different services. For example, if you decide to switch to a new provider, this enables you to move, copy or transfer your information easily between our IT systems and theirs safely and securely, without affecting its usability.",
+    "8e5bc6c2": "The right to object:",
+    "0e827fcf": " You have the right to object to certain types of processing, including processing for direct marketing (which we do only with your consent). For more information or to object, see Objecting to processing.",
+    "51593bd9": "Edgenext Legend Dynasty Pte.Ltd. and its affiliates (hereinafter referred to as “EdgeNext” or “we”) value the data security of our customers. As a cloud service provider, EdgeNext provides various activities and services in compliance with relevant data protection laws and regulations and provides customers with a stable, secure and data-friendly cloud environment. Adhering to the concept of providing customers with adequate data protection, we are committed to becoming a stable, reliable, secure and reliable cloud partner with sustainable evolution.",
+    "f5429c08": "1.1. \"Customer data\" refers to the data stored in the EdgeNext server by the customer due to the use of EdgeNext services, including but not limited to text, audio, video or images.This includes personal data contaioned within.",
+    "5a586138": "2. Customer data control and roles",
+    "d12753da": "2.1. Customer Data is controlled and managed by the Customer, who is the data controller of such data. EdgeNext acts as a data processor on the instructions of the customer.we do not access or use customer data uless othderwise required by law or mutually agreed. Customers decide for themselves how they control customer data. We will carry out the corresponding data processing activities in strict accordance with the written instructions of the customer and in compliance with the Singapore PDPA.",
+    "fee6dbf1": "5. Data Subject Rights and Complaints",
+    "083a908f": "Customers, as data controllers, are primarily responsible for responding to requests from individuals whose personal data is contained within the Customer Data. However, we will provide reasonable assistance to you in fulfilling your obligations under the PDPA. If you receive any data subject requests or have any concerns about how we handle Customer Data, please contact us at ",
+    "872736de": "info_apac@edgenext.com",
+    "c7640952": "If you are not satisfied with how we have handled your complaint, you may have the right to lodge a complaint with the ",
+    "8329d6a2": "Personal Data Protection Commission (PDPC) of Singapore"
   },
   "src__pages__IPTransit": {
     "63005802": "Full Name",
@@ -2754,7 +2802,8 @@
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "6bcc7d36": "Get in Touch"
+    "6bcc7d36": "Get in Touch",
+    "b25eaca0": "\n                Trusted by businesses scaling across the globe—and thriving in emerging markets.\n                From Southeast Asia to Central Asia and Africa, EdgeNext delivers content with\n                speed, security, and a human-first touch.\n              "
   },
   "src__pages__IoTAuthentication": {
     "10513676": "What Are the Benefits of Using Hardware-Based Authentication for IoT Devices?",
@@ -3366,7 +3415,14 @@
     "d59048f2": "\n                        Learn more\n                        ",
     "7b9639b8": "\n                Want to meet us at an event?\n              ",
     "226ab17e": "\n                Contact our team to schedule a meeting at any of our upcoming events. We'd love to discuss how EdgeNext can help accelerate your digital transformation.\n              ",
-    "02d4482d": "\n                Contact us\n                "
+    "02d4482d": "\n                Contact us\n                ",
+    "04461924": "Feb 11–12,2026",
+    "36ec3319": "The Palm, Dubai",
+    "5b91b460": "Join EdgeNext at IDC Middle East CIO Summit 2026 to explore the future of edge cloud infrastructure and digital innovation across emerging markets.",
+    "c78b2c22": "African Peering & Interconnection Forum (AfPIF 2026)",
+    "1725eaf4": "Gitex Global 2026",
+    "b51f356d": "Dec 8–11",
+    "f957ee86": "\n                  IDC Middle East CIO Summit\n                "
   },
   "src__pages__EOEventsPartnership": {
     "58189245": "Seamless integration of technologies for optimal performance",
@@ -3687,7 +3743,35 @@
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "37d17997": "\n                        Contact Sales Team\n                        "
+    "37d17997": "\n                        Contact Sales Team\n                        ",
+    "397e13d3": "\n                EdgeNext Edge Cloud Server (ECS) leverages 1,500+ global edge nodes to create an\n                edge computing network, bringing cloud power closer to end users. It delivers\n                low-latency, scalable services worldwide, with a focus on emerging markets with high\n                computing demand across Asia, the Middle East, Africa, North America, and Oceania.\n              ",
+    "528c0476": "\n                  Reduce latency by up to 80% with our edge locations positioned closer to your\n                  users worldwide.\n                ",
+    "95d445c6": "\n                  Edge nodes not only in developed regions, but in emerging markets like Libya,\n                  Pakistan, Uzbekistan — deploy where others can't.\n                ",
+    "2c5988c9": "\n                  Meet regional data laws and bank-level security needs with localized\n                  infrastructure and multilayer protection.\n                ",
+    "5d7372b7": "\n                  Tailor CPU, memory, storage, and regions to your needs. Deploy across multiple\n                  regions and AZs for low latency and resilience.\n                ",
+    "6bf256e6": "\n                Get started with ECS today and experience the power of edge computing within 5\n                minutes\n              ",
+    "381de3b6": "\n                    Deploy your applications in seconds with our one-click deployment system and\n                    automated scaling.\n                  ",
+    "bd5b2d68": "\n                    Automatically scale resources up or down based on demand with intelligent load\n                    balancing across nodes.\n                  ",
+    "b9b7020b": "\n                    Monitor performance, traffic, and resource usage with comprehensive analytics and\n                    alerts.\n                  ",
+    "44c81364": "\n                    Distributed storage with automatic replication and backup across edge locations,\n                    up to 20 cloud disks per instance.\n                  ",
+    "b84d01f8": "\n                    Deploy in your own Virtual Private Network (VPC) with isolated subnets and\n                    custom access policies.\n                  ",
+    "66c708d3": "\n                    Protect your workloads with built-in firewalls and intrusion detection, creating\n                    a bank-level defense layer.\n                  ",
+    "e4330742": " and provide seamless\n                  multiplayer experiences with edge servers close to players.\n                ",
+    "4d440bbe": "\n                  Process IoT data at the edge for real-time decision making and reduced bandwidth\n                  costs.\n                ",
+    "cf481df7": "\n                  Handle seasonal surges, high-volume transactions, and flash sales with elastic\n                  compute and load balancing.\n                ",
+    "f0d5795d": "\n                  Power fintech, healthcare, and other critical apps with encrypted,\n                  high-concurrency cloud infrastructure.\n                ",
+    "ed1d8135": "\n                  Run pre-trained AI models at the edge for voice, image, and chatbot services. Cut\n                  latency bottlenecks.\n                ",
+    "4ab8007c": "\n                Choose the right plan for your project, with flexible performance options and\n                competitive pricing.\n              ",
+    "812ea35a": "\n                  Deployed custom edge nodes to support its rapid growth across MEA, SEA, and Europe\n                  with ",
+    "bc6fef06": " cost savings,\n                  smoother gameplay.\n                ",
+    "9eaa57ae": "\n                  Ensured regional compliance and improved connectivity across Central Asia with\n                  local edge nodes and optimized networking.\n                ",
+    "4e99383a": " and\n                  cut transmission distance by over",
+    "11b63cfe": ", with caches pushed closer\n                  to users and a custom network solution.\n                ",
+    "d1b8825a": "\n        Ready to Build at the Edge?\n      ",
+    "cf2fe54b": "\n        Tell us about your workloads, regions, and growth plans. Our team will help you\n        design an ECS deployment that fits your performance, compliance, and budget needs.\n      ",
+    "e3185010": "\n        Already working with EdgeNext?",
+    "a2caf1f3": "\n          Log in to the console\n        ",
+    "62e8bc8e": "\n        to manage your ECS instances.\n      "
   },
   "src__pages__Ecommerce": {
     "15656986": "\n                  Leverage EdgeNext's localized infrastructure and orchestration tools to roll out e-commerce services across all over the world.\n                ",
@@ -3754,7 +3838,8 @@
     "6bcc7d36": "\n                  Get in Touch\n                  ",
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
-    "4e61651e": "✓ Message Sent!"
+    "4e61651e": "✓ Message Sent!",
+    "f4210a51": "\n                EdgeNext empowers e-commerce platforms with ultra-low latency, reliable uptime,\n                and localized delivery—so you can scale across emerging markets with confidence.\n              "
   },
   "src__pages__DynamicAcceleration": {
     "24049577": "Edge access reduces round-trip latency, enabling faster and more responsive user experiences",
@@ -3838,7 +3923,8 @@
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "6bcc7d36": "Get in Touch"
+    "6bcc7d36": "Get in Touch",
+    "8de0ce91": "\n                Accelerate your APIs, scale your interactions, and never compromise\n                on performance—even when traffic surges.\n              "
   },
   "src__pages__DNSSecurity": {
     "40623267": "Simple A record configuration",
@@ -4382,7 +4468,8 @@
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "a4d3b161": "\n                        Submit\n                        "
+    "a4d3b161": "\n                        Submit\n                        ",
+    "85bbf221": "\n        Fill out the form and our China market experts will get back to you within\n        24 hours to discuss your ICP license needs and options.\n      "
   },
   "src__pages__ChinaCDN": {
     "12306883": "\n                  Discover how a major e-commerce platform reduced page load times by 60% and increased conversion rates during peak shopping seasons.\n                ",
@@ -4846,7 +4933,8 @@
     "e01d7de3": "bg-green-500 text-white",
     "0cc0c3f3": "bg-white text-[#0EB623] hover:bg-opacity-90",
     "4e61651e": "✓ Message Sent!",
-    "6bcc7d36": "Get in Touch"
+    "6bcc7d36": "Get in Touch",
+    "78b70f8c": "\n                Join the leading companies leveraging EdgeNext for unparalleled bare metal performance\n                across emerging markets.\n              "
   },
   "src__pages__ApplicationLayerNetworkLayerDDoS": {
     "c2c03626": "November 19, 2024 • by Kaiyue",

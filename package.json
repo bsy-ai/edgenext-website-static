@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "prebuild": "npm run translate && npm run replace",
+    "prebuild": "npm run translate && npm run replace && npm run sitemap",
     "build:with-i18n": "npm run replace && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -15,6 +15,7 @@
     "translate:scan": "tsx src/i18n/scripts/autoTranslate.ts --scan-only",
     "replace": "tsx src/i18n/scripts/smartComponentReplacer.ts",
     "replace:config": "tsx src/i18n/scripts/smartComponentReplacer.ts --generate",
+    "sitemap": "tsx scripts/generate-sitemap.ts",
     "i18n:full": "npm run trxanslate && npm run replace"
   },
   "dependencies": {
