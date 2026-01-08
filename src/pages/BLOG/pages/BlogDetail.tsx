@@ -4,6 +4,8 @@ import { Footer } from '../../../components/Footer';
 import { ArrowRight, ArrowLeft } from 'lucide-react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { getPostBySlug, getRelatedPosts } from '../utils/blogUtils';
+import NotFound from '../../NotFound';
+import { PageTransition } from '../../../components/PageTransition';
 import '../styles/blog-content.css';
 
 const BlogDetail: React.FC = () => {
@@ -11,13 +13,21 @@ const BlogDetail: React.FC = () => {
   const navigate = useNavigate();
   
   if (!slug) {
-    return <div>Article not found</div>;
+    return (
+      <PageTransition>
+        <NotFound />
+      </PageTransition>
+    );
   }
 
   const blogPost = getPostBySlug(slug);
   
   if (!blogPost) {
-    return <div>Article not found</div>;
+    return (
+      <PageTransition>
+        <NotFound />
+      </PageTransition>
+    );
   }
 
   const relatedPosts = getRelatedPosts(slug, blogPost.relatedPosts);

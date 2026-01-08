@@ -5,6 +5,8 @@ import { Footer } from '../../../components/Footer';
 import { ArrowLeft, Calendar, Clock, User, Tag, Share2, Copy, ChevronUp, Twitter, Linkedin, Mail } from 'lucide-react';
 import { getNewsBySlug, getRelatedNews } from '../utils/newsDataParser';
 import { formatDate, formatRelativeTime, generateShareUrls, getCategoryColor, getCategoryIcon, getReadTimeText, generateBreadcrumbs } from '../utils/newsUtils';
+import NotFound from '../../NotFound';
+import { PageTransition } from '../../../components/PageTransition';
 import '../styles/news-content.css';
 
 const NewsDetail: React.FC = () => {
@@ -14,13 +16,21 @@ const NewsDetail: React.FC = () => {
   const [copySuccess, setCopySuccess] = useState(false);
   
   if (!slug) {
-    return <Navigate to="/newsroom" replace />;
+    return (
+      <PageTransition>
+        <NotFound />
+      </PageTransition>
+    );
   }
 
   const article = getNewsBySlug(slug);
 
   if (!article) {
-    return <Navigate to="/newsroom" replace />;
+    return (
+      <PageTransition>
+        <NotFound />
+      </PageTransition>
+    );
   }
 
   const relatedNews = getRelatedNews(article, 3);

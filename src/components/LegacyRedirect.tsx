@@ -1,6 +1,8 @@
 import { useParams, Navigate } from 'react-router-dom';
 import { getAllPostSlugs } from '../pages/BLOG/utils/blogUtils';
 import { getAllNews } from '../pages/NEWS/utils/newsDataParser';
+import NotFound from '../pages/NotFound';
+import { PageTransition } from './PageTransition';
 
 /**
  * 处理旧版 URL 重定向
@@ -11,7 +13,11 @@ export const LegacyRedirect = () => {
   const { slug } = useParams<{ slug: string }>();
 
   if (!slug) {
-    return <Navigate to="/404" replace />;
+    return (
+      <PageTransition>
+        <NotFound />
+      </PageTransition>
+    );
   }
   
   const blogSlugs = getAllPostSlugs();
@@ -25,6 +31,10 @@ export const LegacyRedirect = () => {
     return <Navigate to={`/resources/news/${slug}`} replace />;
   }
 
-  return <Navigate to="/404" replace />;
+  return (
+    <PageTransition>
+      <NotFound />
+    </PageTransition>
+  );
 };
 
