@@ -20,11 +20,10 @@ export const TrustedBy: React.FC = () => {
   // Second row logos - different from first row
   const secondRowLogos = [
     { icon: <img src="/chatlablogo.png" alt="ChatLab" className="w-20 h-20 object-contain" /> },
-    { name: 'JD.com', icon: <img src="/JDlogo1.png" alt="JD.com" className="w-10 h-10 object-contain" /> },
     { icon: <img src="/JetStreamlogo.png" alt="JetStream" className="w-24 h-20 object-contain" /> },
     { icon: <img src="/safenames.webp" alt="Safenames" className="w-20 h-20 object-contain" /> },
     { icon: <img src="/neteaselogo.webp" alt="NetEase" className="w-20 h-20 object-contain" /> },
-    { icon: <img src="/tiktoklogo.png" alt="TikTok" className="w-20 h-20 object-contain" /> }
+   
   ];
   // Double the logos array for seamless infinite scroll
   const doubledLogos = [...clientLogos, ...clientLogos];
