@@ -302,7 +302,7 @@ const EdgeCloudServer: React.FC = () => {
             </p>
             <div className="relative h-[450px] rounded-xl overflow-hidden shadow-lg border border-gray-100 bg-gray-50">
               <iframe
-                src="/kepler-gl-1.html"
+                src="/kepler-gl-2.html"
                 width="100%"
                 height="100%"
                 style={{ border: 'none' }}
