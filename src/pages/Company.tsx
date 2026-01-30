@@ -107,8 +107,8 @@ const Company: React.FC = () => {
               
               <div className="text-center">
                 <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4" translate="no">
-                  {hasScrolled && <CountUp end={76} suffix="B+" duration={2} />}
-                  {!hasScrolled && "76B+"}
+                  {hasScrolled && <CountUp end={760} suffix="B+" duration={2} />}
+                  {!hasScrolled && "760B+"}
                 </div>
                 <div className="text-lg text-gray-600">Requests Processed Daily</div>
               </div>

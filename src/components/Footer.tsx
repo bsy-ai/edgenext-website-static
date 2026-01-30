@@ -138,6 +138,11 @@ export const Footer: React.FC = () => {
                 <a href="/media_and_entertainment" className="hover:text-[#0EB623] transition-colors duration-200">
                   Media & Entertainment
                 </a>
+              </li>   
+              <li>
+                <a href="/sports_broadcasting" className="hover:text-[#0EB623] transition-colors duration-200">
+                  Sports Broadcasting
+                </a>
               </li>
             </ul>
 

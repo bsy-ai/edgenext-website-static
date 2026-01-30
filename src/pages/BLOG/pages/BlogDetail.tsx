@@ -139,10 +139,10 @@ const BlogDetail: React.FC = () => {
                   </p>
                 </div>
                 <a 
-                  href="/products/anti-ddos" 
+                  href="/contact_us" 
                   className="px-8 py-4 bg-white text-[#0EB623] rounded-xl hover:bg-opacity-90 transition-colors font-medium whitespace-nowrap"
                 >
-                  Learn More
+                  Contact Us
                 </a>
               </div>
             </div>

@@ -220,6 +220,14 @@ export const Dropdown: React.FC<DropdownProps> = ({ type, onClose }) => {
             description="For gaming services or platforms"
             to="/gaming"
           />
+          
+          <MenuItem 
+            icon={<Video size={18} />}
+            title="Sports Broadcasting"
+            description="For live sports streaming"
+            to="/sports_broadcasting"
+          />
+          
           <MenuItem 
             icon={<Film size={18} />}
             title="Media & Entertainment"

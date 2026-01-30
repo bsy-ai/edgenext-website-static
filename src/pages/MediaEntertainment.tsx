@@ -421,7 +421,7 @@ const MediaEntertainment: React.FC = () => {
                   streaming solution.
                 </p>
                 <Link
-                  to="/cctv-cdn-streaming-solution"
+                  to="/case-study/cctv-cdn-streaming-solution"
                   className="text-[#0EB623] font-medium inline-flex items-center group-hover:gap-2 transition-all duration-300"
                 >
                   Read Case Study

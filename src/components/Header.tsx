@@ -330,6 +330,14 @@ export const Header: React.FC = () => {
                               Gaming
                             </Link>
                             <Link 
+                            to="/sports_broadcasting"
+                            className="block text-gray-600 hover:text-[#0EB623]"
+                            onClick={() => setMobileMenuOpen(false)}
+                            >
+                              Sports Broadcasting
+                            </Link>
+                            
+                            <Link 
                               to="/media_and_entertainment" 
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}

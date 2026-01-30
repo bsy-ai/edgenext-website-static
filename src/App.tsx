@@ -64,6 +64,8 @@ import MENACDN from './pages/MENACDN';
 import Gaming from './pages/Gaming';
 import MediaEntertainment from './pages/MediaEntertainment';
 import Ecommerce from './pages/Ecommerce';
+import SportsBroadcasting from './pages/SportsBroadcasting';
+import LegalV2 from './pages/LegalV2';
 import Telecommunication from './pages/Telecommunication';
 import ELearning from './pages/ELearning';
 import ContactUs from './pages/ContactUs';
@@ -665,6 +667,23 @@ function App() {
           element={
             <PageTransition>
               <Ecommerce />
+            </PageTransition>
+          } 
+        />
+        <Route 
+          path="/sports_broadcasting" 
+          element={
+              <PageTransition>
+              <SportsBroadcasting />
+              </PageTransition>
+         } 
+        />
+
+        <Route 
+          path="/legalV2" 
+          element={
+            <PageTransition>
+              <LegalV2 />
             </PageTransition>
           } 
         />
