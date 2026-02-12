@@ -403,7 +403,7 @@ export const Header: React.FC = () => {
                               rel="noopener noreferrer"
                               className="block text-gray-600 hover:text-[#0EB623]"
                             >
-                              API Reference
+                              Document Center
                             </a>
                             <Link 
                               to="/icp-license" 

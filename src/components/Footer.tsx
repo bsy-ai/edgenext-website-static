@@ -178,7 +178,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2 mb-4">
               <li>
                 <a href="https://home.console.edgenext.com/#/doc/dashboard" target="_blank" rel="noopener noreferrer" className="hover:text-[#0EB623] transition-colors duration-200">
-                  API Reference
+                  Document Center
                 </a>
               </li>
               <li>
