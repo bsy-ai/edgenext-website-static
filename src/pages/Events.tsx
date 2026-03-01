@@ -103,21 +103,21 @@ const Events: React.FC = () => {
             <div className="max-w-4xl mx-auto">
               <div className="bg-white/5 backdrop-blur-sm p-8 md:p-12 rounded-2xl border border-white/10">
                 <h1 className="text-[40px] md:text-[56px] font-medium mb-6 leading-[1.1] tracking-tight text-white">
-                  IDC Middle East CIO Summit
+                 NAB Show 2026
                 </h1>
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-4 mb-6 text-white/90">
                   <div className="flex items-center">
                     <Calendar className="mr-2 text-[#0EB623]" size={20} />
-                    <span>Feb 11–12,2026</span>
+                    <span>April 18–22,2026</span>
                   </div>
                   <div className="hidden md:block w-1.5 h-1.5 rounded-full bg-white/50"></div>
                   <div className="flex items-center">
                     <MapPin className="mr-2 text-[#0EB623]" size={20} />
-                    <span>The Palm, Dubai</span>
+                    <span>Las Vegas, NV</span>
                   </div>
                 </div>
                 <p className="text-lg md:text-xl text-white/80 mb-8 max-w-3xl font-light leading-relaxed">
-                  Join EdgeNext at IDC Middle East CIO Summit 2026 to explore the future of edge cloud infrastructure and digital innovation across emerging markets.
+                  Join EdgeNext at NAB Show 2026 to explore the future of edge cloud infrastructure and digital innovation across emerging markets.
                 </p>
                 <a 
                   href="/Contact_us" 

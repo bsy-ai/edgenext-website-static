@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Globe, Shield, Zap, Server, Database, RefreshCw, Video, Play, Lock, Activity, Network, Download } from 'lucide-react';
+import { Globe, Shield, Zap, Server, Video, Network, Download } from 'lucide-react';
 
 export interface Product {
   name: string;
@@ -10,14 +10,39 @@ export interface CaseStudy {
   slug: string;
   title: string;
   date: string;
+
+  // ✅ layout
+  layout?: "classic" | "silver_media";
   overview: string;
-  challenges: Array<{title?: string; description: string}>;
-  solutions: Array<{title?: string; description: string}>;
+  challenges: Array<{ title?: string; description: string }>;
+  solutions: Array<{ title?: string; description: string }>;
   products: Product[];
   takeaway: string | string[];
   industries: string[];
   relatedProducts: string[];
   imageUrl?: string;
+  location?: string;
+  website?: string;
+  pdfIndustry?: string;
+  solutionName?: string;
+  keyImpacts?: string[];
+  customerOverview?: string;
+  businessContext?: string;
+  objectivesIntro?: string;
+  objectives?: string[];
+  goalStatement?: string;
+  resultsTitle?: string;
+  resultsParagraph?: string;
+  resultsIntro?: string;
+  resultsBullets?: string[];
+  customerQuote?: {
+    text: string;
+    name: string;
+    title: string;
+    company: string;
+  };
+
+  aboutEdgeNext?: string;
 }
 
 const caseStudies: CaseStudy[] = [
@@ -497,6 +522,83 @@ const caseStudies: CaseStudy[] = [
     industries: ["National Broadcasting Platforms", "Government and Public Sector Streaming", "High-Viewership Event Broadcasting", "Video-on-Demand Platforms"],
     relatedProducts: ["Live Streaming", "VOD Acceleration", "Dynamic Content Delivery", "Security CDN"],
     imageUrl: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
+  },
+
+  {
+    slug: "silver-media-elevates-worldwide-digital-experiences",
+    layout: "silver_media",
+    title: "Silver Media elevates worldwide digital experiences using EdgeNext Intelligent Delivery Network Platform",
+    date: "March 1, 2026",
+
+    overview:
+      "Silver Media Direct Marketing, a leading digital and performance marketing agency based in Germany, partnered with EdgeNext to elevate the speed, reliability, and global consistency of its digital campaigns. Through EdgeNext Intelligent Delivery Network Platform, Silver Media strengthened its ability to deliver high-performing campaigns at scale, ensuring fast load times, stable delivery, and a seamless user experience for audiences worldwide.",
+
+    // cover image (public/)
+    imageUrl: "/Silver-Media-elevates-worldwide-digital-experiences.png",
+
+    // Right-side info box
+    location: "Nuremberg, Germany",
+    website: "silvermedia.de",
+    pdfIndustry: "Marketing & Business Services",
+    solutionName: "EdgeNext CDN Platform",
+    keyImpacts: [
+      "Enhanced network visibility",
+      "Global content acceleration",
+      "Unified platform to manage multiple client domains"
+    ],
+
+    // Customer Overview
+    customerOverview:
+      "Silver Media Direct Marketing is a well-established and trusted player in the digital marketing space, known for delivering high-impact, data-driven campaigns for brands across multiple markets.\n\nWith a strong reputation for performance marketing, digital optimization, and execution excellence, Silver Media supports organizations that demand reliability, speed, and scalability from their digital infrastructure.\n\nAs campaign reach expands and audience expectations rise worldwide, Silver Media continues to invest in best-in-class technology partners. This commitment ensures its clients benefit from fast, seamless, and dependable digital experiences regardless of geography, traffic volume, or campaign complexity.",
+
+    // Business Context & Objectives
+    businessContext:
+      "Operating at the forefront of digital marketing, Silver Media manages multiple client campaigns simultaneously, often with time-sensitive launches and fluctuating traffic patterns driven by media exposure and campaign cycles.",
+    objectivesIntro:
+      "To uphold its standards of excellence, Silver Media prioritizes:",
+    objectives: [
+      "Maintaining consistent performance across all digital touchpoints",
+      "Ensuring high availability and reliability for client websites and campaign assets",
+      "Supporting global audiences without compromising user experience",
+      "Simplifying operational management across multiple digital properties"
+    ],
+    goalStatement:
+      "The goal was not to address a single pain point, but to reinforce and future-proof Silver Media’s digital delivery foundation. By partnering with EdgeNext, Silver Media sought to align its infrastructure with its growth trajectory and rising client expectations, ensuring every campaign regardless of scale or geography performs at its peak.",
+
+    // Results & Business Impact
+    resultsTitle: "The EdgeNext Solution - Results & Business Impact",
+    resultsParagraph:
+      "To reinforce its global campaign delivery strategy, Silver Media deployed EdgeNext Intelligent Delivery Network Platform engineered to accelerate content distribution, stabilize performance under variable traffic loads, and provide deep operational visibility across all digital properties.",
+    resultsIntro:
+      "By integrating EdgeNext, Silver Media achieves:",
+    resultsBullets: [
+      "Consistent, high-performance delivery across global audiences",
+      "Improved end-user experience driving higher engagement and conversion",
+      "Confidence during high-visibility or time-critical campaign launches",
+      "Streamlined operations across multiple client websites and digital assets",
+      "A secure, scalable foundation for continued growth and rapid client onboarding"
+    ],
+
+    // Quote
+    customerQuote: {
+      text:
+        "EdgeNext’s CDN platform gave us the speed, stability, and protection essential for modern digital campaigns. It allowed us to focus on creativity while knowing our content delivery was fully taken care of.",
+      name: "Julia Pfaff",
+      title: "Chief Executive Officer (CEO)",
+      company: "Silver Media Direct Marketing"
+    },
+
+    // About (text only; links will be rendered in CaseStudyDetail.tsx)
+    aboutEdgeNext:
+      "EdgeNext is a global edge-cloud and content delivery provider focused on helping brands deliver fast, secure, and reliable digital experiences across international markets. With a network engineered for high performance in regions that are often difficult to reach, EdgeNext supports everything from media streaming to large-scale marketing campaigns with low latency and strong security. Its platform combines intelligent routing, real-time monitoring, and localized infrastructure, giving businesses the confidence to scale their digital presence without compromising speed or stability. Learn more at edgenext.com or follow EdgeNext on LinkedIn.",
+
+    // classic-required fields (keep empty to avoid accidental classic rendering)
+    challenges: [],
+    solutions: [],
+    products: [],
+    takeaway: [],
+    industries: [],
+    relatedProducts: []
   }
 ];
 
