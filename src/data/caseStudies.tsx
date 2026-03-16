@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import { Globe, Shield, Zap, Server, Video, Network, Download } from 'lucide-react';
+import { Globe, Shield, Zap, Server, Database, RefreshCw, Video, Play, Lock, Activity, Network, Download } from 'lucide-react';
 
 export interface Product {
   name: string;
