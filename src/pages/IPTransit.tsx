@@ -40,7 +40,8 @@ const IPTransit: React.FC = () => {
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-[40px] md:text-[60px] font-bold mb-6 leading-[1.1]">
-                <span className="text-gray-900">EdgeNext </span>
+                <span className="text-gray-900">EdgeNext</span>
+                {' '}
                 <span className="animated-gradient-text">IP Transit</span>
               </h1>
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-light">
