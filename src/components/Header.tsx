@@ -263,13 +263,6 @@ export const Header: React.FC = () => {
                             >
                               Bare Metal Server
                             </Link>
-                            <Link 
-                              to="/IP_Transit" 
-                              className="block text-gray-600 hover:text-[#0EB623]"
-                              onClick={() => setMobileMenuOpen(false)}
-                            >
-                              IP Transit
-                            </Link>
                           </div>
                         </div>
                         <div>

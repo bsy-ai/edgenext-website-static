@@ -101,11 +101,6 @@ export const Footer: React.FC = () => {
                   Bare Metal Server
                 </a>
               </li>
-              <li>
-                <a href="/IP_Transit" className="hover:text-[#0EB623] transition-colors duration-200">
-                  IP Transit
-                </a>
-              </li>
             </ul>
           </div>
           

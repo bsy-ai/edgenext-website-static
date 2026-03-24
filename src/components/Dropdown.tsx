@@ -173,12 +173,6 @@ export const Dropdown: React.FC<DropdownProps> = ({ type, onClose }) => {
           description="Dedicated high-performance servers"
           to="/bare_metal_server"
         />
-        <MenuItem 
-          icon={<Network size={18} />}
-          title="IP Transit"
-          description="Global network connectivity"
-          to="/IP_Transit"
-        />
       </Section>
       
       <Section title="AI-Powered Solutions" icon={<BrainCircuit size={20} />}>
