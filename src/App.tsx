@@ -939,6 +939,7 @@ function App() {
             </PageTransition>
           } 
         />
+        <Route path="/pricing" element={<Navigate to="/" replace />} />
         {/* 旧版 URL 重定向 - 处理 /<slug>/ 格式的旧链接 */}
         <Route 
           path="/:slug" 
