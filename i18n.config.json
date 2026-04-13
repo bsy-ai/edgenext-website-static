@@ -28,7 +28,9 @@
       "src/pages/NEWS/styles/**",
       "src/pages/NEWS/utils/**",
       "src/pages/NEWS/**/*.json",
-      "src/components/LegacyRedirect.tsx"
+      "src/components/LegacyRedirect.tsx",
+      "src/components/SeoHead.tsx",
+      "src/seo/**"
     ],
     "ignoreDirs": [
       "node_modules",

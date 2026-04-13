@@ -27,7 +27,9 @@
       "src/**/*.stories.*",
       "src/components/LanguageSwitcher.tsx",
       "src/components/LegacyRedirect.tsx",
-      "src/i18n/**"
+      "src/components/SeoHead.tsx",
+      "src/i18n/**",
+      "src/seo/**"
     ],
     "ignoreDirs": [
       "node_modules",

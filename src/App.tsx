@@ -16,6 +16,7 @@ import { Registration } from './components/Registration';
 import { CallToAction } from './components/CallToAction';
 import { PageTransition } from './components/PageTransition';
 import { LegacyRedirect } from './components/LegacyRedirect';
+import { SeoHead } from './components/SeoHead';
 
 import EdgeCloudServer from './pages/EdgeCloudServer';
 import AdaptiveThreatModulation from './pages/AdaptiveThreatModulation';
@@ -113,8 +114,10 @@ function App() {
   }, [location]);
 
   return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
+    <>
+      <SeoHead pathname={location.pathname} />
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
         <Route 
           path="/" 
           element={
@@ -954,7 +957,8 @@ function App() {
           } 
         />
       </Routes>
-    </AnimatePresence>
+      </AnimatePresence>
+    </>
   );
 }
 

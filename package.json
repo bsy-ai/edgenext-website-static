@@ -31,6 +31,7 @@
     "react": "^18.3.1",
     "react-countup": "^6.5.0",
     "react-dom": "^18.3.1",
+    "react-helmet-async": "^3.0.0",
     "react-i18next": "^15.7.3",
     "react-router-dom": "^6.22.3",
     "react-simple-maps": "^3.0.0",
@@ -38,9 +39,9 @@
   },
   "devDependencies": {
     "@babel/generator": "^7.25.6",
-    "@babel/types": "^7.25.6",
     "@babel/parser": "^7.25.6",
     "@babel/traverse": "^7.25.6",
+    "@babel/types": "^7.25.6",
     "@eslint/js": "^9.9.1",
     "@types/crypto-js": "^4.2.2",
     "@types/fs-extra": "^11.0.4",
