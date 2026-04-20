@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Generated from src/pages/NEWS/content/newsroom.json during prebuild
+public/data/newsroom.json
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
