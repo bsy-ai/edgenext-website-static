@@ -292,10 +292,10 @@ const Ecommerce: React.FC = () => {
                 </p>
               </div>
               <div className="flex gap-4">
-                <a href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-white text-gray-700 rounded-xl hover:text-[#0EB623] font-medium transition-colors">
+                <a href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard" target="_blank" rel="noopener" className="px-6 py-3 bg-white text-gray-700 rounded-xl hover:text-[#0EB623] font-medium transition-colors">
                   Learn more
                 </a>
-                <a href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard" target="_blank" rel="noopener noreferrer" className="px-6 py-3 bg-[#0EB623] text-white rounded-xl hover:bg-[#0EA620] transition-colors font-medium">
+                <a href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard" target="_blank" rel="noopener" className="px-6 py-3 bg-[#0EB623] text-white rounded-xl hover:bg-[#0EA620] transition-colors font-medium">
                   Get started
                 </a>
               </div>

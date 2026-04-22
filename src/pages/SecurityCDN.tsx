@@ -83,7 +83,7 @@ const SecurityCDN: React.FC = () => {
                 <a 
                   href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-6 md:px-8 py-3 md:py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 flex items-center justify-center group"
                 >
                   <span className="relative z-10">Get started for free!</span>
@@ -204,7 +204,7 @@ const SecurityCDN: React.FC = () => {
                 <a 
                   href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="w-full md:w-auto whitespace-nowrap bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-6 md:px-8 py-3 md:py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 flex items-center justify-center group"
                 >
                   Get started for free!
@@ -546,7 +546,7 @@ const SecurityCDN: React.FC = () => {
                         <a 
                           href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                           target="_blank"
-                          rel="noopener noreferrer"
+                          rel="noopener"
                           className="inline-flex items-center px-6 py-3 bg-[#0EB623] text-white rounded-lg hover:bg-[#0EA620] transition-colors font-medium"
                         >
                           Activate Now

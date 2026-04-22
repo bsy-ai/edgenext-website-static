@@ -262,7 +262,7 @@ const EdgeCloudServer: React.FC = () => {
                 <a
                   href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="group bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 flex items-center justify-center relative overflow-hidden"
                 >
                   <span className="relative z-10">Start Free Trial</span>
@@ -425,7 +425,7 @@ const EdgeCloudServer: React.FC = () => {
                 <a
                   href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="px-8 py-4 bg-white/90 backdrop-blur-md text-[#0EB623] rounded-xl font-medium hover:bg-white transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                 >
                   Claim Discount
@@ -654,7 +654,7 @@ const EdgeCloudServer: React.FC = () => {
                 <a
                   href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="block w-full text-center bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium py-3 rounded-xl transition-all duration-300"
                 >
                   Get Started
@@ -687,7 +687,7 @@ const EdgeCloudServer: React.FC = () => {
                 <a
                   href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="block w-full text-center bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium py-3 rounded-xl transition-all duration-300"
                 >
                   Get Started
@@ -720,7 +720,7 @@ const EdgeCloudServer: React.FC = () => {
                 <a
                   href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="block w-full text-center bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium py-3 rounded-xl transition-all duration-300"
                 >
                   Get Started
@@ -808,7 +808,7 @@ const EdgeCloudServer: React.FC = () => {
         <a
           href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener"
           className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300 group"
         >
           Start Free Trial

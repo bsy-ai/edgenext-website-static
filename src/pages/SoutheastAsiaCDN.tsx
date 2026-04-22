@@ -325,7 +325,7 @@ const SoutheastAsiaCDN: React.FC = () => {
               <a 
                 href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener"
                 className="px-8 py-4 bg-white text-purple-600 rounded-xl hover:bg-opacity-90 transition-colors font-medium whitespace-nowrap"
               >
                 Get Started

@@ -97,7 +97,7 @@ const GlobalCDN: React.FC = () => {
                 <a 
                   href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-6 md:px-8 py-3 md:py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 flex items-center justify-center group"
                 >
                   Start Now
