@@ -393,7 +393,7 @@ export const Header: React.FC = () => {
                             <a 
                               href="https://home.console.edgenext.com/#/doc/dashboard" 
                               target="_blank"
-                              rel="noopener noreferrer"
+                              rel="noopener"
                               className="block text-gray-600 hover:text-[#0EB623]"
                             >
                               Document Center

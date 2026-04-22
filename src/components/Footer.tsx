@@ -13,7 +13,7 @@ export const Footer: React.FC = () => {
             <h3 className="text-xl font-semibold mt-8 mb-4">Getting Started</h3>
             <ul className="space-y-3">
               <li>
-                <a href="https://home.console.edgenext.com/#/uc/register" target="_blank" rel="noopener noreferrer" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="https://home.console.edgenext.com/#/uc/register" target="_blank" rel="noopener" className="hover:text-[#0EB623] transition-colors duration-200">
                   Free Trial
                 </a>
               </li>

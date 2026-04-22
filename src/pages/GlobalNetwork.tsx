@@ -99,7 +99,7 @@ const GlobalNetwork: React.FC = () => {
                 <a 
                   href="https://home.console.edgenext.com/#/uc/register"
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="noopener"
                   className="border-2 border-[#0EB623] text-gray-800 font-medium px-8 py-4 rounded-xl hover:bg-white/80 transition-all duration-300 flex items-center justify-center"
                 >
                   Create an account

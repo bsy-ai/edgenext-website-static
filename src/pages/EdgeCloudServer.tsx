@@ -825,7 +825,7 @@ const EdgeCloudServer: React.FC = () => {
           href="https://home.console.edgenext.com/#/dashboard"
           className="underline underline-offset-4 decoration-white/60 hover:decoration-white"
           target="_blank"
-          rel="noopener noreferrer"
+          rel="noopener"
         >
           Log in to the console
         </a>{' '}
