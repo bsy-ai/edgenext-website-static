@@ -186,7 +186,7 @@ function getTrackingParamsFromURLOnly(): Partial<TrackingParams> {
  * 自动收集并保存追踪信息到 Cookie
  * 
  * 使用说明：
- * - 在应用入口调用此函数（例如 App.tsx 的 useEffect 中）
+ * - 在应用入口调用此函数（例如 RootLayout 或页面级的 useEffect 中）
  * - 每次页面加载/路由变化时都会收集并保存追踪信息
  * - 无论是否包含 URL 追踪参数，都会保存基础信息（referrer、landing_page、session_id、timestamp）
  * - 如果 URL 包含追踪参数（gclid、utm_* 等），会一并保存

@@ -16,18 +16,21 @@ interface BlogItem {
 }
 
 const Blog: React.FC = () => {
-  // 从sessionStorage恢复状态，如果没有则使用默认值
+  const isBrowser = typeof sessionStorage !== 'undefined';
+
+  // 从sessionStorage恢复状态，如果没有则使用默认值（SSR 环境下跳过）
   const [searchTerm, setSearchTerm] = useState(() => {
-    return sessionStorage.getItem('blogSearchTerm') || '';
+    return isBrowser ? (sessionStorage.getItem('blogSearchTerm') || '') : '';
   });
   const [debouncedSearchTerm, setDebouncedSearchTerm] = useState(searchTerm);
   const [sortBy, setSortBy] = useState(() => {
-    return sessionStorage.getItem('blogSortBy') || 'Most recent';
+    return isBrowser ? (sessionStorage.getItem('blogSortBy') || 'Most recent') : 'Most recent';
   });
   const [selectedCategory, setSelectedCategory] = useState(() => {
-    return sessionStorage.getItem('blogSelectedCategory') || 'all';
+    return isBrowser ? (sessionStorage.getItem('blogSelectedCategory') || 'all') : 'all';
   });
   const [currentPage, setCurrentPage] = useState(() => {
+    if (!isBrowser) return 1;
     const savedPage = sessionStorage.getItem('blogCurrentPage');
     return savedPage ? parseInt(savedPage) : 1;
   });

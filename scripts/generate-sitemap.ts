@@ -25,23 +25,23 @@ function toLastmodDate(input?: string | Date): string {
   return d.toISOString().slice(0, 10); // YYYY-MM-DD
 }
 
-function extractStaticPathsFromAppTsx(appFile: string): string[] {
-  const src = fs.readFileSync(appFile, 'utf8');
-  const re = /path\s*=\s*["']([^"']+)["']/g;
-
+/** Parse vite-react-ssg RouteRecord paths from routes.tsx (path: 'segment' syntax). */
+function extractStaticPathsFromRoutesTsx(routesFile: string): string[] {
+  const src = fs.readFileSync(routesFile, 'utf8');
   const out = new Set<string>();
-  let m: RegExpExecArray | null;
+  const re = /\bpath:\s*['"]([^'"]+)['"]/g;
 
+  let m: RegExpExecArray | null;
   while ((m = re.exec(src))) {
     const p = (m[1] || '').trim();
     if (!p) continue;
-    if (!p.startsWith('/')) continue; // ignore relative paths
-    if (p.includes(':')) continue; // ignore dynamic routes (:slug, etc.)
-    if (p.includes('*')) continue; // ignore 404 wildcards
-    out.add(p);
+    if (p.includes(':')) continue;
+    if (p.includes('*')) continue;
+
+    const urlPath = p.startsWith('/') ? p : `/${p}`;
+    out.add(urlPath);
   }
 
-  // Ensure key entry pages exist
   out.add('/');
   out.add('/resources/blog');
   out.add('/newsroom');
@@ -63,10 +63,9 @@ function uniqByLoc(entries: UrlEntry[]): UrlEntry[] {
 async function main() {
   console.log('[sitemap] Starting sitemap generation...');
 
-  const appFile = path.join(process.cwd(), 'src', 'App.tsx');
+  const routesFile = path.join(process.cwd(), 'src', 'routes.tsx');
 
-  // Extract static routes from App.tsx
-  const staticPaths = extractStaticPathsFromAppTsx(appFile);
+  const staticPaths = extractStaticPathsFromRoutesTsx(routesFile);
   console.log(`[sitemap] Found ${staticPaths.length} static routes`);
 
   // Static routes: only <loc>, no <lastmod>

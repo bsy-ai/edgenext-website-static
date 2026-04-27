@@ -25,6 +25,54 @@
     <loc>https://www.edgenext.com/ai-solutions</loc>
   </url>
   <url>
+    <loc>https://www.edgenext.com/dynamic-acceleration</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/static-acceleration</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/live_streaming</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/security_cdn</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/anti_ddos</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/dns_security_service</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/bare_metal_server</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/IP_Transit</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/mea_cdn</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/gaming</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/solutions/media-entertainment</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/media_and_entertainment</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/e_commerce</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/sports_broadcasting</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/telcos-isp-iigs</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/e_learning</loc>
+  </url>
+  <url>
     <loc>https://www.edgenext.com/what-is-adaptive-threat-modulation-and-why-is-it-key-for-ddos-resilience</loc>
   </url>
   <url>
@@ -47,6 +95,36 @@
   </url>
   <url>
     <loc>https://www.edgenext.com/what-are-the-key-metrics-for-monitoring-vps-performance-under-load</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/the-dark-side-of-ai-how-machine-learning-is-being-used-to-orchestrate-ddos-attacks</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/why-are-dns-amplification-attacks-still-a-major-threat-in-modern-ddos-campaigns</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/what-are-the-key-differences-between-application-layer-and-network-layer-ddos-attacks</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/zero-trust-architecture-for-iot-devices-why-its-the-security-standard-of-the-future</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/how-can-businesses-detect-and-defend-against-multi-vector-ddos-attacks</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/why-are-bare-metal-servers-outperforming-traditional-vps-for-high-performance-applications</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/ddos-attacks-on-edge-devices-why-even-small-devices-need-advanced-protection</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/how-can-businesses-prepare-a-preemptive-ddos-defense-strategy</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/how-can-edge-computing-and-vps-improve-iot-device-security</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/whats-the-future-impact-of-quantum-computing-on-ddos-defense</loc>
   </url>
   <url>
     <loc>https://www.edgenext.com/resources/news/edgenext-edge-cloud-servers-add-new-nodes-12-countries</loc>
@@ -163,52 +241,16 @@
     <loc>https://www.edgenext.com/edgenext-new-self-built-pops-in-the-middle-east-southeast-asia-and-latin-america-are-online-now</loc>
   </url>
   <url>
-    <loc>https://www.edgenext.com/dynamic-acceleration</loc>
+    <loc>https://www.edgenext.com/blog</loc>
   </url>
   <url>
-    <loc>https://www.edgenext.com/static-acceleration</loc>
+    <loc>https://www.edgenext.com/resources/blog</loc>
   </url>
   <url>
-    <loc>https://www.edgenext.com/live_streaming</loc>
+    <loc>https://www.edgenext.com/newsroom</loc>
   </url>
   <url>
-    <loc>https://www.edgenext.com/security_cdn</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/anti_ddos</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/dns_security_service</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/bare_metal_server</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/IP_Transit</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/mea_cdn</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/gaming</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/solutions/media-entertainment</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/media_and_entertainment</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/e_commerce</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/telcos-isp-iigs</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/e_learning</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/contact_us</loc>
+    <loc>https://www.edgenext.com/case_study</loc>
   </url>
   <url>
     <loc>https://www.edgenext.com/about-us</loc>
@@ -220,58 +262,7 @@
     <loc>https://www.edgenext.com/career</loc>
   </url>
   <url>
-    <loc>https://www.edgenext.com/newsroom</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/blog</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/resources/blog</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/the-dark-side-of-ai-how-machine-learning-is-being-used-to-orchestrate-ddos-attacks</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/why-are-dns-amplification-attacks-still-a-major-threat-in-modern-ddos-campaigns</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/what-are-the-key-differences-between-application-layer-and-network-layer-ddos-attacks</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/zero-trust-architecture-for-iot-devices-why-its-the-security-standard-of-the-future</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/how-can-businesses-detect-and-defend-against-multi-vector-ddos-attacks</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/why-are-bare-metal-servers-outperforming-traditional-vps-for-high-performance-applications</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/ddos-attacks-on-edge-devices-why-even-small-devices-need-advanced-protection</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/how-can-businesses-prepare-a-preemptive-ddos-defense-strategy</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/thank_you</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/how-can-edge-computing-and-vps-improve-iot-device-security</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/whats-the-future-impact-of-quantum-computing-on-ddos-defense</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/case_study</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/legal/trust</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/legal</loc>
-  </url>
-  <url>
-    <loc>https://www.edgenext.com/LegalDocumentation</loc>
+    <loc>https://www.edgenext.com/contact_us</loc>
   </url>
   <url>
     <loc>https://www.edgenext.com/partners</loc>
@@ -283,14 +274,52 @@
     <loc>https://www.edgenext.com/traffic-contact-us</loc>
   </url>
   <url>
+    <loc>https://www.edgenext.com/thank_you</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/legal</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/legal/trust</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/legalV2</loc>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/LegalDocumentation</loc>
+  </url>
+  <url>
     <loc>https://www.edgenext.com/resources/documentation/china-icp-license</loc>
   </url>
   <url>
     <loc>https://www.edgenext.com/icp-license</loc>
   </url>
   <url>
+    <loc>https://www.edgenext.com/pricing</loc>
+  </url>
+  <url>
     <loc>https://www.edgenext.com/resources/blog/why-your-users-are-leaving-and-how-edge-computing-can-bring-them-back</loc>
-    <lastmod>2026-01-08</lastmod>
+    <lastmod>2026-04-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/bare-metal-vs-dedicated-server-which-is-right-for-you</loc>
+    <lastmod>2026-04-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/bare-metal-dedicated-servers-in-new-york-what-you-need-to-know</loc>
+    <lastmod>2026-04-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/top-edge-cloud-providers-leading-the-future-of-computing</loc>
+    <lastmod>2026-04-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/from-cdn-to-idn-why-the-shift-and-why-now</loc>
+    <lastmod>2026-02-11</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/openclaw-is-now-live-on-edgenext-deploy-your-247-automation-assistant-in-minutes</loc>
+    <lastmod>2026-01-30</lastmod>
   </url>
   <url>
     <loc>https://www.edgenext.com/resources/blog/why-waf-is-essential-for-web-application-security</loc>
@@ -307,6 +336,38 @@
   <url>
     <loc>https://www.edgenext.com/resources/blog/ai-powered-cloud-services-in-2025-how-to-drive-business-efficiency-and-reduce-costs</loc>
     <lastmod>2025-11-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/how-cdn-improves-media-delivery-across-geographies</loc>
+    <lastmod>2025-03-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/how-does-china-cdn-handle-data-privacy-and-compliance-issues</loc>
+    <lastmod>2025-03-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/mitigating-ddos-attacks-on-gaming-cdns-best-practices-and-strategies</loc>
+    <lastmod>2025-03-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/what-does-low-latency-mean-for-gaming</loc>
+    <lastmod>2025-03-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/beyond-multi-cloud-why-2026-belongs-to-localized-edge-platforms-in-emerging-markets</loc>
+    <lastmod>2025-03-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/security-at-the-edge-how-ai-driven-scdn-is-replacing-traditional-waf-and-ddos-models</loc>
+    <lastmod>2025-03-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/the-2026-latency-war-why-sub-50ms-delivery-defines-the-next-generation-of-digital-experience</loc>
+    <lastmod>2025-03-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/from-cdn-to-compute-how-lightweight-edge-nodes-are-becoming-the-new-micro-data-centers</loc>
+    <lastmod>2025-03-16</lastmod>
   </url>
   <url>
     <loc>https://www.edgenext.com/resources/blog/the-dark-side-of-ai-how-machine-learning-is-being-used-to-orchestrate-ddos-attacks-</loc>
@@ -1311,6 +1372,10 @@
   <url>
     <loc>https://www.edgenext.com/resources/blog/content-delivery-edge-computing-cloud-security-trend-prediction-for-2023</loc>
     <lastmod>2022-12-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/news/edgenext-expands-european-network-through-strategic-collaboration-with-sparkle</loc>
+    <lastmod>2026-04-01</lastmod>
   </url>
   <url>
     <loc>https://www.edgenext.com/resources/news/edgenext-strengthens-partnership-with-salam-to-advance-cdn-localization-in-saudi-arabia</loc>

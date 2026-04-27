@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite-react-ssg build",
     "prebuild": "npm run translate && npm run replace && npm run sitemap && tsx scripts/copy-newsroom-to-public.ts",
     "build:with-i18n": "npm run replace && vite build",
     "lint": "eslint .",

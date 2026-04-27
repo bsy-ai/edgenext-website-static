@@ -1,28 +1,22 @@
 import { useEffect, useState } from 'react';
+import i18n from '../i18n';
 
 /**
- * 自定义Hook，用于监听语言变化并触发组件重渲染
+ * 监听 i18next 语言变化并触发重渲染（直接订阅 i18n，比 window 自定义事件更可靠）
  * 解决使用 window.t() 的组件在语言切换时不更新的问题
  */
 export const useLanguageListener = () => {
-  const [language, setLanguage] = useState(() => {
-    // 获取当前语言
-    return localStorage.getItem('i18nextLng') || 'en';
-  });
+  const [language, setLanguage] = useState(
+    () => i18n.resolvedLanguage ?? i18n.language ?? 'en'
+  );
 
   useEffect(() => {
-    const handleLanguageChange = (event: CustomEvent) => {
-      const newLanguage = event.detail?.language;
-      if (newLanguage) {
-        setLanguage(newLanguage);
-      }
+    const onLanguageChanged = (lng: string) => {
+      setLanguage(lng);
     };
-
-    // 监听语言变化事件
-    window.addEventListener('languageChanged', handleLanguageChange as EventListener);
-
+    i18n.on('languageChanged', onLanguageChanged);
     return () => {
-      window.removeEventListener('languageChanged', handleLanguageChange as EventListener);
+      i18n.off('languageChanged', onLanguageChanged);
     };
   }, []);
 

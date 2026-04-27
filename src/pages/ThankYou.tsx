@@ -29,14 +29,14 @@ const ThankYou: React.FC = () => {
                 key={i}
                 className="absolute w-2 h-2 bg-[#0EB623] rounded-full"
                 initial={{
-                  x: Math.random() * window.innerWidth,
+                  x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1280),
                   y: -10,
                   opacity: 1,
                   scale: Math.random() * 0.5 + 0.5
                 }}
                 animate={{
-                  y: window.innerHeight + 10,
-                  x: Math.random() * window.innerWidth,
+                  y: (typeof window !== 'undefined' ? window.innerHeight : 800) + 10,
+                  x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1280),
                   opacity: 0,
                   rotate: 360
                 }}
