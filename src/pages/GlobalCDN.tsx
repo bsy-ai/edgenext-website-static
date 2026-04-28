@@ -501,7 +501,7 @@ const GlobalCDN: React.FC = () => {
         Ready to Transform Your Global Content Delivery?
       </h2>
 
-      <p className="text-lg text-white/90 mb-8 max-w-2xl">
+      <p className="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
         Join the leading companies leveraging EdgeNext for unparalleled performance across emerging markets.
       </p>
 
