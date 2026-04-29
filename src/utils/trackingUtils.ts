@@ -39,8 +39,6 @@ function getCookieDomain(): string | undefined {
   return `.${mainDomain}`;
 }
 
-/** Cookie 域名（跨子域共享） */
-const COOKIE_DOMAIN = getCookieDomain();
 
 /** 需要追踪的 URL 参数列表 */
 const TRACKING_PARAM_KEYS = [
@@ -116,7 +114,7 @@ export function saveTrackingToCookie(params: TrackingParams): void {
     // 保存到 Cookie
     // 使用 session cookie（不设置 expires/maxAge），浏览器关闭后自动失效
     setCookie(TRACKING_COOKIE_NAME, paramsJson, {
-      domain: COOKIE_DOMAIN,
+      domain: getCookieDomain(),
       path: '/',
       sameSite: 'Lax', // 安全性设置，防止 CSRF 攻击
     });
