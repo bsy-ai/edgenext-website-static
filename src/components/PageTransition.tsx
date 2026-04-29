@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigationType } from 'react-router-dom';
 
 interface PageTransitionProps {
   children: React.ReactNode;
@@ -8,11 +8,12 @@ interface PageTransitionProps {
 
 export const PageTransition: React.FC<PageTransitionProps> = ({ children }) => {
   const location = useLocation();
+  const navigationType = useNavigationType();
 
-  // Scroll to top when location changes
   useEffect(() => {
+    if (navigationType === 'POP') return;
     window.scrollTo(0, 0);
-  }, [location.pathname]);
+  }, [location.pathname, navigationType]);
 
   return (
     <motion.div

@@ -395,7 +395,7 @@ const GlobalCDN: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   Enabled fast and stable livestreaming for major sales events across Southeast Asia's booming ecommerce market with redundant infrastructure and analytics.
                 </p>
-                <Link to="/global-delivery-top-ecommerce-in-sea" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
+                <Link to="/case-study/global-delivery-top-ecommerce-in-sea" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
                   Read Case Study <ArrowRight className="ml-2" size={16} />
                 </Link>
               </div>

@@ -22,6 +22,7 @@
       "**/tests/**",
       "src/i18n/**",
       "src/utils/**",
+      "src/data/**",
       "src/pages/BLOG/content/**",
       "src/pages/BLOG/styles/**",
       "src/pages/BLOG/utils/**",
@@ -43,6 +44,7 @@
       "public",
       "src/i18n",
       "src/utils",
+      "src/data",
       "src/components/LanguageSwitcher.tsx",
       "src/i18n/scripts",
       "src/i18n"
