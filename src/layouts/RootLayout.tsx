@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { SeoHead } from '../components/SeoHead';
 import { useLanguageListener } from '../hooks/useLanguageListener';
+import { initTracking } from '../utils/trackingUtils';
 
 export default function RootLayout() {
   const location = useLocation();
@@ -19,6 +20,10 @@ export default function RootLayout() {
     if (navigationType === 'POP') return;
     window.scrollTo(0, 0);
   }, [location.pathname, navigationType]);
+
+  useEffect(() => {
+    initTracking();
+  }, [location]);
 
   return (
     <HelmetProvider>
