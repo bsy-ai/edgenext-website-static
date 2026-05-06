@@ -9,6 +9,7 @@ export interface BlogPost {
   content: string;
   relatedPosts: string[];
   thumbnail: string;
+  thumbnailCandidates?: string[];
   category?: string;
 }
 
@@ -23,6 +24,7 @@ function convertParsedPost(parsedPost: ParsedBlogPost): BlogPost {
     content: parsedPost.content,
     relatedPosts: parsedPost.relatedPosts,
     thumbnail: parsedPost.thumbnail,
+    thumbnailCandidates: parsedPost.thumbnailCandidates,
     category: parsedPost.category
   };
 }
