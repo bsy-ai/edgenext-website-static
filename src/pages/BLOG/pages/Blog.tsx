@@ -251,7 +251,6 @@ const Blog: React.FC = () => {
               {/* Results count and active filters */}
               <div className="mt-6 text-center">
                 <p className="text-gray-600">
-                  Showing {filteredAndSortedItems.length} article{filteredAndSortedItems.length !== 1 ? 's' : ''}
                   {selectedCategory !== 'all' && (
                     <span className="ml-2">
                       in <span className="font-medium text-[#0EB623]">{selectedCategory}</span>
