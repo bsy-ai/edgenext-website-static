@@ -324,8 +324,8 @@ const Blog: React.FC = () => {
                                 bases.push(`/blogphoto/${p.toLowerCase()}`);
                               }
                               (el as any)._baseCandidates = bases;
-                              // 扩展名候选：优先jpg，其次png/webp（与 public/blogphoto 实际文件一致）
-                              (el as any)._extCandidates = ['jpg','png','webp'];
+                              // 扩展名候选：优先webp，其次jpg/png（与默认webp首选策略一致）
+                              (el as any)._extCandidates = ['webp','jpg','png'];
                               (el as any)._baseIndex = 0;
                               (el as any)._extIndex = 0;
                               (el as any)._initDone = true;
