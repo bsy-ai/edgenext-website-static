@@ -1,5 +1,8 @@
 import blogsData from '../content/blogs/blogs.json';
 import photoNames from '../content/blogs/blog-photo-name.json';
+import photoManifest from '../content/blogs/blog-photo-manifest.json';
+
+const slugToPhoto = photoManifest as Record<string, string>;
 
 // 缓存解析后的数据
 let cachedParsedPosts: ParsedBlogPost[] | null = null;
@@ -262,17 +265,24 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
           const description = extractDescription(content);
           const category = extractCategory(title, content);
 
-          // 使用新的映射方法确定缩略图
-          const matchingPhotoName = findMatchingPhotoName(title);
-          let thumbnail = '/dynamic-acceleration.png'; // 默认图片
+          // 优先读 manifest 精确映射，找不到才走推断兜底逻辑（保留 jpg/png/webp 候选）
+          let thumbnail: string;
+          let thumbnailCandidates: string[] | undefined;
 
-          if (matchingPhotoName) {
-            thumbnail = `/blogphoto/${matchingPhotoName}.webp`;
+          if (slugToPhoto[slug]) {
+            thumbnail = slugToPhoto[slug];
           } else {
-            const words = splitTitleToWords(title);
-            const prefixes = buildHyphenPrefixes(words, 3, Math.min(words.length, 16));
-            const baseCandidates = prefixes.map(p => `/blogphoto/${p}`);
-            thumbnail = `${baseCandidates[0]}.webp`;
+            const exts = ['jpg', 'png', 'webp'];
+            const matchingPhotoName = findMatchingPhotoName(title);
+            const base = matchingPhotoName
+              ? `/blogphoto/${matchingPhotoName}`
+              : (() => {
+                  const words = splitTitleToWords(title);
+                  const prefixes = buildHyphenPrefixes(words, 3, Math.min(words.length, 16));
+                  return `/blogphoto/${prefixes[0]}`;
+                })();
+            thumbnailCandidates = exts.map(e => `${base}.${e}`);
+            thumbnail = thumbnailCandidates[0];
           }
 
           const relatedPosts = parsedPosts
@@ -289,6 +299,7 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
             description,
             content,
             thumbnail,
+            thumbnailCandidates,
             relatedPosts,
             category
           };
@@ -320,19 +331,24 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
           const description = extractDescription(content);
           const category = extractCategory(title, content);
           
-          // 使用新的映射方法确定缩略图
-          const matchingPhotoName = findMatchingPhotoName(title);
-          let thumbnail = '/dynamic-acceleration.png'; // 默认图片
-          
-          if (matchingPhotoName) {
-            // 检查文件是否存在，优先使用jpg格式
-            thumbnail = `/blogphoto/${matchingPhotoName}.webp`;
+          // 优先读 manifest 精确映射，找不到才走推断兜底逻辑（保留 jpg/png/webp 候选）
+          let thumbnail: string;
+          let thumbnailCandidates: string[] | undefined;
+
+          if (slugToPhoto[slug]) {
+            thumbnail = slugToPhoto[slug];
           } else {
-            // 如果没有匹配，回退到原来的逻辑
-            const words = splitTitleToWords(title);
-            const prefixes = buildHyphenPrefixes(words, 3, Math.min(words.length, 16));
-            const baseCandidates = prefixes.map(p => `/blogphoto/${p}`);
-            thumbnail = `${baseCandidates[0]}.webp`;
+            const exts = ['jpg', 'png', 'webp'];
+            const matchingPhotoName = findMatchingPhotoName(title);
+            const base = matchingPhotoName
+              ? `/blogphoto/${matchingPhotoName}`
+              : (() => {
+                  const words = splitTitleToWords(title);
+                  const prefixes = buildHyphenPrefixes(words, 3, Math.min(words.length, 16));
+                  return `/blogphoto/${prefixes[0]}`;
+                })();
+            thumbnailCandidates = exts.map(e => `${base}.${e}`);
+            thumbnail = thumbnailCandidates[0];
           }
           
           // 生成相关文章（简化处理）
@@ -350,6 +366,7 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
             description,
             content,
             thumbnail,
+            thumbnailCandidates,
             relatedPosts,
             category
           };

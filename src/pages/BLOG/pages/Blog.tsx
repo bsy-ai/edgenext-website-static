@@ -12,6 +12,7 @@ interface BlogItem {
   author: string;
   slug: string;
   thumbnail: string;
+  thumbnailCandidates?: string[];
   category?: string;
 }
 
@@ -98,6 +99,7 @@ const Blog: React.FC = () => {
         author: post.author,
         slug: post.slug,
         thumbnail: post.thumbnail,
+        thumbnailCandidates: post.thumbnailCandidates,
         category: post.category
       }));
     } else {
@@ -110,6 +112,7 @@ const Blog: React.FC = () => {
         author: post.author,
         slug: post.slug,
         thumbnail: post.thumbnail,
+        thumbnailCandidates: post.thumbnailCandidates,
         category: post.category
       }));
     }
@@ -303,57 +306,44 @@ const Blog: React.FC = () => {
                           decoding="async"
                           onError={(e) => {
                             const el = e.currentTarget as HTMLImageElement;
-                            // 初始化候选：多前缀 + 多扩展
-                            const init = (el as any)._initDone as boolean | undefined;
-                            if (!init) {
-                              const bases: string[] = [];
-                              const current = item.thumbnail || "/blogphoto/placeholder";
-                              const noExt = current.replace(/\.[^.]+$/, '');
-                              // 根据连字符拆分，生成逐渐缩短的前缀
-                              const parts = noExt.replace(/^.*\/blogphoto\//, '').split('-');
-                              // 尝试从全长逐步递减到3词的前缀，最短不低于3词
-                              const lenFull = parts.length;
-                              const candidates: string[] = [];
-                              const minLen = 3;
-                              for (let len = lenFull; len >= minLen; len--) {
-                                candidates.push(parts.slice(0, len).join('-'));
+                            if (!(el as any)._initDone) {
+                              // 优先使用数据层给出的 thumbnailCandidates（精确 jpg/png/webp 候选）
+                              // 找不到时才走旧的拆词穷举逻辑（兜底）
+                              let allCandidates: string[];
+                              if (item.thumbnailCandidates && item.thumbnailCandidates.length > 0) {
+                                allCandidates = item.thumbnailCandidates;
+                              } else {
+                                const bases: string[] = [];
+                                const current = item.thumbnail || "/blogphoto/placeholder";
+                                const noExt = current.replace(/\.[^.]+$/, '');
+                                const parts = noExt.replace(/^.*\/blogphoto\//, '').split('-');
+                                const minLen = 3;
+                                const prefixList: string[] = [];
+                                for (let len = parts.length; len >= minLen; len--) {
+                                  prefixList.push(parts.slice(0, len).join('-'));
+                                }
+                                for (const p of prefixList) {
+                                  bases.push(`/blogphoto/${p}`);
+                                  bases.push(`/blogphoto/${p.toLowerCase()}`);
+                                }
+                                const exts = ['jpg', 'png', 'webp'];
+                                allCandidates = bases.flatMap(b => exts.map(ext => `${b}.${ext}`));
                               }
-                              // 对每个前缀尝试原样和全小写，忽略文件名大小写差异
-                              for (const p of candidates) {
-                                bases.push(`/blogphoto/${p}`);
-                                bases.push(`/blogphoto/${p.toLowerCase()}`);
-                              }
-                              (el as any)._baseCandidates = bases;
-                              // 扩展名候选：优先webp，其次jpg/png（与默认webp首选策略一致）
-                              (el as any)._extCandidates = ['webp','jpg','png'];
-                              (el as any)._baseIndex = 0;
-                              (el as any)._extIndex = 0;
+                              (el as any)._candidates = allCandidates;
+                              (el as any)._candidateIndex = 0;
                               (el as any)._initDone = true;
                             }
 
-                            const bases = (el as any)._baseCandidates as string[];
-                            const exts = (el as any)._extCandidates as string[];
-                            let bi = (el as any)._baseIndex as number;
-                            let ei = (el as any)._extIndex as number;
+                            const cands = (el as any)._candidates as string[];
+                            const idx = (el as any)._candidateIndex as number;
 
-                            if (bi >= bases.length) {
+                            if (idx >= cands.length) {
                               el.src = "/dynamic-acceleration.png";
                               return;
                             }
 
-                            // 关键修复：不要先 ei++ 再取值，否则 exts[0] 在第一个 base 上永远不会被尝试
-                            const nextSrc = `${bases[bi]}.${exts[ei]}`;
-
-                            // 推进到下一候选（供下一次 onError 使用）
-                            ei++;
-                            if (ei >= exts.length) {
-                              ei = 0;
-                              bi++;
-                            }
-
-                            (el as any)._baseIndex = bi;
-                            (el as any)._extIndex = ei;
-                            el.src = nextSrc;
+                            (el as any)._candidateIndex = idx + 1;
+                            el.src = cands[idx];
                           }}
                           data-base={item.thumbnail ? item.thumbnail.replace(/\.[^.]+$/, '') : undefined}
                         />
