@@ -251,7 +251,6 @@ const Blog: React.FC = () => {
               {/* Results count and active filters */}
               <div className="mt-6 text-center">
                 <p className="text-gray-600">
-                  Showing {filteredAndSortedItems.length} article{filteredAndSortedItems.length !== 1 ? 's' : ''}
                   {selectedCategory !== 'all' && (
                     <span className="ml-2">
                       in <span className="font-medium text-[#0EB623]">{selectedCategory}</span>
@@ -325,8 +324,8 @@ const Blog: React.FC = () => {
                                 bases.push(`/blogphoto/${p.toLowerCase()}`);
                               }
                               (el as any)._baseCandidates = bases;
-                              // 扩展名候选：优先jpg，然后png
-                              (el as any)._extCandidates = ['jpg', 'png'];
+                              // 扩展名候选：优先webp，其次jpg/png（与默认webp首选策略一致）
+                              (el as any)._extCandidates = ['webp','jpg','png'];
                               (el as any)._baseIndex = 0;
                               (el as any)._extIndex = 0;
                               (el as any)._initDone = true;

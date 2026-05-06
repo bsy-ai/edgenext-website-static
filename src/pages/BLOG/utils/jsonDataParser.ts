@@ -264,15 +264,15 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
 
           // 使用新的映射方法确定缩略图
           const matchingPhotoName = findMatchingPhotoName(title);
-          let thumbnail = '/blogphoto/default.jpg'; // 默认图片
+          let thumbnail = '/blogphoto/default.webp'; // 默认图片
 
           if (matchingPhotoName) {
-            thumbnail = `/blogphoto/${matchingPhotoName}.jpg`;
+            thumbnail = `/blogphoto/${matchingPhotoName}.webp`;
           } else {
             const words = splitTitleToWords(title);
             const prefixes = buildHyphenPrefixes(words, 3, Math.min(words.length, 16));
             const baseCandidates = prefixes.map(p => `/blogphoto/${p}`);
-            thumbnail = `${baseCandidates[0]}.jpg`;
+            thumbnail = `${baseCandidates[0]}.webp`;
           }
 
           const relatedPosts = parsedPosts
@@ -322,17 +322,17 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
           
           // 使用新的映射方法确定缩略图
           const matchingPhotoName = findMatchingPhotoName(title);
-          let thumbnail = '/blogphoto/default.jpg'; // 默认图片
+          let thumbnail = '/blogphoto/default.webp'; // 默认图片
           
           if (matchingPhotoName) {
-            // 检查文件是否存在，优先使用jpg格式
-            thumbnail = `/blogphoto/${matchingPhotoName}.jpg`;
+            // 检查文件是否存在，优先使用webp格式
+            thumbnail = `/blogphoto/${matchingPhotoName}.webp`;
           } else {
             // 如果没有匹配，回退到原来的逻辑
             const words = splitTitleToWords(title);
             const prefixes = buildHyphenPrefixes(words, 3, Math.min(words.length, 16));
             const baseCandidates = prefixes.map(p => `/blogphoto/${p}`);
-            thumbnail = `${baseCandidates[0]}.jpg`;
+            thumbnail = `${baseCandidates[0]}.webp`;
           }
           
           // 生成相关文章（简化处理）
