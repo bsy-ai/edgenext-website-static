@@ -264,7 +264,7 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
 
           // 使用新的映射方法确定缩略图
           const matchingPhotoName = findMatchingPhotoName(title);
-          let thumbnail = '/blogphoto/default.webp'; // 默认图片
+          let thumbnail = '/dynamic-acceleration.png'; // 默认图片
 
           if (matchingPhotoName) {
             thumbnail = `/blogphoto/${matchingPhotoName}.webp`;
@@ -322,10 +322,10 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
           
           // 使用新的映射方法确定缩略图
           const matchingPhotoName = findMatchingPhotoName(title);
-          let thumbnail = '/blogphoto/default.webp'; // 默认图片
+          let thumbnail = '/dynamic-acceleration.png'; // 默认图片
           
           if (matchingPhotoName) {
-            // 检查文件是否存在，优先使用webp格式
+            // 检查文件是否存在，优先使用jpg格式
             thumbnail = `/blogphoto/${matchingPhotoName}.webp`;
           } else {
             // 如果没有匹配，回退到原来的逻辑

@@ -336,21 +336,24 @@ const Blog: React.FC = () => {
                             let bi = (el as any)._baseIndex as number;
                             let ei = (el as any)._extIndex as number;
 
-                            // 简化逻辑：先尝试当前扩展名，失败后切换
+                            if (bi >= bases.length) {
+                              el.src = "/dynamic-acceleration.png";
+                              return;
+                            }
+
+                            // 关键修复：不要先 ei++ 再取值，否则 exts[0] 在第一个 base 上永远不会被尝试
+                            const nextSrc = `${bases[bi]}.${exts[ei]}`;
+
+                            // 推进到下一候选（供下一次 onError 使用）
                             ei++;
                             if (ei >= exts.length) {
                               ei = 0;
                               bi++;
                             }
-                            
-                            if (bi >= bases.length) {
-                              el.src = "/dynamic-acceleration.png";
-                              return;
-                            }
-                            
+
                             (el as any)._baseIndex = bi;
                             (el as any)._extIndex = ei;
-                            el.src = `${bases[bi]}.${exts[ei]}`;
+                            el.src = nextSrc;
                           }}
                           data-base={item.thumbnail ? item.thumbnail.replace(/\.[^.]+$/, '') : undefined}
                         />
