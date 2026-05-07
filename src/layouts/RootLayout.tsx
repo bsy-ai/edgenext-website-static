@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { useLocation, Outlet, useNavigationType } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useTranslation } from 'react-i18next';
 import { SeoHead } from '../components/SeoHead';
@@ -26,7 +25,7 @@ export default function RootLayout() {
   }, [location]);
 
   return (
-    <HelmetProvider>
+    <>
       <SeoHead pathname={location.pathname} />
       <AnimatePresence mode="wait">
         <motion.div
@@ -40,6 +39,6 @@ export default function RootLayout() {
           </div>
         </motion.div>
       </AnimatePresence>
-    </HelmetProvider>);
+    </>);
 
 }
