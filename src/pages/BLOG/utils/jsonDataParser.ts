@@ -15,6 +15,33 @@ interface SearchIndex {
 }
 let searchIndex: SearchIndex[] | null = null;
 
+export interface BlogFaqItem {
+  q: string;
+  a: string;
+}
+
+/**
+ * 单篇博客可选的 SEO 增强字段。所有字段都可选：
+ * - 不写：走默认逻辑（title 用文章原标题，description 用正文前 200 字）
+ * - 写了：覆盖默认值，注入到 <head> 的 meta / og / twitter / JSON-LD 中
+ */
+export interface BlogSeo {
+  /** 覆盖 <title>；不写时使用 `${blogPost.title} | EdgeNext` */
+  metaTitle?: string;
+  /** 覆盖 <meta name="description">；不写时使用正文前 200 字 */
+  metaDescription?: string;
+  /** og:title 单独覆盖（一般不需要，留空就用 title） */
+  ogTitle?: string;
+  /** og:description 单独覆盖（社交分享卡专用文案） */
+  ogDescription?: string;
+  /** twitter:title 单独覆盖 */
+  twitterTitle?: string;
+  /** twitter:description 单独覆盖 */
+  twitterDescription?: string;
+  /** FAQPage 结构化数据，命中后注入第二份 JSON-LD（FAQPage） */
+  faq?: BlogFaqItem[];
+}
+
 export interface ParsedBlogPost {
   slug: string;
   title: string;
@@ -27,12 +54,12 @@ export interface ParsedBlogPost {
   relatedPosts: string[];
   category?: string;
   thumbnailCandidates?: string[];
+  seo?: BlogSeo;
 }
 
-// 从时间戳提取作者信息？？？
-function extractAuthorFromTimestamp(timestamp: number): string {
-  const authors = ['Kaiyue', 'EdgeNext Team', 'Tech Writer', 'Content Team'];
-  return authors[timestamp % authors.length];
+// 统一博客作者显示
+function getDefaultAuthor(): string {
+  return 'EdgeNext Team';
 }
 
 function extractDescription(content: string): string {
@@ -261,7 +288,7 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
           const content = typeof rawContent === 'string' ? rawContent : String(rawContent ?? '');
 
           const slug = generateSlug(title);
-          const author = extractAuthorFromTimestamp(timestamp);
+          const author = getDefaultAuthor();
           const description = extractDescription(content);
           const category = extractCategory(title, content);
 
@@ -290,6 +317,8 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
             .slice(0, 3)
             .map(post => post.slug);
 
+          const seo = (item as any).seo as BlogSeo | undefined;
+
           const parsedPost: ParsedBlogPost = {
             slug,
             title,
@@ -301,7 +330,8 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
             thumbnail,
             thumbnailCandidates,
             relatedPosts,
-            category
+            category,
+            seo
           };
 
           parsedPosts.push(parsedPost);
@@ -327,7 +357,7 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
           
           const slug = generateSlug(title);
           const date = new Date(timestamp).toISOString().split('T')[0];
-          const author = extractAuthorFromTimestamp(timestamp);
+          const author = getDefaultAuthor();
           const description = extractDescription(content);
           const category = extractCategory(title, content);
           
@@ -357,6 +387,8 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
             .slice(0, 3)
             .map(post => post.slug);
 
+          const seo = (item as any).seo as BlogSeo | undefined;
+
           const parsedPost: ParsedBlogPost = {
             slug,
             title,
@@ -368,7 +400,8 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
             thumbnail,
             thumbnailCandidates,
             relatedPosts,
-            category
+            category,
+            seo
           };
 
           parsedPosts.push(parsedPost);

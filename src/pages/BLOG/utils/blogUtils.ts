@@ -1,4 +1,6 @@
-import { parseJsonBlogData, ParsedBlogPost, getCategories, getPostsByCategory, searchPosts } from './jsonDataParser';
+import { parseJsonBlogData, ParsedBlogPost, getCategories, getPostsByCategory, searchPosts, BlogSeo } from './jsonDataParser';
+
+export type { BlogSeo, BlogFaqItem } from './jsonDataParser';
 
 export interface BlogPost {
   slug: string;
@@ -11,6 +13,7 @@ export interface BlogPost {
   thumbnail: string;
   thumbnailCandidates?: string[];
   category?: string;
+  seo?: BlogSeo;
 }
 
 // 将ParsedBlogPost转换为BlogPost格式
@@ -25,7 +28,8 @@ function convertParsedPost(parsedPost: ParsedBlogPost): BlogPost {
     relatedPosts: parsedPost.relatedPosts,
     thumbnail: parsedPost.thumbnail,
     thumbnailCandidates: parsedPost.thumbnailCandidates,
-    category: parsedPost.category
+    category: parsedPost.category,
+    seo: parsedPost.seo
   };
 }
 

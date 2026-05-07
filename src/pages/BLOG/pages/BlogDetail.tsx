@@ -6,6 +6,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { getPostBySlug, getRelatedPosts } from '../utils/blogUtils';
 import NotFound from '../../NotFound';
 import { PageTransition } from '../../../components/PageTransition';
+import { BlogArticleSeo } from '../../../seo/BlogArticleSeo';
 import '../styles/blog-content.css';
 
 const BlogDetail: React.FC = () => {
@@ -39,6 +40,7 @@ const BlogDetail: React.FC = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
+      <BlogArticleSeo blogPost={blogPost} />
       <Header />
       <main className="flex-grow">
         {/* Hero Section */}
