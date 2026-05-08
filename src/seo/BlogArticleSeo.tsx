@@ -8,7 +8,7 @@ type Props = {
 
 /**
  * 为 BlogDetail 页面注入 SEO 相关的 <head> 标签：
- * - title / description / canonical / robots
+ * - title / description /（可选）keywords / canonical / robots
  * - Open Graph & Twitter Card
  * - BlogPosting JSON-LD（所有字段从 blogPost 自动派生）
  * - FAQPage JSON-LD（仅当 blogPost.seo.faq 有内容时输出）
@@ -28,6 +28,17 @@ export function BlogArticleSeo({ blogPost }: Props) {
   const ogDescription = seo?.ogDescription?.trim() || metaDescription;
   const twitterTitle = seo?.twitterTitle?.trim() || blogPost.title;
   const twitterDescription = seo?.twitterDescription?.trim() || metaDescription;
+
+  const rawKeywords = seo?.keywords;
+  const metaKeywords =
+    rawKeywords === undefined
+      ? ''
+      : Array.isArray(rawKeywords)
+        ? rawKeywords
+            .map((k) => String(k).trim())
+            .filter(Boolean)
+            .join(', ')
+        : String(rawKeywords).trim();
 
   // 把 yyyy-MM-dd 拼成完整 ISO 8601，让 article:published_time 更规范
   const publishedAtIso = /^\d{4}-\d{2}-\d{2}$/.test(blogPost.date)
@@ -94,6 +105,9 @@ export function BlogArticleSeo({ blogPost }: Props) {
     <Helmet>
       <title>{metaTitle}</title>
       <meta name="description" content={metaDescription} />
+      {metaKeywords ? (
+        <meta name="keywords" content={metaKeywords} />
+      ) : null}
       <link rel="canonical" href={canonicalUrl} />
       <meta
         name="robots"

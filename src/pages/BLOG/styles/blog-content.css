@@ -37,6 +37,25 @@
   margin-bottom: 1.5rem;
 }
 
+/* Tailwind Preflight 会清除 ul/ol 的 list-style，此处恢复正文列表符号 */
+.blog-content ul {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+.blog-content ol {
+  list-style-type: decimal;
+  list-style-position: outside;
+}
+
+.blog-content ul ul {
+  list-style-type: circle;
+}
+
+.blog-content ul ul ul {
+  list-style-type: square;
+}
+
 .blog-content ul,
 .blog-content ol {
   margin: 1.5rem 0;
@@ -45,6 +64,7 @@
 
 .blog-content li {
   margin-bottom: 0.5rem;
+  display: list-item;
 }
 
 .blog-content a {

@@ -38,6 +38,8 @@ export interface BlogSeo {
   twitterTitle?: string;
   /** twitter:description 单独覆盖 */
   twitterDescription?: string;
+  /** 可选；有值时在 <meta name="description"> 之后输出 <meta name="keywords"> */
+  keywords?: string | string[];
   /** FAQPage 结构化数据，命中后注入第二份 JSON-LD（FAQPage） */
   faq?: BlogFaqItem[];
 }
