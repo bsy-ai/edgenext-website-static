@@ -1,5 +1,26 @@
+# EdgeNext robots.txt
+
 User-agent: *
 Allow: /
 
-Sitemap: https://www.edgenext.com/sitemap.xml
+# AI crawlers
+User-agent: GPTBot
+Allow: /
 
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+# Sitemap
+Sitemap: https://www.edgenext.com/sitemap.xml
