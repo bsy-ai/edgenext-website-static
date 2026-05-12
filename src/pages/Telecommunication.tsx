@@ -36,7 +36,7 @@ const Telecommunication: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_100%,rgba(14,182,35,0.05),transparent_50%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -47,8 +47,8 @@ const Telecommunication: React.FC = () => {
                 <p className="text-lg md:text-xl text-gray-600 mb-8">
                   From cost-cutting to service innovation, EdgeNext helps ISPs and IIGs break free from the price war, build scalable offerings, and unlock new profit engines—faster, safer, and smarter.
                 </p>
-                <a 
-                  href="/contact_us" 
+                <a
+                  href="/contact-us"
                   className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 inline-flex items-center group"
                 >
                   Contact Us
@@ -124,8 +124,8 @@ const Telecommunication: React.FC = () => {
                 <p className="text-lg md:text-xl text-gray-600 mb-8">
                   From rollout to reliability, our goal is simple: deliver seamless infrastructure where it matters most. Because great networks don't just connect—they empower.
                 </p>
-                <a 
-                  href="/contact_us" 
+                <a
+                  href="/contact-us"
                   className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 inline-flex items-center group"
                 >
                   Contact Us
@@ -199,7 +199,7 @@ const Telecommunication: React.FC = () => {
                 </ul>
               </div>
               <div className="order-1 lg:order-2">
-                <img 
+                <img
                   src="/partner.jpg"
                   alt="Trusted Expertise"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -209,7 +209,7 @@ const Telecommunication: React.FC = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
               <div>
-                <img 
+                <img
                   src="/partner2.jpg"
                   alt="Revenue Growth"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -273,7 +273,7 @@ const Telecommunication: React.FC = () => {
                 </ul>
               </div>
               <div className="order-1 lg:order-2">
-                <img 
+                <img
                   src="/partner3.jpg"
                   alt="Competitive Edge"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -298,7 +298,7 @@ const Telecommunication: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <img 
+                <img
                   src="/static-acceleration.jpg"
                   alt="ISP/IIG Caching CDN"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -310,7 +310,7 @@ const Telecommunication: React.FC = () => {
               </div>
 
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <img 
+                <img
                   src="/ddos.png"
                   alt="DDoS System Solution"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -322,7 +322,7 @@ const Telecommunication: React.FC = () => {
               </div>
 
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <img 
+                <img
                   src="/streaming.png"
                   alt="IPTV Solution"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -351,7 +351,7 @@ const Telecommunication: React.FC = () => {
               </p>
 
               <a
-                href="/contact_us"
+                href="/contact-us"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300 group"
               >
                 Contact Us

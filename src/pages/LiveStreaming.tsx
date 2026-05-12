@@ -134,7 +134,7 @@ const LiveStreaming: React.FC = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
-                  href="/contact_us"
+                  href="/contact-us"
                   className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-6 md:px-8 py-3 md:py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 flex items-center justify-center group"
                 >
                   Contact Us
@@ -689,7 +689,7 @@ const LiveStreaming: React.FC = () => {
 
             <div className="text-center">
               <a
-                href="/contact_us"
+                href="/contact-us"
                 className="inline-flex items-center bg-[#0EB623] text-white font-medium px-6 md:px-8 py-3 md:py-4 rounded-xl hover:bg-[#0EA620] transition-all duration-300"
               >
                 Contact Us
@@ -710,7 +710,7 @@ const LiveStreaming: React.FC = () => {
                 security, and a human-first touch.
               </p>
               <a
-                href="/contact_us"
+                href="/contact-us"
                 className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
               >
                 Contact Us

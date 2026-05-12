@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           <div className="lg:col-span-1">
             <Logo darkMode />
-            
+
             <h3 className="text-xl font-semibold mt-8 mb-4">Getting Started</h3>
             <ul className="space-y-3">
               <li>
@@ -18,7 +18,7 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="/contact_us" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="/contact-us" className="hover:text-[#0EB623] transition-colors duration-200">
                   Request a Demo
                 </a>
               </li>
@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
             </ul>
-            
+
             <div className="flex space-x-4 mt-8">
               <a href="https://www.linkedin.com/company/edgenextcdn" target="_blank" rel="noopener noreferrer" className="hover:text-[#0EB623] transition-colors duration-200">
                 <Linkedin size={20} />
@@ -47,10 +47,10 @@ export const Footer: React.FC = () => {
               </a>
             </div>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-semibold mb-4">Products</h3>
-            
+
             <h4 className="text-[#0EB623] font-medium mb-2">Content Delivery</h4>
             <ul className="space-y-2 mb-4">
               <li>
@@ -64,31 +64,31 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="/live_streaming" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="/live-streaming" className="hover:text-[#0EB623] transition-colors duration-200">
                   Live Streaming
                 </a>
               </li>
             </ul>
-            
+
             <h4 className="text-[#0EB623] font-medium mb-2">Security</h4>
             <ul className="space-y-2 mb-4">
               <li>
-                <a href="/security_cdn" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="/security-cdn" className="hover:text-[#0EB623] transition-colors duration-200">
                   Security CDN
                 </a>
               </li>
               <li>
-                <a href="/anti_ddos" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="/anti-ddos" className="hover:text-[#0EB623] transition-colors duration-200">
                   Anti-DDoS
                 </a>
               </li>
               <li>
-               <a href="/dns_security_service" className="hover:text-[#0EB623] transition-colors duration-200">
-                  Security DNS 
+               <a href="/dns-security-service" className="hover:text-[#0EB623] transition-colors duration-200">
+                  Security DNS
                 </a>
               </li>
             </ul>
-            
+
             <h4 className="text-[#0EB623] font-medium mb-2">Computing</h4>
             <ul className="space-y-2">
               <li>
@@ -97,25 +97,25 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="/bare_metal_server" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="/bare-metal-server" className="hover:text-[#0EB623] transition-colors duration-200">
                   Bare Metal Server
                 </a>
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-semibold mb-4">Solutions</h3>
-            
+
             <h4 className="text-[#0EB623] font-medium mb-2">By Industry</h4>
             <ul className="space-y-2 mb-4">
               <li>
-                <a href="/e_commerce" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="/e-commerce" className="hover:text-[#0EB623] transition-colors duration-200">
                   E-Commerce
                 </a>
               </li>
               <li>
-                <a href="/e_learning" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="/e-learning" className="hover:text-[#0EB623] transition-colors duration-200">
                   E-Learning
                 </a>
               </li>
@@ -130,12 +130,12 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="/media_and_entertainment" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="/solutions/media-entertainment" className="hover:text-[#0EB623] transition-colors duration-200">
                   Media & Entertainment
                 </a>
-              </li>   
+              </li>
               <li>
-                <a href="/sports_broadcasting" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="/sports-broadcasting" className="hover:text-[#0EB623] transition-colors duration-200">
                   Sports Broadcasting
                 </a>
               </li>
@@ -144,31 +144,31 @@ export const Footer: React.FC = () => {
             <h4 className="text-[#0EB623] font-medium mb-2">By Need</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/global_cdn" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="/global-cdn" className="hover:text-[#0EB623] transition-colors duration-200">
                   Global CDN
                 </a>
               </li>
               <li>
-                <a href="/mea_cdn" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="/mea-cdn" className="hover:text-[#0EB623] transition-colors duration-200">
                   MENA CDN
                 </a>
               </li>
               <li>
-                <a href="/china_cdn" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="/china-cdn" className="hover:text-[#0EB623] transition-colors duration-200">
                   China CDN
                 </a>
               </li>
               <li>
-                <a href="/southeast_asia_cdn" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="/southeast-asia-cdn" className="hover:text-[#0EB623] transition-colors duration-200">
                   Southeast Asia CDN
                 </a>
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-semibold mb-4">Resources</h3>
-            
+
             <h4 className="text-[#0EB623] font-medium mb-2">Documentation</h4>
             <ul className="space-y-2 mb-4">
               <li>
@@ -196,7 +196,7 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="/case_study" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="/case-study" className="hover:text-[#0EB623] transition-colors duration-200">
                   Case Studies
                 </a>
               </li>
@@ -207,10 +207,10 @@ export const Footer: React.FC = () => {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="text-xl font-semibold mb-4">Company</h3>
-            
+
             <h4 className="text-[#0EB623] font-medium mb-2">About Us</h4>
             <ul className="space-y-2 mb-4">
               <li>
@@ -219,7 +219,7 @@ export const Footer: React.FC = () => {
                 </a>
               </li>
               <li>
-                <a href="/contact_us" className="hover:text-[#0EB623] transition-colors duration-200">
+                <a href="/contact-us" className="hover:text-[#0EB623] transition-colors duration-200">
                   Contact Us
                 </a>
               </li>
@@ -250,7 +250,7 @@ export const Footer: React.FC = () => {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="flex space-x-6 mb-4 md:mb-0">
             <a href="/legal" className="text-sm text-gray-400 hover:text-white transition-colors duration-200">
@@ -265,7 +265,7 @@ export const Footer: React.FC = () => {
               Cookie Policy
             </a>
           </div>
-          
+
           <div className="text-sm text-gray-400">
             © 2025 EdgeNext. All rights reserved.
           </div>

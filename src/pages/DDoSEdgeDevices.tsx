@@ -35,7 +35,7 @@ const DDoSEdgeDevices: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(14,182,35,0.1),transparent_70%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto">
               <div className="text-[#0EB623] text-sm font-medium mb-4">November 13, 2024 • by Kaiyue</div>
@@ -60,7 +60,7 @@ const DDoSEdgeDevices: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">What Is a DDoS Attack, and How Does It Affect Edge Devices?</h2>
-                
+
                 <p className="mb-6">
                   A DDoS attack, or Distributed Denial of Service attack, is an attempt by attackers to overwhelm a target device or network with excessive traffic, rendering it unavailable to legitimate users. For edge devices, which often have limited computing resources, this surge in traffic can quickly deplete available memory, bandwidth, and processing power. As a result, the devices may slow down or shut down entirely, disrupting their primary functions and affecting connected services.
                 </p>
@@ -70,7 +70,7 @@ const DDoSEdgeDevices: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">Why Are Small IoT and Edge Devices Targets for DDoS Attacks?</h2>
-                
+
                 <p className="mb-6">
                   Small IoT and edge devices are common targets for DDoS attacks due to their often limited security features and widespread use across various sectors. These devices frequently operate on default settings, including weak passwords and outdated software, making them easy targets for attackers. Furthermore, many edge devices are deployed in remote or low-maintenance environments, where regular security updates are challenging to implement. Attackers exploit these vulnerabilities to gain control over the devices and incorporate them into botnets to launch DDoS attacks on other targets.
                 </p>
@@ -80,7 +80,7 @@ const DDoSEdgeDevices: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">How Do DDoS Attacks on Edge Devices Impact Broader Network Security?</h2>
-                
+
                 <p className="mb-6">
                   DDoS attacks on edge devices can significantly impact broader network security by turning compromised devices into entry points for attackers to infiltrate the network. Once attackers gain control over an edge device, they can use it to launch further attacks within the network, potentially compromising other connected systems. This means a single compromised device can jeopardize the entire network, mainly if security measures at the edge are insufficient. As a result, securing edge devices is crucial for safeguarding the integrity of the broader network.
                 </p>
@@ -90,7 +90,7 @@ const DDoSEdgeDevices: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">What Are the Key Challenges in Protecting Edge Devices from DDoS Attacks?</h2>
-                
+
                 <p className="mb-6">
                   Protecting edge devices from DDoS attacks presents unique challenges due to their limited processing power, energy constraints, and often minimal built-in security features. Many edge devices are designed for specific functions, such as data collection or simple computations, and therefore lack the resources needed to run advanced security software. This makes implementing traditional DDoS protection methods, such as firewalls and intrusion detection systems, strenuous without significantly impacting device performance.
                 </p>
@@ -100,7 +100,7 @@ const DDoSEdgeDevices: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">How Can AI and Machine Learning Enhance DDoS Protection for Edge Devices?</h2>
-                
+
                 <p className="mb-6">
                   AI and machine learning enhance DDoS protection for edge devices by enabling real-time detection and mitigation of malicious traffic patterns. These technologies analyze data to establish a "normal" traffic baseline, making it easier to identify anomalies that could indicate a DDoS attack. AI-driven systems can act quickly upon detecting unusual patterns, allowing for immediate countermeasures that prevent the device from becoming overloaded. This level of responsiveness is critical for edge devices, which cannot often handle prolonged surges in traffic.
                 </p>
@@ -110,7 +110,7 @@ const DDoSEdgeDevices: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">What Are the Best Practices for Securing Edge Devices Against DDoS Attacks?</h2>
-                
+
                 <p className="mb-6">
                   Securing edge devices against DDoS attacks involves implementing a range of best practices, including regular software updates, robust authentication protocols, and network segmentation. Regular updates ensure that edge devices are protected against known vulnerabilities, as outdated software is a common entry point for attackers. Robust authentication protocols, such as two-factor authentication and complex password requirements, make it harder for unauthorized users to gain control of these devices.
                 </p>
@@ -120,7 +120,7 @@ const DDoSEdgeDevices: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">How Can Businesses Implement a Layered Defense Strategy for Edge Device Security?</h2>
-                
+
                 <p className="mb-6">
                   Businesses can implement a layered defense strategy for edge device security by combining multiple protection measures, such as firewalls, intrusion detection systems (IDS), and endpoint security, to create a comprehensive approach. A layered defense minimizes the chance of any single vulnerability being exploited, as attackers must bypass multiple security barriers to reach their target. For instance, firewalls can control traffic entering and leaving the network, while IDS can monitor for unusual activity that may indicate an attack.
                 </p>
@@ -130,7 +130,7 @@ const DDoSEdgeDevices: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">What Role Will Edge Security Play in Future DDoS Defense Strategies?</h2>
-                
+
                 <p className="mb-6">
                   Edge security will play an increasingly crucial role in future DDoS defense strategies, particularly as the number of connected devices grows. With IoT and edge devices proliferating across industries, these devices are expected to handle more data processing tasks and communicate directly with more extensive network infrastructures. This shift means that edge security is about protecting individual devices and securing the data and traffic flows that pass through them. As a result, DDoS defense strategies must prioritize robust edge security to prevent small devices from becoming weak links in the network.
                 </p>
@@ -140,7 +140,7 @@ const DDoSEdgeDevices: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">Conclusion: Why Advanced Protection Is Essential for Edge Devices in the Fight Against DDoS</h2>
-                
+
                 <p className="mb-6">
                   In conclusion, advanced protection for edge devices is essential in combating DDoS attacks and ensuring network security. These small but critical devices often lack the robust defenses of central systems, making them attractive targets for attackers seeking entry points into more extensive networks. By implementing proactive security measures—such as real-time monitoring, AI-driven threat detection, and a layered defense approach—businesses can strengthen their DDoS defenses at the network edge. As the use of edge devices continues to grow, securing them will be vital for preserving data integrity, maintaining service availability, and supporting the overall resilience of network infrastructure.
                 </p>
@@ -166,11 +166,11 @@ const DDoSEdgeDevices: React.FC = () => {
                         <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
                           <time dateTime={post.date}>{post.date}</time>
                         </div>
-                        
+
                         <h3 className="text-lg font-medium mb-3 text-gray-900 group-hover:text-[#0EB623] transition-colors duration-300">
                           {post.title}
                         </h3>
-                        
+
                         <div className="flex items-center text-[#0EB623] font-medium text-sm group-hover:gap-2 transition-all duration-300">
                           Read article
                           <ArrowRight className="ml-1 group-hover:translate-x-1 transition-transform duration-300" size={16} />
@@ -195,8 +195,8 @@ const DDoSEdgeDevices: React.FC = () => {
                     Explore EdgeNext's security solutions and protect your edge infrastructure from attacks.
                   </p>
                 </div>
-                <a 
-                  href="/anti_ddos" 
+                <a
+                  href="/anti-ddos"
                   className="px-8 py-4 bg-white text-[#0EB623] rounded-xl hover:bg-opacity-90 transition-colors font-medium whitespace-nowrap"
                 >
                   Learn More

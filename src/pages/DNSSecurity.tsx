@@ -76,7 +76,7 @@ const DNSSecurity: React.FC = () => {
           <div className="absolute inset-0" style={{
             background: 'linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%)'
           }}></div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-[40px] md:text-[60px] font-bold mb-4 md:mb-6 leading-[1.1]">
@@ -87,8 +87,8 @@ const DNSSecurity: React.FC = () => {
                 EdgeNext Security DNS helps translate domain names into IP addresses with high availability and scalability—ensuring fast, stable, and secure resolution for your applications.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
-                  href="/contact_us" 
+                <a
+                  href="/contact-us"
                   className="group bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-500 flex items-center justify-center relative overflow-hidden"
                 >
                   <span className="relative z-10">Request a Demo</span>
@@ -104,7 +104,7 @@ const DNSSecurity: React.FC = () => {
         {/* Product Benefits Section */}
         <section className="py-24 bg-black text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(14,182,35,0.15),transparent_70%)]"></div>
-          
+
           <div className="container mx-auto px-4 relative">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-medium mb-6">Product Benefits</h2>
@@ -123,7 +123,7 @@ const DNSSecurity: React.FC = () => {
                   High-availability architecture ensures uninterrupted DNS resolution and continuous service uptime
                 </p>
               </div>
-              
+
               <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:bg-gray-800 transition-all duration-300">
                 <div className="w-12 h-12 bg-[#0EB623]/20 rounded-lg flex items-center justify-center mb-6">
                   <Lock className="text-[#0EB623]" size={24} />
@@ -133,7 +133,7 @@ const DNSSecurity: React.FC = () => {
                   Distributed high-defense clusters provide comprehensive protection against DDoS and other threats
                 </p>
               </div>
-              
+
               <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:bg-gray-800 transition-all duration-300">
                 <div className="w-12 h-12 bg-[#0EB623]/20 rounded-lg flex items-center justify-center mb-6">
                   <Network className="text-[#0EB623]" size={24} />
@@ -143,7 +143,7 @@ const DNSSecurity: React.FC = () => {
                   Supports 200+ network route with geo-aware IPv4/IPv6 resolution for optimal user performance
                 </p>
               </div>
-              
+
               <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:bg-gray-800 transition-all duration-300">
                 <div className="w-12 h-12 bg-[#0EB623]/20 rounded-lg flex items-center justify-center mb-6">
                   <Globe className="text-[#0EB623]" size={24} />
@@ -166,7 +166,7 @@ const DNSSecurity: React.FC = () => {
                 <p className="text-lg text-gray-600 mb-8">
                   With years of global edge deployment, trusted partnerships, and billions of DNS queries resolved daily, EdgeNext Security DNS is built on proven scale and unmatched resilience.
                 </p>
-                
+
                 <div className="space-y-8">
                   <div>
                     <h3 className="text-xl font-bold mb-2">24/7 Support</h3>
@@ -174,7 +174,7 @@ const DNSSecurity: React.FC = () => {
                       Our DNS specialists are available anytime to help you stay online and resilient.
                     </p>
                   </div>
-                  
+
                   <div>
                     <h3 className="text-xl font-bold mb-2">Global Presence</h3>
                     <p className="text-gray-600">
@@ -185,12 +185,12 @@ const DNSSecurity: React.FC = () => {
               </div>
 
               <div className="relative">
-                <img 
+                <img
                   src="https://images.pexels.com/photos/2159/flight-sky-earth-space.jpg"
                   alt="Global Network Infrastructure"
                   className="w-full h-full object-cover rounded-2xl shadow-lg"
                 />
-                <motion.div 
+                <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5 }}
@@ -202,14 +202,14 @@ const DNSSecurity: React.FC = () => {
                     </div>
                     <p className="text-gray-600">Covered Countries in Emerging Markets</p>
                   </div>
-                  
+
                   <div>
                     <div className="text-4xl font-bold text-[#0EB623] mb-2" translate="no">
                       {hasScrolled && <CountUp end={1500} duration={2} />}+
                     </div>
                     <p className="text-gray-600">Global Points of Presence</p>
                   </div>
-                  
+
                   <div>
                     <div className="text-4xl font-bold text-[#0EB623] mb-2" translate="no">
                       {hasScrolled && <CountUp end={90} duration={2} />}+
@@ -236,106 +236,106 @@ const DNSSecurity: React.FC = () => {
               <div className="lg:col-span-3 mb-6 lg:mb-0">
                 <div className="flex flex-nowrap lg:flex-col gap-3 md:gap-4 overflow-x-auto lg:overflow-visible pb-4 lg:pb-0 scrollbar-hide h-full">
                   <button
-                    onClick={() => setActiveFeature('website-hosting')} 
+                    onClick={() => setActiveFeature('website-hosting')}
                     className={`flex-shrink-0 w-auto lg:w-full flex items-center gap-2 md:gap-3 p-3 md:p-4 rounded-lg md:rounded-xl transition-all duration-300 text-sm md:text-base ${
-                      activeFeature === 'website-hosting' 
-                        ? 'bg-[#0EB623] text-white shadow-lg' 
+                      activeFeature === 'website-hosting'
+                        ? 'bg-[#0EB623] text-white shadow-lg'
                         : 'hover:bg-[#0EB623] hover:text-white'
                     }`}
                   >
                     <div className={`transition-colors duration-300 ${
-                      activeFeature === 'website-hosting' 
-                        ? 'text-white' 
+                      activeFeature === 'website-hosting'
+                        ? 'text-white'
                         : 'text-[#0EB623] group-hover:text-white'
                     }`}>
                       <Globe size={20} className="flex-shrink-0" />
                     </div>
                     <span className="font-medium whitespace-nowrap">Website Hosting</span>
                   </button>
-                  
+
                   <button
                     onClick={() => setActiveFeature('email-services')}
                     className={`flex-shrink-0 w-auto lg:w-full flex items-center gap-2 md:gap-3 p-3 md:p-4 rounded-lg md:rounded-xl transition-all duration-300 text-sm md:text-base ${
-                      activeFeature === 'email-services' 
-                        ? 'bg-[#0EB623] text-white shadow-lg' 
+                      activeFeature === 'email-services'
+                        ? 'bg-[#0EB623] text-white shadow-lg'
                         : 'hover:bg-[#0EB623] hover:text-white'
                     }`}
                   >
                     <div className={`transition-colors duration-300 ${
-                      activeFeature === 'email-services' 
-                        ? 'text-white' 
+                      activeFeature === 'email-services'
+                        ? 'text-white'
                         : 'text-[#0EB623] group-hover:text-white'
                     }`}>
                       <Mail size={20} className="flex-shrink-0" />
                     </div>
                     <span className="font-medium whitespace-nowrap">Email Services</span>
                   </button>
-                  
+
                   <button
                     onClick={() => setActiveFeature('high-traffic')}
                     className={`flex-shrink-0 w-auto lg:w-full flex items-center gap-2 md:gap-3 p-3 md:p-4 rounded-lg md:rounded-xl transition-all duration-300 text-sm md:text-base ${
-                      activeFeature === 'high-traffic' 
-                        ? 'bg-[#0EB623] text-white shadow-lg' 
+                      activeFeature === 'high-traffic'
+                        ? 'bg-[#0EB623] text-white shadow-lg'
                         : 'hover:bg-[#0EB623] hover:text-white'
                     }`}
                   >
                     <div className={`transition-colors duration-300 ${
-                      activeFeature === 'high-traffic' 
-                        ? 'text-white' 
+                      activeFeature === 'high-traffic'
+                        ? 'text-white'
                         : 'text-[#0EB623] group-hover:text-white'
                     }`}>
                       <Activity size={20} className="flex-shrink-0" />
                     </div>
                     <span className="font-medium whitespace-nowrap">High-Concurrency Workloads</span>
                   </button>
-                  
+
                   <button
                     onClick={() => setActiveFeature('cross-network')}
                     className={`flex-shrink-0 w-auto lg:w-full flex items-center gap-2 md:gap-3 p-3 md:p-4 rounded-lg md:rounded-xl transition-all duration-300 text-sm md:text-base ${
-                      activeFeature === 'cross-network' 
-                        ? 'bg-[#0EB623] text-white shadow-lg' 
+                      activeFeature === 'cross-network'
+                        ? 'bg-[#0EB623] text-white shadow-lg'
                         : 'hover:bg-[#0EB623] hover:text-white'
                     }`}
                   >
                     <div className={`transition-colors duration-300 ${
-                      activeFeature === 'cross-network' 
-                        ? 'text-white' 
+                      activeFeature === 'cross-network'
+                        ? 'text-white'
                         : 'text-[#0EB623] group-hover:text-white'
                     }`}>
                       <Network size={20} className="flex-shrink-0" />
                     </div>
                     <span className="font-medium whitespace-nowrap">Cross-Region Access</span>
                   </button>
-                  
+
                   <button
                     onClick={() => setActiveFeature('cdn-acceleration')}
                     className={`flex-shrink-0 w-auto lg:w-full flex items-center gap-2 md:gap-3 p-3 md:p-4 rounded-lg md:rounded-xl transition-all duration-300 text-sm md:text-base ${
-                      activeFeature === 'cdn-acceleration' 
-                        ? 'bg-[#0EB623] text-white shadow-lg' 
+                      activeFeature === 'cdn-acceleration'
+                        ? 'bg-[#0EB623] text-white shadow-lg'
                         : 'hover:bg-[#0EB623] hover:text-white'
                     }`}
                   >
                     <div className={`transition-colors duration-300 ${
-                      activeFeature === 'cdn-acceleration' 
-                        ? 'text-white' 
+                      activeFeature === 'cdn-acceleration'
+                        ? 'text-white'
                         : 'text-[#0EB623] group-hover:text-white'
                     }`}>
                       <Zap size={20} className="flex-shrink-0" />
                     </div>
                     <span className="font-medium whitespace-nowrap">CDN Acceleration</span>
                   </button>
-                  
+
                   <button
                     onClick={() => setActiveFeature('dns-attacks')}
                     className={`flex-shrink-0 w-auto lg:w-full flex items-center gap-2 md:gap-3 p-3 md:p-4 rounded-lg md:rounded-xl transition-all duration-300 text-sm md:text-base ${
-                      activeFeature === 'dns-attacks' 
-                        ? 'bg-[#0EB623] text-white shadow-lg' 
+                      activeFeature === 'dns-attacks'
+                        ? 'bg-[#0EB623] text-white shadow-lg'
                         : 'hover:bg-[#0EB623] hover:text-white'
                     }`}
                   >
                     <div className={`transition-colors duration-300 ${
-                      activeFeature === 'dns-attacks' 
-                        ? 'text-white' 
+                      activeFeature === 'dns-attacks'
+                        ? 'text-white'
                         : 'text-[#0EB623] group-hover:text-white'
                     }`}>
                       <Shield size={20} className="flex-shrink-0" />
@@ -382,7 +382,7 @@ const DNSSecurity: React.FC = () => {
                         </div>
                       </>
                     )}
-                    
+
                     {activeFeature === 'email-services' && (
                       <>
                         <div className="flex items-center gap-2 p-2 md:p-3 rounded-lg bg-gray-50 hover:bg-[#0EB623]/5 transition-all duration-300">
@@ -399,7 +399,7 @@ const DNSSecurity: React.FC = () => {
                         </div>
                       </>
                     )}
-                    
+
                     {activeFeature === 'high-traffic' && (
                       <>
                         <div className="flex items-center gap-2 p-2 md:p-3 rounded-lg bg-gray-50 hover:bg-[#0EB623]/5 transition-all duration-300">
@@ -416,7 +416,7 @@ const DNSSecurity: React.FC = () => {
                         </div>
                       </>
                     )}
-                    
+
                     {activeFeature === 'cross-network' && (
                       <>
                         <div className="flex items-center gap-2 p-2 md:p-3 rounded-lg bg-gray-50 hover:bg-[#0EB623]/5 transition-all duration-300">
@@ -433,7 +433,7 @@ const DNSSecurity: React.FC = () => {
                         </div>
                       </>
                     )}
-                    
+
                     {activeFeature === 'cdn-acceleration' && (
                       <>
                         <div className="flex items-center gap-2 p-2 md:p-3 rounded-lg bg-gray-50 hover:bg-[#0EB623]/5 transition-all duration-300">
@@ -450,7 +450,7 @@ const DNSSecurity: React.FC = () => {
                         </div>
                       </>
                     )}
-                    
+
                     {activeFeature === 'dns-attacks' && (
                       <>
                         <div className="flex items-center gap-2 p-2 md:p-3 rounded-lg bg-gray-50 hover:bg-[#0EB623]/5 transition-all duration-300">
@@ -484,7 +484,7 @@ const DNSSecurity: React.FC = () => {
                 Overcome critical DNS obstacles with innovative solutions designed for modern digital environments
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
               <div className="bg-white rounded-2xl p-8 border border-gray-100 hover:shadow-lg transition-all duration-300">
                 <div className="text-6xl font-bold text-[#0EB623] mb-4">01</div>
@@ -579,8 +579,8 @@ const DNSSecurity: React.FC = () => {
               <p className="text-lg text-white/90 mb-8">
                 EdgeNext Security DNS is built to scale with your business—especially in complex regions like China, Southeast Asia, and MENA.
               </p>
-              <a 
-                href="/contact_us" 
+              <a
+                href="/contact-us"
                 className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
               >
                 Get in Touch

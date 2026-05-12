@@ -35,7 +35,7 @@ const QuantumComputingDDoS: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(14,182,35,0.1),transparent_70%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto">
               <div className="text-[#0EB623] text-sm font-medium mb-4">November 10, 2024 • by Kaiyue</div>
@@ -60,7 +60,7 @@ const QuantumComputingDDoS: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">What Is Quantum Computing and How Does It Differ from Classical Computing?</h2>
-                
+
                 <p className="mb-6">
                   Quantum computing is a cutting-edge technology that leverages the principles of quantum mechanics to perform computations far more efficiently than classical computing. While classical computers use bits to represent data as either a 0 or 1, quantum computers use qubits, which can exist in a state of 0, 1, or both simultaneously—a property known as superposition. Additionally, qubits can become entangled, allowing them to influence each other's states regardless of distance. These properties enable quantum computers to process massive amounts of information simultaneously, solving problems that would take classical computers years to complete.
                 </p>
@@ -70,7 +70,7 @@ const QuantumComputingDDoS: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">How Might Quantum Computing Improve DDoS Detection and Mitigation?</h2>
-                
+
                 <p className="mb-6">
                   Quantum computing could improve DDoS detection and mitigation by enabling faster network traffic analysis, allowing security teams to detect attacks in real time. In a typical DDoS attack, large volumes of traffic flood a network, overwhelming its resources and causing service disruptions. Quantum computers' ability to process complex datasets rapidly would make it possible to distinguish between legitimate and malicious traffic at unprecedented speeds, allowing for immediate response to mitigate the attack's impact.
                 </p>
@@ -80,7 +80,7 @@ const QuantumComputingDDoS: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">What Are Quantum-Resistant Algorithms, and Why Are They Important for DDoS Defense?</h2>
-                
+
                 <p className="mb-6">
                   Quantum-resistant algorithms are cryptographic methods designed to withstand attacks from quantum computers, and they are critical for ensuring the security of DDoS defense systems. As quantum computing becomes more advanced, it could enable attackers to bypass traditional encryption methods by breaking them much faster than classical computers could. Quantum-resistant algorithms, also known as post-quantum cryptography, are explicitly developed to be resilient against these quantum-powered attacks, preserving the integrity of encrypted data even when faced with quantum-level processing power.
                 </p>
@@ -90,7 +90,7 @@ const QuantumComputingDDoS: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">Could Quantum Computing Make DDoS Attacks More Dangerous?</h2>
-                
+
                 <p className="mb-6">
                   Quantum computing could make DDoS attacks more dangerous by giving attackers access to vastly increased processing power, enabling them to generate and direct massive amounts of traffic at targeted networks. A quantum-powered DDoS attack would be able to overwhelm defenses at speeds and volumes previously unimaginable, making it harder for traditional defense mechanisms to keep up. This threat is compounded by the fact that quantum computing could break current encryption methods, giving attackers new ways to infiltrate and exploit systems.
                 </p>
@@ -100,7 +100,7 @@ const QuantumComputingDDoS: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">How Are Researchers and Cybersecurity Experts Preparing for Quantum-Based DDoS Threats?</h2>
-                
+
                 <p className="mb-6">
                   Researchers and cybersecurity experts are actively preparing for quantum-based DDoS threats by developing quantum-resistant algorithms, enhancing anomaly detection systems, and building frameworks that leverage quantum technology for defensive purposes. Quantum-resistant algorithms, specifically designed to withstand quantum computing attacks, are being tested and refined to ensure that sensitive data remains secure even when quantum computers are widely accessible. These algorithms are vital in defending against the heightened risks of quantum-powered DDoS attacks, as they help secure communication channels and authentication methods against future threats.
                 </p>
@@ -110,7 +110,7 @@ const QuantumComputingDDoS: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">What Role Will Quantum Cryptography Play in Future DDoS Defense?</h2>
-                
+
                 <p className="mb-6">
                   Quantum cryptography will play a central role in future DDoS defense by providing secure communication methods resistant to quantum-powered decryption. Quantum cryptography, primarily through techniques like Quantum Key Distribution (QKD), allows for safe exchanges of encryption keys using quantum properties, making it theoretically immune to interception. This level of security is beneficial for DDoS defense, as it ensures that communication between devices, security systems, and networks cannot be compromised by attackers using quantum computers.
                 </p>
@@ -120,7 +120,7 @@ const QuantumComputingDDoS: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">When Will Quantum Computing Start Impacting DDoS Defense on a Practical Level?</h2>
-                
+
                 <p className="mb-6">
                   Quantum computing's impact on DDoS defense is expected to materialize gradually over the next decade as current developments in quantum technology move from research to practical applications. While quantum computing is still in its early stages, with limited access and high costs, experts predict that within 10-15 years, quantum computers will be more widely available, bringing risks and opportunities to cybersecurity. During this period, organizations are encouraged to adopt quantum-resistant cryptographic measures proactively, preparing for a landscape in which quantum-powered attacks are possible.
                 </p>
@@ -130,7 +130,7 @@ const QuantumComputingDDoS: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">What Are the Long-Term Implications of Quantum Computing for Cybersecurity?</h2>
-                
+
                 <p className="mb-6">
                   The long-term implications of quantum computing for cybersecurity are profound, as quantum technology could redefine the balance between cyber attackers and defenders. With the power to break traditional encryption methods, quantum computers will require a complete overhaul of existing cybersecurity protocols, particularly for data encryption, identity verification, and network protection. Quantum computing's ability to process and analyze large datasets rapidly may give attackers an edge in crafting more sophisticated DDoS attacks and other cyber threats, making the need for quantum-resistant defenses critical.
                 </p>
@@ -140,7 +140,7 @@ const QuantumComputingDDoS: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">Conclusion: Why Quantum Computing Is Both a Challenge and an Opportunity for DDoS Defense</h2>
-                
+
                 <p className="mb-6">
                   Quantum computing presents both a challenge and an opportunity for DDoS defense, as it can be harnessed to enhance cybersecurity yet also threatens to make traditional defenses obsolete. On the one hand, quantum's immense processing power can bolster defenses through faster, more efficient detection and response systems, enabling security teams to identify DDoS threats in real time and mitigate them with precision. Quantum cryptography, too, promises to revolutionize secure communication, offering encryption that could withstand even quantum-powered decryption attempts.
                 </p>
@@ -166,11 +166,11 @@ const QuantumComputingDDoS: React.FC = () => {
                         <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
                           <time dateTime={post.date}>{post.date}</time>
                         </div>
-                        
+
                         <h3 className="text-lg font-medium mb-3 text-gray-900 group-hover:text-[#0EB623] transition-colors duration-300">
                           {post.title}
                         </h3>
-                        
+
                         <div className="flex items-center text-[#0EB623] font-medium text-sm group-hover:gap-2 transition-all duration-300">
                           Read article
                           <ArrowRight className="ml-1 group-hover:translate-x-1 transition-transform duration-300" size={16} />
@@ -195,8 +195,8 @@ const QuantumComputingDDoS: React.FC = () => {
                     Explore EdgeNext's quantum-ready security solutions and protect your business from next-generation threats.
                   </p>
                 </div>
-                <a 
-                  href="/anti_ddos" 
+                <a
+                  href="/anti-ddos"
                   className="px-8 py-4 bg-white text-[#0EB623] rounded-xl hover:bg-opacity-90 transition-colors font-medium whitespace-nowrap"
                 >
                   Learn More

@@ -36,7 +36,7 @@ const IPTransit: React.FC = () => {
           <div className="absolute inset-0" style={{
             background: 'linear-gradient(135deg, #E8F5E8 0%, #F0E8FF 50%, #E8F0FF 100%)'
           }}></div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-[40px] md:text-[60px] font-bold mb-6 leading-[1.1]">
@@ -47,8 +47,8 @@ const IPTransit: React.FC = () => {
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-light">
                 Reliable global connectivity with 1,500+ nodes—EdgeNext IP Transit powers scalable, cost-effective cross-border access for modern enterprises.
               </p>
-              <a 
-                href="/contact_us"
+              <a
+                href="/contact-us"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 inline-flex items-center group"
@@ -119,7 +119,7 @@ const IPTransit: React.FC = () => {
               {/* Gaming Enterprises */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <img 
+                  <img
                     src="https://images.pexels.com/photos/442576/pexels-photo-442576.jpeg"
                     alt="Gaming Infrastructure"
                     className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -145,7 +145,7 @@ const IPTransit: React.FC = () => {
                       <span className="text-[#0EB623] text-lg">Solution: Multi-carrier redundancy and intelligent routing reduce disruptions. Custom IP resources ensure compliance.</span>
                     </div>
                   </div>
-                  <a 
+                  <a
                     href="/gaming"
                     className="inline-flex items-center px-6 py-3 bg-[#0EB623] text-white rounded-lg hover:bg-[#0EA620] transition-colors"
                   >
@@ -157,7 +157,7 @@ const IPTransit: React.FC = () => {
               {/* E-Commerce Platforms */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="order-1 lg:order-2">
-                  <img 
+                  <img
                     src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg"
                     alt="E-Commerce Platform"
                     className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -183,8 +183,8 @@ const IPTransit: React.FC = () => {
                       <span className="text-[#0EB623] text-lg">Solution: Global nodes optimize cross-border routing, cutting latency by 50%. Flexible pricing lowers costs by 30%. 7-day onboarding into overseas markets.</span>
                     </div>
                   </div>
-                  <a 
-                    href="/e_commerce"
+                  <a
+                    href="/e-commerce"
                     className="inline-flex items-center px-6 py-3 bg-[#0EB623] text-white rounded-lg hover:bg-[#0EA620] transition-colors"
                   >
                     Learn More
@@ -195,7 +195,7 @@ const IPTransit: React.FC = () => {
               {/* Cloud Service Providers */}
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div>
-                  <img 
+                  <img
                     src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg"
                     alt="Cloud Service Provider"
                     className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -221,7 +221,7 @@ const IPTransit: React.FC = () => {
                       <span className="text-[#0EB623] text-lg">Solution: EdgeNext enables node-level access and rapid provisioning to meet dynamic global demand.</span>
                     </div>
                   </div>
-                  <a 
+                  <a
                     href="/telcos-isp-iigs"
                     className="inline-flex items-center px-6 py-3 bg-[#0EB623] text-white rounded-lg hover:bg-[#0EA620] transition-colors"
                   >
@@ -298,8 +298,8 @@ const IPTransit: React.FC = () => {
                     <button
                       onClick={() => setActiveTab('challenges')}
                       className={`w-full text-left p-4 rounded-xl transition-all duration-300 ${
-                        activeTab === 'challenges' 
-                          ? 'bg-[#0EB623] text-white' 
+                        activeTab === 'challenges'
+                          ? 'bg-[#0EB623] text-white'
                           : 'hover:bg-gray-50 text-gray-700'
                       }`}
                     >
@@ -308,12 +308,12 @@ const IPTransit: React.FC = () => {
                         <span className="font-medium">Key Challenges</span>
                       </div>
                     </button>
-                    
+
                     <button
                       onClick={() => setActiveTab('solution')}
                       className={`w-full text-left p-4 rounded-xl transition-all duration-300 ${
-                        activeTab === 'solution' 
-                          ? 'bg-[#0EB623] text-white' 
+                        activeTab === 'solution'
+                          ? 'bg-[#0EB623] text-white'
                           : 'hover:bg-gray-50 text-gray-700'
                       }`}
                     >
@@ -322,12 +322,12 @@ const IPTransit: React.FC = () => {
                         <span className="font-medium">Our Solution</span>
                       </div>
                     </button>
-                    
+
                     <button
                       onClick={() => setActiveTab('results')}
                       className={`w-full text-left p-4 rounded-xl transition-all duration-300 ${
-                        activeTab === 'results' 
-                          ? 'bg-[#0EB623] text-white' 
+                        activeTab === 'results'
+                          ? 'bg-[#0EB623] text-white'
                           : 'hover:bg-gray-50 text-gray-700'
                       }`}
                     >
@@ -506,7 +506,7 @@ const IPTransit: React.FC = () => {
             </div>
 
             <div className="text-center">
-              <a 
+              <a
                 href="/resources/blog"
                 className="inline-flex items-center bg-[#0EB623] text-white font-medium px-8 py-4 rounded-xl hover:bg-[#0EA620] transition-all duration-300"
               >
@@ -534,7 +534,7 @@ const IPTransit: React.FC = () => {
               </p>
 
               <a
-                href="/contact_us"
+                href="/contact-us"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300 group"
               >
                 Contact Us

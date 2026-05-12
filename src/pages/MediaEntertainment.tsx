@@ -96,7 +96,7 @@ const MediaEntertainment: React.FC = () => {
                   localized edge delivery and advanced threat protection.
                 </p>
                 <Link
-                  to="/contact_us"
+                  to="/contact-us"
                   className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 inline-flex items-center group"
                 >
                   Contact Us
@@ -470,7 +470,7 @@ const MediaEntertainment: React.FC = () => {
                 Partner with EdgeNext to deliver seamless, secure, and high-performance media experiences—from real-time news to global VOD. Let's build something your audience won't forget.
               </p>
               <a
-                href="/contact_us"
+                href="/contact-us"
                 className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300 group"
               >
                 Contact Us

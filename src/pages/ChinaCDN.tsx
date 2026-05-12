@@ -39,7 +39,7 @@ const ChinaCDN: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_100%,rgba(14,182,35,0.05),transparent_50%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -52,8 +52,8 @@ const ChinaCDN: React.FC = () => {
                 <p className="text-lg md:text-xl text-gray-600 mb-8">
                   EdgeNext offers licensed CDN services, advanced edge security, and full ICP compliance support to help you scale in China—without compromising speed, security, or control.
                 </p>
-                <Link 
-                  to="/contact_us"
+                <Link
+                  to="/contact-us"
                   className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 inline-flex items-center group"
                 >
                   Contact Us
@@ -141,7 +141,7 @@ const ChinaCDN: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <img 
+                <img
                   src="/chinacdn.jpg"
                   alt="Accelerated Cross-Border Delivery"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -153,7 +153,7 @@ const ChinaCDN: React.FC = () => {
               </div>
 
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <img 
+                <img
                   src="/streaming.png"
                   alt="Seamless Streaming & VOD"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -165,7 +165,7 @@ const ChinaCDN: React.FC = () => {
               </div>
 
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <img 
+                <img
                   src="/static-acceleration.jpg"
                   alt="Enterprise-Grade Cloud Security"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -220,7 +220,7 @@ const ChinaCDN: React.FC = () => {
                 </ul>
               </div>
               <div className="order-1 lg:order-2">
-                <img 
+                <img
                   src="/chinacdn.jpg"
                   alt="Cross-Border Delivery"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -230,7 +230,7 @@ const ChinaCDN: React.FC = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
               <div>
-                <img 
+                <img
                   src="/streaming.png"
                   alt="Streaming & VOD"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -294,7 +294,7 @@ const ChinaCDN: React.FC = () => {
                 </ul>
               </div>
               <div className="order-1 lg:order-2">
-                <img 
+                <img
                   src="/static-acceleration.jpg"
                   alt="Cloud Security"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -314,7 +314,7 @@ const ChinaCDN: React.FC = () => {
                   If you plan to host content within mainland China, an ICP license is mandatory. EdgeNext helps you determine if it's required—and guides you through the process with speed and clarity.
                 </p>
               </div>
-              <Link 
+              <Link
                 to="/icp-license"
                 className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300"
               >
@@ -384,8 +384,8 @@ const ChinaCDN: React.FC = () => {
         From live campaigns to high-frequency content updates, EdgeNext helps digital brands scale reliably in China's fast-moving internet environment.
       </p>
 
-      <Link 
-        to="/contact_us" 
+      <Link
+        to="/contact-us"
         className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
       >
         Contact Us

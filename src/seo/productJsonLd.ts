@@ -22,33 +22,33 @@ const PRODUCT_SCHEMA_BY_PATH: Record<string, ProductSchemaMeta> = {
     category: 'CDN',
     path: '/static-acceleration',
   },
-  '/live_streaming': {
+  '/live-streaming': {
     name: 'Live Streaming',
     description:
       'Deliver high-quality CDN live streaming with EdgeNext. Ensure fast, reliable, and low-latency video delivery for global audiences.',
     category: 'Streaming',
-    path: '/live_streaming',
+    path: '/live-streaming',
   },
-  '/security_cdn': {
+  '/security-cdn': {
     name: 'Security CDN',
     description:
       'Protect your website with web server security and CDN protection. Prevent DDoS attacks, secure data, and ensure safe global content delivery with EdgeNext.',
     category: 'Cloud Security',
-    path: '/security_cdn',
+    path: '/security-cdn',
   },
-  '/anti_ddos': {
+  '/anti-ddos': {
     name: 'Anti-DDoS',
     description:
       'Protect your website with dedicated server DDoS protection. Prevent attacks, filter malicious traffic, and ensure secure, uninterrupted performance with EdgeNext.',
     category: 'Cloud Security',
-    path: '/anti_ddos',
+    path: '/anti-ddos',
   },
-  '/dns_security_service': {
+  '/dns-security-service': {
     name: 'DNS Security Service',
     description:
       'Protect your domain with authoritative DNS servers. EdgeNext ensures fast, reliable DNS resolution and shields against DDoS attacks and spoofing threats.',
     category: 'Cloud Security',
-    path: '/dns_security_service',
+    path: '/dns-security-service',
   },
   '/ecs': {
     name: 'Edge Cloud Server',
@@ -57,12 +57,12 @@ const PRODUCT_SCHEMA_BY_PATH: Record<string, ProductSchemaMeta> = {
     category: 'Edge Cloud',
     path: '/ecs',
   },
-  '/bare_metal_server': {
+  '/bare-metal-server': {
     name: 'Bare Metal Server',
     description:
       'Protect your infrastructure with bare metal server backup solutions from EdgeNext. Ensure full data security, fast recovery, and high-performance server management.',
     category: 'Edge Cloud',
-    path: '/bare_metal_server',
+    path: '/bare-metal-server',
   },
 };
 

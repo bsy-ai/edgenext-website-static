@@ -98,7 +98,7 @@ const BareMetalServer: React.FC = () => {
           <div className="absolute inset-0" style={{
             background: 'linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%)'
           }}></div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-[40px] md:text-[60px] font-bold mb-4 md:mb-6 leading-[1.1]">
@@ -109,8 +109,8 @@ const BareMetalServer: React.FC = () => {
                 EdgeNext Bare Metal Server (BMS) is a dedicated physical server service deployed at edge nodes, ideal for customers with stringent requirements for edge deployment, data compliance, high performance, and security.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
-                  href="/contact_us"
+                <a
+                  href="/contact-us"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 flex items-center justify-center group"
@@ -126,7 +126,7 @@ const BareMetalServer: React.FC = () => {
         {/* Why Choose EdgeNext BMS Section */}
         <section className="py-24 relative overflow-hidden bg-black">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(14,182,35,0.15),transparent_70%)]"></div>
-          
+
           <div className="container mx-auto px-4 relative">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-medium mb-6 text-white">Why Choose EdgeNext BMS?</h2>
@@ -143,7 +143,7 @@ const BareMetalServer: React.FC = () => {
                   Compared to traditional centralized public clouds, EdgeNext focuses on edge nodes closer to users, with deployments in multiple countries—especially remote and compliance-sensitive areas.
                 </p>
               </div>
-              
+
               {/* Card 2: Regulatory Compliance */}
               <div className="group bg-gray-900/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-gray-800 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.3)]">
                 <h3 className="text-xl font-medium text-white mb-4 text-left">Regulatory Compliance</h3>
@@ -151,7 +151,7 @@ const BareMetalServer: React.FC = () => {
                   Local deployments meet data sovereignty and compliance requirements across regions.
                 </p>
               </div>
-              
+
               {/* Card 3: Cost Efficiency */}
               <div className="group bg-gray-900/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-gray-800 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.3)]">
                 <h3 className="text-xl font-medium text-white mb-4 text-left">Cost Efficiency</h3>
@@ -159,7 +159,7 @@ const BareMetalServer: React.FC = () => {
                   Achieve over 30% cost savings on average compared to traditional public cloud platforms.
                 </p>
               </div>
-              
+
               {/* Card 4: Expert Support */}
               <div className="group bg-gray-900/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-gray-800 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.3)]">
                 <h3 className="text-xl font-medium text-white mb-4 text-left">Expert Support</h3>
@@ -167,7 +167,7 @@ const BareMetalServer: React.FC = () => {
                   24/7 professional team provides real-time technical assistance and monitoring.
                 </p>
               </div>
-              
+
               {/* Card 5: Enhanced Security */}
               <div className="group bg-gray-900/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-gray-800 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.3)] md:col-span-2 lg:col-span-1">
                 <h3 className="text-xl font-medium text-white mb-4 text-left">Enhanced Security</h3>
@@ -195,7 +195,7 @@ const BareMetalServer: React.FC = () => {
                   <button
                     onClick={() => setActiveFeature('low-latency')}
                     className={`group w-full flex items-center gap-3 p-4 rounded-xl transition-all duration-300 ${
-                      activeFeature === 'low-latency' 
+                      activeFeature === 'low-latency'
                         ? 'bg-[#0EB623] text-white'
                         : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
                     }`}
@@ -205,11 +205,11 @@ const BareMetalServer: React.FC = () => {
                       <span className="font-medium text-left">Low-Latency, High-Performance Computing</span>
                     </div>
                   </button>
-                  
+
                   <button
                     onClick={() => setActiveFeature('data-compliance')}
                     className={`group w-full flex items-center gap-3 p-4 rounded-xl transition-all duration-300 ${
-                      activeFeature === 'data-compliance' 
+                      activeFeature === 'data-compliance'
                         ? 'bg-[#0EB623] text-white'
                         : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
                     }`}
@@ -217,11 +217,11 @@ const BareMetalServer: React.FC = () => {
                     <Shield size={20} className={activeFeature === 'data-compliance' ? 'text-white' : 'text-[#0EB623]'} />
                     <span className="font-medium text-left">Data Localization & Compliance</span>
                   </button>
-                  
+
                   <button
                     onClick={() => setActiveFeature('high-concurrency')}
                     className={`group w-full flex items-center gap-3 p-4 rounded-xl transition-all duration-300 ${
-                      activeFeature === 'high-concurrency' 
+                      activeFeature === 'high-concurrency'
                         ? 'bg-[#0EB623] text-white'
                         : 'bg-gray-100 hover:bg-gray-200 text-gray-700'
                     }`}
@@ -237,59 +237,59 @@ const BareMetalServer: React.FC = () => {
                   {activeFeature === 'low-latency' && (
                     <div>
                       <h3 className="text-2xl font-medium mb-4 text-left">Low-Latency, High-Performance Computing</h3>
-                      
+
                       <div className="mb-6">
                         <h4 className="font-medium mb-2 text-left">Business Needs:</h4>
                         <p className="text-gray-600 text-left">When every millisecond counts — for real-time applications where latency is critical and physical compute power is a must.</p>
                       </div>
-                      
+
                       <div className="mb-6">
                         <h4 className="font-medium mb-2 text-left">Industry Examples:</h4>
                         <p className="text-gray-600 text-left">Game battle servers, high-frequency trading.</p>
                       </div>
-                      
+
                       <div>
                         <h4 className="font-medium mb-2 text-left">Recommended Solution:</h4>
                         <p className="text-gray-600 text-left">Deploy BMS clusters at edge locations, equipped with low-latency NICs and dedicated lines to core data centers.</p>
                       </div>
                     </div>
                   )}
-                  
+
                   {activeFeature === 'data-compliance' && (
                     <div>
                       <h3 className="text-2xl font-medium mb-4 text-left">Data Localization & Compliance</h3>
-                      
+
                       <div className="mb-6">
                         <h4 className="font-medium mb-2 text-left">Business Needs:</h4>
                         <p className="text-gray-600 text-left">For businesses handling sensitive data that must stay within borders — ensuring data sovereignty, privacy, and regulatory compliance.</p>
                       </div>
-                      
+
                       <div className="mb-6">
                         <h4 className="font-medium mb-2 text-left">Industry Examples:</h4>
                         <p className="text-gray-600 text-left">Overseas connected vehicles, government or financial data processing.</p>
                       </div>
-                      
+
                       <div>
                         <h4 className="font-medium mb-2 text-left">Recommended Solution:</h4>
                         <p className="text-gray-600 text-left">Deploy BMS clusters in the target countries, paired with enterprise-grade storage, hardware firewalls, and ACL-based access control.</p>
                       </div>
                     </div>
                   )}
-                  
+
                   {activeFeature === 'high-concurrency' && (
                     <div>
                       <h3 className="text-2xl font-medium mb-4 text-left">High-Concurrency & Elastic Expansion</h3>
-                      
+
                       <div className="mb-6">
                         <h4 className="font-medium mb-2 text-left">Business Needs:</h4>
                         <p className="text-gray-600 text-left">When traffic spikes are unpredictable — you need infrastructure that's ready to scale up fast and handle massive concurrent requests.</p>
                       </div>
-                      
+
                       <div className="mb-6">
                         <h4 className="font-medium mb-2 text-left">Industry Examples:</h4>
                         <p className="text-gray-600 text-left">E-commerce flash sales, live streaming transcoding.</p>
                       </div>
-                      
+
                       <div>
                         <h4 className="font-medium mb-2 text-left">Recommended Solution:</h4>
                         <p className="text-gray-600 text-left">Lease on-demand BMS cluster, supporting rapid scaling; Combine standard NVMe SSDs with dedicated lines and load balancing, enhancing I/O performance.</p>
@@ -315,7 +315,7 @@ const BareMetalServer: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="group bg-white rounded-2xl p-6 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-                <img 
+                <img
                   src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg"
                   alt="High-Density Computing"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -327,7 +327,7 @@ const BareMetalServer: React.FC = () => {
               </div>
 
               <div className="group bg-white rounded-2xl p-6 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-                <img 
+                <img
                   src="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg"
                   alt="Create Secured Database"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -339,7 +339,7 @@ const BareMetalServer: React.FC = () => {
               </div>
 
               <div className="group bg-white rounded-2xl p-6 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-                <img 
+                <img
                   src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg"
                   alt="Privatized Service Deployment"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -356,7 +356,7 @@ const BareMetalServer: React.FC = () => {
         {/* Breaking Through Cloud Limitations Section */}
         <section className="py-24 bg-black relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(14,182,35,0.15),transparent_70%)]"></div>
-          
+
           <div className="container mx-auto px-4 relative">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-medium mb-6 text-white">Breaking Through Cloud Limitations</h2>
@@ -376,7 +376,7 @@ const BareMetalServer: React.FC = () => {
                   Solution: EdgeNext BMS with dedicated physical resources deliver 100% compute utilization, reducing latency by 50–80% to ≤20 ms.
                 </p>
               </div>
-              
+
               <div className="bg-gray-900/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-gray-800 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.3)]">
                 <div className="text-6xl font-bold text-[#0EB623] mb-4">02</div>
                 <h3 className="text-xl font-medium text-white mb-4 text-left">Challenge: Data Compliance</h3>
@@ -387,7 +387,7 @@ const BareMetalServer: React.FC = () => {
                   Solution: Deploy BMS with firewall/ACL at local edge nodes to meet 100% compliance with sovereignty requirements.
                 </p>
               </div>
-              
+
               <div className="bg-gray-900/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-gray-800 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.3)]">
                 <div className="text-6xl font-bold text-[#0EB623] mb-4">03</div>
                 <h3 className="text-xl font-medium text-white mb-4 text-left">Challenge: High Latency in Underserved Regions</h3>
@@ -398,7 +398,7 @@ const BareMetalServer: React.FC = () => {
                   Solution: 1,500+ edge nodes + private lines with local BMS reduce end-to-end latency to ≤50 ms, boosting response speed by 80%.
                 </p>
               </div>
-              
+
               <div className="bg-gray-900/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-gray-800 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.3)]">
                 <div className="text-6xl font-bold text-[#0EB623] mb-4">04</div>
                 <h3 className="text-xl font-medium text-white mb-4 text-left">Challenge: High Long-Term Costs</h3>
@@ -409,7 +409,7 @@ const BareMetalServer: React.FC = () => {
                   Solution: EdgeNext BMS offers Pay-as-you-go model and leasing replace self-builds, saving 30–50% yearly and cutting upfront by 80%.
                 </p>
               </div>
-              
+
               <div className="bg-gray-900/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-gray-800 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.3)]">
                 <div className="text-6xl font-bold text-[#0EB623] mb-4">05</div>
                 <h3 className="text-xl font-medium text-white mb-4 text-left">Challenge: Complex In-House Ops</h3>
@@ -420,7 +420,7 @@ const BareMetalServer: React.FC = () => {
                   Solution: EdgeNext provides 24/7 managed services and remote monitoring, improving efficiency by 40% and reducing response time to minutes.
                 </p>
               </div>
-              
+
               <div className="bg-gray-900/80 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-gray-800 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.3)]">
                 <div className="text-6xl font-bold text-[#0EB623] mb-4">06</div>
                 <h3 className="text-xl font-medium text-white mb-4 text-left">Challenge: Resource Contention in High-Concurrency Scenarios</h3>
@@ -507,7 +507,7 @@ const BareMetalServer: React.FC = () => {
               </p>
 
               <a
-                href="/contact_us"
+                href="/contact-us"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300 group"

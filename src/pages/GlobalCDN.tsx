@@ -21,7 +21,7 @@ const GlobalCDN: React.FC = () => {
     } else {
       alert('Please fill in all required fields: Full Name, Work Email, Company, and Country/Region');
     }
-  }; 
+  };
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
@@ -83,7 +83,7 @@ const GlobalCDN: React.FC = () => {
           <div className="absolute inset-0" style={{
             background: 'linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%)'
           }}></div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-[40px] md:text-[60px] font-bold mb-4 md:mb-6 leading-[1.1]">
@@ -94,7 +94,7 @@ const GlobalCDN: React.FC = () => {
                 EdgeNext's Global CDN delivers lightning-fast content with unparalleled performance across 1500+ points of presence worldwide, with dominant coverage in Southeast Asia, China, and MENA regions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
+                <a
                   href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                   target="_blank"
                   rel="noopener"
@@ -103,8 +103,8 @@ const GlobalCDN: React.FC = () => {
                   Start Now
                   <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-200" size={20} />
                 </a>
-                <Link 
-                  to="/contact_us"
+                <Link
+                  to="/contact-us"
                   className="glass-card border border-gray-200 text-gray-800 font-medium px-6 md:px-8 py-3 md:py-4 rounded-xl hover:bg-white/80 hover:border-[#0EB623]/20 hover:shadow-glow transition-all duration-300 flex items-center justify-center"
                 >
                   Contact Us
@@ -137,7 +137,7 @@ const GlobalCDN: React.FC = () => {
         {/* Why Choose EdgeNext Global CDN Section */}
         <section className="py-24 relative overflow-hidden bg-white">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(14,182,35,0.08),transparent_70%)]"></div>
-          
+
           <div className="container mx-auto px-4 relative">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-medium mb-6">Why Choose EdgeNext Global CDN?</h2>
@@ -285,7 +285,7 @@ const GlobalCDN: React.FC = () => {
         {/* Regional Network Excellence Section */}
         <section className="py-24 relative overflow-hidden bg-gray-900">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(14,182,35,0.15),transparent_70%)]"></div>
-          
+
           <div className="container mx-auto px-4 relative">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-medium mb-6 text-white">Regional Network Excellence</h2>
@@ -315,7 +315,7 @@ const GlobalCDN: React.FC = () => {
                     <span className="text-gray-300">Tailored Solutions for SEA Challenges</span>
                   </li>
                 </ul>
-                <Link to="/southeast_asia_cdn" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
+                <Link to="/southeast-asia-cdn" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
                   Explore SEA CDN <ArrowRight className="ml-2 group-hover:translate-x-1" size={16} />
                 </Link>
               </div>
@@ -340,7 +340,7 @@ const GlobalCDN: React.FC = () => {
                     <span className="text-gray-300">Local cache optimization</span>
                   </li>
                 </ul>
-                <Link to="/china_cdn" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
+                <Link to="/china-cdn" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
                   Explore China CDN <ArrowRight className="ml-2 group-hover:translate-x-1" size={16} />
                 </Link>
               </div>
@@ -365,7 +365,7 @@ const GlobalCDN: React.FC = () => {
                     <span className="text-gray-300">Optimized Arabic Content Delivery</span>
                   </li>
                 </ul>
-                <Link to="/mea_cdn" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
+                <Link to="/mea-cdn" className="inline-flex items-center text-[#0EB623] font-medium group-hover:gap-2 transition-all duration-300">
                   Explore MENA CDN <ArrowRight className="ml-2 group-hover:translate-x-1" size={16} />
                 </Link>
               </div>
@@ -376,7 +376,7 @@ const GlobalCDN: React.FC = () => {
         {/* Customer Success Stories Section */}
         <section className="py-24 relative overflow-hidden bg-white">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(14,182,35,0.08),transparent_70%)]"></div>
-          
+
           <div className="container mx-auto px-4 relative">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-medium mb-6">Customer Success Stories</h2>
@@ -434,7 +434,7 @@ const GlobalCDN: React.FC = () => {
         {/* Core Features Section */}
         <section className="py-24 relative overflow-hidden bg-gray-50">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(14,182,35,0.03)_0%,transparent_70%)]"></div>
-          
+
           <div className="container mx-auto px-4 relative">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-medium mb-6">Core Features</h2>
@@ -451,14 +451,14 @@ const GlobalCDN: React.FC = () => {
                       key={key}
                       onClick={() => setActiveFeature(key)}
                       className={`flex-shrink-0 w-full flex items-center gap-3 p-4 rounded-xl transition-all duration-300 group ${
-                        activeFeature === key 
+                        activeFeature === key
                           ? 'bg-[#0EB623] text-white shadow-lg'
                           : 'text-gray-600 hover:bg-[#0EB623] hover:text-white'
                       }`}
                     >
                       <div className={`transition-colors duration-300 ${
-                        activeFeature === key 
-                          ? 'text-white' 
+                        activeFeature === key
+                          ? 'text-white'
                           : 'text-[#0EB623] group-hover:text-white'
                       }`}>
                         {feature.icon}
@@ -477,8 +477,8 @@ const GlobalCDN: React.FC = () => {
                   <h4 className="font-semibold mb-4">Key Benefits</h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {features[activeFeature].benefits.map((benefit, index) => (
-                      <div 
-                        key={index} 
+                      <div
+                        key={index}
                         className="flex items-center gap-3 p-4 rounded-lg bg-gray-50 hover:bg-[#0EB623]/5 transition-all duration-300"
                       >
                         <Check className="text-[#0EB623] flex-shrink-0" size={20} />
@@ -506,7 +506,7 @@ const GlobalCDN: React.FC = () => {
       </p>
 
       <Link
-        to="/contact_us"
+        to="/contact-us"
         className="inline-flex items-center px-10 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-gray-100 transition-all duration-300 text-lg shadow-md"
       >
         Contact Us

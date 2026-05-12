@@ -5,7 +5,7 @@ import { ArrowRight, Zap, Globe, Network, Shield, Clock, Database, Settings, Sho
 
 const StaticAcceleration: React.FC = () => {
   const [activeTab, setActiveTab] = useState('website');
-  
+
   const useCases = {
     website: {
       title: 'Website Acceleration',
@@ -54,7 +54,7 @@ const StaticAcceleration: React.FC = () => {
           <div className="absolute inset-0" style={{
             background: 'linear-gradient(135deg, #F0F8F0 0%, #E8F0FF 50%, #F0F0FF 100%)'
           }}></div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-[40px] sm:text-[48px] md:text-[56px] lg:text-[64px] font-bold mb-6 leading-[1.1] tracking-tight">
@@ -65,8 +65,8 @@ const StaticAcceleration: React.FC = () => {
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-light">
                 EdgeNext Static Acceleration delivers high-performance, low-latency content distribution for websites, apps, video-on-demand, and large file downloads. Built for scale, security, and real-time efficiency.
               </p>
-              <a 
-                href="/contact_us" 
+              <a
+                href="/contact-us"
                 className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 inline-flex items-center group"
               >
                 Contact Us
@@ -133,7 +133,7 @@ const StaticAcceleration: React.FC = () => {
               </div>
 
               <div className="relative">
-                <img 
+                <img
                   src="/static-acceleration.jpg"
                   alt="Team collaboration"
                   className="rounded-xl shadow-lg w-full h-[400px] object-cover"
@@ -143,13 +143,13 @@ const StaticAcceleration: React.FC = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-16">
               <div className="order-2 lg:order-1">
-                <img 
+                <img
                   src="/static-acceleration-2.png"
                   alt="Performance optimization"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
                 />
               </div>
-              
+
               <div className="order-1 lg:order-2 space-y-8">
                 <div className="group">
                   <div className="flex items-start gap-4 mb-6">
@@ -218,8 +218,8 @@ const StaticAcceleration: React.FC = () => {
                         key={key}
                         onClick={() => setActiveTab(key)}
                         className={`w-full text-left p-4 rounded-xl transition-all duration-300 ${
-                          activeTab === key 
-                            ? 'bg-[#0EB623] text-white' 
+                          activeTab === key
+                            ? 'bg-[#0EB623] text-white'
                             : 'hover:bg-gray-50 text-gray-700'
                         }`}
                       >
@@ -241,7 +241,7 @@ const StaticAcceleration: React.FC = () => {
                   <div className="bg-gray-50 rounded-xl p-8">
                     <h3 className="text-2xl font-medium mb-4">{useCases[activeTab].title}</h3>
                     <p className="text-gray-600 mb-6">{useCases[activeTab].description}</p>
-                    
+
                     <div className="mb-4">
                       <h4 className="font-medium mb-4">Our Solution</h4>
                       <div className="space-y-3">
@@ -380,8 +380,8 @@ const StaticAcceleration: React.FC = () => {
             </div>
 
             <div className="text-center">
-              <a 
-                href="/blog" 
+              <a
+                href="/blog"
                 className="inline-flex items-center bg-[#0EB623] text-white font-medium px-8 py-4 rounded-xl hover:bg-[#0EA620] transition-all duration-300"
               >
                 View All Resources
@@ -403,8 +403,8 @@ const StaticAcceleration: React.FC = () => {
                 From Southeast Asia to Central Asia and Africa, EdgeNext delivers content with
                 speed, security, and a human-first touch.
               </p>
-              <a 
-                href="/contact_us"
+              <a
+                href="/contact-us"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"

@@ -35,7 +35,7 @@ const DNSAmplificationAttacks: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(14,182,35,0.1),transparent_70%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto">
               <div className="text-[#0EB623] text-sm font-medium mb-4">November 24, 2024 • by Kaiyue</div>
@@ -60,7 +60,7 @@ const DNSAmplificationAttacks: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">What Are the Key Characteristics of a DNS Amplification Attack?</h2>
-                
+
                 <p className="mb-6">
                   The key characteristics of a DNS amplification attack include a sudden spike in network traffic, unusual patterns in DNS queries, and a high volume of responses originating from open resolvers. These attacks often target specific DNS record types, such as ANY queries, which produce significant responses. Another hallmark is spoofed IP addresses, making the attack appear as if it originates from the target.
                 </p>
@@ -70,7 +70,7 @@ const DNSAmplificationAttacks: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">Why Are DNS Amplification Attacks So Effective in Modern Campaigns?</h2>
-                
+
                 <p className="mb-6">
                   DNS amplification attacks remain highly effective because they exploit a core internet protocol essential for online communication. The amplification factor—where a small query generates a disproportionately large response—makes these attacks resource-efficient for attackers. For instance, a 60-byte query can generate a 4,000-byte reaction, allowing attackers to amplify their attack power significantly without requiring a large botnet.
                 </p>
@@ -80,7 +80,7 @@ const DNSAmplificationAttacks: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">What Tools and Techniques Help Detect DNS Amplification Attacks?</h2>
-                
+
                 <p className="mb-6">
                   Detecting DNS amplification attacks requires tools and techniques that monitor and analyze DNS traffic in real time. Traffic analyzers and intrusion detection systems (IDS) are commonly used to identify unusual spikes in DNS query volume or response size. These tools can flag patterns such as repeated requests for specific DNS record types, which often indicate the early stages of an amplification attack.
                 </p>
@@ -90,7 +90,7 @@ const DNSAmplificationAttacks: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">How Can Businesses Defend Against DNS Amplification Attacks?</h2>
-                
+
                 <p className="mb-6">
                   Businesses can defend against DNS amplification attacks by implementing proactive measures to secure their DNS infrastructure. One of the most critical steps is to disable open DNS resolvers, ensuring that DNS servers only respond to authorized queries. Configuring rate limiting on DNS responses is another effective tactic, as it restricts the number of reactions a server can send to a single IP address in a given timeframe, reducing the potential impact of an attack.
                 </p>
@@ -100,7 +100,7 @@ const DNSAmplificationAttacks: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">What Are the Consequences of DNS Amplification Attacks for Businesses?</h2>
-                
+
                 <p className="mb-6">
                   DNS amplification attacks can have severe consequences for businesses, including financial losses, operational disruptions, and damage to reputation. The massive traffic generated during these attacks often overwhelms a business's network infrastructure, leading to downtime for critical services such as websites, email systems, and customer-facing applications. For e-commerce businesses, even a few hours of downtime can translate into significant revenue loss and decreased customer trust.
                 </p>
@@ -110,7 +110,7 @@ const DNSAmplificationAttacks: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">Why Is Collaboration Critical for Mitigating DNS Amplification Threats?</h2>
-                
+
                 <p className="mb-6">
                   Collaboration among stakeholders is essential for mitigating DNS amplification threats because the DNS system is a shared resource used by organizations worldwide. DNS server administrators play a crucial role by securing their servers against misuse, while internet service providers (ISPs) can help identify and block malicious traffic at the network level. Cybersecurity organizations also contribute by sharing threat intelligence informing businesses about evolving attack patterns and mitigation techniques.
                 </p>
@@ -120,7 +120,7 @@ const DNSAmplificationAttacks: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">What Are the Emerging Solutions for Combating DNS Amplification Attacks?</h2>
-                
+
                 <p className="mb-6">
                   Emerging solutions for combating DNS amplification attacks include technologies like DNS over HTTPS (DoH) and automated traffic analysis systems powered by artificial intelligence (AI). DNS over HTTPS encrypts DNS queries, reducing the risk of interception and spoofing that attackers rely on to execute amplification attacks. While not a direct solution, DoH strengthens DNS security overall, making it harder for attackers to exploit the system.
                 </p>
@@ -130,7 +130,7 @@ const DNSAmplificationAttacks: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">Conclusion: Why DNS Amplification Attacks Remain a Persistent Threat</h2>
-                
+
                 <p className="mb-6">
                   DNS amplification attacks continue to pose a significant threat in modern DDoS campaigns due to their efficiency, scalability, and ability to exploit fundamental weaknesses in DNS infrastructure. These attacks can cause extensive operational and financial damage, particularly for businesses that rely on uninterrupted online services. Organizations can effectively mitigate the risk by understanding how these attacks work and implementing proactive defenses, such as securing DNS servers, deploying rate limiting, and leveraging advanced detection tools.
                 </p>
@@ -156,11 +156,11 @@ const DNSAmplificationAttacks: React.FC = () => {
                         <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
                           <time dateTime={post.date}>{post.date}</time>
                         </div>
-                        
+
                         <h3 className="text-lg font-medium mb-3 text-gray-900 group-hover:text-[#0EB623] transition-colors duration-300">
                           {post.title}
                         </h3>
-                        
+
                         <div className="flex items-center text-[#0EB623] font-medium text-sm group-hover:gap-2 transition-all duration-300">
                           Read article
                           <ArrowRight className="ml-1 group-hover:translate-x-1 transition-transform duration-300" size={16} />
@@ -185,8 +185,8 @@ const DNSAmplificationAttacks: React.FC = () => {
                     Explore EdgeNext's DNS security solutions and protect your infrastructure from threats.
                   </p>
                 </div>
-                <a 
-                  href="/dns_security_service" 
+                <a
+                  href="/dns-security-service"
                   className="px-8 py-4 bg-white text-[#0EB623] rounded-xl hover:bg-opacity-90 transition-colors font-medium whitespace-nowrap"
                 >
                   Learn More

@@ -14,7 +14,7 @@ export const CallToAction: React.FC = () => {
           </p>
 
           <a
-            href="/contact_us"
+            href="/contact-us"
             className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300 group"
           >
             Contact Us

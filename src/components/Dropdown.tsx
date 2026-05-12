@@ -62,25 +62,25 @@ const Banner: React.FC<{ type: string }> = ({ type }) => {
       title: "Need Expert Guidance?",
       description: "Our specialists are here to help you find the perfect solution",
       buttonText: "Get Started",
-      link: "/contact_us"
+      link: "/contact-us"
     },
     resources: {
       title: "Discover Success Stories",
       description: "See how our customers achieve their goals",
       buttonText: "View Cases",
-      link: "/case_study"
+      link: "/case-study"
     },
     pricing: {
       title: "Talk to Sales",
       description: "Get personalized pricing and product recommendations",
       buttonText: "Contact Us",
-      link: "/contact_us"
+      link: "/contact-us"
     },
     company: {
       title: "Need Expert Guidance?",
       description: "Get in touch with our team for personalized solutions",
       buttonText: "Contact Us",
-      link: "/contact_us"
+      link: "/contact-us"
     }
   };
 
@@ -119,64 +119,64 @@ export const Dropdown: React.FC<DropdownProps> = ({ type, onClose }) => {
   const renderProducts = () => (
     <div className="grid grid-cols-4 gap-6">
       <Section title="Content Delivery" icon={<Monitor size={20} />}>
-        <MenuItem 
+        <MenuItem
           icon={<Zap size={18} />}
           title="Dynamic Acceleration"
           description="Real-time boost for dynamic content"
           to="/dynamic-acceleration"
         />
-        <MenuItem 
+        <MenuItem
           icon={<Network size={18} />}
           title="Static Acceleration"
           description="Optimized delivery for static assets"
           to="/static-acceleration"
         />
-        <MenuItem 
+        <MenuItem
           icon={<Video size={18} />}
           title="Live Streaming"
           description="Low-latency live video delivery"
-          to="/live_streaming"
+          to="/live-streaming"
         />
       </Section>
-      
+
       <Section title="Security" icon={<Shield size={20} />}>
-        <MenuItem 
+        <MenuItem
           icon={<Lock size={18} />}
           title="Security CDN"
           description="Protected content delivery network"
-          to="/security_cdn"
+          to="/security-cdn"
         />
-        <MenuItem 
+        <MenuItem
           icon={<Shield size={18} />}
           title="Anti-DDoS"
           description="Scalable, always-on DDoS defense"
-          to="/anti_ddos"
+          to="/anti-ddos"
         />
-        <MenuItem 
+        <MenuItem
           icon={<Database size={18} />}
           title="Security DNS"
           description="Secure DNS infrastructure"
-         to="/dns_security_service"
+         to="/dns-security-service"
         />
       </Section>
-      
+
       <Section title="Computing & Network" icon={<Server size={20} />}>
-        <MenuItem 
+        <MenuItem
           icon={<Cloud size={18} />}
           title="Edge Cloud Server"
           description="High-speed global cloud hosting"
           to="/ecs"
         />
-        <MenuItem 
+        <MenuItem
           icon={<ServerIcon size={18} />}
           title="Bare Metal Server"
           description="Dedicated high-performance servers"
-          to="/bare_metal_server"
+          to="/bare-metal-server"
         />
       </Section>
-      
+
       <Section title="AI-Powered Solutions" icon={<BrainCircuit size={20} />}>
-        <MenuItem 
+        <MenuItem
           icon={<BrainCircuit size={18} />}
           title="EdgeNext AI Solutions"
           description="Personal Intelligent Assistant × Enterprise Full-Stack Empowerment"
@@ -190,71 +190,71 @@ export const Dropdown: React.FC<DropdownProps> = ({ type, onClose }) => {
     <div className="grid grid-cols-2 gap-8">
       <Section title="By Industry" icon={<Building2 size={20} />}>
         <div className="grid grid-cols-2 gap-x-4 gap-y-3">
-          <MenuItem 
+          <MenuItem
             icon={<ShoppingCart size={18} />}
             title="E-Commerce"
             description="For online stores or services"
-            to="/e_commerce"
+            to="/e-commerce"
           />
-          <MenuItem 
+          <MenuItem
             icon={<BookOpen size={18} />}
             title="E-Learning"
             description="For academic institutions"
-            to="/e_learning"
+            to="/e-learning"
           />
-          <MenuItem 
+          <MenuItem
             icon={<Smartphone size={18} />}
             title="Telecommunication"
             description="For information and communication enterprises"
             to="/telcos-isp-iigs"
           />
-          <MenuItem 
+          <MenuItem
             icon={<Gamepad2 size={18} />}
             title="Gaming"
             description="For gaming services or platforms"
             to="/gaming"
           />
-          
-          <MenuItem 
+
+          <MenuItem
             icon={<Video size={18} />}
             title="Sports Broadcasting"
             description="For live sports streaming"
-            to="/sports_broadcasting"
+            to="/sports-broadcasting"
           />
-          
-          <MenuItem 
+
+          <MenuItem
             icon={<Film size={18} />}
             title="Media & Entertainment"
             description="For media services"
-            to="/media_and_entertainment"
+            to="/solutions/media-entertainment"
           />
         </div>
       </Section>
-      
+
       <Section title="By Need" icon={<Target size={20} />}>
-        <MenuItem 
+        <MenuItem
           icon={<Globe size={18} />}
           title="Global CDN"
           description="Accelerated global delivery with regional routing"
-          to="/global_cdn"
+          to="/global-cdn"
         />
-        <MenuItem 
+        <MenuItem
           icon={<Globe size={18} />}
           title="MENA CDN"
           description="Optimized delivery for Middle East & North Africa"
-          to="/mea_cdn"
+          to="/mea-cdn"
         />
-        <MenuItem 
+        <MenuItem
           icon={<Globe size={18} />}
           title="China CDN"
           description="Optimized delivery for mainland China"
-          to="/china_cdn"
+          to="/china-cdn"
         />
-        <MenuItem 
+        <MenuItem
           icon={<Globe size={18} />}
           title="Southeast Asia CDN"
           description="Low-latency coverage across Southeast Asia"
-          to="/southeast_asia_cdn"
+          to="/southeast-asia-cdn"
         />
       </Section>
     </div>
@@ -263,34 +263,34 @@ export const Dropdown: React.FC<DropdownProps> = ({ type, onClose }) => {
   const renderResources = () => (
     <div className="grid grid-cols-2 gap-6">
       <Section title="Documentation" icon={<FileText size={20} />}>
-        <MenuItem 
+        <MenuItem
           icon={<FileText size={18} />}
           title="Document Center"
           description="Documentation, guides & API reference"
           to="https://home.console.edgenext.com/#/doc/dashboard"
         />
-        <MenuItem 
+        <MenuItem
           icon={<FileQuestion size={18} />}
           title="China ICP License"
           description="ICP filing and licensing guide"
           to="/icp-license"
         />
       </Section>
-      
+
       <Section title="Resources" icon={<Newspaper size={20} />}>
-        <MenuItem 
+        <MenuItem
           icon={<Newspaper size={18} />}
           title="Blog"
           description="Latest articles"
           to="/blog"
         />
-        <MenuItem 
+        <MenuItem
           icon={<Users size={18} />}
           title="Case Studies"
           description="Customer success stories"
-          to="/case_study"
+          to="/case-study"
         />
-        <MenuItem 
+        <MenuItem
           icon={<Newspaper size={18} />}
           title="News"
           description="Latest news and industry updates"
@@ -303,35 +303,35 @@ export const Dropdown: React.FC<DropdownProps> = ({ type, onClose }) => {
   const renderPricing = () => (
     <div className="grid grid-cols-2 gap-6">
       <Section title="Plans" icon={<Rocket size={20} />}>
-        <MenuItem 
+        <MenuItem
           icon={<Rocket size={18} />}
           title="Starter"
           description="For small projects and startups"
         />
-        <MenuItem 
+        <MenuItem
           icon={<Briefcase size={18} />}
           title="Business"
           description="For growing businesses"
         />
-        <MenuItem 
+        <MenuItem
           icon={<Building2 size={18} />}
           title="Enterprise"
           description="Custom solutions for large organizations"
         />
       </Section>
-      
+
       <Section title="Resources" icon={<Calculator size={20} />}>
-        <MenuItem 
+        <MenuItem
           icon={<Calculator size={18} />}
           title="Cost Calculator"
           description="Estimate your monthly costs"
         />
-        <MenuItem 
+        <MenuItem
           icon={<MessageSquare size={18} />}
           title="Talk to Sales"
           description="Get a custom quote"
         />
-        <MenuItem 
+        <MenuItem
           icon={<HelpCircle size={18} />}
           title="FAQ"
           description="Answers to common billing questions"
@@ -343,40 +343,40 @@ export const Dropdown: React.FC<DropdownProps> = ({ type, onClose }) => {
   const renderCompany = () => (
     <div className="grid grid-cols-2 gap-6">
       <Section title="About Us" icon={<Users2 size={20} />}>
-        <MenuItem 
+        <MenuItem
           icon={<Users2 size={18} />}
           title="Company"
           description="Our story and mission"
           to="/about-us"
         />
-        <MenuItem 
+        <MenuItem
           icon={<Mail size={18} />}
           title="Contact Us"
           description="Get in touch with our team"
-          to="/contact_us"
+          to="/contact-us"
         />
-        <MenuItem 
+        <MenuItem
           icon={<Globe size={18} />}
           title="Global Network"
           description="Extensive worldwide infrastructure"
           to="/network"
         />
       </Section>
-      
+
       <Section title="Trust" icon={<Shield size={20} />}>
-        <MenuItem 
+        <MenuItem
           icon={<Scale size={18} />}
           title="Legal"
           description="Legal resources and guidelines"
           to="/legal"
         />
-        <MenuItem 
+        <MenuItem
           icon={<HeartHandshake size={18} />}
           title="Partners"
           description="Strategic alliances and collaborations"
           to="/partners"
         />
-        <MenuItem 
+        <MenuItem
           icon={<Briefcase size={18} />}
           title="Careers"
           description="Join our growing team"
@@ -404,7 +404,7 @@ export const Dropdown: React.FC<DropdownProps> = ({ type, onClose }) => {
   };
 
   return (
-    <div 
+    <div
       ref={dropdownRef}
       className="fixed left-1/2 -translate-x-1/2 top-[6.5rem] z-50 w-full max-w-[1200px] px-4"
     >

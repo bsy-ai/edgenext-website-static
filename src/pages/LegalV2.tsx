@@ -102,7 +102,7 @@ const LegalV2: React.FC = () => {
     </ul>
 
     <h3 class="text-xl font-medium mt-6 mb-3 text-gray-900">We use cookies, clear gifs, and log file information to:</h3>
-    
+
     <ul class="list-disc pl-6 mb-4">
       <li>Remember information so that you will not have to re-enter it during your visit or the next time you visit the site</li>
       <li>Provide custom, personalized content and information</li>
@@ -146,7 +146,7 @@ const LegalV2: React.FC = () => {
     </p>
     <p class="mb-6">
       For more detailed information about it, please
-      <a class="text-[#0EB623] hover:underline" href="/contact_us">click here</a>.
+      <a class="text-[#0EB623] hover:underline" href="/contact-us">click here</a>.
     </p>
 
     <h3 class="text-xl font-medium mt-6 mb-3 text-gray-900">How Long Do We Keep Your Personal Information?</h3>
@@ -387,7 +387,7 @@ const LegalV2: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(14,182,35,0.1),transparent_70%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-[40px] md:text-[56px] font-medium mb-6 leading-[1.1] tracking-tight text-gray-900">{window.t("src__pages__Legal.fa2ead69")}
@@ -448,8 +448,8 @@ const LegalV2: React.FC = () => {
                       '--tw-prose-links': '#0EB623'
                     }} />
 
-                  
-            
+
+
                 </div>
               </div>
             </div>
@@ -467,7 +467,7 @@ const LegalV2: React.FC = () => {
 
               </p>
               <a
-                href="/contact_us"
+                href="/contact-us"
                 className="inline-flex items-center px-8 py-4 bg-[#0EB623] text-white rounded-xl font-medium hover:bg-[#0EA620] transition-all duration-300">{window.t("src__pages__Legal.14e3c4fd")}
 
 

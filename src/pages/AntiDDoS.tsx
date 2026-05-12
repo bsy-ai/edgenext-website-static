@@ -9,7 +9,7 @@ const AntiDDoS: React.FC = () => {
 
   const features = {
     'high-throughput': {
-      icon: <Network className="text-[#0EB623]" size={24} />, 
+      icon: <Network className="text-[#0EB623]" size={24} />,
       title: "High Throughput",
       description: "Engineered to handle massive volumes of traffic with powerful cleaning capabilities at the device level.",
       benefits: [
@@ -19,7 +19,7 @@ const AntiDDoS: React.FC = () => {
       ]
     },
     'low-latency': {
-      icon: <Activity className="text-[#0EB623]" size={24} />, 
+      icon: <Activity className="text-[#0EB623]" size={24} />,
       title: "Low Latency",
       description: "Optimized for real-time protection with ultra-low response delay.",
       benefits: [
@@ -29,7 +29,7 @@ const AntiDDoS: React.FC = () => {
       ]
     },
     'flexible-compatibility': {
-      icon: <Lock className="text-[#0EB623]" size={24} />, 
+      icon: <Lock className="text-[#0EB623]" size={24} />,
       title: "Wide Compatibility",
       description: "Adapts seamlessly to various network environments and bandwidth needs.",
       benefits: [
@@ -39,7 +39,7 @@ const AntiDDoS: React.FC = () => {
       ]
     },
     'agile-deployment': {
-      icon: <Settings className="text-[#0EB623]" size={24} />, 
+      icon: <Settings className="text-[#0EB623]" size={24} />,
       title: "Agile Deployment",
       description: "Lightweight and software-based design for rapid rollout and flexible scaling.",
       benefits: [
@@ -49,7 +49,7 @@ const AntiDDoS: React.FC = () => {
       ]
     },
     'universal-compatibility': {
-      icon: <Server className="text-[#0EB623]" size={24} />, 
+      icon: <Server className="text-[#0EB623]" size={24} />,
       title: "High Versatility",
       description: "Built on general-purpose X86 servers, minimizing cost while maximizing interoperability.",
       benefits: [
@@ -69,7 +69,7 @@ const AntiDDoS: React.FC = () => {
           <div className="absolute inset-0" style={{
             background: 'linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%)'
           }}></div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-[40px] md:text-[60px] font-bold mb-4 md:mb-6 leading-[1.1]">
@@ -80,8 +80,8 @@ const AntiDDoS: React.FC = () => {
                 Enterprise-grade Anti-DDoS protection with instant mitigation, intelligent filtering, and global coverage—engineered to keep your services online under any threat.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
-                  href="/contact_us"
+                <a
+                  href="/contact-us"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-500 flex items-center justify-center relative overflow-hidden"
@@ -99,7 +99,7 @@ const AntiDDoS: React.FC = () => {
         {/* Product Benefits Section */}
         <section className="py-16 md:py-24 relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(14,182,35,0.03)_0%,transparent_70%)]"></div>
-          
+
           <div className="container mx-auto px-4 relative">
             <div className="text-center mb-12 md:mb-16">
               <h2 className="text-3xl md:text-5xl font-medium mb-6 text-gray-900">AI-Powered Security at Every Layer</h2>
@@ -179,9 +179,9 @@ const AntiDDoS: React.FC = () => {
               </div>
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-[#0EB623]/10 via-transparent to-[#0EB623]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
-                <img 
-                  src="/map.png" 
-                  alt="Global Network Map" 
+                <img
+                  src="/map.png"
+                  alt="Global Network Map"
                   className="rounded-2xl shadow-lg transform transition-transform duration-500 group-hover:scale-[1.02]"
                 />
               </div>
@@ -208,14 +208,14 @@ const AntiDDoS: React.FC = () => {
                         key={key}
                         onClick={() => setActiveFeature(key)}
                         className={`group flex-shrink-0 w-full flex items-center gap-3 p-4 rounded-xl transition-all duration-500 relative overflow-hidden ${
-                          activeFeature === key 
+                          activeFeature === key
                             ? 'bg-[#0EB623] text-white shadow-lg'
                             : 'hover:bg-[#0EB623] hover:text-white'
                         }`}
                       >
                         <div className={`transition-colors duration-300 ${
-                          activeFeature === key 
-                            ? 'text-white' 
+                          activeFeature === key
+                            ? 'text-white'
                             : 'text-[#0EB623] group-hover:text-white'
                         }`}>
                           {feature.icon}
@@ -237,8 +237,8 @@ const AntiDDoS: React.FC = () => {
                   <h4 className="font-semibold mb-4">Key Benefits</h4>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {features[activeFeature].benefits.map((benefit, index) => (
-                      <div 
-                        key={index} 
+                      <div
+                        key={index}
                         className="group flex items-center gap-2 p-3 rounded-lg bg-gray-50 hover:bg-[#0EB623]/5 transition-all duration-300"
                       >
                         <Check className="text-[#0EB623] flex-shrink-0 group-hover:scale-110 transition-transform duration-300" size={20} />
@@ -255,7 +255,7 @@ const AntiDDoS: React.FC = () => {
         {/* Real-World Scenarios Section */}
         <section className="py-16 md:py-24 bg-black relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(14,182,35,0.15),transparent_70%)]"></div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-medium text-white mb-4">Real-World Scenarios, Real-Time Defense</h2>
@@ -263,7 +263,7 @@ const AntiDDoS: React.FC = () => {
                 Practical protection for your most critical digital assets
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-gray-900 rounded-xl p-8 border border-gray-800 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-2">
                 <div className="w-14 h-14 bg-[#0EB623]/20 rounded-xl flex items-center justify-center mb-6">
@@ -274,7 +274,7 @@ const AntiDDoS: React.FC = () => {
                   Blocks and cleans malicious traffic before it ever reaches the data center, preventing server downtime from DDoS attacks.
                 </p>
               </div>
-              
+
               <div className="bg-gray-900 rounded-xl p-8 border border-gray-800 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-2">
                 <div className="w-14 h-14 bg-[#0EB623]/20 rounded-xl flex items-center justify-center mb-6">
                   <Server className="text-[#0EB623]" size={28} />
@@ -284,7 +284,7 @@ const AntiDDoS: React.FC = () => {
                   Filters invalid requests at the network edge to reduce server and bandwidth load, improving resource efficiency and system stability.
                 </p>
               </div>
-              
+
               <div className="bg-gray-900 rounded-xl p-8 border border-gray-800 hover:bg-gray-800 transition-all duration-300 hover:-translate-y-2">
                 <div className="w-14 h-14 bg-[#0EB623]/20 rounded-xl flex items-center justify-center mb-6">
                   <Activity className="text-[#0EB623]" size={28} />
@@ -364,8 +364,8 @@ const AntiDDoS: React.FC = () => {
       <p className="text-lg text-white/90 mb-8">
         Join the leading companies leveraging EdgeNext for unparalleled DDoS protection across emerging markets.
       </p>
-      <a 
-        href="/contact_us"
+      <a
+        href="/contact-us"
         className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
       >
         Contact Us

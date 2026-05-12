@@ -16,7 +16,7 @@ const Careers: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_100%,rgba(14,182,35,0.05),transparent_50%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-[40px] md:text-[56px] font-medium mb-6 leading-[1.1] tracking-tight">
@@ -43,8 +43,8 @@ const Careers: React.FC = () => {
                   There are no open roles at the moment, but if EdgeNext feels like your kind of place, we'd still love to hear from you.
                 </p>
                 <div className="mt-8">
-                  <a 
-                    href="mailto:info@edgenext.com" 
+                  <a
+                    href="mailto:info@edgenext.com"
                     className="inline-flex items-center px-8 py-4 bg-[#0EB623] text-white rounded-xl font-medium hover:bg-[#0EA620] transition-all duration-300"
                   >
                     <Mail className="mr-2" size={20} />
@@ -119,11 +119,11 @@ const Careers: React.FC = () => {
                 Ready to Make an Impact?
               </h2>
               <p className="text-lg text-white/90 mb-8 leading-relaxed">
-                Even though we're not actively hiring, we believe great people create great opportunities. 
+                Even though we're not actively hiring, we believe great people create great opportunities.
                 If our mission resonates with you, let's start a conversation.
               </p>
-              <a 
-                href="/contact_us" 
+              <a
+                href="/contact-us"
                 className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
               >
                 <Mail className="mr-2" size={20} />

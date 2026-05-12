@@ -17,22 +17,22 @@ export const PAGE_SEO_BY_PATH: Record<string, SeoPageMeta> = {
     description:
       'Speed up content delivery with static acceleration and origin server optimization. Reduce load time and deliver fast, cached content globally with EdgeNext CDN.',
   },
-  '/live_streaming': {
+  '/live-streaming': {
     title: 'CDN Live Streaming | Ultra-Low Latency Video Delivery',
     description:
       'Deliver high-quality CDN live streaming with EdgeNext. Ensure fast, reliable, and low-latency video delivery for global audiences.',
   },
-  '/security_cdn': {
+  '/security-cdn': {
     title: 'Web Server Security | Secure CDN & DDoS Protection',
     description:
       'Protect your website with web server security and CDN protection. Prevent DDoS attacks, secure data, and ensure safe global content delivery with EdgeNext.',
   },
-  '/anti_ddos': {
+  '/anti-ddos': {
     title: 'Dedicated Server with DDoS Protection | Secure CDN Shield',
     description:
       'Protect your website with dedicated server DDoS protection. Prevent attacks, filter malicious traffic, and ensure secure, uninterrupted performance with EdgeNext.',
   },
-  '/dns_security_service': {
+  '/dns-security-service': {
     title: 'Authoritative DNS Servers | Secure DNS Security Service',
     description:
       'Protect your domain with authoritative DNS servers. EdgeNext ensures fast, reliable DNS resolution and shields against DDoS attacks and spoofing threats.',
@@ -42,7 +42,7 @@ export const PAGE_SEO_BY_PATH: Record<string, SeoPageMeta> = {
     description:
       'Optimize applications with server-based computing using EdgeNext ECS. Achieve low-latency processing, secure data handling, and scalable cloud-edge performance.',
   },
-  '/bare_metal_server': {
+  '/bare-metal-server': {
     title: 'Bare Metal Server Backup | Reliable Backup Solutions',
     description:
       'Protect your infrastructure with bare metal server backup solutions from EdgeNext. Ensure full data security, fast recovery, and high-performance server management.',
@@ -52,7 +52,7 @@ export const PAGE_SEO_BY_PATH: Record<string, SeoPageMeta> = {
     description:
       'Learn what an edge server is and how it powers AI solutions at the network edge. Get real-time performance, low latency, and scalable computing with EdgeNext.',
   },
-  '/e_commerce': {
+  '/e-commerce': {
     title: 'Global Server Load Balancing | E-Commerce CDN Performance',
     description:
       'Boost e-commerce site speed with global server load balancing to ensure fast delivery, high availability, and reliable checkout experiences worldwide with EdgeNext.',
@@ -62,12 +62,12 @@ export const PAGE_SEO_BY_PATH: Record<string, SeoPageMeta> = {
     description:
       'Ensure uninterrupted connectivity with failover server solutions for telcos, ISPs, and IIGs. EdgeNext supports resilient routing, load balancing, and uptime protection worldwide.',
   },
-  '/sports_broadcasting': {
+  '/sports-broadcasting': {
     title: 'Streaming Dedicated Servers | High-Performance Sports CDN',
     description:
       'Deliver smooth live sports with streaming dedicated servers. EdgeNext provides reliable, low-latency CDN performance to keep fans engaged in real time.',
   },
-  '/e_learning': {
+  '/e-learning': {
     title: 'Global Server Load Balancing for E-Learning Platforms',
     description:
       'Improve e-learning delivery with global server load balancing. EdgeNext ensures fast, reliable, and secure content delivery for students worldwide.',
