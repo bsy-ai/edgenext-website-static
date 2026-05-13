@@ -20,6 +20,9 @@ export function SeoHead({ pathname }: Props) {
       <title>{title}</title>
       <meta name="description" content={description} />
       <link rel="canonical" href={canonical} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={canonical} />
+      <meta property="og:image" content={`${SITE_ORIGIN}/edgenext.jpg`} />
       {pathname === '/' ? (
         <script type="application/ld+json">{JSON.stringify(buildHomeJsonLd())}</script>
       ) : null}
