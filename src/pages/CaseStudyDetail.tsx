@@ -5,7 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import { useParams, Link } from 'react-router-dom';
 import caseStudies, { getIconForProduct } from '../data/caseStudies';
 
-const CONTACT_US = "https://www.edgenext.com/contact_us";
+const CONTACT_US = "https://www.edgenext.com/contact-us";
 const EDGENEXT_SITE = "https://www.edgenext.com/";
 const EDGENEXT_LINKEDIN = "https://www.linkedin.com/company/edgenextcdn/";
 
@@ -24,7 +24,7 @@ const CaseStudyDetail: React.FC = () => {
               <h1 className="text-3xl font-bold mb-6">Case Study Not Found</h1>
               <p className="text-gray-600 mb-8">The case study you're looking for doesn't exist or has been moved.</p>
               <Link
-                to="/case_study"
+                to="/case-study"
                 className="inline-flex items-center px-6 py-3 bg-[#0EB623] text-white rounded-xl hover:bg-[#0EA620] transition-colors"
               >
                 View All Case Studies
@@ -457,7 +457,7 @@ const CaseStudyDetail: React.FC = () => {
                 </p>
               </div>
               <a
-                href="https://www.edgenext.com/contact_us"
+                href="https://www.edgenext.com/contact-us"
                 className="px-8 py-4 bg-white text-[#0EB623] rounded-xl hover:bg-opacity-90 transition-colors font-medium whitespace-nowrap"
                 target="_blank"
                 rel="noreferrer"

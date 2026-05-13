@@ -25,7 +25,7 @@ const NotFound: React.FC = () => {
   const handleRefresh = () => {
     setIsAnimating(true);
     setClickCount(prev => prev + 1);
-    
+
     // Add floating icons
     const newIcons = Array.from({ length: 5 }, (_, i) => ({
       id: Date.now() + i,
@@ -33,9 +33,9 @@ const NotFound: React.FC = () => {
       x: Math.random() * window.innerWidth,
       y: Math.random() * window.innerHeight
     }));
-    
+
     setFloatingIcons(prev => [...prev, ...newIcons]);
-    
+
     setTimeout(() => {
       setIsAnimating(false);
       setFloatingIcons(prev => prev.filter(icon => !newIcons.includes(icon)));
@@ -49,12 +49,12 @@ const NotFound: React.FC = () => {
   };
 
   const suggestions = [
-    { title: 'Global CDN', path: '/global_cdn', description: 'Accelerate your content delivery worldwide' },
+    { title: 'Global CDN', path: '/global-cdn', description: 'Accelerate your content delivery worldwide' },
     { title: 'Edge Cloud Server', path: '/ecs', description: 'Deploy applications closer to your users' },
-    { title: 'Anti-DDoS Protection', path: '/anti_ddos', description: 'Protect your infrastructure from attacks' },
-    { title: 'Live Streaming', path: '/live_streaming', description: 'Deliver smooth real-time streams globally' },
+    { title: 'Anti-DDoS Protection', path: '/anti-ddos', description: 'Protect your infrastructure from attacks' },
+    { title: 'Live Streaming', path: '/live-streaming', description: 'Deliver smooth real-time streams globally' },
     { title: 'Gaming Solutions', path: '/gaming', description: 'Optimize your gaming infrastructure' },
-    { title: 'Contact Us', path: '/contact_us', description: 'Get in touch with our experts' }
+    { title: 'Contact Us', path: '/contact-us', description: 'Get in touch with our experts' }
   ];
 
   useEffect(() => {
@@ -75,7 +75,7 @@ const NotFound: React.FC = () => {
           <motion.div
             key={item.id}
             initial={{ x: item.x, y: item.y, opacity: 0, scale: 0 }}
-            animate={{ 
+            animate={{
               x: item.x + (Math.random() - 0.5) * 200,
               y: item.y - 200,
               opacity: [0, 1, 0],
@@ -117,14 +117,14 @@ const NotFound: React.FC = () => {
           <div className="max-w-4xl mx-auto text-center">
             {/* Animated 404 */}
             <motion.div
-              animate={isAnimating ? { 
-                scale: [1, 1.1, 1], 
+              animate={isAnimating ? {
+                scale: [1, 1.1, 1],
                 rotate: [0, 5, -5, 0],
                 color: ['#111827', '#0EB623', '#111827']
               } : {}}
               transition={{ duration: 0.5 }}
               className="text-[120px] md:text-[200px] font-bold leading-none mb-8 select-none"
-              style={{ 
+              style={{
                 background: 'linear-gradient(45deg, #0EB623, #0EA620, #0EB623)',
                 WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
@@ -135,7 +135,7 @@ const NotFound: React.FC = () => {
               404
             </motion.div>
 
-            <motion.h1 
+            <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
@@ -144,24 +144,24 @@ const NotFound: React.FC = () => {
               Oops! This page got lost in the <span className="text-[#0EB623]">edge</span>
             </motion.h1>
 
-            <motion.p 
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4 }}
               className="text-lg md:text-xl text-gray-600 mb-8 max-w-2xl mx-auto"
             >
-              Don't worry! Even our global edge network sometimes can't find what you're looking for. 
+              Don't worry! Even our global edge network sometimes can't find what you're looking for.
               Let's get you back on track.
             </motion.p>
 
             {/* Interactive Buttons */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
               className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
             >
-              <Link 
+              <Link
                 to="/"
                 className="group bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 flex items-center justify-center"
               >
@@ -195,7 +195,7 @@ const NotFound: React.FC = () => {
                 <Search className="text-[#0EB623]" size={24} />
                 Maybe you were looking for...
               </h2>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {suggestions.map((suggestion, index) => (
                   <motion.div

@@ -12,23 +12,23 @@ const Legal: React.FC = () => {
       icon: <Globe size={20} />,
       content: `
         <h2 class="text-2xl font-medium mb-6">CDN Service Level Agreement</h2>
-        
+
         <h3 class="text-xl font-medium mb-4">1. Introduction</h3>
         <p class="mb-4">This EdgeNext CDN Service Level Agreement ("SLA") applies to your purchase and use of the EdgeNext CDN Service ("Service") and your use of the Service is subjected to the terms and conditions of the EdgeNext International Website Product Terms of Service ("Product Terms") between the relevant EdgeNext entity described in the Product Terms ("EdgeNext", "us", or "we") and you. This SLA only applies to your purchase and use of the Services for a fee that is directly provided by EdgeNext, and shall not apply to any free Services or trial Services provided by us.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">2. Definitions</h3>
         <p class="mb-4"><strong>2.1</strong> "Content" means objects which are delivered from EdgeNext's cache server.</p>
         <p class="mb-4"><strong>2.2</strong> "Cache Server" mean the servers that EdgeNext owned and operated for delivering your Content which are located on EdgeNext's global content delivery network at EdgeNext's Points of Presence (POPs).</p>
         <p class="mb-4"><strong>2.3</strong> "Origin Server" means either EdgeNext's or your Internet web server where your Content is stored for retrieval by the Cache Servers.</p>
         <p class="mb-4"><strong>2.4</strong> "Service Downtime" means an instance in which a service covered by the uptime guarantee is completely unavailable for more than 15 consecutive minutes.</p>
         <p class="mb-4"><strong>2.5</strong> "Base Fee" consists solely of the base monthly fee paid by you for the CDN Services and excludes all other fees that might be paid by you, including, by way of example and not limitation, setup fees, charges for additional services, incremental bandwidth usage, professional services, and any other type of optional additional services.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">3. Guarantee Of Uptime</h3>
         <p class="mb-4">EdgeNext provides an uptime guarantee of 99.9% to you, covering the following items: (i) uptime of the EdgeNext network (i.e. the ability of your IP traffic to transfer to and from the Internet across EdgeNext's network infrastructure), and (ii) your Content uptime and availability. Subject to the terms, conditions and exceptions of this SLA, EdgeNext will issue a Payment Discount to you for EdgeNext's Service Downtimes in an amount equal to one day's worth of the Base Fee paid by you, multiplied by each 24-hour period in which you experiences an EdgeNext Service Downtime during a particular month.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">4. Measurement</h3>
         <p class="mb-4">All credits are calculated on the basis of a thirty (30) day month. EdgeNext will periodically (every fifteen (15) minutes or more often) measure Content availability by requesting representative Content from Cache Servers at selected EdgeNext's POPs using software and hardware components capable of measuring traffic and responses at the selected POPs. EdgeNext reserves the right to periodically change the measurement points and methodologies it uses without notice to you.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">5. Exceptions</h3>
         <p class="mb-4"><strong>5.1</strong> To be eligible for a credit, You must follow EdgeNext's published instructions for use of the Service. Improper use of EdgeNext's Service will result in ineligibility for a Service credit. Service credits shall not be available for you that are in breach of the EdgeNext Product Terms.</p>
         <p class="mb-4"><strong>5.2</strong> You shall not receive any credits under this SLA in connection with any EdgeNext Service Downtime caused by or associated with:</p>
@@ -44,10 +44,10 @@ const Legal: React.FC = () => {
         <p class="mb-2">(j) Stream buffering occurring due to or associated with conditions outside of EdgeNext's network or immediate control.</p>
         <p class="mb-2">(k) Failure of a service that is not covered or guaranteed by this SLA, including, but not limited to, the EdgeNext's control center and the EdgeNext's reporting system.</p>
         <p class="mb-4">(l) SLA credits will only be issued to you who have paid in full for services covering the time period within which the credit has been requested.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">6. Credit Request And Payment Procedures</h3>
         <p class="mb-4">In order to receive a payment discount on Downtime under this SLA, you must make a request by submitting the request in writing via email to support@edgenext.com. All requests must include your contact name, email address, phone number, company name, the date(s) of the Service Downtime, and a description of the reason for the payment discount request. Each request in connection with a breach of this SLA in a particular calendar month must be received by EdgeNext within thirty (30) days after the Service Downtime in question has occurred, and the Service Downtime must be able to be confirmed by EdgeNext's measurement tools. Each valid payment discount will be applied to an invoice of you within two billing cycles after EdgeNext's initial receipt of your request. Payment discounts are exclusive of any taxes charged to you or collected by EdgeNext.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">7. Additional Terms</h3>
         <p class="mb-4"><strong>7.1</strong> In the event of any inconsistency between yours and our system records relating to your claim, unless the discrepancy is caused by any material error or malfunction of our system, our system record shall at all times prevail and be the final and conclusive reference for calculating the Service Credits to be provided to you.</p>
         <p class="mb-4"><strong>7.2</strong> Notwithstanding any provision otherwise in this SLA or the EdgeNext Product Terms, this SLA sets for your sole and exclusive remedy for Service Downtime or other service-related issue for a Service provided by us and we shall not be liable to you or any person claiming through you for any direct, indirect, consequential or incidental damages or losses or expenses whatsoever, including but not limited to, loss of profits or business and irrespective of whether the claim arises in contract, tort (including negligence), or otherwise. Notwithstanding anything in this SLA to the contrary, the total amount credited to you in connection with any calendar month will not exceed the Base Fee paid by you for such month.</p>
@@ -62,10 +62,10 @@ const Legal: React.FC = () => {
         <h2 class="text-2xl font-medium mb-6">EdgeNext Anti-DDoS Service Level Agreement</h2>
         <p class="mb-4 text-sm text-gray-600">Last Updated: November 15, 2022</p>
         <p class="mb-6">This EdgeNext Anti-DDoS Service Level Agreement ("SLA") sets forth the service availability metrics, and compensation plan for Anti-DDoS provided to you by EdgeNext, and your purchase and use of the service is governed by the EdgeNext International Website Product Terms of Service ("Product Terms") between EdgeNext and you. This SLA applies only to your purchase and use of services provided directly by EdgeNext for a fee and does not apply to any free services or trial services provided by EdgeNext.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">I. Business description</h3>
         <p class="mb-4"><strong>1.</strong> Anti-DDoS service refers to the DDoS traffic-based attack defence and service management system provided by EdgeNext. It is suitable for business scenarios that deal with targeted, persistent, large-scale DDoS governance and is an advanced DDoS protection product that provides locally-deployed, privatized data cleansing for data centres.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">II. Definitions</h3>
         <p class="mb-4"><strong>1. DDoS:</strong> Distributed Denial of Service, or distributed denial of service attack, is an attack in the cloud that prevents users from accessing their data, applications or websites in the cloud by impersonating a large number of regular service requests.</p>
         <p class="mb-4"><strong>2. Cleaning:</strong> This service monitors the data traffic entering the user in real-time to detect abnormal traffic, including DDoS attacks promptly. Without affecting regular business, the abnormal traffic is cleansed. That is: redirect suspicious traffic from the original network path to the cleaning product for malicious traffic identification and stripping, and legitimate traffic back to the actual network forwarded to the target system.</p>
@@ -77,13 +77,13 @@ const Legal: React.FC = () => {
         <p class="mb-4"><strong>7. Service Unavailability:</strong> Unsuccessful protection against an attack of a supported protection type or failure of the Anti-DDoS system, resulting in a drop in user traffic of more than 20% for more than 10 minutes.</p>
         <p class="mb-4"><strong>8. Service Downtime = service unavailability resolution time – service unavailability start time.</strong><br />
         Downtime is calculated minute-by-minute, with less than 60 seconds counted as one minute. If the time for business failure to return to normal is less than 1 minute (i.e. Service Downtime for a duration of no more than 1 minute), it will not be counted as the Service Downtime.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">III. Service Availability</h3>
         <p class="mb-4"><strong>1. Service Availability = [(Total minutes of Service Period – Service Downtime) / Total minutes of Service Period] * 100%</strong></p>
         <p class="mb-4"><strong>2. Service Level Commitment</strong><br />
         Anti-DDoS Service Availability is no less than 99%, and the Traffic Attack Cleaning Rate is no less than 95%. Assuming a 30-day Service Period for the month, Service Availability time for the Service Period = 30 days × 24 hours × 60 minutes × 99% = 42768 minutes, i.e. allow 43200 – 42768 = 432 minutes of Service Unavailability.</p>
         <p class="mb-4"><strong>3.</strong> If the Anti-DDoS Service does not achieve the above Availability Commitment, you will be entitled to compensation following Clause 4 of this Agreement.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">4. Exclusion of liability</h3>
         <p class="mb-4">Please be aware that the service is unavailable for the following reasons and that the corresponding period of unavailability is NOT part of the calculation of the Service Unavailability and is NOT covered by EdgeNext's Service Level Commitment.</p>
         <p class="mb-4">Unavailability of the Service due to:</p>
@@ -94,11 +94,11 @@ const Legal: React.FC = () => {
         <p class="mb-2"><strong>4.5</strong> a severe fault generated by the network operator;</p>
         <p class="mb-2"><strong>4.6</strong> force majeure;</p>
         <p class="mb-4"><strong>4.7</strong> other non-EdgeNext reasons, including but not limited to network, device failure or policy configuration adjustments outside of the EdgeNext-owned device.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">IV. Compensation Programme</h3>
         <p class="mb-4"><strong>1. Credit Award</strong><br />
         The Credit Award will be calculated according to the following table, based on the percentage of Service Availability for Anti-DDoS under your EdgeNext account, and is only available as vouchers for the purchase of Anti-DDoS products, and the total amount of Credit Award shall not exceed 25% of the monthly service fee you pay for that month.</p>
-        
+
         <div class="mb-6">
           <table class="w-full border-collapse border border-gray-300">
             <thead>
@@ -119,10 +119,10 @@ const Legal: React.FC = () => {
             </tbody>
           </table>
         </div>
-        
+
         <p class="mb-4"><strong>2. Time limit for Outage Report</strong><br />
         You may submit the Outage Report after the fifth (5th) business day of each natural month for instances where the Service Level Commitment was not met in the previous month. Outage Report time is limited to two (2) months after the end of the month in which Anti-DDoS did not meet the Service Level Commitment. Outage Report made after the application time will not be accepted.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">V. Other</h3>
         <p class="mb-4">EdgeNext reserves the right to modify Terms and Conditions within this Agreement as appropriate or necessary in light of changes. The latest version of the Agreement can be reviewed on the EdgeNext Website. If you disagree with the changes made by EdgeNext to the Agreement, you have the right to stop using this EdgeNext service, and if you continue to use this EdgeNext service, you will be deemed to have accepted the modified Agreement.</p>
       `
@@ -134,10 +134,10 @@ const Legal: React.FC = () => {
         <h2 class="text-2xl font-medium mb-6">EdgeNext SCDN Service Level Agreement</h2>
         <p class="mb-4 text-sm text-gray-600">Last Updated: November 15, 2022</p>
         <p class="mb-6">This EdgeNext SCDN Service Level Agreement ("SLA") sets forth the service availability metrics and compensation plan for the Security CDN ("SCDN") provided to you by EdgeNext, and your purchase and use of the Service is governed by the EdgeNext International Website Product Terms of Service ("Product Terms") between EdgeNext and you. This SLA applies only to your purchase and use of services provided directly by EdgeNext for a fee and does not apply to any free services or trial services provided by EdgeNext.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">I. Business Description</h3>
         <p class="mb-4"><strong>1.</strong> Security CDN is a security acceleration product that protects web services such as Websites/APPs/APIs from threats such as web attacks, exploits, system intrusions, tampering, backdoors and DDoS attacks. By directing traffic to the edge nodes for threat detection and disposal to ensure the security and availability of the source site.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">II. Definition of Services</h3>
         <p class="mb-4"><strong>1.</strong> The service period refers to each natural month included in the service term of your SCDN service purchase, and service availability is accounted for separately by natural month.</p>
         <p class="mb-4"><strong>2.</strong> Total minutes of Service Period = Total days in Service Period * 24 (hours) * 60 (minutes)</p>
@@ -147,7 +147,7 @@ const Legal: React.FC = () => {
         <p class="mb-4">The business server returns 4xx and 5xx status codes due to the SCDN itself.</p>
         <p class="mb-4"><strong>4.</strong> Service Downtime = Service unavailability resolution time – service unavailability start time.</p>
         <p class="mb-4">Downtime is calculated minute-by-minute, with less than 60 seconds counted as one minute. If the time for business failure to return to normal is less than 1 minute (i.e. Service Downtime for a duration of no more than 1 minute), the unavailability minutes will not be counted.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">III. Service Availability</h3>
         <p class="mb-4"><strong>1.</strong> Service Availability means whether the product services provided by EdgeNext are serviceable of the Service Period.</p>
         <p class="mb-4"><strong>2.</strong> Service Availability calculation formula</p>
@@ -167,11 +167,11 @@ const Legal: React.FC = () => {
         <p class="mb-2"><strong>4.8</strong> force majeure;</p>
         <p class="mb-2"><strong>4.9</strong> a severe fault generated by the network operator;</p>
         <p class="mb-4"><strong>4.10</strong> other unavailability not caused by EdgeNext, including but not limited to network, device failure or policy configuration adjustments outside of the EdgeNext-owned device.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">IV. Compensation Programme</h3>
         <p class="mb-4"><strong>1. Credit Award</strong></p>
         <p class="mb-4">The Credit Award will be calculated according to the following table, based on the percentage of Service Availability for SCDN under your EdgeNext account, and is only available as vouchers for the purchase of SCDN products only, and the total amount of Credit Award shall not exceed 25% of the monthly service fee paid by the customer for that month.</p>
-        
+
         <div class="mb-6">
           <table class="w-full border-collapse border border-gray-300">
             <thead>
@@ -192,10 +192,10 @@ const Legal: React.FC = () => {
             </tbody>
           </table>
         </div>
-        
+
         <p class="mb-4"><strong>2. Time limit for Outage Report</strong></p>
         <p class="mb-4">You may submit the Outage Report after the fifth (5th) business day of each natural month for instances where the Service Level Commitment was not met in the previous month. Outage Report time is limited to two (2) months after the end of the month in which Anti-DDoS did not meet the Service Level Commitment. Outage Report made after the application time will not be accepted.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">V. Other</h3>
         <p class="mb-4">EdgeNext reserves the right to modify the Terms and Conditions of this Agreement as appropriate or necessary in light of changes, which you can review in the latest version of the Agreement on the EdgeNext Website. If you disagree with the changes made by EdgeNext to the Agreement, you have the right to stop using this EdgeNext Service, and if you continue to use this EdgeNext Service, you will be deemed to have accepted the modified Agreement.</p>
       `
@@ -206,10 +206,10 @@ const Legal: React.FC = () => {
       content: `
         <h2 class="text-2xl font-medium mb-6">Cloud Hosting Service Level Agreement</h2>
         <p class="mb-4 text-sm text-gray-600">Last Updated: September 30 2022</p>
-        
+
         <h3 class="text-xl font-medium mb-4">1. Introduction</h3>
         <p class="mb-4">This EdgeNext Cloud Hosting Service Level Agreement ("SLA") applies to your purchase and use of the EdgeNext Cloud Hosting Service ("Service","ECS") and your use of the ECS is subjected to the terms and conditions of the EdgeNext International Website Product Terms of Service ("Product Terms") between the relevant EdgeNext entity described in the Product Terms ("EdgeNext", "us", or "we") and you. This SLA only applies to your purchase and use of the Services for a fee that is directly provided by EdgeNext, and shall not apply to any free Services or trial Services provided by us.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">2. Definitions</h3>
         <p class="mb-4"><strong>2.1</strong> Service period: a service period is one calendar month. A period shorter than a calendar month is also counted one service period.</p>
         <p class="mb-4"><strong>2.2</strong> Total number of minutes of single-instance service period: the total number of days of single-instance service period x 24 (hours) x 60 (minutes).</p>
@@ -218,7 +218,7 @@ const Legal: React.FC = () => {
         <p class="mb-4"><strong>2.5</strong> Single-region multi-AZ service unavailable: if the user's ECS instances are deployed in at least 2 availability zones (hereinafter referred to as single-region multi-AZ service) in one region, all ECS instances of the user are unavailable in any one availability zone in the region and the user's ECS instances in the other availability zones in the region are also unavailable (hereinafter referred to as: unavailable ECS instances in the other availability zones in one region), the ECS instances in the other availability zones in the region are deemed single-region multi-AZ service unavailable.</p>
         <p class="mb-4"><strong>2.6</strong> Minutes of single-instance single-region multi-AZ service unavailable: the sum of minutes of unavailable single-region multi-AZ service of single ECS instance in one service period.</p>
         <p class="mb-4"><strong>2.7</strong> Monthly service fee: the total amount of service fee paid by you for a single ECS instance in one service period (calendar month). If you pay the service fee for multiple months in one time, the monthly service fee will be calculated according to the paid amount and months.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">3. Service Availability</h3>
         <p class="mb-4"><strong>3.1</strong> Service availability calculation formula = (expected total service time of all instances at the node in the service period – down time of the node instances in the service period) / expected total service time of all instances at the node in the service period</p>
         <p class="mb-4"><strong>3.2</strong> Service availability commitment</p>
@@ -235,12 +235,12 @@ const Legal: React.FC = () => {
         <p class="mb-2"><strong>3.3.8.</strong> service is suspended or terminated because you fail to comply with the EdgeNext Edge Cloud Hosting Service Agreement or its Supplementary Agreement, including the situation where the ECS instance is temporarily denied service or released due to non-payment of service fee;</p>
         <p class="mb-2"><strong>3.3.9.</strong> short-term service interruption caused by routine maintenance or upgrading of ECS conducted by EdgeNext in accordance with EdgeNext Edge Cloud Hosting Service Agreement and its Supplementary Agreement;</p>
         <p class="mb-4"><strong>3.3.10.</strong> force majeure.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">4. Compensation Scheme</h3>
         <p class="mb-4"><strong>4.1.</strong> For the service availability of the ECS service you are using, EdgeNext may choose to use any of the following compensation schemes, depending on actual business conditions.</p>
         <p class="mb-4"><strong>4.1.1</strong> Compensation with voucher</p>
         <p class="mb-4">The compensation amount is calculated by the criteria in the table below. Compensation is granted only through the voucher for purchase of ECS service, and the total amount of compensation is no more than the monthly service fee paid by you for the node month in which the expected service availability is not fulfilled (excluding the fee paid by the voucher).</p>
-        
+
         <div class="mb-6">
           <table class="w-full border-collapse border border-gray-300">
             <thead>
@@ -265,10 +265,10 @@ const Legal: React.FC = () => {
             </tbody>
           </table>
         </div>
-        
+
         <p class="mb-4"><strong>4.1.2</strong> Compensation for duration of failure</p>
         <p class="mb-4">Compensated duration is calculated by the criteria in the table below, and the total compensated duration is no more than the total service duration of all servers in the service cluster in the month. (Excluding the compensated duration in the month)</p>
-        
+
         <div class="mb-6">
           <table class="w-full border-collapse border border-gray-300">
             <thead>
@@ -293,7 +293,7 @@ const Legal: React.FC = () => {
             </tbody>
           </table>
         </div>
-        
+
         <p class="mb-4"><strong>4.2.</strong> Deadline for a compensation request</p>
         <p class="mb-4">You may submit after the fifth (5th) working day of a month the request for compensation for the ECS service that did not achieve the expected availability in the previous month. The compensation request must be submitted within two (2) months after the month in which ECS service did not achieve the expected availability. Any compensation request submitted beyond such deadline will not be accepted.</p>
       `
@@ -304,10 +304,10 @@ const Legal: React.FC = () => {
       content: `
         <h2 class="text-2xl font-medium mb-6">BMS Service Level Agreement</h2>
         <p class="mb-4 text-sm text-gray-600">Last Updated: September 30 2022</p>
-        
+
         <h3 class="text-xl font-medium mb-4">1. Introduction</h3>
         <p class="mb-4">This EdgeNext BMS (Bare Metal Servers) Service Level Agreement ("SLA") applies to your purchase and use of the EdgeNext BMS Service ("Service","BMS") and your use of the BMS is subjected to the terms and conditions of the EdgeNext International Website Product Terms of Service ("Product Terms") between the relevant EdgeNext entity described in the Product Terms ("EdgeNext", "us", or "we") and you. This SLA only applies to your purchase and use of the Services for a fee that is directly provided by EdgeNext, and shall not apply to any free Services or trial Services provided by us.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">2. Service Definitions</h3>
         <p class="mb-4"><strong>2.1</strong> Service period: a service period is one calendar month. A period shorter than a calendar month is also counted as one service period.</p>
         <p class="mb-4"><strong>2.2</strong> Total number of minutes of the single-instance service period: the total number of days of the single-instance service period x 24 (hours) x 60 (minutes).</p>
@@ -316,7 +316,7 @@ const Legal: React.FC = () => {
         <p class="mb-4"><strong>2.5</strong> Single-region multi-AZ service unavailable: where the user's instances are deployed in at least 2 availability zones (hereinafter referred to as single-region multi-AZ service) in one region, all BMSinstances of the user are unavailable in any one availability zone in the region and the user's BMS instances in the other availability zones in the region are also unavailable (hereinafter referred to as unavailable BMS instances in the other availability zones in one region), the BMS instances in the other availability zones in the region are deemed single-region multi-AZ service unavailable.</p>
         <p class="mb-4"><strong>2.6</strong> Minutes of single-instance single-region multi-AZ service unavailable: the sum of minutes of unavailable single-region multi-AZ service of a single instance in one service period.</p>
         <p class="mb-4"><strong>2.7</strong> Monthly service fee: the total amount of service fee paid by you for a single instance in one service period (calendar month). Where you pay the service fee for multiple months in one time, the monthly service fee will be shared and calculated according to the paid amount and months.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">3. Service Availability</h3>
         <p class="mb-4"><strong>3.1</strong> Service availability calculation formula = (total due service time of all instances at the node in the service period – down time of the node instances in the service period) / total due service time of all instances at the node in the service period</p>
         <p class="mb-4"><strong>3.2</strong> Service Availability Commitment</p>
@@ -333,12 +333,12 @@ const Legal: React.FC = () => {
         <p class="mb-2"><strong>3.3.8.</strong> The service is suspended or terminated because you fail to comply with the EdgeNextBare Metal ServersService Contract or Supplementary Agreement thereto, including the situation where the BMS instance is temporarily denied service or released due to non-payment of service fee;</p>
         <p class="mb-2"><strong>3.3.9.</strong> Short-term service interruption caused by routine maintenance or upgrading of BMS conducted by EdgeNext in accordance with the EdgeNext Bare Metal Servers Service Contract or Supplementary Agreement thereto; and</p>
         <p class="mb-4"><strong>3.3.10.</strong> Force majeure.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">4. Compensation Scheme</h3>
         <p class="mb-4"><strong>4.1</strong> For the service availability of the BMSserviceused by you, EdgeNext may choose to use any of the following compensation schemes, depending on actual business conditions.</p>
         <p class="mb-4"><strong>4.1.1.</strong> Compensation with voucher</p>
         <p class="mb-4">The compensation amount is calculated by the criteria in the table below. Compensation is granted only through the voucher for purchase of BMS service, and the total amount of compensation is no more than the monthly service fee paid by you for the node month in which the expected service availability is not fulfilled (excluding the fee paid by the voucher).</p>
-        
+
         <div class="mb-6">
           <table class="w-full border-collapse border border-gray-300">
             <thead>
@@ -363,10 +363,10 @@ const Legal: React.FC = () => {
             </tbody>
           </table>
         </div>
-        
+
         <p class="mb-4"><strong>4.1.2.</strong> Compensation for the duration of failure</p>
         <p class="mb-4">Compensated duration is calculated by the criteria in the table below, and the total compensated duration is no more than the total service duration of all servers in the service cluster in the current month. (Excluding the compensated duration in the current month)</p>
-        
+
         <div class="mb-6">
           <table class="w-full border-collapse border border-gray-300">
             <thead>
@@ -391,7 +391,7 @@ const Legal: React.FC = () => {
             </tbody>
           </table>
         </div>
-        
+
         <p class="mb-4"><strong>4.2.</strong> Deadline for a compensation request</p>
         <p class="mb-4">You may submit the compensation request after the fifth (5th) working day of each month for the BMS service that did not achieve the expected availability in the previous month. The compensation request must be submitted within two (2) months after the month in which BMS service did not achieve the expected availability. Any compensation request submitted beyond such deadline will not be accepted.</p>
       `
@@ -404,7 +404,7 @@ const Legal: React.FC = () => {
         <p class="mb-4 text-sm text-gray-600">Last Updated: September 30, 2022</p>
         <p class="mb-4">Please read these terms carefully.</p>
         <p class="mb-4">These Terms of EdgeNext International Website Products and Services (hereinafter referred to as "Product Terms", "the Product Terms" or "the Terms") includes the terms and conditions governing your purchase and use of the products and services (hereinafter referred to as "Services") provided through EdgeNext International Website (hereinafter referred to as "EdgeNext International Website") currently located at www.edgenext.com. Unless otherwise specified in the Product Terms, capitalized terms used in the Terms shall have the same meanings as those defined in the Membership Agreement.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">1. Application and Acceptance of Product Terms</h3>
         <p class="mb-4"><strong>1.1</strong> The Product Terms are between you, as a service purchaser and (or) user of EdgeNext International Website and LEGEND DYNASTY PTE. LTD. (hereinafter referred to as "EdgeNext" or "We"). The Terms are effective when you click "OK" or tick the Terms. By purchasing and (or) using the "Services", you agree to accept and to be bound by the Product Terms.</p>
         <p class="mb-4"><strong>1.2</strong> You may need to sign a separate online or offline agreement with EdgeNext or its affiliates to: i) use EdgeNext International Website; or ii) purchase the service or any other service provided by EdgeNext ("Supplementary Agreement"). In the event of any conflict or inconsistency between the Product Terms and any supplementary agreements, the Terms of Service shall prevail over the Product Terms only to the extent of the conflict.</p>
@@ -412,7 +412,7 @@ const Legal: React.FC = () => {
         <p class="mb-4"><strong>1.4</strong> You acknowledge and agree that EdgeNext may update the Terms at any time by posting the relevant amended Product Terms on EdgeNext International Website. By continuing to use the services after the amended Product Terms are posted, you agree to be bound by the Terms and Conditions as amended.</p>
         <p class="mb-4"><strong>1.5</strong> You can purchase the required service online through EdgeNext International Website according to your own needs. Before you purchase the service, you need to open the service, and the product service content, service fee, service period, term of service, etc. of your purchase shall be subject to the order page you confirm and agree to. The specific payment is subject to the Payment Terms and other relevant instructions on the EdgeNext International Website.</p>
         <p class="mb-4"><strong>1.6</strong> You must register as a member of EdgeNext International Website to purchase and/or use products. Your registration and use of an account on EdgeNext International Website is bound by the EdgeNext International Website Membership Agreement. You shall ensure that any and all information you provide to us through EdgeNext International Website is true, accurate, correct and complete, but not deceptive, fraudulent or misleading.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">2. Your Responsibility</h3>
         <p class="mb-4"><strong>2.1</strong> You will ensure that your content and the use of your content or services by your end users do not violate any policy or any applicable law. You are fully responsible for the development, content, operation, maintenance and use of your content. You will ensure that all end users comply with your obligations thereunder and that the terms of your agreement with each end user are consistent with the Agreement. If you become aware that an end user has violated your obligations thereunder, you will immediately suspend the end user's access to your content and services. We will not provide any support or service to the end user unless we have entered into a separate agreement with you or the end user, which obligates us to provide such support or services.</p>
         <p class="mb-4"><strong>2.2</strong> You are responsible for properly configuring and using the service, and otherwise taking appropriate actions to safeguard, protect and back up your account and your content, so as to provide appropriate security and protection, possibly including using encryption technology to protect your content from unauthorized access, and regularly archiving your content.</p>
@@ -420,7 +420,7 @@ const Legal: React.FC = () => {
         <p class="mb-4"><strong>2.4</strong> You agree to cooperate with EdgeNext to identify and solve service problems that EdgeNext has reason to believe are caused by you at the request of EdgeNext.</p>
         <p class="mb-4"><strong>2.5</strong> Some services require the processing of personal data of your end users or employees. You agree that it is entirely your responsibility to establish the legal basis for processing such data in accordance with local laws, including providing appropriate privacy notices and obtaining the consent of any necessary customers or employees. You represent and warrant to EdgeNext that you have a legal basis for processing such data in accordance with local laws, including obtaining any necessary notices and consents. You also represent that you will comply with any data protection laws and regulations, including but not limited to obtaining consent and rules related to cross-border transfers of personal data. These laws and regulations may apply to your use of these services and an appropriate data processing agreement may be separately signed as required by EdgeNext to ensure the security and compliance of personal information processing.</p>
         <p class="mb-4"><strong>2.6</strong> You must comply with the relevant technical documents that we release and update from time to time on EdgeNext International Website and are applicable to the products you purchase.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">3. General Product Terms</h3>
         <p class="mb-4">The following general Product Terms are applicable to the purchase and / or use of all services provided on EdgeNext International Website.</p>
         <p class="mb-4"><strong>3.1</strong> The benefits, features and functions you may obtain from any service may vary in different countries and regions. We do not warrant or represent that a particular feature or function or the same type and degree of features and functions will be available in all countries and regions or to all users. EdgeNext may, at its own discretion, restrict, deny or establish different levels of access and use of any service (or any function therein) for different users. Your use of EdgeNext products shall comply with the product specifications, restrictions and instructions in the relevant product description pages on EdgeNext International Website (hereinafter referred to as "Product Descriptive Terms"). In the event of any inconsistency between the Product Terms and the Product Descriptive Terms, the Product Terms shall prevail.</p>
@@ -433,7 +433,7 @@ const Legal: React.FC = () => {
         <p class="mb-4"><strong>3.8</strong> EdgeNext does not guarantee that the performance of the product services is free from any error or not interrupted, that EdgeNext will correct all product service errors, and that the product services will meet all of your requirements or expectations. EdgeNext will assume no responsibility for any problem concerning service performance, operation, or safety resulting from your content, the content of any third party, or any service provided by any third party.</p>
         <p class="mb-4"><strong>3.9</strong> To the extent not prohibited by law, the guarantees in 3.6/3.7/3.8 are exclusive and EdgeNext has no other express or implied guarantees or conditions, including guarantees for software, hardware, system, network or environment, or merchantability, satisfactory quality, and suitability for a particular purpose.</p>
         <p class="mb-4"><strong>3.10</strong> You confirm that: based on the significant impact of EdgeNext services on your business operation, if you seriously breach the contract but EdgeNext fails to cancel or terminate the cooperation in advance in view of the impact of stopping EdgeNext services on your business, it shall be neither deemed that EdgeNext waives the right to recover the service fees, liquidated damages, compensations, etc. that should be collected according to the Product Terms or other terms, nor shall it be deemed that EdgeNext maliciously enlarges the losses.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">4. Specific Terms of Services</h3>
         <p class="mb-4">Without limiting the generality of the Product Terms, you further agree and promise that the purchase and use of the Services identified herein must comply with the specific terms of services stated herein.</p>
         <p class="mb-4"><strong>4.1</strong> EdgeNext Content Delivery Network (CDN)</p>
@@ -452,7 +452,7 @@ const Legal: React.FC = () => {
         <p class="mb-2">v. Directly or indirectly establish or support products or services competing with EdgeNext by accessing or using the CDN service;</p>
         <p class="mb-2">vi. License, sell, transfer, assign, outsource, permit time-sharing or partial use, commercial exploitation of, or provide any third party with the CDN service, unless otherwise agreed in the Product Terms or by both parties;</p>
         <p class="mb-4">vii. Unless otherwise agreed by both parties, you should not provide EdgeNext with access to any health, payment card, or similarly sensitive personal information. The specific data security obligations for processing such data are higher than the obligations specified in the Service Specification.</p>
-        
+
         <p class="mb-4"><strong>4.2</strong> EdgeNext Cloud Hosting Services (ECS)</p>
         <p class="mb-4">(a) Your use of the EdgeNext Cloud Hosting Services shall comply with the product specifications, limitations and descriptions on the related product description pages of the EdgeNext platform ("ECS Descriptive Terms"). In the event of any inconsistency between the Product Terms and the ESC Descriptive Terms, the former shall prevail.</p>
         <p class="mb-4">(b) EdgeNext will take basic security protection measures for its systems, equipment, etc. according to statutory and regulatory requirements. If your requirements for security protection measures are higher than the foregoing basic security protection measures, you are entitled to purchase security protection services of higher configuration or separately configure other security protection software, systems, etc. according to your needs.</p>
@@ -465,7 +465,7 @@ const Legal: React.FC = () => {
         <p class="mb-4">(i) You shall use up the services in the resource pack within the term of service. Upon expiration of the term of service of the resource pack, any service you have subscribed to but not used will be null and void, and no substitute or supplement will be provided or no unused balance in your platform account will be refunded by EdgeNext.</p>
         <p class="mb-4">(j) Your use of this service will first consume the resource pack you subscribe to. Unless provided for by law or otherwise agreed on by the Parties, if the services in the resource pack are used up or the term of service expires, and you continue to use this service without continuing to subscribe to the resource pack, EdgeNext will regard it as your use of this service in the form of post-paid purchase (if any) and will continue the billing and deduct the service fee based on the billing results.</p>
         <p class="mb-4">(k) You understand and fully acknowledge that EdgeNext has established (and will continue to improve according to technology development) necessary technical measures to defend against matters or acts that endanger network security, including computer viruses and network intrusions, attacks and disruptions (including DDoS) (hereinafter collectively referred to as the Acts), however, in the light of the limitations and relativity of the network security technology and the unpredictability of the Acts, if your website suffers from the Acts, which brings harm to EdgeNext or EdgeNext's other networks or servers (including local, non-local and international networks and servers) or affects EdgeNext's smooth communication with the international Internet or specific networks, servers, and its interior, EdgeNext may decide to suspend or terminate this service. If this service is terminated, the service fee will be calculated according to the actual month of service provided (or days of service provided if less than one month) and the remaining amount (if any) will be refunded.</p>
-        
+
         <p class="mb-4"><strong>4.3</strong> EdgeNext Bare Metal Servers (BMS)</p>
         <p class="mb-4">(a) EdgeNext Bare Metal Servers is a flexible, secure and stable computing service located in the edge cluster, which helps you reduce IT costs, improve operation and maintenance efficiency, and enable you to focus more on core business innovation.</p>
         <p class="mb-4">Your use of the EdgeNext BMS Service shall comply with the product specifications, limitations and descriptions on the related product description pages of the EdgeNext platform ("BMS Service Descriptive Terms"). In the event of any inconsistency between the Product Terms and the BMS Service Descriptive Terms, the former shall prevail.</p>
@@ -480,7 +480,7 @@ const Legal: React.FC = () => {
         <p class="mb-4">(g) You shall compensate EdgeNext for all losses caused by damage to EdgeNext's equipment or failure of other users to normally use the equipment in EdgeNext's server room or EdgeNext's services due to your illegal writing, operation, or use of programs or software.</p>
         <p class="mb-4">(h) You shall be responsible for the normal operation of the software and hardware of your equipment. If the equipment operated and maintained by you has any problems affecting the stability of the Internet, including but not limited to that the equipment is attacked by hackers or computer viruses, sends massive spam, or becomes an attack source, which causes major network security issues and affects other users, EdgeNext will request you to correct them by phone or e-mail and shall be entitled to suspend your network connection until the problems are resolved, and such suspension shall not be deemed as EdgeNext's breach of contract. You shall compensate for the losses caused to EdgeNext or other customers of EdgeNext.</p>
         <p class="mb-4">(i) We reserve the right to restrict, delete or suspend any service that violates any of the above restrictions.</p>
-        
+
         <p class="mb-4"><strong>4.4</strong> EdgeNext Security CDN Services</p>
         <p class="mb-4">(a) Your use of EdgeNext Security CDN shall comply with the product specifications, restrictions, and instructions ("Descriptive Terms of Security CDN") on the relevant product description page of EdgeNext International website. In case of any inconsistency between the Product Terms and the Descriptive Terms of Security CDN, the Product Terms shall prevail.</p>
         <p class="mb-4">(b) Security CDN refer to the Web application security acceleration service provided by EdgeNext for you, which combines security and acceleration and is based on DNS traffic takeover, hides the real server IP address, and provides security services such as intrusion defense against vulnerabilities, defense from DDoS attack and Bot behavior management for your Web applications by implementing a series of security strategies targeting HTTP/HTTPS. In addition, it adopts distributed edge nodes and various acceleration strategies to provide stable CDN acceleration capability for your Web applications.</p>
@@ -492,7 +492,7 @@ const Legal: React.FC = () => {
         <p class="mb-4">(h) You shall be responsible for the data stored on EdgeNext's platform, as well as for the integrity and confidentiality of commands and passwords required for entering and managing various products and services on EdgeNext's platform. All losses and consequences caused by the loss or leakage of the above data, commands and passwords due to improper maintenance, confidentiality or operation by you shall be borne by yourself.</p>
         <p class="mb-4">(i) If EdgeNext finds that you violate the above terms, EdgeNext shall have the right to take corresponding measures, including but not limited to immediate termination of the services or suspension of the services. If you violate the above terms and cause losses to EdgeNext, you shall bear all legal responsibilities and compensate for the losses therefrom;</p>
         <p class="mb-4">(j) You learn that EdgeNext cannot guarantee the service it provides is perfect (for example, EdgeNext's security products cannot ensure that your hardware or software is absolutely secure), but EdgeNext undertakes to improve the service quality and service level continuously. Therefore, you agree that even if there are defects in the services provided by EdgeNext, such defects cannot be avoided by the technical level of the industry at that time, and it will not be deemed as breach of contract by EdgeNext. You also agree to eliminate the above defects through cooperation with EdgeNext.</p>
-        
+
         <p class="mb-4"><strong>4.5</strong> EdgeNext DNS Security</p>
         <p class="mb-4">(a) Your use of the EdgeNext DNS Security shall comply with the product specifications, restrictions and instructions in the relevant product description pages on EdgeNext International Website ("DNS Security Descriptive Terms"). In the event of any inconsistency between this Product and Service Terms and the DNS Security Descriptive Terms, Product and Service Terms shall prevail.</p>
         <p class="mb-4">(b) DNS Security refers to a safe, fast, stable and extensible authoritative DNS service provided by EdgeNext for you, which converts domain names that are easy to manage and identify into digital IP addresses used by computers for interconnection communication, thus routing users' access to corresponding websites or application servers.</p>
@@ -503,7 +503,7 @@ const Legal: React.FC = () => {
         <p class="mb-4">(g) EdgeNext does not rule out the possibility of charging DNS Security in the future. At that time, EdgeNext will publish the charging policies and specifications 10 natural days in advance by publishing an announcement in the appropriate section of the EdgeNext website or sending a notice on the website.</p>
         <p class="mb-4">(h) After EdgeNext charging applies, if you still use the DNS Security service, you shall pay according to the effective charging policy at that time and comply with the effective service terms published by EdgeNext at that time. If you refuse to pay the service fee after charging starts, EdgeNext has the right to stop providing services to you and to stop retaining your business data.</p>
         <p class="mb-4">(i) You learn that EdgeNext cannot guarantee the service it provides is perfect (for example, EdgeNext's security products cannot ensure that your hardware or software is absolutely secure), but EdgeNext undertakes to improve the service quality and service level continuously. Therefore, you agree that even if there are defects in the services provided by EdgeNext, such defects cannot be avoided by the technical level of the industry at that time, and it will not be deemed as breach of contract by EdgeNext. You also agree to eliminate the above defects through cooperation with EdgeNext.</p>
-        
+
         <p class="mb-4"><strong>4.6</strong> EdgeNext Anti-DDoS</p>
         <p class="mb-4">(a) Your use of the EdgeNext Anti-DDoS shall comply with the product specifications, restrictions and instructions in the relevant product description pages on EdgeNext International Website ("Anti-DDoS Descriptive Terms"). In the event of any inconsistency between the Product Terms and the Anti-DDoS Descriptive Terms, the Product Terms shall prevail.</p>
         <p class="mb-4">(b) Anti-DDoS Service means the DDoS traffic-based attack prevention and service management system provided by EdgeNext. The system, applicable to the business scenarios dealing with directed persistence and large-scale DDoS governance, is an advanced DDoS protection product that can provide data centers with locally deployed private data cleaning services.</p>
@@ -513,7 +513,7 @@ const Legal: React.FC = () => {
         <p class="mb-4">(f) You shall be responsible for the data stored on EdgeNext's platform, as well as for the integrity and confidentiality of commands and passwords required for entering and managing various products and services on EdgeNext's platform. All losses and consequences caused by the loss or leakage of the above data, commands and passwords due to improper maintenance, confidentiality or operation by you shall be borne by yourself;</p>
         <p class="mb-4">(g) If EdgeNext finds that you violate the above terms, EdgeNext shall have the right to take corresponding measures, including but not limited to immediate termination of the services or suspension of the services. If you violate the above guarantee and cause losses to EdgeNext, you shall bear all legal responsibilities and compensate for the losses therefrom;</p>
         <p class="mb-4">(h) You learn that EdgeNext cannot guarantee the service it provides is perfect (for example, EdgeNext's security products cannot ensure that your hardware or software is absolutely secure), but EdgeNext undertakes to improve the service quality and service level continuously. Therefore, you agree that even if there are defects in the services provided by EdgeNext, such defects cannot be avoided by the technical level of the industry at that time, and it will not be deemed as breach of contract by EdgeNext. You also agree to eliminate the above defects through cooperation with EdgeNext.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">5. General Provisions</h3>
         <p class="mb-4"><strong>5.1</strong> The Product Terms and SLAs constitute and govern the entire agreement between you and EdgeNext concerning the use of EdgeNext Services, superseding any prior written or oral agreement relating to this subject.</p>
         <p class="mb-4"><strong>5.2</strong> You and EdgeNext are separate legal entities, and the Terms does not represent the establishment of any agency, partnership, joint venture, employee-employer or franchisee-franchisee relationship between both parties.</p>
@@ -555,14 +555,14 @@ These Terms and Conditions of Use of EdgeNext International Website (hereinafter
 1.3  If You use or purchase a specific service on the EdgeNext International Website, You shall be liable to confirm the Terms of Service corresponding to the specific service; Please read carefully, fully understand, and choose to accept or not accept the Terms of Service. In the event of any conflict or inconsistency between these Terms and Conditions and the Terms of Service, the Terms of Service shall prevail over these Terms and Conditions to the extent of the conflict or inconsistency.
 <br/>
 1.4  EdgeNext shall be entitled to transfer and/or change, in whole or in part, any of these Terms and Conditions (including any of Our rights, ownership, interests, obligations and responsibilities under these Terms and Conditions) to any person or entity (including any of EdgeNext’s affiliates). EdgeNext may request changes to these Terms and Conditions or any other part by sending You a written notice (including in-site letter, mail, SMS, etc.), and You hereby irrevocably agree to any such changes or transfer.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">2. Provision of the Services</h3>
         <p class="mb-4">2.1  The legal subject of EdgeNext contracting with You is LEGEND DYNASTY PTE. LTD. You must register an account on the EdgeNext International Website to purchase and use products and services.
 <br/>
 2.2  If EdgeNext believes that You have violated these Terms and Conditions, EdgeNext shall be entitled to restrict, suspend or terminate Your access to or use of EdgeNext International Website or certain Services (including any functions in the Services).
 <br/>
 2.3  The Services (or any feature in any of the Services) may vary in different regions and countries. EdgeNext does not guarantee or represent that certain service or its features or functions or the same type and degree of service or its features and functions will be available in all countries and regions or to all users. EdgeNext may restrict, deny or establish different levels of access to and use of any Service (or any of its features) for different users at its own discretion.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">3. Website Services and Specifications</h3>
         <p class="mb-4">3.1  You shall be entitled to enjoy the Internet technical services and information services provided by EdgeNext through the EdgeNext International Website. And You shall also perform obligations such as timely payment in accordance with these Terms and Conditions, other relevant terms and agreements confirmed by You at the time of purchasing certain Services, and rules and specifications of the EdgeNext International Website.
 <br/>
@@ -625,10 +625,10 @@ b.engage in any activities that may interfere with the normal operation of any S
 c.operate any network services, such as open proxy, open mail relay, open recursive domain name server, etc.; or
 <br/>
 d.otherwise commit any act or matter that We believe constitutes an abuse of the network of any System.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">4. User Violations</h3>
         <p class="mb-4">EdgeNext reserves the right to delete, modify or reject at its sole discretion any content submitted, posted or displayed by You on EdgeNext International Website that We believe is illegal, violates these Terms and Conditions or may make EdgeNext or Our affiliates liable. EdgeNext reserves the right to take such actions as it deems appropriate at its own discretion, including but not limited to sending You a written warning, deleting any user content You submit or post on the relevant features/functions of EdgeNext International Website or the Services, recovering losses or other monetary compensation from You, suspending or terminating Your account in EdgeNext, or suspending Your subscription to any Service. EdgeNext also reserves the right to restrict, refuse or prohibit You from using any other Services provided by EdgeNext in the future.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">5. Limitation of Liability</h3>
         <p class="mb-4">5.1  To the maximum extent permitted by applicable law, the Services is provided “as is”, “available” and “no guarantee of flawless goods”. EdgeNext hereby expressly disclaims any and all warranties, express or implied, including but not limited to any warranties of condition, quality, durability, performance, accuracy, reliability, merchantability or fitness for a particular purpose and non-infringement, or that the Services will be uninterrupted, error-free, free of harmful components, secure, or free from damage or loss of function or data. To the maximum extent permitted by applicable law, EdgeNext makes no representations or warranties as to the validity, accuracy, correctness, reliability, quality, stability, completeness or timeliness of any Information provided on or through the Services; EdgeNext makes no representations or warranties that the manufacture, import, export, distribution, offer, display, purchase, sale and/or use of products or services provided or displayed through the Services will not infringe upon the rights of any third party; and EdgeNext makes no representations or warranties of any kind with respect to any products or services provided or displayed through the Services. Any materials downloaded or otherwise obtained through the Services are at Your sole discretion and risk, and You are solely responsible for any damage to Your system or loss of data that may result from the download of any such materials. Any advice or information You receive from EdgeNext or through or from the Services, whether oral or written, does not give rise to any warranty not expressly stated herein. Save for any warranties, representations, conditions and undertakings expressly specified in these Terms and Conditions, EdgeNext hereby excludes all other warranties, representations, conditions and undertakings, express or implied, to the maximum extent permitted by applicable law.
 <br/>
@@ -637,7 +637,7 @@ d.otherwise commit any act or matter that We believe constitutes an abuse of the
 5.3  To the extent permitted by applicable law, EdgeNext shall not be liable for any indirect, punitive, special or derivative losses related to or arising from this Service Agreement. EdgeNext hereby reminds us that You should abide by the applicable national or regional laws during the use of Our Services, and must not endanger network security, and must not use Our Services to engage in activities that infringe on the reputation, privacy, intellectual property rights and other legitimate rights and interests of others. EdgeNext shall not be liable for any illegal or breach of contract in Your use of EdgeNext Services. If you obtain products or services from other third parties by using EdgeNext Services. As We do not control such websites and resources, You acknowledge and agree that EdgeNext is not liable for the availability of such external websites or resources, and does not recognize or be responsible for any content, advertisements, products, materials or any content originating from such websites or resources. You further acknowledge and agree that EdgeNext shall not be liable for any direct or indirect losses caused by using or relying on any such content.
 <br/>
 5.4  The limitations and exclusions of Your liability set out in these Terms and Conditions shall apply to the maximum extent permitted by law and shall apply to whether EdgeNext was informed or should have known that any such loss may arise.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">6. Notification and Procedure for Filing Claims for Copyright Infringement</h3>
         <p class="mb-4">6.1  If You believe that Your work has been copied and which constitutes copyright infringement, You may give Us a written notice and provide all the details stipulated in PART 6 to the Singapore Copyright Act 2021, Clause 323, Our contact details are as follows:
 </p>
@@ -648,7 +648,7 @@ Tel: +65 68718812
 6.2  We will only process Chinese/English notices that comply with the Singapore Copyright Act, other applicable laws and these Terms and Conditions of Use. Any notice that fails to comply with the above will be rejected.
 </p>
 6.3  Upon receipt of a compliant infringement notice, We will give due consideration to the relevant infringement notice in the above manner and may take further measures depending on the nature of the alleged infringement described in the notice, which may include matters applicable to the Internet Service Provider as described in the Singapore Copyright Act. You agree that You will not take any legal action or any legal remedy against Us with respect to any infringing materials without first notifying Us and giving Us sufficient opportunity to remove it and before We refuse or fail to remove the allegedly infringing materials within the reasonable time limit. If We remove any allegedly infringing material pursuant to Your notice of infringement, You agree not to exercise and hereby waive any rights of action You may have under applicable law against Us prior to Our removal of such content.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">7. Intellectual Property Rights {IPRs}</h3>
         <p class="mb-4">7.1  The IPRs on the LOGO of EdgeNext International Website, “EdgeNext” and other words, graphics and combinations thereof, as well as other logos and emblems of EdgeNext International Website, names of EdgeNext Services, technical documents, etc. shall be the property of EdgeNext and its affiliates.
 <br/>
@@ -711,7 +711,7 @@ These Payment Terms (“Terms”) govern the payment in connection with your pur
 1.3 Each registered payment account can only be tied to one EdgeNext member account. Different EdgeNext member accounts cannot use the same credit card or the same Paypal account to make payments.
 
  </p><br/>
-        
+
         <h3 class="text-xl font-medium mb-4">2. Purchase</h3>
         <p 2.1 According to your own needs, you can purchase the services you need online through the EdgeNext International Website. The content of the purchased products and services, service fees, service periods and billing times are subject to your confirmation and Agreement on the order page.</p>
 
@@ -786,12 +786,12 @@ Automatic information. Information collected automatically when you visit, inter
 <br/>
 Information from third parties or other sources. It may be our business partners, service providers and publicly sources, etc.
 <br/>
- 
+
 
 Personal Information does not include your personally identifiable information that has been de-identified, pseudonymized, anonymized, aggregated and/or otherwise processed so as to be unidentifiable: (i) in such a way that the data can no longer be attributed to a specific individual, or (ii) in such a way that the data can no longer be attributed to a specific individual (by reasonable means) without the use of additional information, and where such additional information is kept separate and under adequate security to prevent unauthorized re-identification of a specific individual such that one could not, using reasonable efforts, link such information back to a specific individual (the foregoing being referred to as “De-Identified Personal Information”).
 <br/>
 </p>
-        
+
         <h3 class="text-xl font-medium mb-4">2. How We Use Your Information
 </h3>
         <p class="mb-4">We use information that we collect about you, including any Personal Information:
@@ -809,7 +809,7 @@ In any other way we may describe when you provide the information.<br/>
 We use cookies, clear gifs, and log file information to: (a) remember information so that you will not have to re-enter it during your visit or the next time you visit the site; (b) provide custom, personalized content and information; (c) monitor the effectiveness of our Service; (d) monitor aggregate metrics such as total number of visitors, traffic, and demographic patterns; (e) diagnose or fix technology problems reported by our users or engineers that are associated with certain IP addresses; (f) help you efficiently access your information after you sign in; (h) track users to the extent necessary to comply with the Digital Millennium Copyright Act; and (i) enhance our Website security.
 <br/>
 Subject to obtaining your specific consent, We may use your information to contact you about our own and third-parties’ goods and services that may be of interest to you. If you do not want us to use your information in this way, please adjust your user preferences in your account profile.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">3. Individuals under the Age of 18
 </h3>
         <p class="mb-4">We do not provide Services for purchase by children. So, we do not knowingly collect or maintain Personal Information from anyone under the age of 18 or knowingly allow such persons to register for our Services. If you’re under 18, you may use our Services only with the permission of your parent or guardian. If you are under 18, please do not send any Personal Information about yourself (such as your name, address, telephone number, or email address) to us. In the event that we learn that we have collected Personal Information from a child under age 18 without verification of parental consent, we will use commercially reasonable efforts to delete that information from our database. Please contact us at +65 68718812 if you have any concerns.
@@ -824,10 +824,10 @@ We will keep your personal information as long as it is necessary for the purpos
 <br/>
 If you ask us to delete your personal information at an earlier time, we will delete all information we hold on you within 30 days, save for information which is reasonable for us to retain in order to operate our Website or information we are required to retain by law.
 <br/>
-Following termination or deactivation of your account, we may retain your profile information and all information posted to public areas of the Service. 
+Following termination or deactivation of your account, we may retain your profile information and all information posted to public areas of the Service.
 
 </p>
-        
+
         <h3 class="text-xl font-medium mb-4">4. How We Share Your Information
 
 </h3>
@@ -840,23 +840,23 @@ Following termination or deactivation of your account, we may retain your profil
         </ul>
         <br/>
 
-        
+
         <h3 class="text-xl font-medium mb-4">5. De-Identified Personal Information</h3>
         <p class="mb-4">We may share De-Identified Personal Information (such as anonymous usage data, referring/exit pages and URLs, platform types, number of clicks, etc.) with interested third parties to help understand the usage patterns for certain Services.
 <br/>
 Business Merger And Acquisition: We may buy businesses or services to a potential buyer or other successor for the purpose of considering a merger, divestiture, restructuring, reorganization, dissolution, or sell or transfer of some or all of our assets, whether as a going concern or as part of bankruptcy, liquidation or similar proceeding, in which Personal Information held by us about our Website users is among the assets transferred. But remains subject to the promises made in any pre-existing Privacy Policy (unless, of course, the individual consents otherwise). Also, in the unlikely event, your information will of course be one of the transferred assets.<br/>
 
 By Your Choices: Others above, you will receive notice when personal information about you might be shared with third parties, and you can choose not to share the information.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">6. Security measures
 
 </h3>
         <p class="mb-4">We have implemented measures designed to secure your Personal Information from accidental loss and from unauthorized access, use, alteration and disclosure. All personal information you provide to us is stored on our secure servers (or those of our service providers) behind firewalls. We may store, retrieve, access, and transmit your personal information in the US or in other countries. The safety and security of your information also depends on you. Where we have given you (or where you have chosen) a password for access to certain parts of the Website or Services, you are responsible for keeping this password confidential. You should not share your password with anyone. You must prevent unauthorized access to your account and Personal Information by selecting and protecting your password appropriately and limiting access to your computer or device and browser by signing off after you have finished accessing your account. The information you share in public areas may be viewed by other users.
 <br/>
-Unfortunately, the transmission of information via the internet is not completely secure. Although we do try to protect your Personal Information, we cannot guarantee the security of your Personal Information transmitted to us or which we obtain. Any transmission of Personal Information is at your own risk. Unauthorized entry or use, hardware or software failure, and other factors, may compromise the security of user information at any time. 
+Unfortunately, the transmission of information via the internet is not completely secure. Although we do try to protect your Personal Information, we cannot guarantee the security of your Personal Information transmitted to us or which we obtain. Any transmission of Personal Information is at your own risk. Unauthorized entry or use, hardware or software failure, and other factors, may compromise the security of user information at any time.
 
 </p>
-        
+
         <h3 class="text-xl font-medium mb-4">7. User Data Protection
 </h3>
         <p class="mb-4">User data refers to the data processed, stored, uploaded, downloaded, distributed and otherwise processed by you through the Services provided by EdgeNext. You have full ownership of your user data. As a cloud service provider, EdgeNext will strictly follow your instructions to process your user data, and will not make any unauthorized use or disclosure of your user data except in accordance with the agreement reached with you or the implementation of specific legal and regulatory requirements.
@@ -880,7 +880,7 @@ user profile information, including any content you have uploaded to the Service
 The information that you can view, update, and delete may change as the Services change. If you have any questions about viewing or updating information we have on file about you, please contact us at info_apac@edgenext.com
 
 </p>
-        
+
         <h3 class="text-xl font-medium mb-4">8. Your Rights/Information
 
 </h3>
@@ -895,7 +895,7 @@ The information that you can view, update, and delete may change as the Services
         <p class="mb-4"><strong>The right to restrict processing:</strong> You have rights to “block” or suppress further use of your information. When processing is restricted, we can still store your information, but may not use it further. We keep lists of people who have asked for further use of their information to be “blocked” to make sure the restriction is respected in future.</p>
         <p class="mb-4"><strong>The right to data portability:</strong> You have rights to obtain and reuse your personal data for your own purposes across different services. For example, if you decide to switch to a new provider, this enables you to move, copy or transfer your information easily between our IT systems and theirs safely and securely, without affecting its usability.</p>
         <p class="mb-4"><strong>The right to object:</strong> You have the right to object to certain types of processing, including processing for direct marketing (which we do only with your consent). For more information or to object, see Objecting to processing.</p>
-To ask questions or comment about this Privacy Policy and our privacy practices, contact us at: info_apac@edgenext.com       
+To ask questions or comment about this Privacy Policy and our privacy practices, contact us at: info_apac@edgenext.com
 60 PAYA LEBAR ROAD, #11-20, PAYA LEBAR SQUARE, SINGAPORE 409051<br/>
 Tel：+65 68718812</p>
 <br/>
@@ -905,17 +905,17 @@ Tel：+65 68718812</p>
 </h3>
         <p class="mb-4">We’re constantly working to improve our Services, so we may need to change this Privacy Policy from time to time as well, but we will alert you to changes by placing a notice on our Website or as part of the Services, by sending you an email, and/or by some other means. Please note that if you’ve opted not to receive legal notice emails from us (or you haven’t provided us with your email address), those legal notices will still govern your use of the Services, and you are still responsible for reading and understanding them. If you use the Services after any changes to the Privacy Policy have been posted, that means you agree to all of the changes. Use of information we collect is subject to the Privacy Policy in effect at the time such information is collected.
 
- 
+
 <br/>
 Additional Information for Customers Located in California
 <br/>
 Under the California Consumer Privacy Act of 2018 (CCPA), California residents have certain rights related to their personal information. We has long recognized the importance of its customers’ privacy rights and for that reason, most of the CCPA requirements have been part of our approach to data privacy since well before passage of the CCPA. Although the rights are described in more detail in the main body of our Privacy Policy, we outline them here for ease of reference.
 
- 
+
 <br/>
 First, EdgeNext does not exchange your personal information for money.
 
- 
+
 <br/>
 Second, you may submit a verifiable request for the following information; a) categories of your personal information collected by us; b) purposes for which we collect your personal information; c) categories of sources from which we collect your personal information; and d) the specific personal information we have collected about you in the prior 12 months.
 
@@ -927,7 +927,7 @@ Under California Civil Code Sections 1798.83-1798.84, California residents are e
 
 Third, subject to certain exceptions outlined in the CCPA, you may ask us to delete the personal information we have collected from you. We will retain your information for as long as your account is active or as needed to provide you services. We will retain and use your information as necessary to comply with our legal obligations, resolve disputes, and enforce our agreements.
 <br/>
- 
+
 <br/>
 Fourth, we will not discriminate against you on either a pricing or service basis, for exercising your CCPA privacy rights.
 
@@ -936,7 +936,7 @@ Fourth, we will not discriminate against you on either a pricing or service basi
 Finally, you may exercise your rights under CCPA by: a) deactivating and purging your account in your control panel settings or b) by sending an email to info_apac@edgenext.com to request access or deletion. If you have any questions about your CCPA rights as they relate to EdgeNext, you may call us or send emails.
 <br/>
  <br/>
- 
+
 Additional Information for International Users (Including Singapore)
 <br/>
 <br/>
@@ -995,7 +995,7 @@ We may transfer some or all of your personal information outside of the EEA. The
 1.4   If You use or purchase a specific service on the EdgeNext International Website, You shall be liable to confirm the terms of service corresponding to the specific service and activate that service before completing Your purchase; Please read carefully, fully understand, and choose to accept or not accept the Terms of Service.<br/>
 
 1.5   EdgeNext shall be entitled to amend this Agreement from time to time. Any and all modifications to this Agreement will be announced or notified by means of web announcements, emails, intranet messages, SMS messages, etc. If You continue to use the EdgeNext Services after the content of this Service Agreement has been modified, it means that You have fully read, understood and accepted the modified content, and will also comply with the modified content of the terms and conditions.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">2. Intellectual Property Rights {IPRs}</h3>
         <p class="mb-4">2.1   The IPRs on the LOGO of EdgeNext International Website, “EdgeNext” and other words, graphics and combinations thereof, as well as other logos and emblems of EdgeNext International Website, names of EdgeNext Services, technical documents, etc., shall be the property of EdgeNext and its affiliates.<br/>
 
@@ -1004,7 +1004,7 @@ We may transfer some or all of your personal information outside of the EEA. The
 2.3   We will not use, modify, reproduce, publicly distribute, alter, disseminate, distribute or publicly publish the results in which You own IPRs without Your consent.<br/>
 
 2.4   If any natural person, legal person or other organization believes that the content of the web pages of the EdgeNext International Website (such as reproduced articles, etc.) may violate their legitimate rights and interests, they may submit a written notice of their rights to EdgeNext, and EdgeNext will deal with them as soon as possible after receiving a valid notice from the intellectual property rights holder in accordance with the law.</p><br/>
-     
+
         <h3 class="text-xl font-medium mb-4">3. Use of EdgeNext Services</h3>
         <p class="mb-4">3.1   You may access, purchase, subscribe to or use any and all products or services provided by EdgeNext in accordance with these Terms and Conditions and any Service Level Agreement (“SLA”) specified by EdgeNext in respect of such products or services (“EdgeNext Services”) through Your account. The EdgeNext Services include the cloud computing products and services offered by EdgeNext, as well as the functions, features and contents of Your account and the EdgeNext International Website. The EdgeNext Services do not include any content or services provided to You by any third party on the EdgeNext International Website (including any third party content provided) or any content or services used in conjunction with the EdgeNext Services.
 <br/>
@@ -1055,7 +1055,7 @@ We may transfer some or all of your personal information outside of the EEA. The
 3.9   EdgeNext shall be entitled to report any activity that We believe violates this Agreement or any statute or law of any jurisdiction to relevant law enforcement agencies, regulators, government agencies and any other qualified third parties, and EdgeNext shall be entitled to access, disclose and/or remove any content (including any Member Content) that You post or submit to EdgeNext on EdgeNext or the EdgeNext platform.
 
  </p>
-        
+
         <h3 class="text-xl font-medium mb-4">4. Member Liabilities and Representations and Warranties.</h3>
         <p class="mb-4">4.1 You shall be entitled to enjoy the technical services and information services on the Internet that We provide through the EdgeNext International Website. And You shall also perform obligations such as timely payment and service management in accordance with this Agreement, other relevant terms and conditions confirmed by You at the time of purchasing certain services, and rules and specifications of the EdgeNext International Website.
 <br/>
@@ -1112,7 +1112,7 @@ We may transfer some or all of your personal information outside of the EEA. The
 4.7 Rights in the Member Content
 <br/>
 4.7.1 You reserve any rights You may have to any Member Content. We will not access or use Your Member Content unless it is necessary to maintain or provide the EdgeNext Service or to comply with applicable laws or regulations. This Agreement does not grant either Party any rights in the content of the other Party or any intellectual property rights of the other Party, except as otherwise provided in this Agreement or other applicable agreements binding on Your use of the EdgeNext Services. As between You and EdgeNext, You own all intellectual property rights to the Member Content, and We own all intellectual property rights to the EdgeNext Services.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">5. Other Technologies</h3>
         <p class="mb-4">5.1   Visitor Use and Misuse Records
 <br/>
@@ -1129,7 +1129,7 @@ We may transfer some or all of your personal information outside of the EEA. The
 5.3   Access and Service License
 <br/>
 5.3.1 Considering that You may need to access www.edgenext.com and the Services, EdgeNext grants You a limited license under which You may access the website and use it for Your personal use. This Membership Agreement prohibits You from downloading (except for page caching) or modifying any part of it unless expressly agreed in writing by EdgeNext. The EdgeNext Services You purchase under this Agreement may not be resold. You may not use framing techniques or attach any trademarks, logos or other proprietary (including images, text, page layouts or forms) information without EdgeNext’s express written consent. You may not use any metadata tags and any other “hidden text” utilizing EdgeNext’s name or trademarks without EdgeNext’s express written consent. If You make any unauthorized use, the permission or license granted to You by EdgeNext will be automatically terminated and You may incur liability for damages. You are granted a limited, revocable, non-exclusive right to create a hyperlink to any non-password protected directory, provided that such link shall not portray EdgeNext, its affiliated websites, or the Services in a false, misleading, defamatory, or otherwise offensive manner. You may not use any of EdgeNext’s proprietary graphics or trademarks as part of a link without EdgeNext’s written permission.</p>
-        
+
         <h3 class="text-xl font-medium mb-4">6. Disclaimers and Limitations of Liability</h3>
         <p class="mb-4">6.1   You understand and agree that You shall be liable for any third party claims arising from Your use of the EdgeNext Services, breach of this Agreement or any action taken under Your account. If EdgeNext and any of its affiliate, employee, customer or partner is claimed by any third party, You shall be liable for handling and compensating EdgeNext and its affiliates for any and all losses and responsibilities incurred therefrom.
 <br/>
@@ -1144,7 +1144,7 @@ We may transfer some or all of your personal information outside of the EEA. The
 6.6   The Exemption Clause shall survive the termination of this Agreement.
 
  </p>
-        
+
         <h3 class="text-xl font-medium mb-4">7. Fees, Payments and Taxes</h3>
         <p class="mb-4">7.1   Unless otherwise specified or with Our prior written consent, You shall pay any payments, fees, taxes, etc. arising from Your use of EdgeNext Services in accordance with EdgeNext’s current payment terms. You shall make the relevant payment to Us through the payment method supported by the EdgeNext International Website.
 <br/>
@@ -1213,7 +1213,7 @@ Address: 60 PAYA LEBAR ROAD, #11-20, PAYA LEBAR SQUARE, SINGAPORE 409051</p>
 3.3 Disclosure</p>
 
 Unless otherwise required by law, we will protect Customer Data in accordance with the law and will not disclose Customer Data without authorization. Where disclosure is mandated by law, we will, where legally permissible, inform the customer prior to disclosure.</p>
-      <br />  
+      <br />
         <h3 class="text-xl font-medium mb-4">4. Customer Data Security</h3>
    4.1  EdgeNext provides customers with a variety of data protection technologies, including access control and identity authentication, data encryption, logging and auditing and related enhanced technologies, as well as various services of EdgeNext based on this, to help customers according to business needs. data protection. We will endeavor to implement the following safeguards:</p>
 
@@ -1226,11 +1226,11 @@ Unless otherwise required by law, we will protect Customer Data in accordance wi
    (4) Conduct due diligence and data security assessment on suppliers providing data processing services as required, and the contracts signed with them will clarify the data protection obligations of suppliers as processors/sub-processors and the requirements of applicable laws and regulations. requirements to ensure that suppliers meet customer data protection requirements.</p>
 
    (5) Equipped with a professional team to fully respond to customers’ requests related to data protection, complete the request processing within the specified time after receiving the customer’s request, and feedback the processing results to the customer. In the unfortunate event of a data breach, we will fully fulfill our legal obligations, disclose it in a timely manner, and implement emergency plans and recovery procedures to minimize the impact on customers.</p>
-<br />  
+<br />
 4.2 We make continuous efforts to take more secure physical and technical measures and strengthen security management to protect customer data. When customers use EdgeNext services, we provide encryption functions for customer data in transmission and storage according to customer needs, and support customers to choose to manage their own encryption keys.</p>
-<br />  
+<br />
 4.3 We have obtained information security management system certificationISO27001, quality management system certification ISO9001, information technology service management system certification ISO20000, privacy information management system compliance evaluation ISO27701, business continuity management system certification ISO22301, personal identifiable information security management system certification ISO27018, cloud services Information security management system certification ISO27017, compliance management system certification ISO37301  and other certifications for information security management activities related to technical services such as cloud distribution, with the corresponding security competence.</p>
-      <br />  
+      <br />
         <h3 class="text-xl font-medium mb-4">5. Data Subject Rights and Complaints</h3>
         <p>Customers, as data controllers, are primarily responsible for responding to requests from individuals whose personal data is contained within the Customer Data. However, we will provide reasonable assistance to you in fulfilling your obligations under the PDPA. If you receive any data subject requests or have any concerns about how we handle Customer Data, please contact us at <a href="mailto:info_apac@edgenext.com" class="text-[#0EB623] hover:underline">info_apac@edgenext.com</a>.</p>
         <p>If you are not satisfied with how we have handled your complaint, you may have the right to lodge a complaint with the <strong>Personal Data Protection Commission (PDPC) of Singapore</strong>.</p>
@@ -1251,7 +1251,7 @@ Unless otherwise required by law, we will protect Customer Data in accordance wi
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(14,182,35,0.1),transparent_70%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-[40px] md:text-[56px] font-medium mb-6 leading-[1.1] tracking-tight text-gray-900">
@@ -1301,10 +1301,10 @@ Unless otherwise required by law, we will protect Customer Data in accordance wi
               {/* Content Area */}
               <div className="lg:col-span-9">
                 <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-                  <div 
+                  <div
                     className="prose prose-lg max-w-none"
-                    dangerouslySetInnerHTML={{ 
-                      __html: legalDocuments[activeTab].content 
+                    dangerouslySetInnerHTML={{
+                      __html: legalDocuments[activeTab].content
                     }}
                     style={{
                       '--tw-prose-headings': '#111827',
@@ -1312,8 +1312,8 @@ Unless otherwise required by law, we will protect Customer Data in accordance wi
                       '--tw-prose-links': '#0EB623',
                     }}
                   />
-                  
-            
+
+
                 </div>
               </div>
             </div>
@@ -1330,8 +1330,8 @@ Unless otherwise required by law, we will protect Customer Data in accordance wi
               <p className="text-lg text-gray-600 mb-8">
                 Our legal team is here to help clarify any questions you may have about our terms and policies.
               </p>
-              <a 
-                href="/contact_us" 
+              <a
+                href="/contact-us"
                 className="inline-flex items-center px-8 py-4 bg-[#0EB623] text-white rounded-xl font-medium hover:bg-[#0EA620] transition-all duration-300"
               >
                 Contact Legal Team

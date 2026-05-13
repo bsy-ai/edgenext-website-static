@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowRight, Shield, Globe, Zap, Server, Database, RefreshCw, FileText, Lock, Network, Play, Video, ShieldCheck, Key, ShieldAlert, Rocket, Cloud } from 'lucide-react';
+import { ArrowRight, Globe, Zap, Server, Database, Network, Play, ShieldCheck, Key, ShieldAlert, Cloud } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 interface TabContentProps {
@@ -9,18 +9,28 @@ interface TabContentProps {
   features: string[];
 }
 
+type HomeSolutionsTab = 'global' | 'security' | 'edge';
+
+interface SolutionAccordionItem {
+  title: string;
+  icon: React.ReactNode;
+  description: string;
+  features: string[];
+  link: string;
+}
+
 export const SolutionsSection: React.FC = () => {
-  const [activeTab, setActiveTab] = useState('global');
+  const [activeTab, setActiveTab] = useState<HomeSolutionsTab>('global');
   const [activeAccordion, setActiveAccordion] = useState<string>('cdn');
-  
+
   const handleAccordionToggle = (id: string) => {
     setActiveAccordion(id);
   };
-  
+
   // Set the first item of the tab as active when tab changes
-  const handleTabChange = (tab: string) => {
+  const handleTabChange = (tab: HomeSolutionsTab) => {
     setActiveTab(tab);
-    
+
     // Set the first item of the new tab as active
     switch(tab) {
       case 'global':
@@ -36,8 +46,8 @@ export const SolutionsSection: React.FC = () => {
         setActiveAccordion('cdn');
     }
   };
-  
-  const tabContent: Record<string, TabContentProps> = {
+
+  const tabContent: Record<HomeSolutionsTab, TabContentProps> = {
     global: {
       title: "Global Acceleration",
       description: "Deliver content with lightning-fast speed across the globe with our advanced CDN and edge computing solutions.",
@@ -73,7 +83,7 @@ export const SolutionsSection: React.FC = () => {
     },
   };
 
-  const globalAccelerationItems = {
+  const globalAccelerationItems: Record<string, SolutionAccordionItem> = {
     cdn: {
       title: "Global CDN",
       icon: <Globe size={20} className="text-[#0EB623]" />,
@@ -83,7 +93,7 @@ export const SolutionsSection: React.FC = () => {
         "Intelligent load balancing across edge PoPs",
         "Optimized for scalability and low-latency user experience"
       ],
-      link: "/products/global-cdn"
+      link: "/global-cdn"
     },
     dynamic: {
       title: "Dynamic Acceleration",
@@ -116,11 +126,11 @@ export const SolutionsSection: React.FC = () => {
         "Adaptive bitrate streaming",
         "High concurrency performance"
       ],
-      link: "/live_streaming"
+      link: "/live-streaming"
     }
   };
 
-  const cloudSecurityItems = {
+  const cloudSecurityItems: Record<string, SolutionAccordionItem> = {
     security: {
       title: "Security CDN",
       icon: <ShieldCheck size={20} className="text-[#0EB623]" />,
@@ -130,7 +140,7 @@ export const SolutionsSection: React.FC = () => {
         "Bot mitigation and IP filtering",
         "Real-time security alerts"
       ],
-      link: "security_cdn"
+      link: "/security-cdn"
     },
     ddos: {
       title: "Anti-DDoS",
@@ -141,7 +151,7 @@ export const SolutionsSection: React.FC = () => {
         "Automated detection and mitigation",
         "Real-time reporting and threat intelligence"
       ],
-      link: "/anti_ddos"
+      link: "/anti-ddos"
     },
     dns: {
       title: "Security DNS",
@@ -152,11 +162,11 @@ export const SolutionsSection: React.FC = () => {
         "Threat filtering and hijack prevention",
         "Real-time monitoring and resilience"
       ],
-     link: "/dns_security_service"
+     link: "/dns-security-service"
     }
   };
 
-  const edgeComputingItems = {
+  const edgeComputingItems: Record<string, SolutionAccordionItem> = {
     cloud: {
       title: "Edge Cloud Server",
       icon: <Cloud size={20} className="text-[#0EB623]" />,
@@ -166,7 +176,7 @@ export const SolutionsSection: React.FC = () => {
         "1500+ PoPs worldwide",
         "Scalable billing (hourly/monthly)"
       ],
-      link: "/products/edge-cloud-server"
+      link: "/ecs"
     },
     bare: {
       title: "Bare Metal Server",
@@ -177,7 +187,7 @@ export const SolutionsSection: React.FC = () => {
         "No virtualization overhead",
         "Ideal for gaming, AI, and heavy workloads"
       ],
-      link: "/bare_metal_server"
+      link: "/bare-metal-server"
     },
     transit: {
       title: "IP Transit",
@@ -188,12 +198,12 @@ export const SolutionsSection: React.FC = () => {
         "Multi-path routing and redundancy",
         "Optimized traffic engineering"
       ],
-      link: "/IP_Transit"
+      link: "/ip-transit"
     }
   };
 
 
-  const getActiveItems = () => {
+  const getActiveItems = (): Record<string, SolutionAccordionItem> => {
     switch (activeTab) {
       case 'global':
         return globalAccelerationItems;
@@ -206,9 +216,9 @@ export const SolutionsSection: React.FC = () => {
     }
   };
 
-  const getActiveItem = () => {
-    const items = getActiveItems();
-    return activeAccordion ? items[activeAccordion as keyof typeof items] : null;
+  const getActiveItem = (): SolutionAccordionItem | null => {
+    if (!activeAccordion) return null;
+    return getActiveItems()[activeAccordion] ?? null;
   };
 
   return (
@@ -232,26 +242,26 @@ export const SolutionsSection: React.FC = () => {
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
           {/* Tab Navigation */}
           <div className="flex border-b border-gray-200 bg-gradient-to-r from-gray-50 to-white overflow-x-auto">
-            <button 
+            <button
               onClick={() => handleTabChange('global')}
               className={`px-6 py-4 font-medium text-sm transition-colors duration-200 whitespace-nowrap ${activeTab === 'global' ? 'text-[#0EB623] border-b-2 border-[#0EB623]' : 'text-gray-600 hover:text-[#0EB623]'}`}
             >
               Global Acceleration
             </button>
-            <button 
+            <button
               onClick={() => handleTabChange('security')}
               className={`px-6 py-4 font-medium text-sm transition-colors duration-200 whitespace-nowrap ${activeTab === 'security' ? 'text-[#0EB623] border-b-2 border-[#0EB623]' : 'text-gray-600 hover:text-[#0EB623]'}`}
             >
               Cloud Security
             </button>
-            <button 
+            <button
               onClick={() => handleTabChange('edge')}
               className={`px-6 py-4 font-medium text-sm transition-colors duration-200 whitespace-nowrap ${activeTab === 'edge' ? 'text-[#0EB623] border-b-2 border-[#0EB623]' : 'text-gray-600 hover:text-[#0EB623]'}`}
             >
               Edge Computing
             </button>
           </div>
-          
+
           {/* Content Area */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
             {/* Left: Solution List */}
@@ -269,32 +279,32 @@ export const SolutionsSection: React.FC = () => {
                       {item.icon}
                       <span className="font-medium">{item.title}</span>
                     </div>
-                    <ArrowRight 
-                      size={16} 
+                    <ArrowRight
+                      size={16}
                       className={`text-[#0EB623] transition-transform duration-200 ${
                         activeAccordion === key ? 'rotate-90' : ''
-                      }`} 
+                      }`}
                     />
                   </button>
                 ))}
               </div>
             </div>
-            
+
             {/* Right: Content Display */}
             <div className="lg:col-span-8 p-8">
               <div className="flex flex-col h-full">
                 <h3 className="text-2xl font-medium mb-4">{getActiveItem()?.title}</h3>
                 <p className="text-gray-600 mb-6 font-medium">{getActiveItem()?.description}</p>
-                
+
                 <div className="relative rounded-xl overflow-hidden mb-6 flex-grow">
                   <div className="absolute inset-0 bg-gradient-to-r from-[#0EB623]/10 to-transparent rounded-xl z-10"></div>
-                  <img 
+                  <img
                     src={tabContent[activeTab].image}
                     alt={tabContent[activeTab].title}
                     className="w-full h-[220px] object-cover rounded-xl"
                   />
                 </div>
-                
+
                 <div className="space-y-4 mb-6">
                   {getActiveItem()?.features.map((feature, index) => (
                     <div key={index} className="flex items-start gap-2">
@@ -305,15 +315,15 @@ export const SolutionsSection: React.FC = () => {
                     </div>
                   ))}
                 </div>
-                
-                <Link 
-                  to={getActiveItem()?.link === "/products/global-cdn" ? "/global_cdn" : getActiveItem()?.link === "/products/dynamic-acceleration" ? "/dynamic-acceleration" : getActiveItem()?.link === "/products/edge-cloud-server" ? "/ecs" : getActiveItem()?.link === "/company/global-network" ? "/network" : getActiveItem()?.link || "#"}
+
+                <Link
+                  to={getActiveItem()?.link || "#"}
                   className="inline-flex items-center text-[#0EB623] font-medium hover:gap-2 transition-all duration-300"
                 >
                   Learn more <ArrowRight className="ml-2" size={16} />
                 </Link>
               </div>
-                  
+
             </div>
           </div>
         </div>

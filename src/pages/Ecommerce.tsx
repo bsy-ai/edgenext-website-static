@@ -55,7 +55,7 @@ const Ecommerce: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_100%,rgba(14,182,35,0.05),transparent_50%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -66,8 +66,8 @@ const Ecommerce: React.FC = () => {
                 <p className="text-lg md:text-xl text-gray-600 mb-8">
                   As global e-commerce expands, brands rely on innovation and service quality to boost traffic, loyalty, and sales. EdgeNext empowers them with seamless, localized solutions to stay ahead.
                 </p>
-                <a 
-                  href="/contact_us" 
+                <a
+                  href="/contact-us"
                   className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 inline-flex items-center group"
                 >
                   Contact Us
@@ -197,7 +197,7 @@ const Ecommerce: React.FC = () => {
                 </ul>
               </div>
               <div className="order-1 lg:order-2">
-                <img 
+                <img
                   src="/ecommerce2.png"
                   alt="Global Rollout"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -207,7 +207,7 @@ const Ecommerce: React.FC = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
               <div>
-                <img 
+                <img
                   src="/ecommerce3.png"
                   alt="Edge Security"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -271,7 +271,7 @@ const Ecommerce: React.FC = () => {
                 </ul>
               </div>
               <div className="order-1 lg:order-2">
-                <img 
+                <img
                   src="/ecommerce4.jpg"
                   alt="User Experience"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -376,7 +376,7 @@ const Ecommerce: React.FC = () => {
               </p>
 
               <a
-                href="/contact_us"
+                href="/contact-us"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300 group"
               >
                 Get in Touch

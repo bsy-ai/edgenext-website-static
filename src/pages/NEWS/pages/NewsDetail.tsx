@@ -14,7 +14,7 @@ const NewsDetail: React.FC = () => {
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [shareMenuOpen, setShareMenuOpen] = useState(false);
   const [copySuccess, setCopySuccess] = useState(false);
-  
+
   if (!slug) {
     return (
       <PageTransition>
@@ -82,7 +82,7 @@ const NewsDetail: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      
+
       <main className="flex-grow">
         {/* Breadcrumb */}
         <section className="pt-20 pb-4 bg-gray-50">
@@ -94,8 +94,8 @@ const NewsDetail: React.FC = () => {
                   {index === breadcrumbs.length - 1 ? (
                     <span className="text-gray-600 truncate max-w-[200px]">{crumb.label}</span>
                   ) : (
-                    <Link 
-                      to={crumb.href} 
+                    <Link
+                      to={crumb.href}
                       className="text-[#0EB623] hover:text-[#0a9e1e] transition-colors"
                     >
                       {crumb.label}
@@ -113,7 +113,7 @@ const NewsDetail: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               <div className="lg:col-span-7">
                 {/* Back Button */}
-                <Link 
+                <Link
                   to="/newsroom"
                   className="inline-flex items-center gap-2 text-[#0EB623] hover:text-[#0a9e1e] transition-colors mb-6"
                 >
@@ -123,7 +123,7 @@ const NewsDetail: React.FC = () => {
 
                 {/* Category and Date */}
                 <div className="flex items-center gap-4 mb-4">
-                  <span 
+                  <span
                     className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium text-white"
                     style={{ backgroundColor: getCategoryColor(article.category) }}
                   >
@@ -228,7 +228,7 @@ const NewsDetail: React.FC = () => {
 
               <div className="lg:col-span-5">
                 <div className="rounded-xl overflow-hidden shadow-md">
-                  <img 
+                  <img
                     src={article.thumbnail}
                     alt={article.title}
                     className="w-full h-[200px] md:h-[300px] object-cover"
@@ -246,7 +246,7 @@ const NewsDetail: React.FC = () => {
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">
             <div className="news-content">
-              <div 
+              <div
                 className="max-w-none"
                 dangerouslySetInnerHTML={{ __html: article.content }}
               />
@@ -266,7 +266,7 @@ const NewsDetail: React.FC = () => {
                   Author: {article.author}
                 </p>
               </div>
-              
+
               <div className="flex items-center gap-4">
                 <span className="text-sm text-gray-600">Share:</span>
                 <div className="flex gap-2">
@@ -308,16 +308,16 @@ const NewsDetail: React.FC = () => {
               <h2 className="text-2xl md:text-3xl font-medium text-gray-900 mb-8 text-center">
                 Related Articles
               </h2>
-              
+
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {relatedNews.map((relatedArticle) => (
-                  <article 
+                  <article
                     key={relatedArticle.id}
                     className="group bg-white rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300 border border-gray-200"
                   >
                     <Link to={`/resources/news/${relatedArticle.slug}`}>
                       <div className="aspect-video bg-gradient-to-br from-[#0EB623]/10 to-[#0EB623]/5 relative overflow-hidden">
-                        <img 
+                        <img
                           src={relatedArticle.thumbnail}
                           alt={relatedArticle.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
@@ -326,23 +326,23 @@ const NewsDetail: React.FC = () => {
                             (e.target as HTMLImageElement).src = '/newsphoto/EdgeNext-National-Pulse.jpg';
                           }}
                         />
-                        <div 
+                        <div
                           className="absolute top-3 left-3 px-2 py-1 rounded-full text-xs font-medium text-white"
                           style={{ backgroundColor: getCategoryColor(relatedArticle.category) }}
                         >
                           {relatedArticle.category}
                         </div>
                       </div>
-                      
+
                       <div className="p-4">
                         <div className="text-xs text-gray-500 mb-2">
                           {formatRelativeTime(relatedArticle.publishedAt)}
                         </div>
-                        
+
                         <h3 className="font-medium text-gray-900 group-hover:text-[#0EB623] transition-colors duration-300 line-clamp-2 mb-2">
                           {relatedArticle.title}
                         </h3>
-                        
+
                         <p className="text-sm text-gray-600 line-clamp-2">
                           {relatedArticle.description}
                         </p>
@@ -365,8 +365,8 @@ const NewsDetail: React.FC = () => {
                   Explore our products and services to find the best solution for your business.
                 </p>
               </div>
-              <a 
-                href="/contact_us" 
+              <a
+                href="/contact-us"
                 className="px-8 py-4 bg-white text-[#0EB623] rounded-xl hover:bg-opacity-90 transition-colors font-medium whitespace-nowrap"
               >
                 Contact Us
@@ -389,8 +389,8 @@ const NewsDetail: React.FC = () => {
 
       {/* Click outside to close share menu */}
       {shareMenuOpen && (
-        <div 
-          className="fixed inset-0 z-5" 
+        <div
+          className="fixed inset-0 z-5"
           onClick={() => setShareMenuOpen(false)}
         />
       )}

@@ -80,7 +80,7 @@ export const Header: React.FC = () => {
 
 
       {/* Main header */}
-      <header 
+      <header
         ref={headerRef}
         className={`sticky top-0 z-50 w-full bg-white transition-all duration-300 ${
           isScrolled ? 'shadow-md' : ''
@@ -91,11 +91,11 @@ export const Header: React.FC = () => {
             <div className="flex items-center">
               <Logo />
             </div>
-            
+
             <div className="flex-1 flex justify-center">
               <nav className="hidden lg:flex items-center space-x-4">
                 <div className="relative">
-                  <button 
+                  <button
                     className={`nav-link flex items-center ${activeMenu === 'products' ? 'active' : ''}`}
                     onMouseEnter={() => handleMenuToggle('products')}
                   >
@@ -104,9 +104,9 @@ export const Header: React.FC = () => {
                   </button>
                   {activeMenu === 'products' && <Dropdown type="products" onClose={() => setActiveMenu(null)} />}
                 </div>
-                
+
                 <div className="relative">
-                  <button 
+                  <button
                     className={`nav-link flex items-center ${activeMenu === 'solutions' ? 'active' : ''}`}
                     onMouseEnter={() => handleMenuToggle('solutions')}
                   >
@@ -115,9 +115,9 @@ export const Header: React.FC = () => {
                   </button>
                   {activeMenu === 'solutions' && <Dropdown type="solutions" onClose={() => setActiveMenu(null)} />}
                 </div>
-                
+
                 <div className="relative">
-                  <button 
+                  <button
                     className={`nav-link flex items-center ${activeMenu === 'resources' ? 'active' : ''}`}
                     onMouseEnter={() => handleMenuToggle('resources')}
                   >
@@ -126,9 +126,9 @@ export const Header: React.FC = () => {
                   </button>
                   {activeMenu === 'resources' && <Dropdown type="resources" onClose={() => setActiveMenu(null)} />}
                 </div>
-                
+
                 <div className="relative">
-                  <button 
+                  <button
                     className={`nav-link flex items-center ${activeMenu === 'company' ? 'active' : ''}`}
                     onMouseEnter={() => handleMenuToggle('company')}
                   >
@@ -137,15 +137,15 @@ export const Header: React.FC = () => {
                   </button>
                   {activeMenu === 'company' && <Dropdown type="company" onClose={() => setActiveMenu(null)} />}
                 </div>
-                
+
                 <Link to="/partners" className="nav-link">
                   Partners
                 </Link>
               </nav>
             </div>
-            
+
             <div className="hidden lg:flex items-center space-x-4">
-              <a 
+              <a
                 href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                 target="_blank"
                 rel="noopener"
@@ -153,23 +153,23 @@ export const Header: React.FC = () => {
               >
                 Login
               </a>
-              <a 
-                href="/contact_us"
+              <a
+                href="/contact-us"
                 className="button-primary"
               >
                 Contact Us
               </a>
             </div>
-            
-            <button 
-              className="lg:hidden focus:outline-none" 
+
+            <button
+              className="lg:hidden focus:outline-none"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
         </div>
-        
+
         {/* Mobile Menu */}
         {mobileMenuOpen && (
           <div className="lg:hidden fixed inset-0 z-50 bg-black bg-opacity-50">
@@ -181,11 +181,11 @@ export const Header: React.FC = () => {
                     <X size={24} />
                   </button>
                 </div>
-                
+
                 <nav className="space-y-6 mt-6">
                   {/* Products Section */}
                   <div>
-                    <button 
+                    <button
                       onClick={() => toggleMobileSubmenu('products')}
                       className="flex items-center justify-between w-full text-left text-gray-900 font-medium"
                     >
@@ -197,22 +197,22 @@ export const Header: React.FC = () => {
                         <div>
                           <h4 className="text-sm font-medium text-[#0EB623] mb-2">Content Delivery</h4>
                           <div className="space-y-3">
-                            <Link 
-                              to="/dynamic-acceleration" 
+                            <Link
+                              to="/dynamic-acceleration"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               Dynamic Acceleration
                             </Link>
-                            <Link 
-                              to="/static-acceleration" 
+                            <Link
+                              to="/static-acceleration"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               Static Acceleration
                             </Link>
-                            <Link 
-                              to="/live_streaming" 
+                            <Link
+                              to="/live-streaming"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
@@ -223,22 +223,22 @@ export const Header: React.FC = () => {
                         <div>
                           <h4 className="text-sm font-medium text-[#0EB623] mb-2">Security</h4>
                           <div className="space-y-3">
-                            <Link 
-                              to="/security_cdn" 
+                            <Link
+                              to="/security-cdn"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               Security CDN
                             </Link>
-                            <Link 
-                              to="/anti_ddos" 
+                            <Link
+                              to="/anti-ddos"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               Anti-DDoS
                             </Link>
-                            <Link 
-                             to="/dns_security_service" 
+                            <Link
+                             to="/dns-security-service"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
@@ -249,15 +249,15 @@ export const Header: React.FC = () => {
                         <div>
                           <h4 className="text-sm font-medium text-[#0EB623] mb-2">Computing & Network</h4>
                           <div className="space-y-3">
-                            <Link 
-                              to="/ecs" 
+                            <Link
+                              to="/ecs"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               Edge Cloud Server
                             </Link>
-                            <Link 
-                              to="/bare_metal_server" 
+                            <Link
+                              to="/bare-metal-server"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
@@ -268,8 +268,8 @@ export const Header: React.FC = () => {
                         <div>
                           <h4 className="text-sm font-medium text-[#0EB623] mb-2">AI-Powered Solutions</h4>
                           <div className="space-y-3">
-                            <Link 
-                              to="/ai-solutions" 
+                            <Link
+                              to="/ai-solutions"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
@@ -282,7 +282,7 @@ export const Header: React.FC = () => {
                   </div>
                   {/* Solutions Section */}
                   <div>
-                    <button 
+                    <button
                       onClick={() => toggleMobileSubmenu('solutions')}
                       className="flex items-center justify-between w-full text-left text-gray-900 font-medium"
                     >
@@ -294,44 +294,44 @@ export const Header: React.FC = () => {
                         <div>
                           <h4 className="text-sm font-medium text-[#0EB623] mb-2">By Industry</h4>
                           <div className="space-y-3">
-                            <Link 
-                              to="/e_commerce" 
+                            <Link
+                              to="/e-commerce"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               E-Commerce
                             </Link>
-                            <Link 
-                              to="/e_learning" 
+                            <Link
+                              to="/e-learning"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               E-Learning
                             </Link>
-                            <Link 
-                              to="/telcos-isp-iigs" 
+                            <Link
+                              to="/telcos-isp-iigs"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               Telecommunication
                             </Link>
-                            <Link 
-                              to="/gaming" 
+                            <Link
+                              to="/gaming"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               Gaming
                             </Link>
-                            <Link 
-                            to="/sports_broadcasting"
+                            <Link
+                            to="/sports-broadcasting"
                             className="block text-gray-600 hover:text-[#0EB623]"
                             onClick={() => setMobileMenuOpen(false)}
                             >
                               Sports Broadcasting
                             </Link>
-                            
-                            <Link 
-                              to="/media_and_entertainment" 
+
+                            <Link
+                              to="/solutions/media-entertainment"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
@@ -342,29 +342,29 @@ export const Header: React.FC = () => {
                         <div>
                           <h4 className="text-sm font-medium text-[#0EB623] mb-2">By Need</h4>
                           <div className="space-y-3">
-                            <Link 
-                              to="/global_cdn" 
+                            <Link
+                              to="/global-cdn"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               Global CDN
                             </Link>
-                            <Link 
-                              to="/mea_cdn" 
+                            <Link
+                              to="/mea-cdn"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               MENA CDN
                             </Link>
-                            <Link 
-                              to="/china_cdn" 
+                            <Link
+                              to="/china-cdn"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               China CDN
                             </Link>
-                            <Link 
-                              to="/southeast_asia_cdn" 
+                            <Link
+                              to="/southeast-asia-cdn"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
@@ -375,10 +375,10 @@ export const Header: React.FC = () => {
                       </div>
                     )}
                   </div>
-                  
+
                   {/* Resources Section */}
                   <div>
-                    <button 
+                    <button
                       onClick={() => toggleMobileSubmenu('resources')}
                       className="flex items-center justify-between w-full text-left text-gray-900 font-medium"
                     >
@@ -390,16 +390,16 @@ export const Header: React.FC = () => {
                         <div>
                           <h4 className="text-sm font-medium text-[#0EB623] mb-2">Documentation</h4>
                           <div className="space-y-3">
-                            <a 
-                              href="https://home.console.edgenext.com/#/doc/dashboard" 
+                            <a
+                              href="https://home.console.edgenext.com/#/doc/dashboard"
                               target="_blank"
                               rel="noopener"
                               className="block text-gray-600 hover:text-[#0EB623]"
                             >
                               Document Center
                             </a>
-                            <Link 
-                              to="/icp-license" 
+                            <Link
+                              to="/icp-license"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
@@ -410,22 +410,22 @@ export const Header: React.FC = () => {
                         <div>
                           <h4 className="text-sm font-medium text-[#0EB623] mb-2">Resources</h4>
                           <div className="space-y-3">
-                            <Link 
-                              to="/blog" 
+                            <Link
+                              to="/blog"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               Blog
                             </Link>
-                            <Link 
-                              to="/case_study" 
+                            <Link
+                              to="/case-study"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               Case Studies
                             </Link>
-                            <Link 
-                              to="/newsroom" 
+                            <Link
+                              to="/newsroom"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
@@ -436,10 +436,10 @@ export const Header: React.FC = () => {
                       </div>
                     )}
                   </div>
-                  
+
                   {/* Company Section */}
                   <div>
-                    <button 
+                    <button
                       onClick={() => toggleMobileSubmenu('company')}
                       className="flex items-center justify-between w-full text-left text-gray-900 font-medium"
                     >
@@ -451,22 +451,22 @@ export const Header: React.FC = () => {
                         <div>
                           <h4 className="text-sm font-medium text-[#0EB623] mb-2">About Us</h4>
                           <div className="space-y-3">
-                            <Link 
-                              to="/about-us" 
+                            <Link
+                              to="/about-us"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               Company
                             </Link>
-                            <Link 
-                             to="/contact_us" 
+                            <Link
+                             to="/contact-us"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               Contact Us
                             </Link>
-                            <Link 
-                              to="/network" 
+                            <Link
+                              to="/network"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
@@ -477,22 +477,22 @@ export const Header: React.FC = () => {
                         <div>
                           <h4 className="text-sm font-medium text-[#0EB623] mb-2">Trust</h4>
                           <div className="space-y-3">
-                            <Link 
-                              to="/legal" 
+                            <Link
+                              to="/legal"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               Legal
                             </Link>
-                            <Link 
-                              to="/partners" 
+                            <Link
+                              to="/partners"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               Partners
                             </Link>
-                            <Link 
-                              to="/career" 
+                            <Link
+                              to="/career"
                               className="block text-gray-600 hover:text-[#0EB623]"
                               onClick={() => setMobileMenuOpen(false)}
                             >
@@ -506,7 +506,7 @@ export const Header: React.FC = () => {
 
                   {/* Partners Section */}
                   <div>
-                    <button 
+                    <button
                       onClick={() => toggleMobileSubmenu('partners')}
                       className="flex items-center justify-between w-full text-left text-gray-900 font-medium"
                     >
@@ -517,9 +517,9 @@ export const Header: React.FC = () => {
                   </div>
                 </nav>
               </div>
-            
+
               <div className="pt-6 border-t border-gray-200 px-6">
-                <a 
+                <a
                   href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                   target="_blank"
                   rel="noopener"
@@ -527,8 +527,8 @@ export const Header: React.FC = () => {
                 >
                   Login
                 </a>
-                <a 
-                  href="/contact_us"
+                <a
+                  href="/contact-us"
                   className="w-full px-8 py-3 button-primary block text-center"
                 >
                   Contact Us

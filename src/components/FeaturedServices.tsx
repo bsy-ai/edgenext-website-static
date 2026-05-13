@@ -19,15 +19,15 @@ const UseCaseCard: React.FC<UseCaseCardProps> = ({ title, description, icon, lin
       <h3 className="text-xl font-medium mb-4 group-hover:text-[#0EB623] transition-colors duration-300">{title}</h3>
       <p className="text-gray-600 mb-6 h-24">{description}</p>
       {link ? (
-        <RouterLink 
-          to={link} 
+        <RouterLink
+          to={link}
           className="text-[#0EB623] inline-flex items-center group-hover:gap-2 transition-all duration-300"
         >
           Learn More <ArrowRight className="ml-1 group-hover:translate-x-1 transition-transform duration-200" size={16} />
         </RouterLink>
       ) : (
-        <a 
-          href="#" 
+        <a
+          href="#"
           className="text-[#0EB623] inline-flex items-center group-hover:gap-2 transition-all duration-300"
         >
           {isCustom ? 'Contact Us' : 'Learn More'} <ArrowRight className="ml-1 group-hover:translate-x-1 transition-transform duration-200" size={16} />
@@ -52,48 +52,48 @@ export const FeaturedServices: React.FC = () => {
             Tailored infrastructure for real-world use cases across every industry
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <UseCaseCard 
-            title="Gaming" 
+          <UseCaseCard
+            title="Gaming"
             description="Ultra-low latency infrastructure for seamless gameplay, fast downloads, and reliable multiplayer experiences."
             icon={<Gamepad2 className="text-[#0EB623]" size={32} />}
             link="/gaming"
           />
-          
-          <UseCaseCard 
-            title="E-Commerce" 
+
+          <UseCaseCard
+            title="E-Commerce"
             description="Accelerate product pages, secure transactions, and deliver seamless shopping experiences worldwide."
             icon={<ShoppingCart className="text-[#0EB623]" size={32} />}
-            link="/e_commerce"
+            link="/e-commerce"
           />
-          
-          <UseCaseCard 
-            title="E-Learning" 
+
+          <UseCaseCard
+            title="E-Learning"
             description="Enable seamless video streaming, interactive content delivery, and global classroom experiences."
             icon={<GraduationCap className="text-[#0EB623]" size={32} />}
-            link="/e_learning"
+            link="/e-learning"
           />
-          
-          <UseCaseCard 
-            title="Telecommunications" 
+
+          <UseCaseCard
+            title="Telecommunications"
             description="Enhance network performance with carrier-grade solutions designed for telecom providers."
             icon={<Radio className="text-[#0EB623]" size={32} />}
             link="/telcos-isp-iigs"
           />
-          
-          <UseCaseCard 
-            title="Media & Entertainment" 
+
+          <UseCaseCard
+            title="Media & Entertainment"
             description="Deliver high-quality streaming content, live events, and digital assets to global audiences."
             icon={<Play className="text-[#0EB623]" size={32} />}
-            link="/media_and_entertainment"
+            link="/solutions/media-entertainment"
           />
-          
-          <UseCaseCard 
-            title="Custom Solutions" 
+
+          <UseCaseCard
+            title="Custom Solutions"
             description="Need something specific? Our team can build tailored solutions for your unique business requirements."
             icon={<Building2 className="text-[#0EB623]" size={32} />}
-            link="/contact_us"
+            link="/contact-us"
           />
         </div>
       </div>

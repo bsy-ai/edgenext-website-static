@@ -17,7 +17,7 @@ const Partners: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_100%,rgba(14,182,35,0.05),transparent_50%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-[40px] md:text-[56px] font-bold mb-6 leading-[1.1] tracking-tight">
@@ -27,8 +27,8 @@ const Partners: React.FC = () => {
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-light leading-relaxed">
                 Partner with EdgeNext to accelerate innovation, expand market reach, and build future-ready solutions—together, with trust and support at every step.
               </p>
-              <a 
-                href="#partner-form" 
+              <a
+                href="#partner-form"
                 className="inline-flex items-center px-8 py-4 bg-[#0EB623] text-white rounded-xl font-medium hover:bg-[#0EA620] transition-all duration-300"
               >
                 Become a Partner
@@ -53,7 +53,7 @@ const Partners: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Maximize Revenue, Minimize Cost */}
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-                <img 
+                <img
                   src="/telco1.png"
                   alt="Maximize Revenue"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -66,7 +66,7 @@ const Partners: React.FC = () => {
 
               {/* Drive Global Growth */}
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-                <img 
+                <img
                   src="/telco2.png"
                   alt="Drive Global Growth"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -79,7 +79,7 @@ const Partners: React.FC = () => {
 
               {/* Tiered Discounting */}
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-                <img 
+                <img
                   src="/discount.jpg"
                   alt="Tiered Discounting"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -92,7 +92,7 @@ const Partners: React.FC = () => {
 
               {/* Seamless Integration, Ongoing Support */}
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100">
-                <img 
+                <img
                   src="/support.jpg"
                   alt="Seamless Integration"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -335,14 +335,14 @@ const Partners: React.FC = () => {
 
               <div className="relative">
                 <div className="rounded-2xl overflow-hidden">
-                  <img 
+                  <img
                     src="/telco1.png"
                     alt="VR Technology"
                     className="w-full h-[400px] object-cover rounded-2xl"
                   />
                 </div>
                 <div className="absolute -bottom-12 -left-12 w-[250px] h-[200px] rounded-2xl overflow-hidden hidden md:block">
-                  <img 
+                  <img
                     src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg"
                     alt="Team Collaboration"
                     className="w-full h-full object-cover"
@@ -357,7 +357,7 @@ const Partners: React.FC = () => {
         <section id="partner-form" className="py-24 bg-[#0EB623]">
   <div className="container mx-auto px-4 relative">
     <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
-      
+
       <h2 className="text-4xl font-medium text-white mb-6">
                 Ready to grow—together?
               </h2>
@@ -366,7 +366,7 @@ const Partners: React.FC = () => {
               </p>
 
               <a
-                href="/contact_us"
+                href="/contact-us"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
               >
                 Become a Partner

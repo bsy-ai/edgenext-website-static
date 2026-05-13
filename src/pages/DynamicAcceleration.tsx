@@ -46,7 +46,7 @@ const DynamicAcceleration: React.FC = () => {
           <div className="absolute inset-0" style={{
             background: 'linear-gradient(135deg, #E8F5E8 0%, #F0E8FF 50%, #E8F0FF 100%)'
           }}></div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-[40px] md:text-[60px] font-bold mb-6 leading-[1.1]">
@@ -56,8 +56,8 @@ const DynamicAcceleration: React.FC = () => {
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-5xl mx-auto font-light">
                 EdgeNext Dynamic Acceleration is purpose-built to optimize API performance, real-time communications, and dynamic content delivery. From financial transactions to game logic and SaaS APIs, ensure your dynamic workloads are fast, reliable, and globally consistent.
               </p>
-              <a 
-                href="/contact_us"
+              <a
+                href="/contact-us"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 inline-flex items-center group"
@@ -125,7 +125,7 @@ const DynamicAcceleration: React.FC = () => {
               </div>
 
               <div className="relative">
-                <img 
+                <img
                   src="/dynamic-acceleration.png"
                   alt="Team collaboration"
                   className="rounded-xl shadow-lg w-full h-[400px] object-cover"
@@ -135,13 +135,13 @@ const DynamicAcceleration: React.FC = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-16">
               <div className="order-2 lg:order-1">
-                <img 
+                <img
                   src="/dynamic-acceleration-2.png"
                   alt="Performance optimization"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
                 />
               </div>
-              
+
               <div className="order-1 lg:order-2 space-y-8">
                 <div className="group">
                   <div className="flex items-start gap-4 mb-6">
@@ -196,8 +196,8 @@ const DynamicAcceleration: React.FC = () => {
                         key={key}
                         onClick={() => setActiveTab(key)}
                         className={`w-full text-left p-4 rounded-xl transition-all duration-300 ${
-                          activeTab === key 
-                            ? 'bg-[#0EB623] text-white' 
+                          activeTab === key
+                            ? 'bg-[#0EB623] text-white'
                             : 'hover:bg-gray-50 text-gray-700'
                         }`}
                       >
@@ -218,7 +218,7 @@ const DynamicAcceleration: React.FC = () => {
                   <div className="bg-gray-50 rounded-xl p-8">
                     <h3 className="text-2xl font-medium mb-4">{useCases[activeTab].title}</h3>
                     <p className="text-gray-600 mb-6">{useCases[activeTab].description}</p>
-                    
+
                     <div className="mb-4">
                       <h4 className="font-medium mb-4">Our Solution</h4>
                       <div className="space-y-3">
@@ -228,7 +228,7 @@ const DynamicAcceleration: React.FC = () => {
                               <Check className="text-[#0EB623]" size={16} />
                             </div>
                             <span className="text-gray-700">
-                              {solution === 'Traffic control protects backends from overload' 
+                              {solution === 'Traffic control protects backends from overload'
                                 ? 'Advanced traffic control protects backend systems from spikes and overload, ensuring service stability'
                                : solution === 'Edge access reduces round-trip delays'
                                  ? 'Edge access reduces round-trip latency, enabling faster and more responsive user experiences'
@@ -311,7 +311,7 @@ const DynamicAcceleration: React.FC = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
-                <img 
+                <img
                   src="/GlobalDeliverySolutionforTopPhotoBeautyAppinChina.jpg"
                   alt="Dynamic Acceleration Solution"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -364,8 +364,8 @@ const DynamicAcceleration: React.FC = () => {
                 Accelerate your APIs, scale your interactions, and never compromise
                 on performance—even when traffic surges.
               </p>
-              <a 
-                href="/contact_us"
+              <a
+                href="/contact-us"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
@@ -379,7 +379,7 @@ const DynamicAcceleration: React.FC = () => {
 
       </main>
       <Footer />
-    </div> 
+    </div>
   );
 };
 

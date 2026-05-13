@@ -12,7 +12,7 @@ import '../styles/blog-content.css';
 const BlogDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
-  
+
   if (!slug) {
     return (
       <PageTransition>
@@ -22,7 +22,7 @@ const BlogDetail: React.FC = () => {
   }
 
   const blogPost = getPostBySlug(slug);
-  
+
   if (!blogPost) {
     return (
       <PageTransition>
@@ -50,7 +50,7 @@ const BlogDetail: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(14,182,35,0.1),transparent_70%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto">
               {/* 返回按钮 */}
@@ -61,7 +61,7 @@ const BlogDetail: React.FC = () => {
                 <ArrowLeft className="group-hover:-translate-x-1 transition-transform duration-300" size={20} />
                 Back to Blog
               </button>
-              
+
               <div className="text-[#0EB623] text-sm font-medium mb-4">{blogPost.date} • by {blogPost.author}</div>
               <h1 className="text-[32px] md:text-[48px] font-medium mb-6 leading-[1.2]">
                 {blogPost.title}
@@ -85,14 +85,14 @@ const BlogDetail: React.FC = () => {
                   </span>
                 </div>
               )}
-              
+
               <article className="prose prose-lg max-w-none prose-p:mb-6 prose-headings:mt-8 prose-headings:mb-4 prose-a:text-[#0EB623] prose-a:no-underline hover:prose-a:underline prose-img:rounded-lg prose-img:shadow-md">
-                <div 
-                  dangerouslySetInnerHTML={{ __html: blogPost.content }} 
+                <div
+                  dangerouslySetInnerHTML={{ __html: blogPost.content }}
                   className="blog-content"
                 />
               </article>
-              
+
 
             </div>
           </div>
@@ -111,11 +111,11 @@ const BlogDetail: React.FC = () => {
                         <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
                           <time dateTime={post.date}>{post.date}</time>
                         </div>
-                        
+
                         <h3 className="text-lg font-medium mb-3 text-gray-900 group-hover:text-[#0EB623] transition-colors duration-300">
                           {post.title}
                         </h3>
-                        
+
                         <div className="flex items-center text-[#0EB623] font-medium text-sm group-hover:gap-2 transition-all duration-300">
                           Read more
                           <ArrowRight className="ml-1 group-hover:translate-x-1 transition-transform duration-300" size={16} />
@@ -140,8 +140,8 @@ const BlogDetail: React.FC = () => {
                     Explore EdgeNext's security solutions and protect your business from cyber threats.
                   </p>
                 </div>
-                <a 
-                  href="/contact_us" 
+                <a
+                  href="/contact-us"
                   className="px-8 py-4 bg-white text-[#0EB623] rounded-xl hover:bg-opacity-90 transition-colors font-medium whitespace-nowrap"
                 >
                   Contact Us

@@ -78,7 +78,7 @@ const Company: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_100%,rgba(14,182,35,0.05),transparent_50%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-5xl mx-auto text-center">
               <h1 className="text-[40px] md:text-[60px] font-bold mb-6 leading-[1.1]">
@@ -104,7 +104,7 @@ const Company: React.FC = () => {
                 </div>
                 <div className="text-lg text-gray-600">Global Points of Presence</div>
               </div>
-              
+
               <div className="text-center">
                 <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4" translate="no">
                   {hasScrolled && <CountUp end={760} suffix="B+" duration={2} />}
@@ -112,7 +112,7 @@ const Company: React.FC = () => {
                 </div>
                 <div className="text-lg text-gray-600">Requests Processed Daily</div>
               </div>
-              
+
               <div className="text-center">
                 <div className="text-4xl md:text-5xl font-bold text-[#0EB623] mb-4" translate="no">
                   {hasScrolled && <CountUp end={90} suffix="+" duration={2} />}
@@ -146,13 +146,13 @@ const Company: React.FC = () => {
                 </h2>
               </div>
               <div className="relative">
-                <a 
+                <a
                   href="https://youtu.be/7ZRnN6Nz8SA?si=z_L5HN35uBnIgs4j"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="aspect-video bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 rounded-2xl overflow-hidden relative group cursor-pointer block"
                 >
-                  <img 
+                  <img
                     src="/edgenext.webp"
                     alt="Company Video"
                     className="w-full h-full object-cover"
@@ -219,8 +219,8 @@ const Company: React.FC = () => {
                   EdgeNext helps telcos expand their reach with scalable infrastructure and localized edge solutions built for tomorrow's demands.
                 </p>
               </div>
-              <a 
-                href="/contact_us" 
+              <a
+                href="/contact-us"
                 className="px-8 py-4 bg-[#0EB623] text-white rounded-xl hover:bg-[#0EA620] transition-colors font-medium whitespace-nowrap"
               >
                 Contact Us
@@ -236,7 +236,7 @@ const Company: React.FC = () => {
               <div className="text-center mb-16">
                 <h2 className="text-4xl font-medium mb-4">Frequently Asked Questions</h2>
               </div>
-              
+
               <div className="space-y-4">
                 {faqs.map((faq, index) => (
                   <div
@@ -277,7 +277,7 @@ const Company: React.FC = () => {
                 EdgeNext is built to scale with your business—especially in complex regions like China, Southeast Asia, and MENA. Let's create something extraordinary together.
               </p>
               <a
-                href="/contact_us"
+                href="/contact-us"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
               >
                 Get in Touch

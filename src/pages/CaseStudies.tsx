@@ -32,10 +32,10 @@ const CaseStudies: React.FC = () => {
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { 
-      year: 'numeric', 
-      month: 'long', 
-      day: 'numeric' 
+    return date.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
     });
   };
 
@@ -47,7 +47,7 @@ const CaseStudies: React.FC = () => {
   const renderPaginationNumbers = () => {
     const pages = [];
     const maxVisiblePages = 5;
-    
+
     if (totalPages <= maxVisiblePages) {
       for (let i = 1; i <= totalPages; i++) {
         pages.push(i);
@@ -76,7 +76,7 @@ const CaseStudies: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(14,182,35,0.1),transparent_70%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-[40px] md:text-[56px] font-medium mb-6 leading-[1.1] tracking-tight text-gray-900">
@@ -85,7 +85,7 @@ const CaseStudies: React.FC = () => {
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-light leading-relaxed">
                 Discover how leading companies achieve exceptional results with EdgeNext solutions.
               </p>
-              
+
               {/* Search and Filter */}
               <div className="flex flex-col md:flex-row gap-4 justify-center items-center max-w-2xl mx-auto">
                 <div className="relative flex-1 w-full">
@@ -123,13 +123,13 @@ const CaseStudies: React.FC = () => {
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                 {currentItems.map((item, index) => (
-                  <article 
+                  <article
                     key={index}
                     className="group bg-white rounded-2xl overflow-hidden hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100"
                   >
                     <Link to={`/case-study/${item.slug}`} className="block">
                       <div className="aspect-video bg-gradient-to-br from-[#0EB623]/10 to-[#0EB623]/5 relative overflow-hidden">
-                        <img 
+                        <img
                           src={item.slug === "beijing-2022-winter-olympic-games-cdn-streaming-solution" ? "/Beijing2022WinterOlympicGamesCDNStreamingSolution.png" : item.slug === "dynamic-acceleration-solution-for-top-e-commerce-in-china" ? "/Dynamic Acceleration case study.png" : item.slug === "global-delivery-solution-for-top-photo-beauty-app-in-china" ? "/GlobalDeliverySolutionforTopPhotoBeautyAppinChina.jpg" : item.slug === "media-on-demand-solution-for-top-global-short-video-platform" ? "/MediaonDemandSolutionforTopGlobalShortVideoPlatform.jpg" : item.slug === "cdn-gaming-solution-for-us-top-gaming-company" ? "/CDNGamingSolutionforUSTopGamingCompany.jpg" : item.slug === "global-delivery-top-ecommerce-in-sea" ? "/GlobalDeliveryTopEcommerceinSEA.jpg" : item.slug === "cctv-cdn-streaming-solution" ? "/CCTVCDN StreamingSolution.png" : item.slug === "giant-network-cdn-gaming-solution" ? "/GiantNetworkCDNGamingSolution.jpg" : (item.imageUrl || "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg")}
                           alt={item.title}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -137,20 +137,20 @@ const CaseStudies: React.FC = () => {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
-                      
+
                       <div className="p-6">
                         <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
                           <time dateTime={item.date}>{formatDate(item.date)}</time>
                         </div>
-                        
+
                         <h3 className="text-lg font-medium mb-3 text-gray-900 group-hover:text-[#0EB623] transition-colors duration-300 line-clamp-2">
                           {item.title}
                         </h3>
-                        
+
                         <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-4">
                           {item.overview.substring(0, 150)}...
                         </p>
-                        
+
                         <div className="flex items-center text-[#0EB623] font-medium text-sm group-hover:gap-2 transition-all duration-300">
                           Read more
                           <ArrowRight className="ml-1 group-hover:translate-x-1 transition-transform duration-300" size={16} />
@@ -222,8 +222,8 @@ const CaseStudies: React.FC = () => {
                   Join thousands of companies already growing with EdgeNext.
                 </p>
               </div>
-              <a 
-                href="/contact_us" 
+              <a
+                href="/contact-us"
                 className="px-8 py-4 bg-white text-[#0EB623] rounded-xl hover:bg-opacity-90 transition-colors font-medium whitespace-nowrap"
               >
                 Contact Us

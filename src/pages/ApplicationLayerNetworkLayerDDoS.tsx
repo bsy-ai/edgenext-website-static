@@ -35,7 +35,7 @@ const ApplicationLayerNetworkLayerDDoS: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(14,182,35,0.1),transparent_70%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto">
               <div className="text-[#0EB623] text-sm font-medium mb-4">November 19, 2024 • by Kaiyue</div>
@@ -60,7 +60,7 @@ const ApplicationLayerNetworkLayerDDoS: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">What Is a Network-Layer DDoS Attack?</h2>
-                
+
                 <p className="mb-6">
                   A network-layer DDoS attack focuses on overwhelming the bandwidth or capacity of the network infrastructure, often resulting in widespread disruption. These attacks operate at Layers 3 and 4 of the OSI model, targeting network devices, protocols, or the network's overall bandwidth. By flooding the network with massive volumes of traffic, such as ICMP or UDP packets, attackers aim to exhaust resources and make the network inaccessible.
                 </p>
@@ -70,7 +70,7 @@ const ApplicationLayerNetworkLayerDDoS: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">How Do the Targets of Application-Layer and Network-Layer DDoS Attacks Differ?</h2>
-                
+
                 <p className="mb-6">
                   The primary difference between the targets of application-layer and network-layer DDoS attacks lies in their focus. Application-layer attacks target specific services, such as a website's login page, API endpoints, or a payment gateway. These attacks render these specific functionalities unusable, disrupting end-user access without affecting the entire network. This precision targeting makes them especially harmful for businesses reliant on web applications or APIs for customer interactions.
                 </p>
@@ -80,7 +80,7 @@ const ApplicationLayerNetworkLayerDDoS: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">Which Type of DDoS Attack Is More Difficult to Detect and Why?</h2>
-                
+
                 <p className="mb-6">
                   Application-layer DDoS attacks are generally more difficult to detect because they mimic normal user behavior, often at low volumes. For example, an attacker may send small bursts of HTTP requests to a website's API endpoint, making the traffic look legitimate. Traditional monitoring systems that detect high traffic volumes may fail to identify these attacks, allowing them to persist undetected for extended periods. The subtlety of these attacks makes them a significant threat, as they can drain resources without triggering alerts.
                 </p>
@@ -90,7 +90,7 @@ const ApplicationLayerNetworkLayerDDoS: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">What Are the Tactics Used in Application-Layer vs. Network-Layer DDoS Attacks?</h2>
-                
+
                 <p className="mb-6">
                   Application-layer DDoS attacks rely on tactics that exploit the resource-intensive nature of application processes. For instance, attackers may use "low-and-slow" methods, such as sending partial HTTP requests to tie up server resources without completing a connection. This technique forces the server to wait for data that never arrives, ultimately depleting its capacity to handle legitimate requests. Other tactics include flooding APIs or targeting dynamic content that requires significant processing, making it harder for servers to differentiate between legitimate and malicious traffic.
                 </p>
@@ -100,7 +100,7 @@ const ApplicationLayerNetworkLayerDDoS: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">How Does Mitigation Differ Between Application-Layer and Network-Layer DDoS Attacks?</h2>
-                
+
                 <p className="mb-6">
                   Mitigation strategies for application-layer DDoS attacks often focus on detecting and blocking malicious traffic while maintaining service availability for legitimate users. Web Application Firewalls (WAFs) are a vital tool, as they analyze incoming requests for suspicious patterns, such as repeated access to specific endpoints or unusual request headers. Rate limiting is another effective tactic that restricts the requests a single client can send within a given timeframe. By filtering out low-and-slow or API flood attacks, these solutions help preserve application resources.
                 </p>
@@ -110,7 +110,7 @@ const ApplicationLayerNetworkLayerDDoS: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">What Are the Tools and Technologies Used to Defend Against These Attacks?</h2>
-                
+
                 <p className="mb-6">
                   Defending against application-layer DDoS attacks requires specialized tools such as WAFs, intrusion detection systems (IDS), and behavioral analytics platforms. WAFs can identify and block malicious requests by analyzing application-layer data, while IDS tools monitor for anomalous behavior that may indicate an ongoing attack. Behavioral analytics platforms use machine learning to recognize deviations from normal user activity, enabling proactive responses to subtle threats like low-and-slow attacks.
                 </p>
@@ -120,7 +120,7 @@ const ApplicationLayerNetworkLayerDDoS: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">What Are the Long-term Impacts of Application-Layer vs. Network-Layer DDoS Attacks on Businesses?</h2>
-                
+
                 <p className="mb-6">
                   Application-layer DDoS attacks can have significant long-term impacts on businesses by damaging customer trust and draining operational resources. These attacks often disrupt specific services, such as payment systems or APIs, leading to a poor user experience and potential revenue loss. Additionally, the subtle nature of these attacks can result in prolonged disruptions that are costly to diagnose and mitigate. Repeated attacks may also force businesses to invest heavily in enhanced application-layer defenses, increasing operational costs.
                 </p>
@@ -130,7 +130,7 @@ const ApplicationLayerNetworkLayerDDoS: React.FC = () => {
                 </p>
 
                 <h2 className="text-2xl font-medium mt-10 mb-6">Conclusion: Why Understanding These Differences Is Essential for Effective DDoS Defense</h2>
-                
+
                 <p className="mb-6">
                   Understanding the critical differences between application-layer and network-layer DDoS attacks is essential for implementing effective defense strategies. Application-layer attacks target specific services with low-volume, resource-intensive methods, requiring tools like WAFs and behavioral analytics for detection and mitigation. On the other hand, network-layer attacks aim to overwhelm the broader infrastructure with high-volume traffic, necessitating scalable solutions like CDNs and traffic scrubbing.
                 </p>
@@ -156,11 +156,11 @@ const ApplicationLayerNetworkLayerDDoS: React.FC = () => {
                         <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
                           <time dateTime={post.date}>{post.date}</time>
                         </div>
-                        
+
                         <h3 className="text-lg font-medium mb-3 text-gray-900 group-hover:text-[#0EB623] transition-colors duration-300">
                           {post.title}
                         </h3>
-                        
+
                         <div className="flex items-center text-[#0EB623] font-medium text-sm group-hover:gap-2 transition-all duration-300">
                           Read article
                           <ArrowRight className="ml-1 group-hover:translate-x-1 transition-transform duration-300" size={16} />
@@ -185,8 +185,8 @@ const ApplicationLayerNetworkLayerDDoS: React.FC = () => {
                     Explore EdgeNext's security solutions and protect your business from cyber threats.
                   </p>
                 </div>
-                <a 
-                  href="/anti_ddos" 
+                <a
+                  href="/anti-ddos"
                   className="px-8 py-4 bg-white text-[#0EB623] rounded-xl hover:bg-opacity-90 transition-colors font-medium whitespace-nowrap"
                 >
                   Learn More

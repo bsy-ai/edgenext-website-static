@@ -151,7 +151,7 @@ const ChinaICPLicense: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(14,182,35,0.1),transparent_70%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -164,8 +164,8 @@ const ChinaICPLicense: React.FC = () => {
                 <p className="text-base md:text-lg text-gray-600 mb-8">
                   The Internet Content Provider (ICP) license is a regulatory requirement for hosting websites in China, issued by the Ministry of Industry and Information Technology (MIIT). EdgeNext helps you navigate every step to compliance.
                 </p>
-                <Link 
-                  to="/contact_us" 
+                <Link
+                  to="/contact-us"
                   className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 inline-flex items-center group"
                 >
                   Contact Us
@@ -252,8 +252,8 @@ const ChinaICPLicense: React.FC = () => {
                 <p className="text-lg text-gray-600 mb-8">
                   To effectively tap into this market, your content needs to be hosted in China. This necessitates an Internet Content Provider (ICP) filing or "Bei-An," mandated by China's Ministry of Industry and Information Technology (MIIT).
                 </p>
-                <Link 
-                  to="/contact_us"
+                <Link
+                  to="/contact-us"
                   className="inline-flex items-center px-6 py-3 bg-[#0EB623] text-white rounded-xl hover:bg-[#0EA620] transition-colors duration-300"
                 >
                   Contact Us
@@ -305,32 +305,32 @@ const ChinaICPLicense: React.FC = () => {
                     <button
                       onClick={() => setActiveTab('icp-filing')}
                       className={`w-full flex items-center gap-3 p-4 rounded-xl text-left transition-all duration-300 ${
-                        activeTab === 'icp-filing' 
-                          ? 'bg-[#0EB623]/10 text-[#0EB623]' 
+                        activeTab === 'icp-filing'
+                          ? 'bg-[#0EB623]/10 text-[#0EB623]'
                           : 'hover:bg-gray-100'
                       }`}
                     >
                       <RefreshCw size={20} className={activeTab === 'icp-filing' ? 'text-[#0EB623]' : 'text-gray-500'} />
                       <span className="font-medium">ICP Filing</span>
                     </button>
-                    
+
                     <button
                       onClick={() => setActiveTab('document-requirements')}
                       className={`w-full flex items-center gap-3 p-4 rounded-xl text-left transition-all duration-300 ${
-                        activeTab === 'document-requirements' 
-                          ? 'bg-[#0EB623]/10 text-[#0EB623]' 
+                        activeTab === 'document-requirements'
+                          ? 'bg-[#0EB623]/10 text-[#0EB623]'
                           : 'hover:bg-gray-100'
                       }`}
                     >
                       <FileText size={20} className={activeTab === 'document-requirements' ? 'text-[#0EB623]' : 'text-gray-500'} />
                       <span className="font-medium">Document Requirements</span>
                     </button>
-                    
+
                     <button
                       onClick={() => setActiveTab('application-process')}
                       className={`w-full flex items-center gap-3 p-4 rounded-xl text-left transition-all duration-300 ${
-                        activeTab === 'application-process' 
-                          ? 'bg-[#0EB623]/10 text-[#0EB623]' 
+                        activeTab === 'application-process'
+                          ? 'bg-[#0EB623]/10 text-[#0EB623]'
                           : 'hover:bg-gray-100'
                       }`}
                     >
@@ -353,7 +353,7 @@ const ChinaICPLicense: React.FC = () => {
                     )}
                     <h3 className="text-2xl font-medium">{tabs[activeTab].title}</h3>
                   </div>
-                  
+
                   {tabs[activeTab].content}
                 </div>
               </div>
@@ -371,8 +371,8 @@ const ChinaICPLicense: React.FC = () => {
                   Looking to penetrate mainland China without an ICP license? EdgeNext's RIM Delivery Solution has you covered. Harness our robust server network in Hong Kong and Taiwan for efficient content delivery and high availability in China.
                 </p>
               </div>
-              <Link 
-                to="/contact_us" 
+              <Link
+                to="/contact-us"
                 className="px-8 py-4 bg-[#0EB623] text-white rounded-xl hover:bg-[#0EA620] transition-colors font-medium whitespace-nowrap"
               >
                 Contact Us
@@ -396,22 +396,22 @@ const ChinaICPLicense: React.FC = () => {
               <div className="group bg-white rounded-2xl overflow-hidden hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100">
                 <Link to="/case-study/global-delivery-solution-for-top-photo-beauty-app-in-china" className="block">
                   <div className="aspect-video bg-gradient-to-br from-[#0EB623]/10 to-[#0EB623]/5 relative overflow-hidden">
-                    <img 
+                    <img
                       src="/GlobalDeliverySolutionforTopPhotoBeautyAppinChina.jpg"
                       alt="Global Delivery Solution"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  
+
                   <div className="p-6">
                     <h3 className="text-xl font-medium mb-3 text-gray-900 group-hover:text-[#0EB623] transition-colors duration-300">
                       Global Delivery Solution for Top Photo Beauty App in China
                     </h3>
-                    
+
                     <p className="text-gray-600 mb-6">
                       EdgeNext enabled a leading photo beauty app to launch real-time campaigns and VOD playback across China and overseas...
                     </p>
-                    
+
                     <div className="flex items-center text-[#0EB623] font-medium text-sm group-hover:gap-2 transition-all duration-300">
                       Read Case Study
                       <ArrowRight className="ml-1 group-hover:translate-x-1 transition-transform duration-300" size={16} />
@@ -423,22 +423,22 @@ const ChinaICPLicense: React.FC = () => {
               <div className="group bg-white rounded-2xl overflow-hidden hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100">
                 <Link to="/case-study/dynamic-acceleration-solution-for-top-e-commerce-in-china" className="block">
                   <div className="aspect-video bg-gradient-to-br from-[#0EB623]/10 to-[#0EB623]/5 relative overflow-hidden">
-                    <img 
+                    <img
                       src="/DynamicAccelerationSolutionforTopEcommerceinChina.jpg"
                       alt="Dynamic Acceleration Solution"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                   </div>
-                  
+
                   <div className="p-6">
                     <h3 className="text-xl font-medium mb-3 text-gray-900 group-hover:text-[#0EB623] transition-colors duration-300">
                       Dynamic Acceleration Solution for Top E-commerce in China
                     </h3>
-                    
+
                     <p className="text-gray-600 mb-6">
                       By powering real-time text and image updates, EdgeNext helped a top e-commerce brand boost user experience and stability during major promotional events...
                     </p>
-                    
+
                     <div className="flex items-center text-[#0EB623] font-medium text-sm group-hover:gap-2 transition-all duration-300">
                       Read Case Study
                       <ArrowRight className="ml-1 group-hover:translate-x-1 transition-transform duration-300" size={16} />
@@ -463,7 +463,7 @@ const ChinaICPLicense: React.FC = () => {
       </p>
 
       <Link
-        to="/contact_us"
+        to="/contact-us"
         className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
       >
         Contact Us

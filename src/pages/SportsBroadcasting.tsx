@@ -77,7 +77,7 @@ const SportsBroadcasting: React.FC = () => {
         </p>
 
         <a
-          href="/contact_us"
+          href="/contact-us"
           className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 inline-flex items-center group"
         >
           Contact Us
@@ -449,7 +449,7 @@ const SportsBroadcasting: React.FC = () => {
 
       <div className="flex">
         <a
-          href="/contact_us"
+          href="/contact-us"
           className="px-6 py-3 bg-[#0EB623] text-white rounded-xl hover:bg-[#0EA620] font-medium transition-colors"
         >
           Contact Us
@@ -736,7 +736,7 @@ const SportsBroadcasting: React.FC = () => {
               </p>
 
               <a
-                href="/contact_us"
+                href="/contact-us"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300 group"
               >
                 Get in Touch

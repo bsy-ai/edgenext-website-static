@@ -55,7 +55,7 @@ const ELearning: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_100%,rgba(14,182,35,0.05),transparent_50%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -66,8 +66,8 @@ const ELearning: React.FC = () => {
                 <p className="text-lg md:text-xl text-gray-600 mb-8">
                   At EdgeNext, we believe great learning shouldn't be limited by lag, downtime, or where a student happens to be. That's why we power online classrooms with lightning-fast delivery and built-in protection—so teachers can focus on teaching, and students can focus on learning.
                 </p>
-                <a 
-                  href="/contact_us" 
+                <a
+                  href="/contact-us"
                   className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 inline-flex items-center group"
                 >
                   Contact Us
@@ -88,7 +88,7 @@ const ELearning: React.FC = () => {
         {/* Stats Section */}
         <section className="py-24 bg-gray-900 text-white relative overflow-hidden" id="stats-section">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(14,182,35,0.15),transparent_70%)]"></div>
-          
+
           <div className="container mx-auto px-4 relative">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-medium mb-6">
@@ -223,7 +223,7 @@ const ELearning: React.FC = () => {
                 </ul>
               </div>
               <div>
-                <img 
+                <img
                   src="https://images.pexels.com/photos/4144101/pexels-photo-4144101.jpeg"
                   alt="Real-Time Learning"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -233,7 +233,7 @@ const ELearning: React.FC = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
               <div className="order-2 lg:order-1">
-                <img 
+                <img
                   src="https://images.pexels.com/photos/4144144/pexels-photo-4144144.jpeg"
                   alt="Security Features"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -293,7 +293,7 @@ const ELearning: React.FC = () => {
                 </ul>
               </div>
               <div>
-                <img 
+                <img
                   src="https://images.pexels.com/photos/4144099/pexels-photo-4144099.jpeg"
                   alt="Video Delivery"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -318,7 +318,7 @@ const ELearning: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <img 
+                <img
                   src="https://images.pexels.com/photos/4144147/pexels-photo-4144147.jpeg"
                   alt="1-on-1 Classes"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -330,7 +330,7 @@ const ELearning: React.FC = () => {
               </div>
 
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <img 
+                <img
                   src="https://images.pexels.com/photos/4144176/pexels-photo-4144176.jpeg"
                   alt="Small Group Classes"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -342,7 +342,7 @@ const ELearning: React.FC = () => {
               </div>
 
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <img 
+                <img
                   src="https://images.pexels.com/photos/4144100/pexels-photo-4144100.jpeg"
                   alt="Lectures & Townhall Sessions"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -371,7 +371,7 @@ const ELearning: React.FC = () => {
               </p>
 
               <a
-                href="/contact_us"
+                href="/contact-us"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300 group"
               >
                 Get in Touch

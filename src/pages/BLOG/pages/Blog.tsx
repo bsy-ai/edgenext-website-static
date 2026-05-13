@@ -75,7 +75,7 @@ const Blog: React.FC = () => {
     const savedSortBy = sessionStorage.getItem('blogSortBy');
     const savedCategory = sessionStorage.getItem('blogSelectedCategory');
     const savedPage = sessionStorage.getItem('blogCurrentPage');
-    
+
     if (savedSearchTerm !== null) setSearchTerm(savedSearchTerm);
     if (savedSortBy !== null) setSortBy(savedSortBy);
     if (savedCategory !== null) setSelectedCategory(savedCategory);
@@ -138,17 +138,17 @@ const Blog: React.FC = () => {
 
   const formatDate = (dateString: string) => {
     const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', { 
-      year: 'numeric', 
-      month: 'long', 
-      day: 'numeric' 
+    return date.toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
     });
   };
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    
+
     // 重置所有图片的加载状态，确保分页后图片能正确加载
     setTimeout(() => {
       const images = document.querySelectorAll('img[data-base]');
@@ -168,7 +168,7 @@ const Blog: React.FC = () => {
   const renderPaginationNumbers = () => {
     const pages = [];
     const maxVisiblePages = 5;
-    
+
     if (totalPages <= maxVisiblePages) {
       for (let i = 1; i <= totalPages; i++) {
         pages.push(i);
@@ -197,7 +197,7 @@ const Blog: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(14,182,35,0.1),transparent_70%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-[40px] md:text-[56px] font-medium mb-6 leading-[1.1] tracking-tight text-gray-900">
@@ -206,7 +206,7 @@ const Blog: React.FC = () => {
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-light leading-relaxed">
                 Expert insights, technical deep-dives, and industry analysis from the EdgeNext team.
               </p>
-              
+
               {/* Search and Filter */}
               <div className="flex flex-col lg:flex-row gap-4 justify-center items-center max-w-4xl mx-auto">
                 <div className="relative flex-1 w-full max-w-md">
@@ -220,7 +220,7 @@ const Blog: React.FC = () => {
                     aria-label="Search blog posts"
                   />
                 </div>
-                
+
                 <div className="flex gap-3">
                   <div className="relative">
                     <Filter className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={16} />
@@ -238,7 +238,7 @@ const Blog: React.FC = () => {
                       ))}
                     </select>
                   </div>
-                  
+
                   <select
                     value={sortBy}
                     onChange={(e) => setSortBy(e.target.value)}
@@ -250,7 +250,7 @@ const Blog: React.FC = () => {
                   </select>
                 </div>
               </div>
-              
+
               {/* Results count and active filters */}
               <div className="mt-6 text-center">
                 <p className="text-gray-600">
@@ -292,13 +292,13 @@ const Blog: React.FC = () => {
             ) : (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                 {currentItems.map((item) => (
-                  <article 
+                  <article
                     key={item.slug}
                     className="group bg-white rounded-2xl overflow-hidden hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100"
-                  > 
+                  >
                     <Link to={`/resources/blog/${item.slug}`} className="block">
                       <div className="aspect-video bg-gradient-to-br from-[#0EB623]/10 to-[#0EB623]/5 relative overflow-hidden">
-                        <img 
+                        <img
                           src={item.thumbnail || "/dynamic-acceleration.png"}
                           alt="Blog post thumbnail"
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -349,7 +349,7 @@ const Blog: React.FC = () => {
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
-                      
+
                       <div className="p-6">
                         <div className="flex items-center justify-between mb-3">
                           <div className="flex items-center gap-2 text-sm text-gray-500">
@@ -363,15 +363,15 @@ const Blog: React.FC = () => {
                             </span>
                           )}
                         </div>
-                        
+
                         <h3 className="text-lg font-medium mb-3 text-gray-900 group-hover:text-[#0EB623] transition-colors duration-300 line-clamp-2">
                           {item.title}
                         </h3>
-                        
+
                         <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-4">
                           {item.description}
                         </p>
-                        
+
                         <div className="flex items-center text-[#0EB623] font-medium text-sm group-hover:gap-2 transition-all duration-300">
                           Read article
                           <ArrowRight className="ml-1 group-hover:translate-x-1 transition-transform duration-300" size={16} />
@@ -443,8 +443,8 @@ const Blog: React.FC = () => {
                   Join thousands of companies already growing with EdgeNext.
                 </p>
               </div>
-              <a 
-                href="/contact_us" 
+              <a
+                href="/contact-us"
                 className="px-8 py-4 bg-white text-[#0EB623] rounded-xl hover:bg-opacity-90 transition-colors font-medium whitespace-nowrap"
               >
                 Contact Us

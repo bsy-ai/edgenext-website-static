@@ -274,7 +274,7 @@ const EdgeCloudServer: React.FC = () => {
                   <div className="absolute -inset-1 bg-gradient-to-r from-[#0EB623] to-[#0EA620] blur opacity-30 group-hover:opacity-75 transition-all duration-500 group-hover:blur-md"></div>
                 </a>
                 <a
-                  href="/contact_us"
+                  href="/contact-us"
                   className="glass-card border border-gray-200 text-gray-800 font-medium px-8 py-4 rounded-xl hover:bg-white/80 hover:border-[#0EB623]/20 hover:shadow-glow transition-all duration-300 flex items-center justify-center"
                 >
                   <span>Contact Us</span>
@@ -729,7 +729,7 @@ const EdgeCloudServer: React.FC = () => {
             </div>
             <div className="text-center mt-12">
               <a
-                href="/contact_us"
+                href="/contact-us"
                 className="inline-flex items-center text-[#0EB623] font-medium hover:gap-2 transition-all duration-300"
               >
                 Contact Us for Custom Plans

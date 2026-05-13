@@ -24,7 +24,7 @@ const News: React.FC = () => {
       category: selectedCategory,
       search: searchTerm,
     });
-    
+
     return sortNews(filtered, sortBy);
   }, [allNews, selectedCategory, searchTerm, sortBy]);
 
@@ -65,7 +65,7 @@ const News: React.FC = () => {
     const { totalPages, currentPage: page } = paginationData;
     const pages = [];
     const maxVisiblePages = 5;
-    
+
     if (totalPages <= maxVisiblePages) {
       for (let i = 1; i <= totalPages; i++) {
         pages.push(i);
@@ -94,7 +94,7 @@ const News: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(14,182,35,0.1),transparent_70%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-[40px] md:text-[56px] font-medium mb-6 leading-[1.1] tracking-tight text-gray-900">
@@ -103,7 +103,7 @@ const News: React.FC = () => {
               <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-3xl mx-auto font-light leading-relaxed">
                 The latest updates, partnerships, and product releases from EdgeNext.
               </p>
-              
+
               {/* Search and Filter */}
               <div className="flex flex-col lg:flex-row gap-4 justify-center items-center max-w-4xl mx-auto">
                 <div className="relative flex-1 w-full max-w-lg">
@@ -117,7 +117,7 @@ const News: React.FC = () => {
                     aria-label="Search news articles"
                   />
                 </div>
-                
+
                 <div className="flex gap-2 flex-wrap justify-center">
                   <select
                     value={sortBy}
@@ -130,7 +130,7 @@ const News: React.FC = () => {
                     <option value="title">Title</option>
                     <option value="category">Category</option>
                   </select>
-                  
+
                   <button
                     onClick={() => setShowFilters(!showFilters)}
                     className="flex items-center gap-2 px-4 py-3 rounded-xl border border-gray-200 hover:border-[#0EB623] transition-colors bg-white"
@@ -174,7 +174,7 @@ const News: React.FC = () => {
                       </button>
                     ))}
                   </div>
-                  
+
                   {(searchTerm || selectedCategory !== 'All') && (
                     <div className="mt-4 pt-4 border-t border-gray-200">
                       <button
@@ -230,13 +230,13 @@ const News: React.FC = () => {
               <>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                   {paginationData.items.map((article) => (
-                    <article 
+                    <article
                       key={article.id}
                       className="group bg-white rounded-2xl overflow-hidden hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2 border border-gray-100"
                     >
                       <Link to={`/resources/news/${article.slug}`} className="block">
                         <div className="aspect-video bg-gradient-to-br from-[#0EB623]/10 to-[#0EB623]/5 relative overflow-hidden">
-                          <img 
+                          <img
                             src={article.thumbnail}
                             alt={article.title}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -246,16 +246,16 @@ const News: React.FC = () => {
                             }}
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                          
+
                           {/* Category Badge */}
-                          <div 
+                          <div
                             className="absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-medium text-white flex items-center gap-1"
                             style={{ backgroundColor: getCategoryColor(article.category) }}
                           >
                             <span>{getCategoryIcon(article.category)}</span>
                             {article.category}
                           </div>
-                          
+
                           {/* Featured Badge */}
                           {article.featured && (
                             <div className="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded-full text-xs font-medium">
@@ -263,7 +263,7 @@ const News: React.FC = () => {
                             </div>
                           )}
                         </div>
-                        
+
                         <div className="p-6">
                           <div className="flex items-center gap-2 text-sm text-gray-500 mb-3">
                             <Calendar size={14} />
@@ -275,15 +275,15 @@ const News: React.FC = () => {
                             <span>•</span>
                             <span>{getReadTimeText(article.readTime)}</span>
                           </div>
-                          
+
                           <h3 className="text-lg font-medium mb-3 text-gray-900 group-hover:text-[#0EB623] transition-colors duration-300 line-clamp-2">
                             {article.title}
                           </h3>
-                          
+
                           <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-4">
                             {article.description}
                           </p>
-                          
+
                           {/* Tags */}
                           {article.tags.length > 0 && (
                             <div className="flex flex-wrap gap-1 mb-4">
@@ -301,7 +301,7 @@ const News: React.FC = () => {
                               )}
                             </div>
                           )}
-                          
+
                           <div className="flex items-center text-[#0EB623] font-medium text-sm group-hover:gap-2 transition-all duration-300">
                             Read more
                             <ArrowRight className="ml-1 group-hover:translate-x-1 transition-transform duration-300" size={16} />
@@ -374,8 +374,8 @@ const News: React.FC = () => {
                   Join thousands of companies already growing with EdgeNext.
                 </p>
               </div>
-              <a 
-                href="/contact_us" 
+              <a
+                href="/contact-us"
                 className="px-8 py-4 bg-white text-[#0EB623] rounded-xl hover:bg-opacity-90 transition-colors font-medium whitespace-nowrap"
               >
                 Contact Us

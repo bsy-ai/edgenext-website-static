@@ -39,7 +39,7 @@ const MENACDN: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_100%,rgba(14,182,35,0.05),transparent_50%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -53,8 +53,8 @@ const MENACDN: React.FC = () => {
                 <p className="text-lg text-gray-600 mb-8">
                   EdgeNext delivers ultra-low latency and secure CDN services across the Middle East and North Africa with adaptive edge caching, region-specific routing, and deep ISP interconnectivity—helping you overcome fragmented infrastructure and deliver consistently high performance across the Middle East and North Africa.
                 </p>
-                <a 
-                  href="/contact_us"
+                <a
+                  href="/contact-us"
                   className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 inline-flex items-center group"
                 >
                   Contact Us
@@ -75,7 +75,7 @@ const MENACDN: React.FC = () => {
         {/* Emerging Markets, Expanding Opportunities */}
         <section className="py-24 bg-black text-white relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(14,182,35,0.15),transparent_70%)]"></div>
-          
+
           <div className="container mx-auto px-4 relative">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-medium mb-6">
@@ -120,7 +120,7 @@ const MENACDN: React.FC = () => {
         {/* What's Challenging MENA Content Delivery? */}
         <section className="py-24 bg-white relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(14,182,35,0.03)_0%,transparent_70%)]"></div>
-          
+
           <div className="container mx-auto px-4 relative">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
@@ -179,7 +179,7 @@ const MENACDN: React.FC = () => {
         {/* Taking Your Goals to New Heights in MENA */}
         <section className="py-24 bg-gray-50 relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(14,182,35,0.08),transparent_70%)]"></div>
-          
+
           <div className="container mx-auto px-4 relative">
             <div className="text-center mb-16">
               <h2 className="text-4xl md:text-5xl font-medium mb-6">
@@ -192,7 +192,7 @@ const MENACDN: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <img 
+                <img
                   src="/mena-cdn.png"
                   alt="MENA Delivery Optimization"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -204,7 +204,7 @@ const MENACDN: React.FC = () => {
               </div>
 
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <img 
+                <img
                   src="/streaming.png"
                   alt="Cross-Border Content Delivery"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -216,7 +216,7 @@ const MENACDN: React.FC = () => {
               </div>
 
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <img 
+                <img
                   src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg"
                   alt="Enterprise-Grade Security"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -229,8 +229,8 @@ const MENACDN: React.FC = () => {
             </div>
 
             <div className="text-center mt-12">
-              <Link 
-                to="/contact_us" 
+              <Link
+                to="/contact-us"
                 className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 inline-flex items-center group"
               >
                 Contact Us
@@ -243,7 +243,7 @@ const MENACDN: React.FC = () => {
         {/* Key Benefits Section */}
         <section className="py-24 bg-white relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(14,182,35,0.03)_0%,transparent_70%)]"></div>
-          
+
           <div className="container mx-auto px-4 relative">
             <div className="text-center mb-16">
               <div className="text-[#0EB623] text-sm font-medium mb-4">Key Benefits</div>
@@ -284,7 +284,7 @@ const MENACDN: React.FC = () => {
                 </ul>
               </div>
               <div className="order-1 lg:order-2">
-                <img 
+                <img
                   src="/mena-cdn.png"
                   alt="MENA Delivery Optimization"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -294,7 +294,7 @@ const MENACDN: React.FC = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
               <div>
-                <img 
+                <img
                   src="/streaming.png"
                   alt="Cross-Border Content Delivery"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -358,7 +358,7 @@ const MENACDN: React.FC = () => {
                 </ul>
               </div>
               <div className="order-1 lg:order-2">
-                <img 
+                <img
                   src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg"
                   alt="Enterprise-Grade Security"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -379,8 +379,8 @@ const MENACDN: React.FC = () => {
                   Every platform is different—so we build around you. With tailor-made acceleration strategies and dedicated bilingual support, EdgeNext helps you navigate Middle East & North Africa's complexity with confidence and control.
                 </p>
               </div>
-              <Link 
-                to="/contact_us"
+              <Link
+                to="/contact-us"
                 className="px-8 py-4 bg-[#0EB623] text-white rounded-xl hover:bg-[#0EA620] transition-colors font-medium whitespace-nowrap"
               >
                 Contact Us
@@ -444,8 +444,8 @@ const MENACDN: React.FC = () => {
             </div>
 
             <div className="text-center">
-              <Link 
-                to="/blog" 
+              <Link
+                to="/blog"
                 className="inline-flex items-center bg-[#0EB623] text-white font-medium px-8 py-4 rounded-xl hover:bg-[#0EA620] transition-all duration-300"
               >
                 View All Resources
@@ -471,8 +471,8 @@ const MENACDN: React.FC = () => {
         With deep local insight, ultra-reliable delivery, and 24/7 bilingual support, EdgeNext helps you launch, scale, and dominate across the Middle East & North Africa—without compromising speed, security, or control.
       </p>
 
-      <Link 
-        to="/contact_us" 
+      <Link
+        to="/contact-us"
         className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
       >
         Get in Touch

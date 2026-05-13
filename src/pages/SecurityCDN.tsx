@@ -69,7 +69,7 @@ const SecurityCDN: React.FC = () => {
           <div className="absolute inset-0" style={{
             background: 'linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%)'
           }}></div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="max-w-4xl mx-auto text-center">
               <h1 className="text-[40px] md:text-[60px] font-bold mb-4 md:mb-6 leading-[1.1]">
@@ -80,7 +80,7 @@ const SecurityCDN: React.FC = () => {
                 In the world's most complex markets, performance alone isn't enough. You need speed, security, and trust—all built into one edge-native platform.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a 
+                <a
                   href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                   target="_blank"
                   rel="noopener"
@@ -97,7 +97,7 @@ const SecurityCDN: React.FC = () => {
         {/* Accelerated. Stable. Secure. Section */}
         <section className="py-16 bg-black relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(14,182,35,0.15),transparent_70%)]"></div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-medium text-white mb-4">Accelerated. Stable. Secure.</h2>
@@ -105,7 +105,7 @@ const SecurityCDN: React.FC = () => {
                 Enterprise-grade protection with uncompromising performance
               </p>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:bg-gray-800 transition-all duration-300">
                 <div className="w-12 h-12 bg-[#0EB623]/20 rounded-lg flex items-center justify-center mb-6">
@@ -116,7 +116,7 @@ const SecurityCDN: React.FC = () => {
                   Dynamic-static hybrid separation + efficient caching + smart routing for faster, more stable delivery
                 </p>
               </div>
-              
+
               <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:bg-gray-800 transition-all duration-300">
                 <div className="w-12 h-12 bg-[#0EB623]/20 rounded-lg flex items-center justify-center mb-6">
                   <Settings className="text-[#0EB623]" size={24} />
@@ -126,7 +126,7 @@ const SecurityCDN: React.FC = () => {
                   Load balancing, traffic control, instant failover, and offline mode for uninterrupted service
                 </p>
               </div>
-              
+
               <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:bg-gray-800 transition-all duration-300">
                 <div className="w-12 h-12 bg-[#0EB623]/20 rounded-lg flex items-center justify-center mb-6">
                   <Shield className="text-[#0EB623]" size={24} />
@@ -136,7 +136,7 @@ const SecurityCDN: React.FC = () => {
                   HTTPS encryption across the full path between users and origin servers to protect user data
                 </p>
               </div>
-              
+
               <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:bg-gray-800 transition-all duration-300">
                 <div className="w-12 h-12 bg-[#0EB623]/20 rounded-lg flex items-center justify-center mb-6">
                   <Shield className="text-[#0EB623]" size={24} />
@@ -146,7 +146,7 @@ const SecurityCDN: React.FC = () => {
                   AI-powered multi-engine defense with 4.5 Tbps DDoS protection capacity
                 </p>
               </div>
-              
+
               <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:bg-gray-800 transition-all duration-300">
                 <div className="w-12 h-12 bg-[#0EB623]/20 rounded-lg flex items-center justify-center mb-6">
                   <ShieldAlert className="text-[#0EB623]" size={24} />
@@ -156,7 +156,7 @@ const SecurityCDN: React.FC = () => {
                   24/7 monitoring and rapid 0-day vulnerability patching
                 </p>
               </div>
-              
+
               <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:bg-gray-800 transition-all duration-300">
                 <div className="w-12 h-12 bg-[#0EB623]/20 rounded-lg flex items-center justify-center mb-6">
                   <Key className="text-[#0EB623]" size={24} />
@@ -166,7 +166,7 @@ const SecurityCDN: React.FC = () => {
                   Updated daily to outsmart new and evolving bots, with detection across 15 categories and hundreds of signatures
                 </p>
               </div>
-              
+
               <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:bg-gray-800 transition-all duration-300">
                 <div className="w-12 h-12 bg-[#0EB623]/20 rounded-lg flex items-center justify-center mb-6">
                   <Building2 className="text-[#0EB623]" size={24} />
@@ -176,7 +176,7 @@ const SecurityCDN: React.FC = () => {
                   Multi-dimensional rules and flexible strategies for business-specific security policy
                 </p>
               </div>
-              
+
               <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:bg-gray-800 transition-all duration-300">
                 <div className="w-12 h-12 bg-[#0EB623]/20 rounded-lg flex items-center justify-center mb-6">
                   <ShieldCheck className="text-[#0EB623]" size={24} />
@@ -201,7 +201,7 @@ const SecurityCDN: React.FC = () => {
                     Global edge acceleration + full-link HTTPS boosts both speed and security.
                   </p>
                 </div>
-                <a 
+                <a
                   href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                   target="_blank"
                   rel="noopener"
@@ -231,21 +231,21 @@ const SecurityCDN: React.FC = () => {
                   <button
                     onClick={() => setActiveFeature('acceleration')}
                     className={`flex-shrink-0 w-full flex items-center gap-3 p-4 rounded-xl transition-all duration-300 group ${
-                      activeFeature === 'acceleration' 
+                      activeFeature === 'acceleration'
                         ? 'bg-[#0EB623] text-white shadow-lg'
                         : 'text-gray-600 hover:bg-[#0EB623] hover:text-white'
                     }`}
                   >
                     <div className={`transition-colors duration-300 ${
-                      activeFeature === 'acceleration' 
-                        ? 'text-white' 
+                      activeFeature === 'acceleration'
+                        ? 'text-white'
                         : 'text-[#0EB623] group-hover:text-white'
                     }`}>
                       <Zap size={24} />
                     </div>
                     <span className="font-medium text-left whitespace-nowrap">Acceleration</span>
                   </button>
-                  
+
                   {(Object.keys(features) as FeatureKey[])
                     .filter((key) => key !== 'acceleration')
                     .map((key) => {
@@ -255,14 +255,14 @@ const SecurityCDN: React.FC = () => {
                       key={key}
                       onClick={() => setActiveFeature(key)}
                       className={`flex-shrink-0 w-full flex items-center gap-3 p-4 rounded-xl transition-all duration-300 group ${
-                        activeFeature === key 
+                        activeFeature === key
                           ? 'bg-[#0EB623] text-white shadow-lg'
                           : 'text-gray-600 hover:bg-[#0EB623] hover:text-white'
                       }`}
                     >
                       <div className={`transition-colors duration-300 ${
-                        activeFeature === key 
-                          ? 'text-white' 
+                        activeFeature === key
+                          ? 'text-white'
                           : 'text-[#0EB623] group-hover:text-white'
                       }`}>
                         {feature.icon}
@@ -282,8 +282,8 @@ const SecurityCDN: React.FC = () => {
                   <h4 className="font-semibold mb-4">Key Benefits</h4>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {features[activeFeature].benefits.map((benefit: string, index: number) => (
-                      <div 
-                        key={index} 
+                      <div
+                        key={index}
                         className="flex items-center gap-2 p-3 rounded-lg bg-white shadow-sm hover:shadow-md transition-all duration-300"
                       >
                         <Check className="text-[#0EB623] flex-shrink-0" size={20} />
@@ -301,14 +301,14 @@ const SecurityCDN: React.FC = () => {
         <section className="py-16 md:py-24 bg-white">
           <div className="container mx-auto px-4 relative">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(14,182,35,0.03),transparent_70%)]"></div>
-            
+
             <div className="text-center mb-12 md:mb-16">
               <h2 className="text-3xl md:text-5xl font-medium mb-4 md:mb-6 text-gray-900">The Challenges You Face. The Answers We Offer.</h2>
               <p className="text-base md:text-xl text-gray-600 max-w-3xl mx-auto font-light">
                 Discover how EdgeNext solves your most pressing security and performance challenges
               </p>
             </div>
-             
+
             {/* Horizontal Scrollable Cards on Mobile */}
             <div className="flex overflow-x-auto pb-8 md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 snap-x relative z-10">
               {/* Card 1 */}
@@ -318,21 +318,21 @@ const SecurityCDN: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   Heavy content, global users, and sluggish cross-border access slow down site performance.
                 </p>
-                
+
                 {/* Industry Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">E-commerce</span>
                   <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">Media</span>
                   <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">Finance</span>
                 </div>
-                
+
                 {/* Solution */}
                 <div className="flex items-center gap-3 bg-[#0EB623]/10 p-4 rounded-xl">
                   <Zap className="text-[#0EB623] flex-shrink-0" size={24} />
                   <p className="text-[#0EB623] font-medium">Global edge acceleration + full-link HTTPS boosts both speed and security.</p>
                 </div>
               </div>
-              
+
               {/* Card 2 */}
               <div className="min-w-[300px] md:min-w-0 flex-shrink-0 snap-center group bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
                 <div className="text-6xl font-bold text-[#0EB623] mb-4">02</div>
@@ -340,21 +340,21 @@ const SecurityCDN: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   Viral campaigns or flash sales overwhelm origin servers.
                 </p>
-                
+
                 {/* Industry Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">E-commerce</span>
                   <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">Social Media</span>
                   <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">Video</span>
                 </div>
-                
+
                 {/* Solution */}
                 <div className="flex items-center gap-3 bg-[#0EB623]/10 p-4 rounded-xl">
                   <Network className="text-[#0EB623] flex-shrink-0" size={24} />
                   <p className="text-[#0EB623] font-medium">Global traffic scheduling + distributed caching ensures stability under pressure.</p>
                 </div>
               </div>
-              
+
               {/* Card 3 */}
               <div className="min-w-[300px] md:min-w-0 flex-shrink-0 snap-center group bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
                 <div className="text-6xl font-bold text-[#0EB623] mb-4">03</div>
@@ -362,21 +362,21 @@ const SecurityCDN: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   Origin exposure leads to easy targeting and service disruptions.
                 </p>
-                
+
                 {/* Industry Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">Gaming</span>
                   <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">Finance</span>
                   <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">E-commerce</span>
                 </div>
-                
+
                 {/* Solution */}
                 <div className="flex items-center gap-3 bg-[#0EB623]/10 p-4 rounded-xl">
                   <ShieldAlert className="text-[#0EB623] flex-shrink-0" size={24} />
                   <p className="text-[#0EB623] font-medium">AI-powered traffic scrubbing + validation mechanisms blocks malicious traffic and protects your origin.</p>
                 </div>
               </div>
-              
+
               {/* Card 4 */}
               <div className="min-w-[300px] md:min-w-0 flex-shrink-0 snap-center group bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
                 <div className="text-6xl font-bold text-[#0EB623] mb-4">04</div>
@@ -384,7 +384,7 @@ const SecurityCDN: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   Attackers exploit vulnerabilities to steal data or deface your site.
                 </p>
-                
+
                 {/* Industry Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">Government</span>
@@ -392,14 +392,14 @@ const SecurityCDN: React.FC = () => {
                   <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">E-commerce</span>
                   <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">Payment</span>
                 </div>
-                
+
                 {/* Solution */}
                 <div className="flex items-center gap-3 bg-[#0EB623]/10 p-4 rounded-xl">
                   <Shield className="text-[#0EB623] flex-shrink-0" size={24} />
                   <p className="text-[#0EB623] font-medium">WAF + AI threat engine thwarts SQL injections, XSS, and other exploits.</p>
                 </div>
               </div>
-              
+
               {/* Card 5 */}
               <div className="min-w-[300px] md:min-w-0 flex-shrink-0 snap-center group bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-gray-100">
                 <div className="text-6xl font-bold text-[#0EB623] mb-4">05</div>
@@ -407,14 +407,14 @@ const SecurityCDN: React.FC = () => {
                 <p className="text-gray-600 mb-6">
                   Malicious bots steal sensitive data and disrupt your services.
                 </p>
-                
+
                 {/* Industry Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">E-commerce</span>
                   <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">Ticketing</span>
                   <span className="px-3 py-1 bg-gray-100 text-gray-600 rounded-full text-xs">Media</span>
                 </div>
-                
+
                 {/* Solution */}
                 <div className="flex items-center gap-3 bg-[#0EB623]/10 p-4 rounded-xl">
                   <Activity className="text-[#0EB623] flex-shrink-0" size={24} />
@@ -422,7 +422,7 @@ const SecurityCDN: React.FC = () => {
                 </div>
               </div>
             </div>
-            
+
             {/* Navigation Indicators for Mobile */}
             <div className="flex justify-center gap-2 mt-6 md:hidden">
               <button className="w-3 h-3 rounded-full bg-[#0EB623]"></button>
@@ -437,7 +437,7 @@ const SecurityCDN: React.FC = () => {
         {/* Pricing Section */}
         <section className="py-24 bg-gray-100 relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(14,182,35,0.03)_0%,transparent_70%)]"></div>
-          
+
           <div className="container mx-auto px-4 relative">
             <div className="text-center mb-12 md:mb-16">
               <h2 className="text-3xl md:text-5xl font-medium mb-4 md:mb-6 text-gray-900">Find the Right Plan for Your Business</h2>
@@ -456,11 +456,11 @@ const SecurityCDN: React.FC = () => {
                       <th className="py-6 px-6 text-center bg-gray-50 border-b border-gray-200">
                         <div className="text-xl font-bold text-gray-800">Basic</div>
                       </th>
-                      
+
                       <th className="py-6 px-6 text-center bg-gray-50 border-b border-gray-200">
                         <div className="text-xl font-bold text-gray-800">Custom</div>
                       </th>
-                    </tr> 
+                    </tr>
                   </thead>
                   <tbody>
                     <tr>
@@ -468,14 +468,14 @@ const SecurityCDN: React.FC = () => {
                       <td className="py-4 px-6 border-b border-gray-200 text-center">
                         <div className="text-2xl font-bold text-[#0EB623]">$180</div>
                       </td>
-                      
+
                       <td className="py-4 px-6 border-b border-gray-200 text-center">
                         <div className="text-2xl font-bold text-[#0EB623]">Custom Pricing</div>
                       </td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">Price / Year</td>
-                      
+
                       <td className="py-4 px-6 border-b border-gray-200 text-center">
                         <a href="https://home.console.edgenext.com/#/uc/register" className="text-gray-500 text-sm hover:text-[#0EB623] transition-colors">Sign up for more details</a>
                       </td>
@@ -486,7 +486,7 @@ const SecurityCDN: React.FC = () => {
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">Included Traffic</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">500GB</td>
-                      
+
                       <td className="py-4 px-6 border-b border-gray-200 text-center">2,000+GB</td>
                     </tr>
                     <tr>
@@ -496,25 +496,25 @@ const SecurityCDN: React.FC = () => {
                     </tr>
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">Max Services</td>
-                      
+
                       <td className="py-4 px-6 border-b border-gray-200 text-center">10</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">20+</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">QPS</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">1,000</td>
-                      
+
                       <td className="py-4 px-6 border-b border-gray-200 text-center">14,000+</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">WAF Mode</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">Observation</td>
-                      
+
                       <td className="py-4 px-6 border-b border-gray-200 text-center">+ Intercept + Ban</td>
                     </tr>
-                    <tr> 
+                    <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">Bot Protection</td>
-                      
+
                       <td className="py-4 px-6 border-b border-gray-200 text-center">–</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">
                         <Check className="text-[#0EB623] inline-block" size={20} />
@@ -524,26 +524,26 @@ const SecurityCDN: React.FC = () => {
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">Custom Rules</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">10 / domain</td>
-                      
+
                       <td className="py-4 px-6 border-b border-gray-200 text-center">100+ / domain</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">Anti-DDoS</td>
-                      
+
                       <td className="py-4 px-6 border-b border-gray-200 text-center">Universal engine</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">Custom defense policies</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200 font-medium">Support</td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">Email + Ticket</td>
-                      
+
                       <td className="py-4 px-6 border-b border-gray-200 text-center">24×7 Email + IM + Phone Support</td>
                     </tr>
                     <tr>
                       <td className="py-4 px-6 border-b border-gray-200"></td>
-                      
+
                       <td className="py-4 px-6 border-b border-gray-200 text-center">
-                        <a 
+                        <a
                           href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                           target="_blank"
                           rel="noopener"
@@ -553,7 +553,7 @@ const SecurityCDN: React.FC = () => {
                         </a>
                       </td>
                       <td className="py-4 px-6 border-b border-gray-200 text-center">
-                        <a 
+                        <a
                           href="/Contact_us"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -580,7 +580,7 @@ const SecurityCDN: React.FC = () => {
                     <div className="text-3xl font-bold text-[#0EB623] mb-1">$180</div>
                     <div className="text-gray-500 text-sm">per month</div>
                   </div>
-                  
+
                   <div className="space-y-4 mb-6">
                     <div className="flex justify-between border-b border-gray-100 pb-2">
                       <span className="text-gray-600">Included Traffic</span>
@@ -615,10 +615,10 @@ const SecurityCDN: React.FC = () => {
                       <span className="font-medium">Email + Ticket</span>
                     </div>
                   </div>
-                  
+
                   <div className="text-center">
-                    <a 
-                      href="#" 
+                    <a
+                      href="#"
                       className="inline-flex items-center px-6 py-3 bg-[#0EB623] text-white rounded-lg hover:bg-[#0EA620] transition-colors font-medium"
                     >
                       Activate Now
@@ -626,9 +626,9 @@ const SecurityCDN: React.FC = () => {
                   </div>
                 </div>
               </div>
-              
-              
-              
+
+
+
               {/* Business Plan */}
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                 <div className="bg-gray-50 py-6 px-6 border-b border-gray-200">
@@ -639,7 +639,7 @@ const SecurityCDN: React.FC = () => {
                     <div className="text-3xl font-bold text-[#0EB623] mb-1">Custom Pricing</div>
                     <div className="text-gray-500 text-sm">per month</div>
                   </div>
-                  
+
                   <div className="space-y-4 mb-6">
                     <div className="flex justify-between border-b border-gray-100 pb-2">
                       <span className="text-gray-600">Included Traffic</span>
@@ -674,10 +674,10 @@ const SecurityCDN: React.FC = () => {
                       <span className="font-medium">24×7 Email + IM + Phone Support</span>
                     </div>
                   </div>
-                  
+
                   <div className="text-center">
-                    <a 
-                     href="/contact_us"
+                    <a
+                     href="/contact-us"
                      target="_blank"
                      rel="noopener noreferrer"
                       className="inline-flex items-center px-6 py-3 bg-[#0EB623] text-white rounded-lg hover:bg-[#0EA620] transition-colors font-medium"
@@ -688,10 +688,10 @@ const SecurityCDN: React.FC = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="text-center mt-8">
               <p className="text-gray-500 text-sm">
-                Need a custom plan? <a href="/contact_us" className="text-[#0EB623] font-medium hover:underline">Contact our sales team</a> for enterprise-grade solutions.
+                Need a custom plan? <a href="/contact-us" className="text-[#0EB623] font-medium hover:underline">Contact our sales team</a> for enterprise-grade solutions.
               </p>
             </div>
           </div>
@@ -711,11 +711,11 @@ const SecurityCDN: React.FC = () => {
 
             <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-12 shadow-lg hover:shadow-xl transition-all duration-500">
               <div style={{ width: '100%', height: '500px' }}>
-                <iframe 
+                <iframe
                   style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-                  width="100%" 
-                  height="100%" 
-                  src="/scdnmap.html" 
+                  width="100%"
+                  height="100%"
+                  src="/scdnmap.html"
                   allowFullScreen
                   title="Security CDN Global Network Map"
                 ></iframe>
@@ -723,7 +723,7 @@ const SecurityCDN: React.FC = () => {
             </div>
           </div>
         </section>
-        
+
         {/* Looking for more Section */}
         <section className="py-16 md:py-24 bg-gradient-to-b from-gray-50 to-white">
           <div className="container mx-auto px-4">
@@ -779,8 +779,8 @@ const SecurityCDN: React.FC = () => {
             </div>
 
             <div className="text-center">
-              <a 
-                href="/newsroom" 
+              <a
+                href="/newsroom"
                 className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl transition-all duration-300 inline-flex items-center group"
               >
                 Explore our latest news
@@ -798,12 +798,12 @@ const SecurityCDN: React.FC = () => {
         Ready to Transform Your Global Content Delivery?
       </h2>
       <p className="text-base md:text-lg text-white/90 mb-8 leading-relaxed">
-        Trusted by businesses scaling across the globe—and thriving in emerging markets. 
-        From Southeast Asia to Central Asia and Africa, EdgeNext delivers content with speed, 
+        Trusted by businesses scaling across the globe—and thriving in emerging markets.
+        From Southeast Asia to Central Asia and Africa, EdgeNext delivers content with speed,
         security, and a human-first touch.
       </p>
-      <a 
-        href="/contact_us"
+      <a
+        href="/contact-us"
         className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
       >
         Contact Us

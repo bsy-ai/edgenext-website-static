@@ -39,7 +39,7 @@ const SoutheastAsiaCDN: React.FC = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_100%_100%,rgba(14,182,35,0.05),transparent_50%)]"></div>
             <div className="absolute inset-0 bg-grid-pattern opacity-10"></div>
           </div>
-          
+
           <div className="container mx-auto px-4 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -52,8 +52,8 @@ const SoutheastAsiaCDN: React.FC = () => {
                 <p className="text-lg md:text-xl text-gray-600 mb-8">
                   EdgeNext delivers ultra-low latency and resilient CDN services across Southeast Asia with intelligent edge caching, mobile-first routing, and strong ISP interconnectivity—helping you scale performance-critical apps across diverse markets without compromise.
                 </p>
-                <a 
-                  href="/contact_us"
+                <a
+                  href="/contact-us"
                   className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 inline-flex items-center group"
                 >
                   Contact Us
@@ -141,7 +141,7 @@ const SoutheastAsiaCDN: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <img 
+                <img
                   src="/SoutheastAsiaCDN.jpg"
                   alt="Regional Delivery Optimization"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -153,7 +153,7 @@ const SoutheastAsiaCDN: React.FC = () => {
               </div>
 
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <img 
+                <img
                   src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg"
                   alt="Cross-Border Delivery"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -165,7 +165,7 @@ const SoutheastAsiaCDN: React.FC = () => {
               </div>
 
               <div className="group bg-white rounded-2xl p-8 hover:shadow-[0_20px_60px_-15px_rgba(14,182,35,0.15)] transition-all duration-500 hover:-translate-y-2">
-                <img 
+                <img
                   src="/static-acceleration.jpg"
                   alt="Integrated Cloud Security"
                   className="w-full h-48 object-cover rounded-xl mb-6 transform group-hover:scale-[1.02] transition-all duration-300"
@@ -178,8 +178,8 @@ const SoutheastAsiaCDN: React.FC = () => {
             </div>
 
             <div className="text-center">
-              <a 
-                href="/contact_us"
+              <a
+                href="/contact-us"
                 className="bg-[#0EB623] hover:bg-[#0EA620] text-white font-medium px-8 py-4 rounded-xl shadow-glow hover:shadow-glow-lg transition-all duration-300 inline-flex items-center group"
               >
                 Contact Us
@@ -227,7 +227,7 @@ const SoutheastAsiaCDN: React.FC = () => {
                 </ul>
               </div>
               <div className="order-1 lg:order-2">
-                <img 
+                <img
                   src="/SoutheastAsiaCDN.jpg"
                   alt="Regional Optimization"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -237,7 +237,7 @@ const SoutheastAsiaCDN: React.FC = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24">
               <div>
-                <img 
+                <img
                   src="https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg"
                   alt="Cross-Border Delivery"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -301,7 +301,7 @@ const SoutheastAsiaCDN: React.FC = () => {
                 </ul>
               </div>
               <div className="order-1 lg:order-2">
-                <img 
+                <img
                   src="/static-acceleration.jpg"
                   alt="Cloud Security"
                   className="rounded-xl shadow-lg w-full h-[300px] object-cover"
@@ -322,7 +322,7 @@ const SoutheastAsiaCDN: React.FC = () => {
                   Every platform is different—so we build around you. With tailor-made acceleration strategies and dedicated bilingual support, EdgeNext helps you navigate Southeast Asia's complexity with confidence and control.
                 </p>
               </div>
-              <a 
+              <a
                 href="https://account.console.edgenext.com/auth/realms/edgenext/protocol/openid-connect/auth?response_type=code&approval_prompt=auto&client_id=edgenext-login&redirect_uri=https%3A%2F%2Fhome.console.edgenext.com%2F%23%2Fdashboard"
                 target="_blank"
                 rel="noopener"
@@ -394,7 +394,7 @@ const SoutheastAsiaCDN: React.FC = () => {
 <section className="py-24 bg-[#0EB623] relative overflow-hidden">
   <div className="container mx-auto px-4 relative">
     <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
-      
+
       <h2 className="text-4xl font-medium text-white mb-6">
         Deliver Smarter in Southeast Asia
       </h2>
@@ -403,8 +403,8 @@ const SoutheastAsiaCDN: React.FC = () => {
         EdgeNext delivers custom-tailored CDN solutions with local compliance expertise and 24/7 bilingual support—so you can focus on growing your business in Southeast Asia with confidence.
       </p>
 
-      <a 
-        href="/contact_us" 
+      <a
+        href="/contact-us"
         className="inline-flex items-center px-8 py-4 bg-white text-[#0EB623] rounded-xl font-medium hover:bg-opacity-90 transition-all duration-300"
       >
         Get in Touch
