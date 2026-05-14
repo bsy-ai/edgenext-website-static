@@ -59,9 +59,23 @@ export interface ParsedBlogPost {
   seo?: BlogSeo;
 }
 
-// 统一博客作者显示
+// 统一博客作者显示（未在 blogs.json 中提供 author 时使用）
 function getDefaultAuthor(): string {
   return 'EdgeNext Team';
+}
+
+/** 新/旧格式均可选顶层 `author`；非空字符串则覆盖默认作者 */
+function resolveBlogAuthor(item: Record<string, unknown>): string {
+  const raw = item.author;
+  if (typeof raw === 'string') {
+    const t = raw.trim();
+    if (t) return t;
+  }
+  if (raw != null && typeof raw !== 'object') {
+    const t = String(raw).trim();
+    if (t) return t;
+  }
+  return getDefaultAuthor();
 }
 
 function extractDescription(content: string): string {
@@ -290,7 +304,7 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
           const content = typeof rawContent === 'string' ? rawContent : String(rawContent ?? '');
 
           const slug = generateSlug(title);
-          const author = getDefaultAuthor();
+          const author = resolveBlogAuthor(item as Record<string, unknown>);
           const description = extractDescription(content);
           const category = extractCategory(title, content);
 
@@ -359,7 +373,7 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
           
           const slug = generateSlug(title);
           const date = new Date(timestamp).toISOString().split('T')[0];
-          const author = getDefaultAuthor();
+          const author = resolveBlogAuthor(item as Record<string, unknown>);
           const description = extractDescription(content);
           const category = extractCategory(title, content);
           
