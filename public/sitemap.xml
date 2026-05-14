@@ -298,8 +298,32 @@
     <loc>https://www.edgenext.com/pricing</loc>
   </url>
   <url>
-    <loc>https://www.edgenext.com/resources/blog/why-your-users-are-leaving-and-how-edge-computing-can-bring-them-back</loc>
-    <lastmod>2026-04-27</lastmod>
+    <loc>https://www.edgenext.com/resources/blog/how-to-choose-a-global-cdn-when-your-users-are-everywhere</loc>
+    <lastmod>2026-05-14</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/ddos-protection-for-gaming-cdns-how-to-keep-online-games-fast-stable-and-available</loc>
+    <lastmod>2026-05-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/tcp-vs-udp-for-gaming-which-protocol-is-better-for-low-latency-online-games</loc>
+    <lastmod>2026-05-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/how-tcpip-offloading-improves-gaming-cdn-performance-latency-and-player-experience</loc>
+    <lastmod>2026-05-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/digital-growth-in-africa-mena-and-central-asia-what-global-companies-still-misunderstandand-the-real-infrastructure-behind-it</loc>
+    <lastmod>2026-05-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/best-server-load-balancing-for-cloud-security-in-2026</loc>
+    <lastmod>2026-05-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/best-cdn-providers-2026-top-global-content-delivery-networks-compared</loc>
+    <lastmod>2026-05-06</lastmod>
   </url>
   <url>
     <loc>https://www.edgenext.com/resources/blog/bare-metal-vs-dedicated-server-which-is-right-for-you</loc>
@@ -332,6 +356,10 @@
   <url>
     <loc>https://www.edgenext.com/resources/blog/comparing-ipv6-and-ipv4-impact-on-internet-speed-and-security</loc>
     <lastmod>2025-12-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/blog/why-your-users-are-leaving-and-how-edge-computing-can-bring-them-back</loc>
+    <lastmod>2025-11-25</lastmod>
   </url>
   <url>
     <loc>https://www.edgenext.com/resources/blog/ai-powered-cloud-services-in-2025-how-to-drive-business-efficiency-and-reduce-costs</loc>
@@ -1372,6 +1400,10 @@
   <url>
     <loc>https://www.edgenext.com/resources/blog/content-delivery-edge-computing-cloud-security-trend-prediction-for-2023</loc>
     <lastmod>2022-12-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.edgenext.com/resources/news/edgenext-invites-businesses-to-experience-its-high-performance-edge-cloud-at-gitex-ai-kazakhstan-2026</loc>
+    <lastmod>2026-05-03</lastmod>
   </url>
   <url>
     <loc>https://www.edgenext.com/resources/news/edgenext-expands-european-network-through-strategic-collaboration-with-sparkle</loc>
