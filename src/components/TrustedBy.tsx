@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimationControls } from 'framer-motion';
-import { Zap, Monitor, Globe, Activity, Shield, Server } from 'lucide-react';
 
 export const TrustedBy: React.FC = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -25,6 +24,34 @@ export const TrustedBy: React.FC = () => {
     { icon: <img src="/neteaselogo.webp" alt="NetEase" className="w-20 h-20 object-contain" /> },
    
   ];
+
+  const testimonials = [
+    {
+      label: 'Streaming Platform',
+      title: 'Built for Large-Scale Streaming',
+      quote:
+        'EdgeNext helps us deliver low-latency streaming experiences while improving cost efficiency and elasticity at global scale.',
+      person: 'CEO',
+      company: 'Global Streaming Platform'
+    },
+    {
+      label: 'Gaming Platform',
+      title: 'Performance That Supports Growth',
+      quote:
+        "EdgeNext's CDN performance has become important to our global reach, player experience, and customer satisfaction.",
+      person: 'CTO',
+      company: 'Digital Game Distribution Platform'
+    },
+    {
+      label: 'SaaS Provider',
+      title: 'Flexible Cloud Delivery for What Comes Next',
+      quote:
+        "EdgeNext's cloud computing and bare metal capabilities give us the flexibility and performance needed to move faster in a competitive market.",
+      person: 'CEO',
+      company: 'Global SaaS Provider'
+    }
+  ];
+
   // Double the logos array for seamless infinite scroll
   const doubledLogos = [...clientLogos, ...clientLogos];
   const doubledSecondRowLogos = [...secondRowLogos, ...secondRowLogos];
@@ -128,6 +155,62 @@ export const TrustedBy: React.FC = () => {
                 </motion.div>
               ))}
             </motion.div>
+          </div>
+        </div>
+
+        <div className="mt-12">
+          <div className="text-center mb-9">
+            <div className="mb-4 inline-flex items-center rounded-full border border-[#0EB623]/20 bg-[#0EB623]/10 px-4 py-2 text-sm font-medium text-[#0EB623]">
+              Customer Feedback
+            </div>
+
+            <h3 className="text-3xl md:text-4xl font-medium mb-4 text-gray-900">
+              Proven in High-Demand Digital Environments
+            </h3>
+
+            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+              Teams rely on EdgeNext to improve speed, scale, and reliability across streaming, gaming, SaaS, and cloud delivery.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5">
+            {testimonials.map((item) => (
+              <article
+                key={item.title}
+                className="group relative overflow-hidden rounded-lg border border-gray-100 bg-white p-6 shadow-sm transition-all duration-500 hover:-translate-y-1 hover:border-[#0EB623]/35 hover:shadow-[0_20px_60px_rgba(15,23,42,0.10)]"
+              >
+                <div className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-[#0EB623] via-[#8CEB54] to-[#F5B849] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+
+                <div className="absolute -right-20 -top-20 h-40 w-40 rounded-full bg-[#0EB623]/0 blur-3xl transition-all duration-500 group-hover:bg-[#0EB623]/10" />
+
+                <div className="relative z-10">
+                  <div className="mb-6 flex items-start justify-between gap-4">
+                    <div>
+                      <p className="mb-3 text-xs font-medium uppercase tracking-[0.16em] text-[#0EB623]">
+                        {item.label}
+                      </p>
+
+                      <h4 className="text-xl md:text-2xl font-medium leading-tight text-gray-900">
+                        {item.title}
+                      </h4>
+                    </div>
+
+                    <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-lg bg-[#0EB623]/10 text-3xl leading-none text-[#0EB623]/35 transition-all duration-500 group-hover:bg-[#0EB623] group-hover:text-white">
+                      "
+                    </div>
+                  </div>
+
+                  <p className="mb-7 text-base leading-relaxed text-gray-600 transition-colors duration-500 group-hover:text-gray-800">
+                    &quot;{item.quote}&quot;
+                  </p>
+
+                  <div className="border-t border-gray-100 pt-5">
+                    <p className="font-medium text-gray-900">{item.person}</p>
+                    <p className="mt-1 text-sm text-gray-500">{item.company}</p>
+                  </div>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </div>

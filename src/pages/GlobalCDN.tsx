@@ -123,7 +123,7 @@ const GlobalCDN: React.FC = () => {
                 <div className="text-sm md:text-base text-gray-700">Tbps Total Bandwidth</div>
               </div>
               <div className="glass-card rounded-2xl p-4 md:p-6 text-center backdrop-blur-sm bg-white/40 hover:bg-white/60 hover:shadow-glow transition-all duration-300">
-                <div className="text-2xl md:text-4xl font-bold text-[#0EB623] mb-2">76B+</div>
+                <div className="text-2xl md:text-4xl font-bold text-[#0EB623] mb-2">760B+</div>
                 <div className="text-sm md:text-base text-gray-700">Requests Processed Daily</div>
               </div>
               <div className="glass-card rounded-2xl p-4 md:p-6 text-center backdrop-blur-sm bg-white/40 hover:bg-white/60 hover:shadow-glow transition-all duration-300">
