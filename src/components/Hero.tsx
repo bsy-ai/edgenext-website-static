@@ -114,6 +114,82 @@ export const Hero: React.FC = () => {
             </div>
           </div>
       </div>
+
+      {/* World Cup 2026 Live Streaming Solution Announcement */}
+<div className="container mx-auto px-4 relative z-10 -mt-4 md:-mt-5 pb-8">
+  <div className="mx-auto max-w-7xl">
+    <a
+      href="/worldcup-2026-streaming-solution"
+      className="group relative block overflow-hidden rounded-[22px] border border-white/70 bg-white/76 backdrop-blur-2xl shadow-[0_14px_42px_rgba(15,23,42,0.09)] transition-all duration-500 hover:-translate-y-0.5 hover:border-[#F5B849]/70 hover:shadow-[0_22px_68px_rgba(14,182,35,0.18)]"
+    >
+      {/* Default soft glass background */}
+      <div className="absolute inset-0 bg-gradient-to-r from-white via-[#F9FCF8] to-[#EEF8EA] transition-opacity duration-500 group-hover:opacity-0" />
+
+      {/* Hover green-black campaign background */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#061108] via-[#0D2414] to-[#0EB623] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+
+      {/* Hover gold-green glow */}
+      <div className="absolute right-0 top-0 h-full w-[34%] bg-[radial-gradient(circle_at_85%_50%,rgba(245,184,73,0.24),transparent_58%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
+      <div className="absolute left-0 top-0 h-full w-[5px] bg-[#0EB623] transition-all duration-500 group-hover:w-[7px] group-hover:bg-[#F5B849]" />
+
+      {/* subtle glass line */}
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/70 to-transparent opacity-70" />
+
+      <div className="relative grid grid-cols-1 xl:grid-cols-[1fr_300px] items-center gap-5 px-5 md:px-7 py-3.5">
+        {/* Copy */}
+        <div className="min-w-0">
+          <div className="mb-2 flex flex-wrap items-center gap-2">
+            <span className="inline-flex items-center rounded-full bg-gray-950 px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-white transition-all duration-500 group-hover:bg-[#F5B849] group-hover:text-gray-950">
+              New
+            </span>
+
+            <span className="text-xs md:text-sm font-semibold text-[#0A8F1F] transition-colors duration-500 group-hover:text-[#F5B849]">
+              World Cup 2026 Live Streaming Solution
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-[360px_1fr] gap-3 lg:gap-6 items-start">
+            <h2 className="text-[20px] md:text-[22px] font-semibold leading-tight text-gray-950 transition-colors duration-500 group-hover:text-white">
+              Ready for World Cup 2026 Live Streaming?
+            </h2>
+
+            <p className="text-sm md:text-[15px] leading-relaxed text-gray-600 transition-colors duration-500 group-hover:text-white">
+              Explore how EdgeNext supports match-day traffic with low-latency playback, 4K/8K streaming, DRM, SCTE-35 ad insertion, replay, and global edge delivery.
+            </p>
+          </div>
+        </div>
+
+        {/* Right side: secondary CTA + workflow */}
+        <div className="flex flex-col gap-2.5 xl:items-stretch">
+          <span className="inline-flex items-center justify-center rounded-xl border border-[#0EB623]/30 bg-white/70 px-5 py-2.5 text-sm font-medium text-[#0A8F1F] transition-all duration-500 group-hover:border-[#F5B849]/70 group-hover:bg-[#F5B849] group-hover:text-gray-950 group-hover:shadow-[0_12px_28px_rgba(245,184,73,0.28)] whitespace-nowrap">
+            Explore the Solution
+            <ArrowRight className="ml-2 transition-transform duration-200 group-hover:translate-x-1" size={17} />
+          </span>
+
+          <div className="hidden md:flex items-center justify-center gap-2 rounded-2xl border border-gray-200 bg-white/75 px-3.5 py-2 shadow-sm transition-all duration-500 group-hover:border-white/25 group-hover:bg-gray-950/35 group-hover:backdrop-blur-md">
+            <span className="h-2.5 w-2.5 rounded-full bg-[#0EB623] transition-all duration-500 group-hover:bg-[#F5B849] group-hover:shadow-[0_0_14px_rgba(245,184,73,0.75)]" />
+
+            <span className="text-xs font-medium text-gray-700 transition-colors duration-500 group-hover:text-white whitespace-nowrap">
+              Live Signal
+            </span>
+
+            <ArrowRight className="text-[#0EB623] transition-colors duration-500 group-hover:text-[#F5B849]" size={14} />
+
+            <span className="text-xs font-medium text-gray-700 transition-colors duration-500 group-hover:text-white whitespace-nowrap">
+              Media Recode
+            </span>
+
+            <ArrowRight className="text-[#0EB623] transition-colors duration-500 group-hover:text-[#F5B849]" size={14} />
+
+            <span className="text-xs font-medium text-gray-700 transition-colors duration-500 group-hover:text-white whitespace-nowrap">
+              Media Delivery
+            </span>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
     </section>
     
     {/* Key Metrics Section */}

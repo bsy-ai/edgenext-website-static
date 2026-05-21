@@ -80,6 +80,7 @@ import Blog from './pages/BLOG/pages/Blog';
 import BlogDetail from './pages/BLOG/pages/BlogDetail';
 import News from './pages/NEWS/pages/News';
 import NewsDetail from './pages/NEWS/pages/NewsDetail';
+import WorldCup from './pages/WorldCup';
 import { LegacyRedirect } from './components/LegacyRedirect';
 
 import { getAllPosts } from './pages/BLOG/utils/blogUtils';
@@ -117,6 +118,7 @@ export const routes: RouteRecord[] = [
   { path: 'sports-broadcasting', Component: SportsBroadcasting },
   { path: 'telcos-isp-iigs', Component: Telecommunication },
   { path: 'e-learning', Component: ELearning },
+  { path: 'worldcup-2026-streaming-solution', Component: WorldCup },
 
   // ── 文章页（技术博客类独立页面）──
   { path: 'what-is-adaptive-threat-modulation-and-why-is-it-key-for-ddos-resilience', Component: AdaptiveThreatModulation },
