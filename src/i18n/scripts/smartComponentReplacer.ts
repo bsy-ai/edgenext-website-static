@@ -9,7 +9,6 @@ import { parse } from '@babel/parser';
 import traverseImport from '@babel/traverse';
 import generateImport from '@babel/generator';
 import * as t from '@babel/types';
-import { FileQuestion, QuoteIcon } from 'lucide-react';
 
 interface SmartReplaceConfig {
   srcDir: string;
@@ -362,6 +361,11 @@ class SmartComponentReplacer {
               'content',
               'question',
               'answer',
+              'quote',
+              'company',
+              'person',
+              'role',
+              'author',
               'overview',
               'takeaway',
               'name'

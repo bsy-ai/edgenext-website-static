@@ -174,13 +174,15 @@ Examples:
     const sourceLanguage = getArgValue(args, '--source') || 'en';
     
     try {
-      const scanner = new TextScanner(defaultScanConfig);
+      const config = await loadConfigFromFile();
+      const scanConfig = { ...defaultScanConfig, ...(config?.scanConfig || {}) };
+      const scanner = new TextScanner(scanConfig);
       const extractedTexts = await scanner.scan();
       
       console.log(`📝 Found ${extractedTexts.length} text strings`);
       
       if (extractedTexts.length > 0) {
-        const outputPath = path.join(defaultScanConfig.outputDir, `${sourceLanguage}.json`);
+        const outputPath = path.join(scanConfig.outputDir, `${sourceLanguage}.json`);
         await scanner.generateLanguageFile(extractedTexts, outputPath);
         console.log(`✅ Generated ${outputPath}`);
       } else {
@@ -220,6 +222,16 @@ Examples:
 function getArgValue(args: string[], flag: string): string | undefined {
   const index = args.indexOf(flag);
   return index !== -1 && index + 1 < args.length ? args[index + 1] : undefined;
+}
+
+async function loadConfigFromFile(): Promise<AutoTranslateConfig | null> {
+  const configPath = path.join(process.cwd(), 'i18n.config.json');
+
+  if (!(await fs.pathExists(configPath))) {
+    return null;
+  }
+
+  return JSON.parse(await fs.readFile(configPath, 'utf-8'));
 }
 
 // 仅当作为脚本直接运行时执行 main（兼容 Windows 路径）

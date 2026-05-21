@@ -131,6 +131,19 @@ export class TextScanner {
       StringLiteral: (path: any) => {
         const parent = path.parent;
 
+        // Ignore translation keys that are already wrapped with window.t("...")
+        if (
+          t.isCallExpression(parent) &&
+          parent.arguments.includes(path.node) &&
+          t.isMemberExpression(parent.callee) &&
+          t.isIdentifier(parent.callee.object) &&
+          parent.callee.object.name === 'window' &&
+          t.isIdentifier(parent.callee.property) &&
+          parent.callee.property.name === 't'
+        ) {
+          return;
+        }
+
         // 忽略作为对象键的字面量
         if ((t.isObjectProperty(parent) || t.isObjectMethod(parent)) && (parent as t.ObjectProperty | t.ObjectMethod).key === path.node && !(parent as t.ObjectProperty | t.ObjectMethod).computed) {
           return;
@@ -318,6 +331,7 @@ export class TextScanner {
     /^[a-zA-Z\s\-_.,!@#$%^&*()+=[\]{}|;:'"<>?/~`]*$/.test(text) && text.length < 4, // 纯英文且很短
     /^(className|style|id|key|type|placeholder|alt|title|href|src|onClick|onChange|onSubmit)$/.test(text), // 属性名
     /^[A-Z_][A-Z0-9_]*$/.test(text), // 常量名
+    /^[A-Za-z0-9_]+(?:__[A-Za-z0-9_]+)*\.[a-f0-9]{8}$/.test(text), // 已替换的 i18n key
     // 更严格：短小的单词样式字符串往往是代码中的标识符（如 tab/key/id），避免提取   可能是变量名
     /^[a-z][a-zA-Z0-9_]*$/.test(text) && text.length <= 8,
     /^(div|span|p|h1|h2|h3|h4|h5|h6|a|img|input|button|form|table|tr|td|th|ul|ol|li|nav|header|footer|main|section|article)$/.test(text), // HTML标签
