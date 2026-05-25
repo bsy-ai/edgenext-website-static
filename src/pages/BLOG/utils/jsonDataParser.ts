@@ -78,6 +78,12 @@ function resolveBlogAuthor(item: Record<string, unknown>): string {
   return getDefaultAuthor();
 }
 
+/** blogs.json 中 `hide` 或 `hidden` 为 true 时跳过该篇（列表、详情、静态路由、sitemap 均不可见） */
+function isBlogHidden(item: Record<string, unknown>): boolean {
+  const hide = item.hide ?? item.hidden;
+  return hide === true || hide === 'true';
+}
+
 function extractDescription(content: string): string {
   // 移除HTML标签
   const plainText = content.replace(/<[^>]*>/g, '');
@@ -275,6 +281,10 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
 
     blogsData.forEach((item: any, index: number) => {
       try {
+        if (item && typeof item === 'object' && isBlogHidden(item)) {
+          return;
+        }
+
         // 兼容两种格式：
         // 1）旧格式：{ "<titleKey>": "<titleValue>", "<timestampKey>": 1690831540000, "<htmlKey>": "<htmlValue>", ... }
         // 2）新格式：{ "title": "...", "date": "2025-11-23", "content_html": "<h1>...</h1>..." }
