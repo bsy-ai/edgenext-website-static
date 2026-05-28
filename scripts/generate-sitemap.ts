@@ -5,7 +5,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 // Import blog and news data utilities
-import { getAllPosts } from '../src/pages/BLOG/utils/blogUtils.js';
+import { getAllPostsForSitemap } from '../src/pages/BLOG/utils/blogUtils.js';
 import { getAllNews } from '../src/pages/NEWS/utils/newsDataParser.js';
 
 const SITE_URL = (process.env.SITE_URL || 'https://www.edgenext.com').replace(/\/+$/, '');
@@ -74,7 +74,7 @@ async function main() {
   }));
 
   // Blog entries: <loc> + <lastmod>
-  const blogPosts = getAllPosts();
+  const blogPosts = getAllPostsForSitemap();
   console.log(`[sitemap] Found ${blogPosts.length} blog posts`);
   
   const blogEntries: UrlEntry[] = blogPosts.map((p) => ({

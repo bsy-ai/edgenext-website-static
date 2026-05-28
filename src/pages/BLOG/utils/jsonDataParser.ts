@@ -57,6 +57,8 @@ export interface ParsedBlogPost {
   category?: string;
   thumbnailCandidates?: string[];
   seo?: BlogSeo;
+  /** 为 true 时不在列表/搜索/分类/相关文章中出现，直链与 sitemap 仍保留 */
+  hide?: boolean;
 }
 
 // 统一博客作者显示（未在 blogs.json 中提供 author 时使用）
@@ -78,10 +80,14 @@ function resolveBlogAuthor(item: Record<string, unknown>): string {
   return getDefaultAuthor();
 }
 
-/** blogs.json 中 `hide` 或 `hidden` 为 true 时跳过该篇（列表、详情、静态路由、sitemap 均不可见） */
+/** blogs.json 中 `hide` 或 `hidden` 为 true 时，仅隐藏列表入口（直链、sitemap、静态页仍可用） */
 function isBlogHidden(item: Record<string, unknown>): boolean {
   const hide = item.hide ?? item.hidden;
   return hide === true || hide === 'true';
+}
+
+export function isVisibleBlogPost(post: ParsedBlogPost): boolean {
+  return !post.hide;
 }
 
 function extractDescription(content: string): string {
@@ -281,10 +287,6 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
 
     blogsData.forEach((item: any, index: number) => {
       try {
-        if (item && typeof item === 'object' && isBlogHidden(item)) {
-          return;
-        }
-
         // 兼容两种格式：
         // 1）旧格式：{ "<titleKey>": "<titleValue>", "<timestampKey>": 1690831540000, "<htmlKey>": "<htmlValue>", ... }
         // 2）新格式：{ "title": "...", "date": "2025-11-23", "content_html": "<h1>...</h1>..." }
@@ -339,11 +341,12 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
           }
 
           const relatedPosts = parsedPosts
-            .filter(post => post.category === category && post.slug !== slug)
+            .filter(post => post.category === category && post.slug !== slug && isVisibleBlogPost(post))
             .slice(0, 3)
             .map(post => post.slug);
 
           const seo = (item as any).seo as BlogSeo | undefined;
+          const hide = isBlogHidden(item as Record<string, unknown>);
 
           const parsedPost: ParsedBlogPost = {
             slug,
@@ -357,7 +360,8 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
             thumbnailCandidates,
             relatedPosts,
             category,
-            seo
+            seo,
+            hide
           };
 
           parsedPosts.push(parsedPost);
@@ -409,11 +413,12 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
           
           // 生成相关文章（简化处理）
           const relatedPosts = parsedPosts
-            .filter(post => post.category === category && post.slug !== slug)
+            .filter(post => post.category === category && post.slug !== slug && isVisibleBlogPost(post))
             .slice(0, 3)
             .map(post => post.slug);
 
           const seo = (item as any).seo as BlogSeo | undefined;
+          const hide = isBlogHidden(item as Record<string, unknown>);
 
           const parsedPost: ParsedBlogPost = {
             slug,
@@ -427,7 +432,8 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
             thumbnailCandidates,
             relatedPosts,
             category,
-            seo
+            seo,
+            hide
           };
 
           parsedPosts.push(parsedPost);
@@ -439,10 +445,10 @@ export function parseJsonBlogData(): ParsedBlogPost[] {
 
     parsedPosts.sort((a, b) => b.timestamp - a.timestamp);
     
-    // 更新相关文章
+    // 更新相关文章（不含 hide 文章）
     parsedPosts.forEach(post => {
       post.relatedPosts = parsedPosts
-        .filter(p => p.category === post.category && p.slug !== post.slug)
+        .filter(p => p.category === post.category && p.slug !== post.slug && isVisibleBlogPost(p))
         .slice(0, 3)
         .map(p => p.slug);
     });
@@ -470,7 +476,7 @@ export function getCategories(): string[] {
     return cachedCategories;
   }
   
-  const posts = parseJsonBlogData();
+  const posts = parseJsonBlogData().filter(isVisibleBlogPost);
   const categories = Array.from(new Set(posts.map(post => post.category || 'general')));
   
   // 缓存结果
@@ -481,7 +487,7 @@ export function getCategories(): string[] {
 
 export function getPostsByCategory(category: string): ParsedBlogPost[] {
   const posts = parseJsonBlogData();
-  return posts.filter(post => post.category === category);
+  return posts.filter(post => post.category === category && isVisibleBlogPost(post));
 }
 
 export function searchPosts(query: string): ParsedBlogPost[] {
@@ -494,11 +500,11 @@ export function searchPosts(query: string): ParsedBlogPost[] {
   
   const searchTerm = query.toLowerCase().trim();
   if (!searchTerm) {
-    return cachedParsedPosts || [];
+    return (cachedParsedPosts || []).filter(isVisibleBlogPost);
   }
-  
-  // 使用预建的搜索索引进行快速搜索
+
+  // 使用预建的搜索索引进行快速搜索（不含 hide 文章）
   return searchIndex
-    .filter(item => item.searchText.includes(searchTerm))
+    .filter(item => isVisibleBlogPost(item.post) && item.searchText.includes(searchTerm))
     .map(item => item.post);
 }

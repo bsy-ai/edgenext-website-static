@@ -83,7 +83,7 @@ import NewsDetail from './pages/NEWS/pages/NewsDetail';
 import WorldCup from './pages/WorldCup';
 import { LegacyRedirect } from './components/LegacyRedirect';
 
-import { getAllPosts } from './pages/BLOG/utils/blogUtils';
+import { getAllPostSlugs } from './pages/BLOG/utils/blogUtils';
 import { getAllNews } from './pages/NEWS/utils/newsDataParser';
 import caseStudies from './data/caseStudies';
 
@@ -193,7 +193,7 @@ export const routes: RouteRecord[] = [
   {
     path: 'resources/blog/:slug',
     Component: BlogDetail,
-    getStaticPaths: () => getAllPosts().map((p) => `resources/blog/${p.slug}`)
+    getStaticPaths: () => getAllPostSlugs().map((slug) => `resources/blog/${slug}`)
   },
 
   // ── Newsroom ──

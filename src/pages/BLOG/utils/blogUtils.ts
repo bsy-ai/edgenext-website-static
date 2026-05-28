@@ -1,4 +1,12 @@
-import { parseJsonBlogData, ParsedBlogPost, getCategories, getPostsByCategory, searchPosts, BlogSeo } from './jsonDataParser';
+import {
+  parseJsonBlogData,
+  ParsedBlogPost,
+  getCategories,
+  getPostsByCategory,
+  searchPosts,
+  isVisibleBlogPost,
+  BlogSeo
+} from './jsonDataParser';
 
 export type { BlogSeo, BlogFaqItem } from './jsonDataParser';
 
@@ -14,6 +22,7 @@ export interface BlogPost {
   thumbnailCandidates?: string[];
   category?: string;
   seo?: BlogSeo;
+  hide?: boolean;
 }
 
 // 将ParsedBlogPost转换为BlogPost格式
@@ -29,33 +38,43 @@ function convertParsedPost(parsedPost: ParsedBlogPost): BlogPost {
     thumbnail: parsedPost.thumbnail,
     thumbnailCandidates: parsedPost.thumbnailCandidates,
     category: parsedPost.category,
-    seo: parsedPost.seo
+    seo: parsedPost.seo,
+    hide: parsedPost.hide
   };
 }
 
-function getBlogPosts(): BlogPost[] {
+function getBlogPosts(includeHidden = false): BlogPost[] {
   const parsedPosts = parseJsonBlogData();
-  return parsedPosts.map(convertParsedPost);
+  const filtered = includeHidden ? parsedPosts : parsedPosts.filter(isVisibleBlogPost);
+  return filtered.map(convertParsedPost);
 }
 
+/** 全部 slug（含 hide），用于静态路由 */
 export function getAllPostSlugs(): string[] {
-  const posts = getBlogPosts();
-  return posts.map(post => post.slug);
+  return getBlogPosts(true).map(post => post.slug);
 }
 
+/** 直链访问：含 hide 文章 */
 export function getPostBySlug(slug: string): BlogPost | null {
-  const posts = getBlogPosts();
+  const posts = getBlogPosts(true);
   return posts.find(post => post.slug === slug) || null;
 }
 
+/** 列表展示：不含 hide 文章 */
 export function getAllPosts(): BlogPost[] {
-  const posts = getBlogPosts();
+  const posts = getBlogPosts(false);
+  return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+
+/** Sitemap：含 hide 文章 */
+export function getAllPostsForSitemap(): BlogPost[] {
+  const posts = getBlogPosts(true);
   return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
 export function getRelatedPosts(currentSlug: string, relatedSlugs: string[]): BlogPost[] {
-  const posts = getBlogPosts();
-  return posts.filter(post => 
+  const posts = getBlogPosts(false);
+  return posts.filter(post =>
     relatedSlugs.includes(post.slug) && post.slug !== currentSlug
   );
 }
@@ -72,4 +91,4 @@ export function getPostsByCategoryName(category: string): BlogPost[] {
 export function searchBlogPosts(query: string): BlogPost[] {
   const parsedPosts = searchPosts(query);
   return parsedPosts.map(convertParsedPost);
-} 
+}
